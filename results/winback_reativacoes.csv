@@ -1,0 +1,8 @@
+tipo_venda,ciclo,consumo,total_contratos,churners,churn_rate
+first_contract,1o,N,23191,14080,60.7
+first_contract,1o,S,67448,39771,59.0
+reactivation,1o,N,4237,2489,58.7
+reactivation,1o,S,12407,7130,57.5
+renewal,1o,N,4349,2574,59.2
+renewal,1o,S,13058,7335,56.2
+renewal,2o+,N,79180,38533,48.7

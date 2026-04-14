@@ -1,0 +1,6 @@
+faixa_risco,total_contratos,churners,churn_rate,score_medio,score_min,score_max
+1_CRITICO (55+),36796,28748,78.1,64.4,55,100
+2_ALTO (40-54),53704,31651,58.9,46.0,40,53
+3_MEDIO (25-39),55981,28292,50.5,31.3,25,38
+4_BAIXO (10-24),37657,16349,43.4,16.8,10,23
+5_MINIMO (0-9),22248,8459,38.0,1.5,-15,8

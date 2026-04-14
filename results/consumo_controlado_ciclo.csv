@@ -1,0 +1,7 @@
+ciclo,consumo,duracao,total_contratos,churners,churn_rate
+1o_contrato,N,12,15919,10168,63.9
+1o_contrato,N,6,16810,9670,57.5
+1o_contrato,S,12,47605,28633,60.1
+1o_contrato,S,6,46263,26169,56.6
+2o+_contrato,N,12,32796,17704,54.0
+2o+_contrato,N,6,46993,21155,45.0
