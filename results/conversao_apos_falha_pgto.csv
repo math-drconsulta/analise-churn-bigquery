@@ -1,1301 +1,1301 @@
-id_paciente,data_envio,assinatura_7dias_sn,assinatura_pos_disparo_sn,dias_ate_assinatura,plano_assinado,forma_pagamento,data_assinatura
-20800,2026-03-31,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
-1094857,2026-03-31,Nao,Nao,,,,
-1239752,2026-03-31,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-09
-1418637,2026-03-31,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
-1439534,2026-03-31,Sim,Sim,5,cartao dr.consulta - gratis,,2026-04-05
-1503363,2026-03-31,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-09
-1550212,2026-03-31,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-09
-1551365,2026-03-31,Nao,Sim,8,cartao dr.consulta - gratis,,2026-04-08
-1597640,2026-03-31,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
-1640730,2026-03-31,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
-1738778,2026-03-31,Nao,Nao,,,,
-1753720,2026-03-31,Nao,Nao,,,,
-1874878,2026-03-31,Nao,Nao,,,,
-1911514,2026-03-31,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-09
-1932274,2026-03-31,Nao,Nao,,,,
-1940560,2026-03-31,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-09
-1998103,2026-03-31,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
-2004109,2026-03-31,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
-2020574,2026-03-31,Nao,Nao,,,,
-2075616,2026-03-31,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
-2104108,2026-03-31,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-09
-2121119,2026-03-31,Sim,Sim,0,cartao dr.consulta com odonto anual,credit_card,2026-03-31
-2176829,2026-03-31,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
-2177996,2026-03-31,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-09
-2180857,2026-03-31,Nao,Nao,,,,
-2273291,2026-03-31,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-09
-2277889,2026-03-31,Sim,Sim,6,cartao dr.consulta com odonto anual,boleto,2026-04-06
-2365364,2026-03-31,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
-2479341,2026-03-31,Nao,Nao,,,,
-2504639,2026-03-31,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-09
-2532030,2026-03-31,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
-2590421,2026-03-31,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
-2636375,2026-03-31,Nao,Nao,,,,
-2671894,2026-03-31,Nao,Sim,8,cartao dr.consulta - gratis,,2026-04-08
-2751169,2026-03-31,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
-2836869,2026-03-31,Sim,Sim,2,cartao dr.consulta anual,credit_card,2026-04-02
-2893073,2026-03-31,Nao,Nao,,,,
-2921964,2026-03-31,Sim,Sim,5,cartao dr.consulta - gratis,,2026-04-05
-2925000,2026-03-31,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-09
-3046802,2026-03-31,Nao,Sim,8,cartao dr.consulta - gratis,,2026-04-08
-3111054,2026-03-31,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
-3182327,2026-03-31,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-09
-3205660,2026-03-31,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
-3275524,2026-03-31,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-09
-3282353,2026-03-31,Nao,Sim,8,cartao dr.consulta - gratis,,2026-04-08
-3331281,2026-03-31,Nao,Nao,,,,
-3377933,2026-03-31,Nao,Nao,,,,
-3381996,2026-03-31,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-09
-3579243,2026-03-31,Sim,Sim,0,cartao dr.consulta com odonto anual,credit_card,2026-03-31
-3632301,2026-03-31,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
-3813929,2026-03-31,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
-3994127,2026-03-31,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
-4127793,2026-03-31,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-09
-4206204,2026-03-31,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
-4334536,2026-03-31,Sim,Sim,0,cartao dr.consulta com odonto anual,credit_card,2026-03-31
-4343174,2026-03-31,Nao,Sim,8,cartao dr.consulta - gratis,,2026-04-08
-4386959,2026-03-31,Sim,Sim,5,cartao dr.consulta - gratis,,2026-04-05
-4412264,2026-03-31,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
-4423615,2026-03-31,Nao,Sim,8,cartao dr.consulta - gratis,,2026-04-08
-4426056,2026-03-31,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-09
-4598424,2026-03-31,Nao,Nao,,,,
-4614004,2026-03-31,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-09
-4650210,2026-03-31,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
-4706112,2026-03-31,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
-4750880,2026-03-31,Nao,Sim,8,cartao dr.consulta - gratis,,2026-04-08
-4831409,2026-03-31,Nao,Sim,8,cartao dr.consulta - gratis,,2026-04-08
-4844998,2026-03-31,Nao,Sim,8,cartao dr.consulta com odonto anual,credit_card,2026-04-08
-4952771,2026-03-31,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
-4993696,2026-03-31,Nao,Nao,,,,
-5145305,2026-03-31,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
-5166722,2026-03-31,Nao,Nao,,,,
-5196851,2026-03-31,Nao,Sim,8,cartao dr.consulta - gratis,,2026-04-08
-5202359,2026-03-31,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-09
-5228554,2026-03-31,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
-5283007,2026-03-31,Nao,Sim,8,cartao dr.consulta - gratis,,2026-04-08
-5307025,2026-03-31,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-09
-5509324,2026-03-31,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
-5536592,2026-03-31,Nao,Nao,,,,
-5652629,2026-03-31,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
-5728618,2026-03-31,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-09
-5804003,2026-03-31,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
-5930522,2026-03-31,Sim,Sim,5,cartao dr.consulta - gratis,,2026-04-05
-5982933,2026-03-31,Nao,Nao,,,,
-6119387,2026-03-31,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
-6154338,2026-03-31,Nao,Sim,8,cartao dr.consulta - gratis,,2026-04-08
-6174482,2026-03-31,Nao,Nao,,,,
-6285777,2026-03-31,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
-6385498,2026-03-31,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
-6463199,2026-03-31,Nao,Sim,8,cartao dr.consulta - gratis,,2026-04-08
-6631680,2026-03-31,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
-6700068,2026-03-31,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
-6709020,2026-03-31,Sim,Sim,3,cartao dr.consulta com odonto anual,credit_card,2026-04-03
-6776624,2026-03-31,Nao,Sim,8,cartao dr.consulta - gratis,,2026-04-08
-6943763,2026-03-31,Nao,Nao,,,,
-7009938,2026-03-31,Nao,Nao,,,,
-7016543,2026-03-31,Nao,Nao,,,,
-7135666,2026-03-31,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
-7184337,2026-03-31,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
-7223988,2026-03-31,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
-7257287,2026-03-31,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
-7299904,2026-03-31,Nao,Nao,,,,
-7376534,2026-03-31,Nao,Nao,,,,
-7444145,2026-03-31,Sim,Sim,7,cartao dr.consulta anual,pix,2026-04-07
-7489194,2026-03-31,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
-7501358,2026-03-31,Sim,Sim,0,cartao dr.consulta anual,credit_card,2026-03-31
-7561121,2026-03-31,Nao,Nao,,,,
-7568510,2026-03-31,Nao,Nao,,,,
-7653586,2026-03-31,Nao,Nao,,,,
-7895653,2026-03-31,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
-7940214,2026-03-31,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
-7990821,2026-03-31,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
-8074317,2026-03-31,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-09
-8129624,2026-03-31,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
-11256576,2026-03-31,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
-11276928,2026-03-31,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
-11292025,2026-03-31,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-09
-11490597,2026-03-31,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-09
-11583696,2026-03-31,Sim,Sim,5,cartao dr.consulta - gratis,,2026-04-05
-11618160,2026-03-31,Nao,Sim,8,cartao dr.consulta - gratis,,2026-04-08
-11653771,2026-03-31,Nao,Nao,,,,
-11704985,2026-03-31,Sim,Sim,0,cartao dr.consulta com odonto anual,credit_card,2026-03-31
-11838869,2026-03-31,Nao,Nao,,,,
-12033330,2026-03-31,Nao,Nao,,,,
-12168890,2026-03-31,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
-12179797,2026-03-31,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
-12270509,2026-03-31,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-09
-12319644,2026-03-31,Nao,Nao,,,,
-12418807,2026-03-31,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
-12480027,2026-03-31,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-09
-12496340,2026-03-31,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
-12520348,2026-03-31,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
-12528247,2026-03-31,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
-12588464,2026-03-31,Nao,Sim,8,cartao dr.consulta - gratis,,2026-04-08
-12609073,2026-03-31,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
-12661642,2026-03-31,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-09
-12662321,2026-03-31,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
-12847821,2026-03-31,Nao,Sim,8,cartao dr.consulta - gratis,,2026-04-08
-12855949,2026-03-31,Nao,Nao,,,,
-12949595,2026-03-31,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
-12967124,2026-03-31,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
-13180956,2026-03-31,Sim,Sim,5,cartao dr.consulta - gratis,,2026-04-05
-13257941,2026-03-31,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-09
-13335032,2026-03-31,Nao,Nao,,,,
-13434748,2026-03-31,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
-13485470,2026-03-31,Nao,Nao,,,,
-13489705,2026-03-31,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-09
-13529780,2026-03-31,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
-13595615,2026-03-31,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
-13603779,2026-03-31,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-09
-13658724,2026-03-31,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-09
-13700321,2026-03-31,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
-13722689,2026-03-31,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
-13776724,2026-03-31,Nao,Nao,,,,
-13826401,2026-03-31,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
-13904769,2026-03-31,Nao,Sim,8,cartao dr.consulta - gratis,,2026-04-08
-14065657,2026-03-31,Nao,Nao,,,,
-14086091,2026-03-31,Sim,Sim,2,cartao dr.consulta semestral,credit_card,2026-04-02
-14128465,2026-03-31,Sim,Sim,0,cartao dr.consulta anual,credit_card,2026-03-31
-14139531,2026-03-31,Nao,Nao,,,,
-14197787,2026-03-31,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
-14289951,2026-03-31,Sim,Sim,0,cartao dr.consulta semestral,credit_card,2026-03-31
-14351690,2026-03-31,Nao,Nao,,,,
-14431081,2026-03-31,Nao,Nao,,,,
-14455176,2026-03-31,Nao,Nao,,,,
-14582333,2026-03-31,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
-14709755,2026-03-31,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-09
-14760504,2026-03-31,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
-14835131,2026-03-31,Sim,Sim,5,cartao dr.consulta - gratis,,2026-04-05
-14870390,2026-03-31,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
-14872860,2026-03-31,Nao,Nao,,,,
-14876501,2026-03-31,Nao,Nao,,,,
-14975503,2026-03-31,Sim,Sim,1,cartao dr.consulta anual,credit_card,2026-04-01
-15345691,2026-03-31,Nao,Sim,8,cartao dr.consulta - gratis,,2026-04-08
-15349311,2026-03-31,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
-15420118,2026-03-31,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
-15604815,2026-03-31,Nao,Nao,,,,
-15614628,2026-03-31,Nao,Sim,8,cartao dr.consulta - gratis,,2026-04-08
-15614895,2026-03-31,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
-15691810,2026-03-31,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
-15751071,2026-03-31,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
-15774179,2026-03-31,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
-15863139,2026-03-31,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
-15898690,2026-03-31,Nao,Sim,8,cartao dr.consulta - gratis,,2026-04-08
-16003285,2026-03-31,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
-16261872,2026-03-31,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-09
-16341726,2026-03-31,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-09
-16406283,2026-03-31,Sim,Sim,1,cartao dr.consulta com odonto anual,credit_card,2026-04-01
-16408857,2026-03-31,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
-16465693,2026-03-31,Nao,Sim,8,cartao dr.consulta - gratis,,2026-04-08
-16480617,2026-03-31,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
-16511797,2026-03-31,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
-16533452,2026-03-31,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
-16547810,2026-03-31,Nao,Sim,8,cartao dr.consulta - gratis,,2026-04-08
-16568723,2026-03-31,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-09
-16600573,2026-03-31,Nao,Nao,,,,
-16670644,2026-03-31,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-09
-16681583,2026-03-31,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-09
-16821884,2026-03-31,Sim,Sim,0,cartao dr.consulta anual,credit_card,2026-03-31
-16871503,2026-03-31,Nao,Sim,8,cartao dr.consulta - gratis,,2026-04-08
-16899889,2026-03-31,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
-16961444,2026-03-31,Nao,Nao,,,,
-17288457,2026-03-31,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-09
-17327998,2026-03-31,Nao,Nao,,,,
-17352467,2026-03-31,Nao,Nao,,,,
-17383217,2026-03-31,Sim,Sim,5,cartao dr.consulta - gratis,,2026-04-05
-17398794,2026-03-31,Nao,Nao,,,,
-17415897,2026-03-31,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
-17449304,2026-03-31,Nao,Nao,,,,
-17554648,2026-03-31,Nao,Nao,,,,
-17638725,2026-03-31,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
-17714906,2026-03-31,Nao,Sim,8,cartao dr.consulta - gratis,,2026-04-08
-17759386,2026-03-31,Nao,Nao,,,,
-17779992,2026-03-31,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
-17788385,2026-03-31,Nao,Nao,,,,
-17819292,2026-03-31,Nao,Sim,8,cartao dr.consulta - gratis,,2026-04-08
-17947088,2026-03-31,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
-18040152,2026-03-31,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
-18048299,2026-03-31,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
-18114055,2026-03-31,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
-18125341,2026-03-31,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
-18187600,2026-03-31,Sim,Sim,1,cartao dr.consulta com odonto anual,credit_card,2026-04-01
-18194136,2026-03-31,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
-18227841,2026-03-31,Sim,Sim,5,cartao dr.consulta - gratis,,2026-04-05
-18232607,2026-03-31,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
-18247056,2026-03-31,Nao,Sim,8,cartao dr.consulta - gratis,,2026-04-08
-18247198,2026-03-31,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
-18248063,2026-03-31,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
-18248180,2026-03-31,Sim,Sim,0,cartao dr.consulta anual,credit_card,2026-03-31
-18251210,2026-03-31,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
-18251495,2026-03-31,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
-18251570,2026-03-31,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
-18251671,2026-03-31,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
-18253492,2026-03-31,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
-18254440,2026-03-31,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
-18257721,2026-03-31,Nao,Sim,8,cartao dr.consulta - gratis,,2026-04-08
-18257944,2026-03-31,Nao,Sim,8,cartao dr.consulta - gratis,,2026-04-08
-18259450,2026-03-31,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-09
-18259472,2026-03-31,Nao,Sim,8,cartao dr.consulta - gratis,,2026-04-08
-18259966,2026-03-31,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-09
-18260587,2026-03-31,Nao,Sim,8,cartao dr.consulta - gratis,,2026-04-08
-18260704,2026-03-31,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-09
-18260783,2026-03-31,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-09
-18263143,2026-03-31,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-09
-18294597,2026-03-31,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-09
-18400140,2026-03-31,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
-18421890,2026-03-31,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-09
-18618393,2026-03-31,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
-18832481,2026-03-31,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
-18844379,2026-03-31,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
-18922909,2026-03-31,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-09
-18980428,2026-03-31,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
-18985653,2026-03-31,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
-18988988,2026-03-31,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-09
-19159664,2026-03-31,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
-19169170,2026-03-31,Nao,Sim,8,cartao dr.consulta - gratis,,2026-04-08
-19170679,2026-03-31,Nao,Nao,,,,
-19241568,2026-03-31,Nao,Sim,8,cartao dr.consulta - gratis,,2026-04-08
-19296443,2026-03-31,Nao,Sim,8,cartao dr.consulta - gratis,,2026-04-08
-19334793,2026-03-31,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
-19410003,2026-03-31,Sim,Sim,4,cartao dr.consulta anual,credit_card,2026-04-04
-19515656,2026-03-31,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-09
-19574683,2026-03-31,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
-19579069,2026-03-31,Nao,Sim,8,cartao dr.consulta - gratis,,2026-04-08
-19588503,2026-03-31,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
-19603174,2026-03-31,Nao,Sim,8,cartao dr.consulta - gratis,,2026-04-08
-19611049,2026-03-31,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
-19623563,2026-03-31,Nao,Sim,8,cartao dr.consulta - gratis,,2026-04-08
-19633949,2026-03-31,Sim,Sim,5,cartao dr.consulta - gratis,,2026-04-05
-19635895,2026-03-31,Nao,Sim,8,cartao dr.consulta - gratis,,2026-04-08
-19636575,2026-03-31,Sim,Sim,5,cartao dr.consulta - gratis,,2026-04-05
-19640777,2026-03-31,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
-19641156,2026-03-31,Nao,Sim,8,cartao dr.consulta - gratis,,2026-04-08
-19642562,2026-03-31,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
-19643097,2026-03-31,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
-19643257,2026-03-31,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
-19643359,2026-03-31,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
-19643949,2026-03-31,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
-19644411,2026-03-31,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
-19644811,2026-03-31,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
-19645944,2026-03-31,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
-19646366,2026-03-31,Nao,Nao,,,,
-19646645,2026-03-31,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
-19646863,2026-03-31,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
-19648149,2026-03-31,Nao,Sim,8,cartao dr.consulta - gratis,,2026-04-08
-19648268,2026-03-31,Nao,Sim,8,cartao dr.consulta - gratis,,2026-04-08
-19648936,2026-03-31,Nao,Sim,8,cartao dr.consulta - gratis,,2026-04-08
-19650010,2026-03-31,Sim,Sim,2,cartao dr.consulta anual,credit_card,2026-04-02
-19650641,2026-03-31,Nao,Nao,,,,
-19651724,2026-03-31,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-09
-19651731,2026-03-31,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-09
-19653255,2026-03-31,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-09
-20008213,2026-03-31,Nao,Nao,,,,
-20327965,2026-03-31,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
-20347312,2026-03-31,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-09
-20352151,2026-03-31,Sim,Sim,5,cartao dr.consulta - gratis,,2026-04-05
-20362467,2026-03-31,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
-20370256,2026-03-31,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-09
-20370457,2026-03-31,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-09
-20370790,2026-03-31,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-09
-20371751,2026-03-31,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-09
-9906,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-12642,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-13684,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-20986,2026-04-02,Nao,Nao,,,,
-28711,2026-04-02,Nao,Nao,,,,
-28981,2026-04-02,Nao,Nao,,,,
-31537,2026-04-02,Nao,Nao,,,,
-36249,2026-04-02,Nao,Nao,,,,
-1049860,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-1063727,2026-04-02,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
-1097610,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-1133855,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-1168970,2026-04-02,Nao,Nao,,,,
-1170143,2026-04-02,Nao,Nao,,,,
-1190367,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-1199386,2026-04-02,Nao,Nao,,,,
-1204792,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-1204976,2026-04-02,Nao,Nao,,,,
-1221622,2026-04-02,Nao,Nao,,,,
-1254823,2026-04-02,Nao,Nao,,,,
-1284997,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-1341060,2026-04-02,Nao,Nao,,,,
-1359853,2026-04-02,Nao,Nao,,,,
-1359923,2026-04-02,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
-1385035,2026-04-02,Sim,Sim,4,cartao dr.consulta anual,credit_card,2026-04-06
-1418380,2026-04-02,Nao,Nao,,,,
-1445047,2026-04-02,Nao,Nao,,,,
-1459906,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-1461399,2026-04-02,Nao,Nao,,,,
-1465170,2026-04-02,Sim,Sim,6,cartao dr.consulta anual,credit_card,2026-04-08
-1466000,2026-04-02,Nao,Nao,,,,
-1483384,2026-04-02,Nao,Sim,12,cartao dr.consulta com odonto anual,credit_card,2026-04-14
-1493440,2026-04-02,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
-1495471,2026-04-02,Nao,Nao,,,,
-1500283,2026-04-02,Nao,Nao,,,,
-1546682,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-1559098,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-1559625,2026-04-02,Nao,Nao,,,,
-1562835,2026-04-02,Nao,Nao,,,,
-1574182,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-1588508,2026-04-02,Nao,Sim,8,cartao dr.consulta semestral,credit_card,2026-04-10
-1596203,2026-04-02,Nao,Nao,,,,
-1612811,2026-04-02,Nao,Nao,,,,
-1613159,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-1614455,2026-04-02,Nao,Nao,,,,
-1620056,2026-04-02,Sim,Sim,5,cartao dr.consulta semestral,credit_card,2026-04-07
-1621633,2026-04-02,Nao,Nao,,,,
-1648838,2026-04-02,Nao,Nao,,,,
-1651581,2026-04-02,Nao,Nao,,,,
-1656027,2026-04-02,Nao,Nao,,,,
-1665813,2026-04-02,Nao,Nao,,,,
-1670668,2026-04-02,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
-1675534,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-1676517,2026-04-02,Nao,Nao,,,,
-1687081,2026-04-02,Nao,Nao,,,,
-1689582,2026-04-02,Nao,Nao,,,,
-1697119,2026-04-02,Nao,Nao,,,,
-1705153,2026-04-02,Nao,Nao,,,,
-1744497,2026-04-02,Sim,Sim,4,cartao dr.consulta com odonto anual,credit_card,2026-04-06
-1759450,2026-04-02,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
-1796731,2026-04-02,Nao,Nao,,,,
-1797893,2026-04-02,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
-1834220,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-1874773,2026-04-02,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
-1875069,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-1916999,2026-04-02,Nao,Nao,,,,
-1936548,2026-04-02,Sim,Sim,0,cartao dr.consulta semestral,credit_card,2026-04-02
-1936769,2026-04-02,Nao,Nao,,,,
-1937636,2026-04-02,Nao,Nao,,,,
-1971686,2026-04-02,Nao,Nao,,,,
-1978053,2026-04-02,Sim,Sim,4,cartao dr.consulta com odonto anual,credit_card,2026-04-06
-1990714,2026-04-02,Nao,Nao,,,,
-2033169,2026-04-02,Nao,Nao,,,,
-2077938,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-2078091,2026-04-02,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
-2083426,2026-04-02,Nao,Nao,,,,
-2102350,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-2106243,2026-04-02,Nao,Nao,,,,
-2106986,2026-04-02,Nao,Nao,,,,
-2113095,2026-04-02,Nao,Nao,,,,
-2140903,2026-04-02,Nao,Nao,,,,
-2142797,2026-04-02,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
-2151994,2026-04-02,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
-2190070,2026-04-02,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
-2190916,2026-04-02,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
-2210910,2026-04-02,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
-2216017,2026-04-02,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
-2227067,2026-04-02,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
-2241916,2026-04-02,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
-2247924,2026-04-02,Nao,Nao,,,,
-2252585,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-2303047,2026-04-02,Nao,Nao,,,,
-2318298,2026-04-02,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
-2328111,2026-04-02,Nao,Nao,,,,
-2351682,2026-04-02,Sim,Sim,2,cartao dr.consulta com odonto anual,credit_card,2026-04-04
-2374136,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-2390349,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-2410129,2026-04-02,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
-2414034,2026-04-02,Nao,Nao,,,,
-2419895,2026-04-02,Nao,Nao,,,,
-2431296,2026-04-02,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
-2461069,2026-04-02,Sim,Sim,1,cartao dr.consulta semestral,credit_card,2026-04-03
-2487012,2026-04-02,Sim,Sim,6,cartao dr.consulta anual,credit_card,2026-04-08
-2487253,2026-04-02,Nao,Nao,,,,
-2489588,2026-04-02,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
-2498705,2026-04-02,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
-2513994,2026-04-02,Nao,Nao,,,,
-2532013,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-2538773,2026-04-02,Nao,Nao,,,,
-2540515,2026-04-02,Nao,Nao,,,,
-2541493,2026-04-02,Nao,Nao,,,,
-2547928,2026-04-02,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
-2548165,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-2550814,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-2597666,2026-04-02,Sim,Sim,0,cartao dr.consulta anual,pix,2026-04-02
-2610229,2026-04-02,Nao,Nao,,,,
-2635046,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-2635936,2026-04-02,Nao,Nao,,,,
-2644702,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-2664712,2026-04-02,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
-2685166,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-2687503,2026-04-02,Nao,Nao,,,,
-2695825,2026-04-02,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
-2798443,2026-04-02,Nao,Nao,,,,
-2819498,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-2831672,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-2855129,2026-04-02,Nao,Sim,10,cartao dr.consulta anual,credit_card,2026-04-12
-2888026,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-2956851,2026-04-02,Nao,Sim,8,cartao dr.consulta com odonto anual,credit_card,2026-04-10
-3003763,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-3008391,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-3069285,2026-04-02,Nao,Nao,,,,
-3093814,2026-04-02,Nao,Nao,,,,
-3095003,2026-04-02,Sim,Sim,3,cartao dr.consulta anual,credit_card,2026-04-05
-3110490,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-3137390,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-3195526,2026-04-02,Nao,Nao,,,,
-3236876,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-3249011,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-3287445,2026-04-02,Sim,Sim,0,cartao dr.consulta semestral,credit_card,2026-04-02
-3297674,2026-04-02,Nao,Nao,,,,
-3313384,2026-04-02,Nao,Nao,,,,
-3317828,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-3353862,2026-04-02,Nao,Nao,,,,
-3359373,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-3437587,2026-04-02,Nao,Sim,9,cartao dr.consulta semestral,credit_card,2026-04-11
-3447049,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-3448218,2026-04-02,Nao,Nao,,,,
-3452778,2026-04-02,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
-3505282,2026-04-02,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
-3508922,2026-04-02,Sim,Sim,0,cartao dr.consulta anual,credit_card,2026-04-02
-3570955,2026-04-02,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
-3582548,2026-04-02,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
-3591794,2026-04-02,Nao,Nao,,,,
-3598148,2026-04-02,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
-3606470,2026-04-02,Sim,Sim,7,cartao dr.consulta com odonto anual,credit_card,2026-04-09
-3625427,2026-04-02,Nao,Nao,,,,
-3641135,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-3661358,2026-04-02,Nao,Nao,,,,
-3667238,2026-04-02,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
-3667722,2026-04-02,Nao,Nao,,,,
-3679795,2026-04-02,Nao,Nao,,,,
-3685344,2026-04-02,Nao,Nao,,,,
-3686987,2026-04-02,Nao,Nao,,,,
-3698146,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-3742048,2026-04-02,Nao,Nao,,,,
-3758491,2026-04-02,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
-3772990,2026-04-02,Nao,Nao,,,,
-3924495,2026-04-02,Sim,Sim,4,cartao dr.consulta semestral,credit_card,2026-04-06
-3924593,2026-04-02,Nao,Nao,,,,
-3960619,2026-04-02,Nao,Sim,9,cartao dr.consulta semestral,debit_card,2026-04-11
-3993629,2026-04-02,Nao,Nao,,,,
-4006108,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-4040165,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-4041443,2026-04-02,Nao,Nao,,,,
-4043935,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-4067271,2026-04-02,Nao,Nao,,,,
-4070497,2026-04-02,Nao,Nao,,,,
-4080297,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-4084509,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-4090647,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-4104203,2026-04-02,Nao,Nao,,,,
-4112747,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-4131841,2026-04-02,Nao,Nao,,,,
-4141360,2026-04-02,Sim,Sim,7,cartao dr.consulta anual,credit_card,2026-04-09
-4150978,2026-04-02,Nao,Nao,,,,
-4164045,2026-04-02,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
-4185325,2026-04-02,Nao,Nao,,,,
-4225060,2026-04-02,Sim,Sim,4,cartao dr.consulta semestral,credit_card,2026-04-06
-4239359,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-4244802,2026-04-02,Nao,Nao,,,,
-4274581,2026-04-02,Nao,Nao,,,,
-4294756,2026-04-02,Nao,Nao,,,,
-4297491,2026-04-02,Nao,Nao,,,,
-4371399,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-4379728,2026-04-02,Nao,Nao,,,,
-4411854,2026-04-02,Nao,Nao,,,,
-4476840,2026-04-02,Nao,Nao,,,,
-4482016,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-4540426,2026-04-02,Nao,Nao,,,,
-4546086,2026-04-02,Nao,Nao,,,,
-4548159,2026-04-02,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
-4567305,2026-04-02,Nao,Nao,,,,
-4568632,2026-04-02,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
-4585616,2026-04-02,Sim,Sim,4,cartao dr.consulta anual,credit_card,2026-04-06
-4604330,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-4610539,2026-04-02,Nao,Nao,,,,
-4647033,2026-04-02,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
-4667575,2026-04-02,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
-4678289,2026-04-02,Nao,Nao,,,,
-4707453,2026-04-02,Sim,Sim,4,cartao dr.consulta com odonto anual,credit_card,2026-04-06
-4716355,2026-04-02,Nao,Nao,,,,
-4759611,2026-04-02,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
-4778182,2026-04-02,Nao,Nao,,,,
-4787032,2026-04-02,Nao,Nao,,,,
-4797128,2026-04-02,Nao,Nao,,,,
-4810473,2026-04-02,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
-4835630,2026-04-02,Nao,Nao,,,,
-4869126,2026-04-02,Nao,Nao,,,,
-4896298,2026-04-02,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
-4906953,2026-04-02,Nao,Nao,,,,
-4908726,2026-04-02,Nao,Nao,,,,
-4947707,2026-04-02,Nao,Nao,,,,
-4947758,2026-04-02,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
-4947954,2026-04-02,Nao,Nao,,,,
-4948288,2026-04-02,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
-4978672,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-5024884,2026-04-02,Nao,Nao,,,,
-5029255,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-5033261,2026-04-02,Nao,Nao,,,,
-5034022,2026-04-02,Nao,Nao,,,,
-5061700,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-5110668,2026-04-02,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
-5119795,2026-04-02,Nao,Nao,,,,
-5126282,2026-04-02,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
-5134857,2026-04-02,Nao,Nao,,,,
-5141660,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-5208519,2026-04-02,Sim,Sim,7,cartao dr.consulta anual,credit_card,2026-04-09
-5232856,2026-04-02,Nao,Nao,,,,
-5254256,2026-04-02,Sim,Sim,6,cartao dr.consulta com odonto anual,credit_card,2026-04-08
-5258966,2026-04-02,Sim,Sim,0,cartao dr.consulta anual,credit_card,2026-04-02
-5290795,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-5301557,2026-04-02,Nao,Nao,,,,
-5350692,2026-04-02,Nao,Nao,,,,
-5351138,2026-04-02,Sim,Sim,1,cartao dr.consulta com odonto anual,credit_card,2026-04-03
-5359168,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-5369805,2026-04-02,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
-5376370,2026-04-02,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
-5416758,2026-04-02,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
-5428725,2026-04-02,Nao,Nao,,,,
-5438028,2026-04-02,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
-5446646,2026-04-02,Nao,Nao,,,,
-5546200,2026-04-02,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
-5550673,2026-04-02,Nao,Nao,,,,
-5559277,2026-04-02,Nao,Nao,,,,
-5567091,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-5580999,2026-04-02,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
-5584918,2026-04-02,Nao,Nao,,,,
-5589496,2026-04-02,Sim,Sim,7,cartao dr.consulta semestral,credit_card,2026-04-09
-5622403,2026-04-02,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
-5652626,2026-04-02,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
-5657654,2026-04-02,Nao,Nao,,,,
-5661204,2026-04-02,Nao,Nao,,,,
-5676934,2026-04-02,Nao,Nao,,,,
-5725488,2026-04-02,Nao,Nao,,,,
-5735177,2026-04-02,Nao,Nao,,,,
-5744110,2026-04-02,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
-5750429,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-5755071,2026-04-02,Nao,Nao,,,,
-5761828,2026-04-02,Sim,Sim,0,cartao dr.consulta anual,credit_card,2026-04-02
-5765336,2026-04-02,Nao,Nao,,,,
-5776085,2026-04-02,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
-5794940,2026-04-02,Nao,Nao,,,,
-5809576,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-5822715,2026-04-02,Nao,Nao,,,,
-5844490,2026-04-02,Nao,Nao,,,,
-5849017,2026-04-02,Nao,Nao,,,,
-5868194,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-5873733,2026-04-02,Nao,Nao,,,,
-5881892,2026-04-02,Nao,Nao,,,,
-5911053,2026-04-02,Nao,Nao,,,,
-5923697,2026-04-02,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
-5944199,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-5971583,2026-04-02,Nao,Nao,,,,
-6001894,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-6028272,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-6075576,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-6098488,2026-04-02,Nao,Nao,,,,
-6101274,2026-04-02,Nao,Nao,,,,
-6142612,2026-04-02,Nao,Nao,,,,
-6169435,2026-04-02,Nao,Nao,,,,
-6192864,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-6192929,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-6214702,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-6216174,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-6256912,2026-04-02,Nao,Nao,,,,
-6263162,2026-04-02,Nao,Sim,9,cartao dr.consulta com odonto anual,credit_card,2026-04-11
-6267604,2026-04-02,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
-6291037,2026-04-02,Nao,Nao,,,,
-6320525,2026-04-02,Nao,Nao,,,,
-6321646,2026-04-02,Nao,Nao,,,,
-6343881,2026-04-02,Nao,Nao,,,,
-6397842,2026-04-02,Nao,Nao,,,,
-6410114,2026-04-02,Sim,Sim,0,cartao dr.consulta com odonto anual,credit_card,2026-04-02
-6469689,2026-04-02,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
-6561755,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-6577694,2026-04-02,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
-6610214,2026-04-02,Nao,Nao,,,,
-6623657,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-6642048,2026-04-02,Nao,Nao,,,,
-6645122,2026-04-02,Nao,Nao,,,,
-6661310,2026-04-02,Sim,Sim,0,cartao dr.consulta com odonto anual,credit_card,2026-04-02
-6676870,2026-04-02,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
-6686511,2026-04-02,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
-6701851,2026-04-02,Nao,Nao,,,,
-6755649,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-6762517,2026-04-02,Sim,Sim,7,cartao dr.consulta semestral,credit_card,2026-04-09
-6765321,2026-04-02,Nao,Nao,,,,
-6806411,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-6818743,2026-04-02,Nao,Nao,,,,
-6851459,2026-04-02,Nao,Nao,,,,
-6861203,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-6890853,2026-04-02,Nao,Nao,,,,
-6912644,2026-04-02,Nao,Nao,,,,
-6938824,2026-04-02,Nao,Nao,,,,
-6964056,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-6970628,2026-04-02,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
-6986234,2026-04-02,Nao,Nao,,,,
-7005820,2026-04-02,Nao,Nao,,,,
-7010068,2026-04-02,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
-7068630,2026-04-02,Nao,Nao,,,,
-7086401,2026-04-02,Nao,Nao,,,,
-7088352,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-7144307,2026-04-02,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
-7193293,2026-04-02,Nao,Nao,,,,
-7200241,2026-04-02,Nao,Nao,,,,
-7216472,2026-04-02,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
-7275840,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-7277939,2026-04-02,Nao,Nao,,,,
-7297178,2026-04-02,Nao,Nao,,,,
-7300173,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-7308442,2026-04-02,Sim,Sim,7,cartao dr.consulta anual,credit_card,2026-04-09
-7344649,2026-04-02,Nao,Nao,,,,
-7345797,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-7353089,2026-04-02,Nao,Nao,,,,
-7380361,2026-04-02,Nao,Nao,,,,
-7435392,2026-04-02,Nao,Nao,,,,
-7499691,2026-04-02,Sim,Sim,0,cartao dr.consulta com odonto anual,credit_card,2026-04-02
-7503889,2026-04-02,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
-7587659,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-7589262,2026-04-02,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
-7589943,2026-04-02,Nao,Nao,,,,
-7623134,2026-04-02,Nao,Nao,,,,
-7646317,2026-04-02,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
-7667355,2026-04-02,Nao,Nao,,,,
-7705442,2026-04-02,Nao,Nao,,,,
-7719719,2026-04-02,Nao,Nao,,,,
-7775079,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-7780619,2026-04-02,Sim,Sim,0,cartao dr.consulta semestral,credit_card,2026-04-02
-7786256,2026-04-02,Nao,Nao,,,,
-7833326,2026-04-02,Nao,Nao,,,,
-7855791,2026-04-02,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
-7861016,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-7910848,2026-04-02,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
-7913982,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-7930226,2026-04-02,Nao,Nao,,,,
-7937006,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-7940204,2026-04-02,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
-7942134,2026-04-02,Nao,Nao,,,,
-7971495,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-7980172,2026-04-02,Sim,Sim,3,cartao dr.consulta semestral,credit_card,2026-04-05
-8016400,2026-04-02,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
-8017496,2026-04-02,Nao,Nao,,,,
-8043431,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-8058868,2026-04-02,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
-8067764,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-8079505,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-8101582,2026-04-02,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
-8101679,2026-04-02,Sim,Sim,2,cartao dr.consulta semestral,credit_card,2026-04-04
-8127480,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-8133335,2026-04-02,Nao,Nao,,,,
-11263778,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-11291624,2026-04-02,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
-11368436,2026-04-02,Sim,Sim,2,cartao dr.consulta com odonto anual,credit_card,2026-04-04
-11391758,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-11407656,2026-04-02,Nao,Nao,,,,
-11431128,2026-04-02,Nao,Nao,,,,
-11469521,2026-04-02,Nao,Nao,,,,
-11489104,2026-04-02,Nao,Nao,,,,
-11494284,2026-04-02,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
-11499052,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-11533806,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-11538010,2026-04-02,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
-11554478,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-11555163,2026-04-02,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
-11561409,2026-04-02,Nao,Nao,,,,
-11567968,2026-04-02,Nao,Nao,,,,
-11599827,2026-04-02,Nao,Nao,,,,
-11603358,2026-04-02,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
-11615165,2026-04-02,Nao,Nao,,,,
-11615823,2026-04-02,Sim,Sim,4,cartao dr.consulta com odonto anual,credit_card,2026-04-06
-11635888,2026-04-02,Nao,Nao,,,,
-11665448,2026-04-02,Nao,Nao,,,,
-11678774,2026-04-02,Nao,Nao,,,,
-11685127,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-11685548,2026-04-02,Nao,Nao,,,,
-11711551,2026-04-02,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
-11740825,2026-04-02,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
-11744296,2026-04-02,Nao,Nao,,,,
-11751885,2026-04-02,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
-11839909,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-11844482,2026-04-02,Nao,Nao,,,,
-11877070,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-11879432,2026-04-02,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
-11879623,2026-04-02,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
-11898326,2026-04-02,Nao,Nao,,,,
-11904766,2026-04-02,Nao,Nao,,,,
-12006953,2026-04-02,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
-12011761,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-12028209,2026-04-02,Nao,Nao,,,,
-12033803,2026-04-02,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
-12041417,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-12054797,2026-04-02,Nao,Nao,,,,
-12061914,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-12188642,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-12193220,2026-04-02,Nao,Nao,,,,
-12193384,2026-04-02,Nao,Nao,,,,
-12220213,2026-04-02,Nao,Nao,,,,
-12224843,2026-04-02,Nao,Nao,,,,
-12265623,2026-04-02,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
-12298224,2026-04-02,Nao,Nao,,,,
-12344640,2026-04-02,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
-12356188,2026-04-02,Nao,Nao,,,,
-12361875,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-12403539,2026-04-02,Nao,Sim,9,cartao dr.consulta semestral,pix,2026-04-11
-12454064,2026-04-02,Nao,Nao,,,,
-12476746,2026-04-02,Sim,Sim,4,cartao dr.consulta com odonto anual,credit_card,2026-04-06
-12527819,2026-04-02,Nao,Nao,,,,
-12634060,2026-04-02,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
-12652126,2026-04-02,Nao,Nao,,,,
-12669476,2026-04-02,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
-12684666,2026-04-02,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
-12693367,2026-04-02,Nao,Nao,,,,
-12715120,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-12724373,2026-04-02,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
-12731675,2026-04-02,Nao,Nao,,,,
-12764319,2026-04-02,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
-12816813,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-12820860,2026-04-02,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
-12855891,2026-04-02,Sim,Sim,7,cartao dr.consulta com odonto anual,credit_card,2026-04-09
-12860345,2026-04-02,Nao,Nao,,,,
-12875342,2026-04-02,Nao,Nao,,,,
-12903228,2026-04-02,Nao,Nao,,,,
-12929594,2026-04-02,Nao,Nao,,,,
-12932597,2026-04-02,Nao,Nao,,,,
-12946549,2026-04-02,Nao,Nao,,,,
-12973606,2026-04-02,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
-13002399,2026-04-02,Nao,Nao,,,,
-13017857,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-13083752,2026-04-02,Nao,Nao,,,,
-13104933,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-13151704,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-13177858,2026-04-02,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
-13203249,2026-04-02,Nao,Nao,,,,
-13223775,2026-04-02,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
-13230207,2026-04-02,Nao,Nao,,,,
-13237035,2026-04-02,Nao,Nao,,,,
-13269635,2026-04-02,Nao,Nao,,,,
-13284147,2026-04-02,Nao,Nao,,,,
-13294398,2026-04-02,Nao,Nao,,,,
-13297676,2026-04-02,Nao,Nao,,,,
-13300471,2026-04-02,Nao,Nao,,,,
-13311713,2026-04-02,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
-13414061,2026-04-02,Nao,Nao,,,,
-13417359,2026-04-02,Nao,Nao,,,,
-13421890,2026-04-02,Nao,Nao,,,,
-13453554,2026-04-02,Nao,Nao,,,,
-13505253,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-13508769,2026-04-02,Nao,Nao,,,,
-13563780,2026-04-02,Nao,Nao,,,,
-13571654,2026-04-02,Nao,Nao,,,,
-13575674,2026-04-02,Nao,Nao,,,,
-13592836,2026-04-02,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
-13616146,2026-04-02,Nao,Nao,,,,
-13650808,2026-04-02,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
-13679260,2026-04-02,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
-13681305,2026-04-02,Sim,Sim,5,cartao dr.consulta anual,credit_card,2026-04-07
-13696826,2026-04-02,Nao,Nao,,,,
-13703682,2026-04-02,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
-13727963,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-13751456,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-13777893,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-13870513,2026-04-02,Nao,Nao,,,,
-13899524,2026-04-02,Nao,Nao,,,,
-13916288,2026-04-02,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
-13954598,2026-04-02,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
-13972692,2026-04-02,Nao,Nao,,,,
-13990885,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-14071242,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-14093515,2026-04-02,Nao,Nao,,,,
-14119646,2026-04-02,Nao,Nao,,,,
-14225033,2026-04-02,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
-14228433,2026-04-02,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
-14243993,2026-04-02,Sim,Sim,0,cartao dr.consulta com odonto anual,credit_card,2026-04-02
-14288358,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-14299794,2026-04-02,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
-14312139,2026-04-02,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
-14328634,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-14394742,2026-04-02,Sim,Sim,5,cartao dr.consulta com odonto anual,credit_card,2026-04-07
-14412585,2026-04-02,Nao,Nao,,,,
-14414546,2026-04-02,Nao,Nao,,,,
-14489473,2026-04-02,Sim,Sim,0,cartao dr.consulta com odonto anual,credit_card,2026-04-02
-14510923,2026-04-02,Nao,Nao,,,,
-14516316,2026-04-02,Nao,Nao,,,,
-14519518,2026-04-02,Sim,Sim,5,cartao dr.consulta com odonto anual,boleto,2026-04-07
-14551061,2026-04-02,Nao,Nao,,,,
-14598601,2026-04-02,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
-14601985,2026-04-02,Nao,Nao,,,,
-14626665,2026-04-02,Nao,Sim,8,cartao dr.consulta anual,credit_card,2026-04-10
-14677887,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-14694104,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-14711961,2026-04-02,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
-14718318,2026-04-02,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
-14735540,2026-04-02,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
-14751473,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-14790478,2026-04-02,Nao,Nao,,,,
-14811132,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-14833684,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-14850725,2026-04-02,Nao,Nao,,,,
-14859460,2026-04-02,Nao,Nao,,,,
-14967606,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-14969288,2026-04-02,Nao,Nao,,,,
-14972814,2026-04-02,Sim,Sim,3,cartao dr.consulta anual,credit_card,2026-04-05
-14974812,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-14974880,2026-04-02,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
-15035429,2026-04-02,Nao,Nao,,,,
-15063297,2026-04-02,Nao,Nao,,,,
-15099045,2026-04-02,Nao,Nao,,,,
-15132112,2026-04-02,Nao,Nao,,,,
-15132770,2026-04-02,Sim,Sim,4,cartao dr.consulta com odonto anual,credit_card,2026-04-06
-15138288,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-15148172,2026-04-02,Nao,Nao,,,,
-15148673,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-15150284,2026-04-02,Nao,Nao,,,,
-15160659,2026-04-02,Nao,Nao,,,,
-15162295,2026-04-02,Nao,Nao,,,,
-15181848,2026-04-02,Nao,Nao,,,,
-15184953,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-15198964,2026-04-02,Nao,Nao,,,,
-15242702,2026-04-02,Nao,Nao,,,,
-15283319,2026-04-02,Sim,Sim,0,cartao dr.consulta anual,credit_card,2026-04-02
-15295737,2026-04-02,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
-15317642,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-15341308,2026-04-02,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
-15358949,2026-04-02,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
-15366836,2026-04-02,Nao,Nao,,,,
-15391980,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-15409296,2026-04-02,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
-15413790,2026-04-02,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
-15455635,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-15480282,2026-04-02,Nao,Nao,,,,
-15515144,2026-04-02,Sim,Sim,0,cartao dr.consulta anual,credit_card,2026-04-02
-15543390,2026-04-02,Nao,Nao,,,,
-15557298,2026-04-02,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
-15590312,2026-04-02,Nao,Nao,,,,
-15601406,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-15605788,2026-04-02,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
-15615231,2026-04-02,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
-15631445,2026-04-02,Nao,Nao,,,,
-15660339,2026-04-02,Nao,Nao,,,,
-15708131,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-15712623,2026-04-02,Nao,Nao,,,,
-15718974,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-15723476,2026-04-02,Sim,Sim,6,cartao dr.consulta semestral,credit_card,2026-04-08
-15723808,2026-04-02,Nao,Nao,,,,
-15727488,2026-04-02,Sim,Sim,7,cartao dr.consulta semestral,credit_card,2026-04-09
-15728558,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-15776012,2026-04-02,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
-15854011,2026-04-02,Nao,Nao,,,,
-15882566,2026-04-02,Nao,Nao,,,,
-15884768,2026-04-02,Nao,Nao,,,,
-15904431,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-15915638,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-15937938,2026-04-02,Nao,Nao,,,,
-15952151,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-15961419,2026-04-02,Sim,Sim,6,cartao dr.consulta anual,credit_card,2026-04-08
-15985446,2026-04-02,Nao,Sim,8,cartao dr.consulta semestral,credit_card,2026-04-10
-16009993,2026-04-02,Nao,Nao,,,,
-16011806,2026-04-02,Nao,Nao,,,,
-16093654,2026-04-02,Sim,Sim,0,cartao dr.consulta anual,credit_card,2026-04-02
-16106490,2026-04-02,Nao,Sim,9,cartao dr.consulta anual,credit_card,2026-04-11
-16113904,2026-04-02,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
-16114674,2026-04-02,Nao,Nao,,,,
-16123598,2026-04-02,Nao,Nao,,,,
-16129361,2026-04-02,Nao,Nao,,,,
-16149790,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-16172068,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-16188004,2026-04-02,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
-16212258,2026-04-02,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
-16218069,2026-04-02,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
-16219365,2026-04-02,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
-16272122,2026-04-02,Nao,Nao,,,,
-16275301,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-16297623,2026-04-02,Nao,Nao,,,,
-16309809,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-16360832,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-16365120,2026-04-02,Sim,Sim,3,cartao dr.consulta anual,credit_card,2026-04-05
-16384068,2026-04-02,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
-16384254,2026-04-02,Nao,Nao,,,,
-16387721,2026-04-02,Nao,Nao,,,,
-16400401,2026-04-02,Nao,Nao,,,,
-16412250,2026-04-02,Nao,Nao,,,,
-16421693,2026-04-02,Nao,Nao,,,,
-16431218,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-16437241,2026-04-02,Nao,Nao,,,,
-16459045,2026-04-02,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
-16459745,2026-04-02,Nao,Nao,,,,
-16485174,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-16525333,2026-04-02,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
-16538447,2026-04-02,Nao,Nao,,,,
-16538637,2026-04-02,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
-16553401,2026-04-02,Nao,Nao,,,,
-16572597,2026-04-02,Nao,Nao,,,,
-16579490,2026-04-02,Nao,Nao,,,,
-16582608,2026-04-02,Nao,Nao,,,,
-16585142,2026-04-02,Nao,Nao,,,,
-16590898,2026-04-02,Nao,Nao,,,,
-16592477,2026-04-02,Nao,Nao,,,,
-16593712,2026-04-02,Sim,Sim,7,cartao dr.consulta anual,credit_card,2026-04-09
-16680123,2026-04-02,Nao,Nao,,,,
-16683477,2026-04-02,Sim,Sim,0,cartao dr.consulta anual,credit_card,2026-04-02
-16708127,2026-04-02,Nao,Nao,,,,
-16747397,2026-04-02,Nao,Nao,,,,
-16762062,2026-04-02,Nao,Nao,,,,
-16767966,2026-04-02,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
-16786211,2026-04-02,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
-16789866,2026-04-02,Nao,Nao,,,,
-16805561,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-16831043,2026-04-02,Nao,Nao,,,,
-16841189,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-16845478,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-16855532,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-16924068,2026-04-02,Nao,Nao,,,,
-16984935,2026-04-02,Nao,Sim,12,cartao dr.consulta semestral,credit_card,2026-04-14
-17031433,2026-04-02,Nao,Nao,,,,
-17098397,2026-04-02,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
-17123277,2026-04-02,Nao,Nao,,,,
-17160462,2026-04-02,Nao,Nao,,,,
-17189451,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-17214615,2026-04-02,Nao,Nao,,,,
-17234121,2026-04-02,Nao,Nao,,,,
-17251649,2026-04-02,Nao,Nao,,,,
-17287423,2026-04-02,Nao,Nao,,,,
-17309448,2026-04-02,Nao,Nao,,,,
-17313919,2026-04-02,Nao,Nao,,,,
-17320073,2026-04-02,Nao,Nao,,,,
-17334791,2026-04-02,Nao,Nao,,,,
-17351415,2026-04-02,Nao,Nao,,,,
-17357457,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-17359692,2026-04-02,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
-17376030,2026-04-02,Nao,Nao,,,,
-17394391,2026-04-02,Nao,Nao,,,,
-17407372,2026-04-02,Sim,Sim,3,cartao dr.consulta semestral,credit_card,2026-04-05
-17416537,2026-04-02,Sim,Sim,1,cartao dr.consulta com odonto anual,credit_card,2026-04-03
-17420847,2026-04-02,Nao,Nao,,,,
-17435858,2026-04-02,Nao,Nao,,,,
-17453645,2026-04-02,Nao,Nao,,,,
-17509111,2026-04-02,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
-17510426,2026-04-02,Nao,Nao,,,,
-17540836,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-17558702,2026-04-02,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
-17558762,2026-04-02,Nao,Nao,,,,
-17564890,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-17573547,2026-04-02,Nao,Nao,,,,
-17606074,2026-04-02,Nao,Nao,,,,
-17633578,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-17637446,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-17655732,2026-04-02,Nao,Nao,,,,
-17679779,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-17720114,2026-04-02,Nao,Nao,,,,
-17721668,2026-04-02,Nao,Nao,,,,
-17731673,2026-04-02,Nao,Nao,,,,
-17741977,2026-04-02,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
-17771922,2026-04-02,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
-17803529,2026-04-02,Nao,Nao,,,,
-17805195,2026-04-02,Nao,Nao,,,,
-17810759,2026-04-02,Sim,Sim,6,cartao dr.consulta semestral,credit_card,2026-04-08
-17834077,2026-04-02,Nao,Nao,,,,
-17836532,2026-04-02,Sim,Sim,7,cartao dr.consulta semestral,credit_card,2026-04-09
-17862816,2026-04-02,Nao,Nao,,,,
-17881580,2026-04-02,Nao,Nao,,,,
-17923053,2026-04-02,Nao,Nao,,,,
-17953895,2026-04-02,Sim,Sim,0,cartao dr.consulta anual,credit_card,2026-04-02
-17956233,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-17969354,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-17992956,2026-04-02,Nao,Nao,,,,
-18011297,2026-04-02,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
-18019818,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-18040525,2026-04-02,Nao,Nao,,,,
-18044604,2026-04-02,Nao,Nao,,,,
-18051616,2026-04-02,Nao,Nao,,,,
-18064569,2026-04-02,Nao,Nao,,,,
-18077884,2026-04-02,Nao,Nao,,,,
-18078251,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-18096455,2026-04-02,Nao,Nao,,,,
-18100237,2026-04-02,Sim,Sim,2,cartao dr.consulta com odonto anual,credit_card,2026-04-04
-18119739,2026-04-02,Nao,Nao,,,,
-18129259,2026-04-02,Nao,Nao,,,,
-18140218,2026-04-02,Sim,Sim,7,cartao dr.consulta com odonto anual,credit_card,2026-04-09
-18142028,2026-04-02,Nao,Nao,,,,
-18165580,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-18167176,2026-04-02,Nao,Nao,,,,
-18175363,2026-04-02,Nao,Nao,,,,
-18178337,2026-04-02,Nao,Nao,,,,
-18191706,2026-04-02,Nao,Nao,,,,
-18197376,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-18209422,2026-04-02,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
-18217956,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-18240274,2026-04-02,Nao,Nao,,,,
-18245123,2026-04-02,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
-18264842,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-18266230,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-18267733,2026-04-02,Nao,Nao,,,,
-18269390,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-18271615,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-18271900,2026-04-02,Nao,Nao,,,,
-18272250,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-18273056,2026-04-02,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
-18273172,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-18274465,2026-04-02,Nao,Nao,,,,
-18275062,2026-04-02,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
-18275613,2026-04-02,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
-18275851,2026-04-02,Nao,Nao,,,,
-18277103,2026-04-02,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
-18277604,2026-04-02,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
-18277696,2026-04-02,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
-18277933,2026-04-02,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
-18278522,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-18280885,2026-04-02,Sim,Sim,1,cartao dr.consulta anual,credit_card,2026-04-03
-18281837,2026-04-02,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
-18282266,2026-04-02,Nao,Nao,,,,
-18284186,2026-04-02,Nao,Nao,,,,
-18284657,2026-04-02,Nao,Nao,,,,
-18286167,2026-04-02,Nao,Nao,,,,
-18286631,2026-04-02,Nao,Sim,11,cartao dr.consulta semestral,credit_card,2026-04-13
-18288739,2026-04-02,Nao,Nao,,,,
-18289293,2026-04-02,Nao,Nao,,,,
-18290047,2026-04-02,Nao,Nao,,,,
-18290117,2026-04-02,Nao,Nao,,,,
-18330066,2026-04-02,Nao,Nao,,,,
-18449653,2026-04-02,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
-18503411,2026-04-02,Nao,Nao,,,,
-18514300,2026-04-02,Sim,Sim,2,cartao dr.consulta semestral,credit_card,2026-04-04
-18563363,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-18569379,2026-04-02,Sim,Sim,7,cartao dr.consulta com odonto anual,credit_card,2026-04-09
-18583024,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-18593615,2026-04-02,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
-18604236,2026-04-02,Sim,Sim,0,cartao dr.consulta semestral,credit_card,2026-04-02
-18639662,2026-04-02,Nao,Nao,,,,
-18643227,2026-04-02,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
-18648777,2026-04-02,Nao,Nao,,,,
-18655648,2026-04-02,Nao,Nao,,,,
-18675544,2026-04-02,Nao,Nao,,,,
-18680483,2026-04-02,Nao,Nao,,,,
-18681461,2026-04-02,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
-18682896,2026-04-02,Nao,Nao,,,,
-18696388,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-18725952,2026-04-02,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
-18744200,2026-04-02,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
-18765521,2026-04-02,Nao,Nao,,,,
-18782511,2026-04-02,Nao,Nao,,,,
-18801888,2026-04-02,Nao,Nao,,,,
-18814156,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-18823171,2026-04-02,Nao,Nao,,,,
-18857068,2026-04-02,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
-18858310,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-18872926,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-18885736,2026-04-02,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
-18916203,2026-04-02,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
-18933674,2026-04-02,Sim,Sim,4,cartao dr.consulta anual,credit_card,2026-04-06
-18937565,2026-04-02,Sim,Sim,4,cartao dr.consulta semestral,credit_card,2026-04-06
-18972880,2026-04-02,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
-18975494,2026-04-02,Sim,Sim,5,cartao dr.consulta com odonto anual,credit_card,2026-04-07
-18998993,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-19008141,2026-04-02,Nao,Nao,,,,
-19008930,2026-04-02,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
-19010669,2026-04-02,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
-19010957,2026-04-02,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
-19019011,2026-04-02,Sim,Sim,0,cartao dr.consulta semestral,credit_card,2026-04-02
-19073262,2026-04-02,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
-19114332,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-19130274,2026-04-02,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
-19136263,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-19175066,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-19192452,2026-04-02,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
-19211307,2026-04-02,Nao,Nao,,,,
-19213185,2026-04-02,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
-19221240,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-19224127,2026-04-02,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
-19290644,2026-04-02,Nao,Nao,,,,
-19296560,2026-04-02,Nao,Nao,,,,
-19325210,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-19325279,2026-04-02,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
-19352505,2026-04-02,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
-19365913,2026-04-02,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
-19374799,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-19388401,2026-04-02,Sim,Sim,5,cartao dr.consulta semestral,credit_card,2026-04-07
-19389765,2026-04-02,Nao,Nao,,,,
-19423973,2026-04-02,Nao,Nao,,,,
-19424321,2026-04-02,Sim,Sim,0,cartao dr.consulta anual,credit_card,2026-04-02
-19436073,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-19447109,2026-04-02,Nao,Nao,,,,
-19468874,2026-04-02,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
-19496061,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-19522571,2026-04-02,Nao,Nao,,,,
-19529286,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-19534154,2026-04-02,Nao,Nao,,,,
-19556160,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-19563568,2026-04-02,Nao,Nao,,,,
-19575132,2026-04-02,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
-19588509,2026-04-02,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
-19594461,2026-04-02,Nao,Nao,,,,
-19603979,2026-04-02,Nao,Nao,,,,
-19604592,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-19620271,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-19621350,2026-04-02,Nao,Nao,,,,
-19623993,2026-04-02,Nao,Nao,,,,
-19627174,2026-04-02,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
-19636208,2026-04-02,Nao,Nao,,,,
-19638616,2026-04-02,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
-19643070,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-19648447,2026-04-02,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
-19649121,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-19649697,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-19651122,2026-04-02,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
-19652072,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-19652503,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-19653712,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-19655213,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-19656536,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-19656560,2026-04-02,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
-19656659,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-19656798,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-19656965,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-19656990,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-19656994,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-19657254,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-19657276,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-19657411,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-19657530,2026-04-02,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
-19657536,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-19658395,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-19658546,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-19658813,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-19658885,2026-04-02,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
-19658924,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-19658948,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-19659036,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-19659413,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-19660227,2026-04-02,Nao,Nao,,,,
-19660281,2026-04-02,Nao,Nao,,,,
-19660665,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-19660989,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-19661068,2026-04-02,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
-19661084,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-19661303,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-19662247,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-19662369,2026-04-02,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
-19662545,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-19662555,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-19662752,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-19662975,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-19663037,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-19663047,2026-04-02,Nao,Nao,,,,
-19663614,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-19663738,2026-04-02,Sim,Sim,0,cartao dr.consulta anual,credit_card,2026-04-02
-19663800,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-19664246,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-19664362,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-19664517,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-19664769,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-19665002,2026-04-02,Nao,Nao,,,,
-19665466,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-19665788,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-19666514,2026-04-02,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
-19667745,2026-04-02,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
-19667845,2026-04-02,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
-19668196,2026-04-02,Nao,Nao,,,,
-19668530,2026-04-02,Nao,Nao,,,,
-19668607,2026-04-02,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
-19668622,2026-04-02,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
-19668663,2026-04-02,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
-19668664,2026-04-02,Nao,Nao,,,,
-19668939,2026-04-02,Nao,Nao,,,,
-19669035,2026-04-02,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
-19669633,2026-04-02,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
-19670804,2026-04-02,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
-19671212,2026-04-02,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
-19671658,2026-04-02,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
-19672200,2026-04-02,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
-19672201,2026-04-02,Nao,Nao,,,,
-19672304,2026-04-02,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
-19672395,2026-04-02,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
-19673030,2026-04-02,Nao,Nao,,,,
-19673369,2026-04-02,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
-19673784,2026-04-02,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
-19673803,2026-04-02,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
-19673809,2026-04-02,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
-19674132,2026-04-02,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
-19674210,2026-04-02,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
-19674483,2026-04-02,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
-19674881,2026-04-02,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
-19675142,2026-04-02,Sim,Sim,0,cartao dr.consulta com odonto anual,pix,2026-04-02
-19675918,2026-04-02,Nao,Nao,,,,
-19675962,2026-04-02,Nao,Nao,,,,
-19675987,2026-04-02,Nao,Nao,,,,
-19676591,2026-04-02,Nao,Nao,,,,
-19676771,2026-04-02,Nao,Nao,,,,
-19676875,2026-04-02,Nao,Nao,,,,
-19677816,2026-04-02,Nao,Nao,,,,
-19677999,2026-04-02,Nao,Nao,,,,
-19678169,2026-04-02,Nao,Nao,,,,
-19678363,2026-04-02,Nao,Nao,,,,
-19678540,2026-04-02,Nao,Nao,,,,
-19678586,2026-04-02,Sim,Sim,0,cartao dr.consulta anual,credit_card,2026-04-02
-19679123,2026-04-02,Nao,Nao,,,,
-19679479,2026-04-02,Nao,Nao,,,,
-19679597,2026-04-02,Nao,Nao,,,,
-19679743,2026-04-02,Nao,Nao,,,,
-19680026,2026-04-02,Nao,Nao,,,,
-19680564,2026-04-02,Nao,Nao,,,,
-19680906,2026-04-02,Nao,Nao,,,,
-19681170,2026-04-02,Nao,Nao,,,,
-19681526,2026-04-02,Nao,Nao,,,,
-19683148,2026-04-02,Nao,Nao,,,,
-19683151,2026-04-02,Nao,Nao,,,,
-19683946,2026-04-02,Sim,Sim,0,cartao dr.consulta anual,credit_card,2026-04-02
-19761055,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-19767428,2026-04-02,Nao,Nao,,,,
-19878373,2026-04-02,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
-19960319,2026-04-02,Nao,Nao,,,,
-20030097,2026-04-02,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
-20041521,2026-04-02,Nao,Nao,,,,
-20118741,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-20118869,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-20176854,2026-04-02,Nao,Nao,,,,
-20212420,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-20216425,2026-04-02,Nao,Nao,,,,
-20222867,2026-04-02,Nao,Nao,,,,
-20245729,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-20249152,2026-04-02,Sim,Sim,2,cartao dr.consulta com odonto anual,credit_card,2026-04-04
-20264138,2026-04-02,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
-20292877,2026-04-02,Nao,Nao,,,,
-20313985,2026-04-02,Nao,Nao,,,,
-20328515,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-20352732,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-20357664,2026-04-02,Nao,Nao,,,,
-20363729,2026-04-02,Nao,Nao,,,,
-20377579,2026-04-02,Nao,Nao,,,,
-20380106,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-20380567,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-20380688,2026-04-02,Nao,Nao,,,,
-20381015,2026-04-02,Nao,Nao,,,,
-20382041,2026-04-02,Nao,Nao,,,,
-20382450,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-20382682,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-20383216,2026-04-02,Sim,Sim,7,cartao dr.consulta semestral,credit_card,2026-04-09
-20383560,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-20384024,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-20384254,2026-04-02,Nao,Nao,,,,
-20384477,2026-04-02,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
-20385751,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-20385807,2026-04-02,Nao,Nao,,,,
-20385897,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-20386491,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-20387227,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-20388082,2026-04-02,Nao,Nao,,,,
-20388767,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-20388934,2026-04-02,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
-20389403,2026-04-02,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
-20391819,2026-04-02,Nao,Nao,,,,
-20393041,2026-04-02,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
-20393842,2026-04-02,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
-20395734,2026-04-02,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
-20396616,2026-04-02,Nao,Nao,,,,
-20396794,2026-04-02,Nao,Nao,,,,
-20397267,2026-04-02,Nao,Nao,,,,
-20397521,2026-04-02,Nao,Nao,,,,
-20397828,2026-04-02,Nao,Nao,,,,
-20399035,2026-04-02,Nao,Nao,,,,
-20400267,2026-04-02,Nao,Nao,,,,
-20400620,2026-04-02,Nao,Nao,,,,
-20400799,2026-04-02,Nao,Nao,,,,
-20401776,2026-04-02,Nao,Nao,,,,
-20402076,2026-04-02,Nao,Nao,,,,
-20402488,2026-04-02,Nao,Nao,,,,
-20403845,2026-04-02,Nao,Nao,,,,
-20405940,2026-04-02,Nao,Nao,,,,
-20407416,2026-04-02,Nao,Nao,,,,
-20407834,2026-04-02,Nao,Nao,,,,
+id_paciente,data_envio,duracao_plano_original,plano_original,assinatura_7dias_sn,assinatura_pos_disparo_sn,dias_ate_assinatura,plano_assinado,forma_pagamento,data_assinatura
+20800,2026-03-31,12,cartao dr.consulta anual,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
+1094857,2026-03-31,12,cartao dr.consulta com odonto anual,Nao,Nao,,,,
+1239752,2026-03-31,12,cartao dr.consulta anual,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-09
+1418637,2026-03-31,12,cartao dr.consulta anual,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
+1439534,2026-03-31,12,cartao dr.consulta anual,Sim,Sim,5,cartao dr.consulta - gratis,,2026-04-05
+1503363,2026-03-31,12,cartao dr.consulta com odonto anual,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-09
+1550212,2026-03-31,6,cartao dr.consulta semestral,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-09
+1551365,2026-03-31,6,cartao dr.consulta semestral,Nao,Sim,8,cartao dr.consulta - gratis,,2026-04-08
+1597640,2026-03-31,12,cartao dr.consulta anual,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
+1640730,2026-03-31,12,cartao dr.consulta com odonto anual,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
+1738778,2026-03-31,12,cartao dr.consulta anual,Nao,Nao,,,,
+1753720,2026-03-31,12,cartao dr.consulta com odonto anual,Nao,Nao,,,,
+1874878,2026-03-31,6,cartao dr.consulta semestral,Nao,Nao,,,,
+1911514,2026-03-31,6,cartao dr.consulta semestral,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-09
+1932274,2026-03-31,12,cartao dr.consulta com odonto anual,Nao,Nao,,,,
+1940560,2026-03-31,6,cartao dr.consulta semestral,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-09
+1998103,2026-03-31,6,cartao dr.consulta semestral,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
+2004109,2026-03-31,6,cartao dr.consulta semestral,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
+2020574,2026-03-31,6,cartao dr.consulta semestral,Nao,Sim,16,cartao dr.consulta semestral,pix,2026-04-16
+2075616,2026-03-31,12,cartao dr.consulta anual,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
+2104108,2026-03-31,12,cartao dr.consulta anual,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-09
+2121119,2026-03-31,12,cartao dr.consulta com odonto anual,Sim,Sim,0,cartao dr.consulta com odonto anual,credit_card,2026-03-31
+2176829,2026-03-31,12,cartao dr.consulta com odonto anual,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
+2177996,2026-03-31,12,cartao dr.consulta anual,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-09
+2180857,2026-03-31,12,cartao dr.consulta anual,Nao,Nao,,,,
+2273291,2026-03-31,6,cartao dr.consulta semestral,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-09
+2277889,2026-03-31,12,cartao dr.consulta com odonto anual,Sim,Sim,6,cartao dr.consulta com odonto anual,boleto,2026-04-06
+2365364,2026-03-31,6,cartao dr.consulta semestral,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
+2479341,2026-03-31,6,cartao dr.consulta semestral,Nao,Nao,,,,
+2504639,2026-03-31,12,cartao dr.consulta anual,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-09
+2532030,2026-03-31,6,cartao dr.consulta semestral,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
+2590421,2026-03-31,12,cartao dr.consulta com odonto anual,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
+2636375,2026-03-31,6,cartao dr.consulta semestral,Nao,Nao,,,,
+2671894,2026-03-31,12,cartao dr.consulta anual,Nao,Sim,8,cartao dr.consulta - gratis,,2026-04-08
+2751169,2026-03-31,6,cartao dr.consulta semestral,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
+2836869,2026-03-31,12,cartao dr.consulta anual,Sim,Sim,2,cartao dr.consulta anual,credit_card,2026-04-02
+2893073,2026-03-31,12,cartao dr.consulta anual,Nao,Nao,,,,
+2921964,2026-03-31,12,cartao dr.consulta anual,Sim,Sim,5,cartao dr.consulta - gratis,,2026-04-05
+2925000,2026-03-31,6,cartao dr.consulta semestral,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-09
+3046802,2026-03-31,12,cartao dr.consulta anual,Nao,Sim,8,cartao dr.consulta - gratis,,2026-04-08
+3111054,2026-03-31,6,cartao dr.consulta semestral,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
+3182327,2026-03-31,6,cartao dr.consulta semestral,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-09
+3205660,2026-03-31,12,cartao dr.consulta com odonto anual,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
+3275524,2026-03-31,6,cartao dr.consulta semestral,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-09
+3282353,2026-03-31,6,cartao dr.consulta semestral,Nao,Sim,8,cartao dr.consulta - gratis,,2026-04-08
+3331281,2026-03-31,12,cartao dr.consulta anual,Nao,Nao,,,,
+3377933,2026-03-31,6,cartao dr.consulta semestral,Nao,Nao,,,,
+3381996,2026-03-31,12,cartao dr.consulta com odonto anual,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-09
+3579243,2026-03-31,12,cartao dr.consulta com odonto anual,Sim,Sim,0,cartao dr.consulta com odonto anual,credit_card,2026-03-31
+3632301,2026-03-31,12,cartao dr.consulta anual,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
+3813929,2026-03-31,6,cartao dr.consulta semestral,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
+3994127,2026-03-31,6,cartao dr.consulta semestral,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
+4127793,2026-03-31,6,cartao dr.consulta semestral,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-09
+4206204,2026-03-31,12,cartao dr.consulta com odonto anual,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
+4334536,2026-03-31,12,cartao dr.consulta com odonto anual,Sim,Sim,0,cartao dr.consulta com odonto anual,credit_card,2026-03-31
+4343174,2026-03-31,12,cartao dr.consulta com odonto anual,Nao,Sim,8,cartao dr.consulta - gratis,,2026-04-08
+4386959,2026-03-31,12,cartao dr.consulta com odonto anual,Sim,Sim,5,cartao dr.consulta - gratis,,2026-04-05
+4412264,2026-03-31,12,cartao dr.consulta com odonto anual,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
+4423615,2026-03-31,12,cartao dr.consulta anual,Nao,Sim,8,cartao dr.consulta - gratis,,2026-04-08
+4426056,2026-03-31,12,cartao dr.consulta anual,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-09
+4598424,2026-03-31,12,cartao dr.consulta com odonto anual,Nao,Nao,,,,
+4614004,2026-03-31,12,cartao dr.consulta anual,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-09
+4650210,2026-03-31,6,cartao dr.consulta semestral,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
+4706112,2026-03-31,12,cartao dr.consulta anual,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
+4750880,2026-03-31,12,cartao dr.consulta anual,Nao,Sim,8,cartao dr.consulta - gratis,,2026-04-08
+4831409,2026-03-31,6,cartao dr.consulta semestral,Nao,Sim,8,cartao dr.consulta - gratis,,2026-04-08
+4844998,2026-03-31,12,cartao dr.consulta anual,Nao,Sim,8,cartao dr.consulta com odonto anual,credit_card,2026-04-08
+4952771,2026-03-31,12,cartao dr.consulta anual,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
+4993696,2026-03-31,12,cartao dr.consulta anual,Nao,Nao,,,,
+5145305,2026-03-31,6,cartao dr.consulta semestral,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
+5166722,2026-03-31,12,cartao dr.consulta com odonto anual,Nao,Nao,,,,
+5196851,2026-03-31,6,cartao dr.consulta semestral,Nao,Sim,8,cartao dr.consulta - gratis,,2026-04-08
+5202359,2026-03-31,6,cartao dr.consulta semestral,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-09
+5228554,2026-03-31,6,cartao dr.consulta semestral,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
+5283007,2026-03-31,6,cartao dr.consulta semestral,Nao,Sim,8,cartao dr.consulta - gratis,,2026-04-08
+5307025,2026-03-31,6,cartao dr.consulta semestral,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-09
+5509324,2026-03-31,6,cartao dr.consulta semestral,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
+5536592,2026-03-31,12,cartao dr.consulta com odonto anual,Nao,Nao,,,,
+5652629,2026-03-31,6,cartao dr.consulta semestral,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
+5728618,2026-03-31,6,cartao dr.consulta semestral,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-09
+5804003,2026-03-31,6,cartao dr.consulta semestral,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
+5930522,2026-03-31,6,cartao dr.consulta semestral,Sim,Sim,5,cartao dr.consulta - gratis,,2026-04-05
+5982933,2026-03-31,6,cartao dr.consulta semestral,Nao,Nao,,,,
+6119387,2026-03-31,6,cartao dr.consulta semestral,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
+6154338,2026-03-31,12,cartao dr.consulta com odonto anual,Nao,Sim,8,cartao dr.consulta - gratis,,2026-04-08
+6174482,2026-03-31,6,cartao dr.consulta semestral,Nao,Nao,,,,
+6285777,2026-03-31,12,cartao dr.consulta com odonto anual,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
+6385498,2026-03-31,6,cartao dr.consulta semestral,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
+6463199,2026-03-31,12,cartao dr.consulta com odonto anual,Nao,Sim,8,cartao dr.consulta - gratis,,2026-04-08
+6631680,2026-03-31,12,cartao dr.consulta anual,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
+6700068,2026-03-31,6,cartao dr.consulta semestral,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
+6709020,2026-03-31,12,cartao dr.consulta com odonto anual,Sim,Sim,3,cartao dr.consulta com odonto anual,credit_card,2026-04-03
+6776624,2026-03-31,12,cartao dr.consulta com odonto anual,Nao,Sim,8,cartao dr.consulta - gratis,,2026-04-08
+6943763,2026-03-31,12,cartao dr.consulta com odonto anual,Nao,Nao,,,,
+7009938,2026-03-31,6,cartao dr.consulta semestral,Nao,Nao,,,,
+7016543,2026-03-31,6,cartao dr.consulta semestral,Nao,Nao,,,,
+7135666,2026-03-31,12,cartao dr.consulta anual,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
+7184337,2026-03-31,12,cartao dr.consulta anual,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
+7223988,2026-03-31,12,cartao dr.consulta com odonto anual,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
+7257287,2026-03-31,6,cartao dr.consulta semestral,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
+7299904,2026-03-31,12,cartao dr.consulta com odonto anual,Nao,Nao,,,,
+7376534,2026-03-31,6,cartao dr.consulta semestral,Nao,Nao,,,,
+7444145,2026-03-31,12,cartao dr.consulta anual,Sim,Sim,7,cartao dr.consulta anual,pix,2026-04-07
+7489194,2026-03-31,12,cartao dr.consulta com odonto anual,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
+7501358,2026-03-31,12,cartao dr.consulta com odonto anual,Sim,Sim,0,cartao dr.consulta anual,credit_card,2026-03-31
+7561121,2026-03-31,12,cartao dr.consulta anual,Nao,Nao,,,,
+7568510,2026-03-31,12,cartao dr.consulta anual,Nao,Nao,,,,
+7653586,2026-03-31,6,cartao dr.consulta semestral,Nao,Nao,,,,
+7895653,2026-03-31,6,cartao dr.consulta semestral,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
+7940214,2026-03-31,12,cartao dr.consulta com odonto anual,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
+7990821,2026-03-31,6,cartao dr.consulta semestral,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
+8074317,2026-03-31,6,cartao dr.consulta semestral,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-09
+8129624,2026-03-31,6,cartao dr.consulta semestral,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
+11256576,2026-03-31,12,cartao dr.consulta com odonto anual,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
+11276928,2026-03-31,12,cartao dr.consulta com odonto anual,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
+11292025,2026-03-31,12,cartao dr.consulta com odonto anual,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-09
+11490597,2026-03-31,6,cartao dr.consulta semestral,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-09
+11583696,2026-03-31,12,cartao dr.consulta com odonto anual,Sim,Sim,5,cartao dr.consulta - gratis,,2026-04-05
+11618160,2026-03-31,6,cartao dr.consulta semestral,Nao,Sim,8,cartao dr.consulta - gratis,,2026-04-08
+11653771,2026-03-31,12,cartao dr.consulta anual,Nao,Nao,,,,
+11704985,2026-03-31,12,cartao dr.consulta anual,Sim,Sim,0,cartao dr.consulta com odonto anual,credit_card,2026-03-31
+11838869,2026-03-31,6,cartao dr.consulta semestral,Nao,Nao,,,,
+12033330,2026-03-31,12,cartao dr.consulta anual,Nao,Nao,,,,
+12168890,2026-03-31,12,cartao dr.consulta com odonto anual,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
+12179797,2026-03-31,12,cartao dr.consulta com odonto anual,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
+12270509,2026-03-31,6,cartao dr.consulta semestral,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-09
+12319644,2026-03-31,6,cartao dr.consulta semestral,Nao,Nao,,,,
+12418807,2026-03-31,12,cartao dr.consulta anual,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
+12480027,2026-03-31,6,cartao dr.consulta semestral,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-09
+12496340,2026-03-31,12,cartao dr.consulta anual,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
+12520348,2026-03-31,12,cartao dr.consulta anual,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
+12528247,2026-03-31,12,cartao dr.consulta anual,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
+12588464,2026-03-31,12,cartao dr.consulta anual,Nao,Sim,8,cartao dr.consulta - gratis,,2026-04-08
+12609073,2026-03-31,12,cartao dr.consulta com odonto anual,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
+12661642,2026-03-31,12,cartao dr.consulta com odonto anual,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-09
+12662321,2026-03-31,12,cartao dr.consulta anual,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
+12847821,2026-03-31,6,cartao dr.consulta semestral,Nao,Sim,8,cartao dr.consulta - gratis,,2026-04-08
+12855949,2026-03-31,6,cartao dr.consulta semestral,Nao,Nao,,,,
+12949595,2026-03-31,12,cartao dr.consulta com odonto anual,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
+12967124,2026-03-31,6,cartao dr.consulta semestral,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
+13180956,2026-03-31,12,cartao dr.consulta com odonto anual,Sim,Sim,5,cartao dr.consulta - gratis,,2026-04-05
+13257941,2026-03-31,12,cartao dr.consulta com odonto anual,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-09
+13335032,2026-03-31,12,cartao dr.consulta com odonto anual,Nao,Nao,,,,
+13434748,2026-03-31,12,cartao dr.consulta com odonto anual,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
+13485470,2026-03-31,6,cartao dr.consulta semestral,Nao,Nao,,,,
+13489705,2026-03-31,12,cartao dr.consulta anual,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-09
+13529780,2026-03-31,12,cartao dr.consulta anual,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
+13595615,2026-03-31,6,cartao dr.consulta semestral,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
+13603779,2026-03-31,6,cartao dr.consulta semestral,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-09
+13658724,2026-03-31,12,cartao dr.consulta anual,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-09
+13700321,2026-03-31,6,cartao dr.consulta semestral,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
+13722689,2026-03-31,12,cartao dr.consulta anual,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
+13776724,2026-03-31,6,cartao dr.consulta semestral,Nao,Sim,16,cartao dr.consulta anual,credit_card,2026-04-16
+13826401,2026-03-31,12,cartao dr.consulta com odonto anual,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
+13904769,2026-03-31,6,cartao dr.consulta semestral,Nao,Sim,8,cartao dr.consulta - gratis,,2026-04-08
+14065657,2026-03-31,12,cartao dr.consulta com odonto anual,Nao,Sim,17,cartao dr.consulta semestral,credit_card,2026-04-17
+14086091,2026-03-31,6,cartao dr.consulta semestral,Sim,Sim,2,cartao dr.consulta semestral,credit_card,2026-04-02
+14128465,2026-03-31,12,cartao dr.consulta anual,Sim,Sim,0,cartao dr.consulta anual,credit_card,2026-03-31
+14139531,2026-03-31,12,cartao dr.consulta com odonto anual,Nao,Nao,,,,
+14197787,2026-03-31,12,cartao dr.consulta com odonto anual,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
+14289951,2026-03-31,12,cartao dr.consulta anual,Sim,Sim,0,cartao dr.consulta semestral,credit_card,2026-03-31
+14351690,2026-03-31,12,cartao dr.consulta com odonto anual,Nao,Nao,,,,
+14431081,2026-03-31,12,cartao dr.consulta so odonto anual,Nao,Nao,,,,
+14455176,2026-03-31,12,cartao dr.consulta com odonto anual,Nao,Nao,,,,
+14582333,2026-03-31,6,cartao dr.consulta semestral,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
+14709755,2026-03-31,12,yalo familia cartao dr.consulta,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-09
+14760504,2026-03-31,12,cartao dr.consulta anual,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
+14835131,2026-03-31,12,cartao dr.consulta anual,Sim,Sim,5,cartao dr.consulta - gratis,,2026-04-05
+14870390,2026-03-31,12,cartao dr.consulta anual,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
+14872860,2026-03-31,12,cartao dr.consulta com odonto anual,Nao,Nao,,,,
+14876501,2026-03-31,12,cartao dr.consulta anual,Nao,Nao,,,,
+14975503,2026-03-31,12,cartao dr.consulta anual,Sim,Sim,1,cartao dr.consulta anual,credit_card,2026-04-01
+15345691,2026-03-31,6,cartao dr.consulta semestral,Nao,Sim,8,cartao dr.consulta - gratis,,2026-04-08
+15349311,2026-03-31,12,cartao dr.consulta com odonto anual,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
+15420118,2026-03-31,6,cartao dr.consulta semestral,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
+15604815,2026-03-31,6,cartao dr.consulta semestral,Nao,Nao,,,,
+15614628,2026-03-31,6,cartao dr.consulta semestral,Nao,Sim,8,cartao dr.consulta - gratis,,2026-04-08
+15614895,2026-03-31,12,cartao dr.consulta com odonto anual,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
+15691810,2026-03-31,6,cartao dr.consulta semestral,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
+15751071,2026-03-31,12,cartao dr.consulta com odonto anual,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
+15774179,2026-03-31,12,cartao dr.consulta anual,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
+15863139,2026-03-31,12,cartao dr.consulta com odonto anual,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
+15898690,2026-03-31,12,cartao dr.consulta anual,Nao,Sim,8,cartao dr.consulta - gratis,,2026-04-08
+16003285,2026-03-31,12,cartao dr.consulta com odonto anual,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
+16261872,2026-03-31,6,cartao dr.consulta semestral,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-09
+16341726,2026-03-31,6,cartao dr.consulta semestral,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-09
+16406283,2026-03-31,12,cartao dr.consulta com odonto anual,Sim,Sim,1,cartao dr.consulta com odonto anual,credit_card,2026-04-01
+16408857,2026-03-31,12,cartao dr.consulta anual,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
+16465693,2026-03-31,12,cartao dr.consulta anual,Nao,Sim,8,cartao dr.consulta - gratis,,2026-04-08
+16480617,2026-03-31,12,cartao dr.consulta anual,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
+16511797,2026-03-31,6,cartao dr.consulta semestral,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
+16533452,2026-03-31,12,cartao dr.consulta anual,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
+16547810,2026-03-31,12,cartao dr.consulta com odonto anual,Nao,Sim,8,cartao dr.consulta - gratis,,2026-04-08
+16568723,2026-03-31,6,cartao dr.consulta semestral,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-09
+16600573,2026-03-31,6,cartao dr.consulta semestral,Nao,Nao,,,,
+16670644,2026-03-31,12,cartao dr.consulta anual,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-09
+16681583,2026-03-31,6,cartao dr.consulta semestral,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-09
+16821884,2026-03-31,6,cartao dr.consulta semestral,Sim,Sim,0,cartao dr.consulta anual,credit_card,2026-03-31
+16871503,2026-03-31,6,cartao dr.consulta semestral,Nao,Sim,8,cartao dr.consulta - gratis,,2026-04-08
+16899889,2026-03-31,12,cartao dr.consulta com odonto anual,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
+16961444,2026-03-31,6,cartao dr.consulta semestral,Nao,Nao,,,,
+17288457,2026-03-31,6,cartao dr.consulta semestral,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-09
+17327998,2026-03-31,6,cartao dr.consulta semestral,Nao,Nao,,,,
+17352467,2026-03-31,6,cartao dr.consulta semestral,Nao,Nao,,,,
+17383217,2026-03-31,12,cartao dr.consulta anual,Sim,Sim,5,cartao dr.consulta - gratis,,2026-04-05
+17398794,2026-03-31,6,cartao dr.consulta semestral,Nao,Nao,,,,
+17415897,2026-03-31,12,cartao dr.consulta com odonto anual,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
+17449304,2026-03-31,12,cartao dr.consulta anual,Nao,Nao,,,,
+17554648,2026-03-31,12,cartao dr.consulta com odonto anual,Nao,Nao,,,,
+17638725,2026-03-31,12,cartao dr.consulta anual,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
+17714906,2026-03-31,12,cartao dr.consulta com odonto anual,Nao,Sim,8,cartao dr.consulta - gratis,,2026-04-08
+17759386,2026-03-31,12,cartao dr.consulta anual,Nao,Nao,,,,
+17779992,2026-03-31,6,cartao dr.consulta semestral,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
+17788385,2026-03-31,6,cartao dr.consulta semestral,Nao,Nao,,,,
+17819292,2026-03-31,6,cartao dr.consulta semestral,Nao,Sim,8,cartao dr.consulta - gratis,,2026-04-08
+17947088,2026-03-31,12,cartao dr.consulta com odonto anual,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
+18040152,2026-03-31,6,cartao dr.consulta semestral,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
+18048299,2026-03-31,6,cartao dr.consulta semestral,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
+18114055,2026-03-31,12,cartao dr.consulta anual,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
+18125341,2026-03-31,6,cartao dr.consulta semestral,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
+18187600,2026-03-31,6,cartao dr.consulta semestral,Sim,Sim,1,cartao dr.consulta com odonto anual,credit_card,2026-04-01
+18194136,2026-03-31,6,cartao dr.consulta semestral,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
+18227841,2026-03-31,12,cartao dr.consulta com odonto anual,Sim,Sim,5,cartao dr.consulta - gratis,,2026-04-05
+18232607,2026-03-31,12,cartao dr.consulta com odonto anual,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
+18247056,2026-03-31,12,cartao dr.consulta anual,Nao,Sim,8,cartao dr.consulta - gratis,,2026-04-08
+18247198,2026-03-31,6,cartao dr.consulta semestral,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
+18248063,2026-03-31,12,cartao dr.consulta anual,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
+18248180,2026-03-31,12,cartao dr.consulta com odonto anual,Sim,Sim,0,cartao dr.consulta anual,credit_card,2026-03-31
+18251210,2026-03-31,12,cartao dr.consulta anual,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
+18251495,2026-03-31,6,cartao dr.consulta semestral,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
+18251570,2026-03-31,12,cartao dr.consulta com odonto anual,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
+18251671,2026-03-31,12,cartao dr.consulta anual,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
+18253492,2026-03-31,12,cartao dr.consulta anual,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
+18254440,2026-03-31,12,cartao dr.consulta com odonto anual,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
+18257721,2026-03-31,12,cartao dr.consulta com odonto anual,Nao,Sim,8,cartao dr.consulta - gratis,,2026-04-08
+18257944,2026-03-31,12,cartao dr.consulta anual,Nao,Sim,8,cartao dr.consulta - gratis,,2026-04-08
+18259450,2026-03-31,12,cartao dr.consulta anual,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-09
+18259472,2026-03-31,12,cartao dr.consulta com odonto anual,Nao,Sim,8,cartao dr.consulta - gratis,,2026-04-08
+18259966,2026-03-31,12,cartao dr.consulta anual,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-09
+18260587,2026-03-31,12,cartao dr.consulta anual,Nao,Sim,8,cartao dr.consulta - gratis,,2026-04-08
+18260704,2026-03-31,12,cartao dr.consulta com odonto anual,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-09
+18260783,2026-03-31,12,cartao dr.consulta anual,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-09
+18263143,2026-03-31,6,cartao dr.consulta semestral,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-09
+18294597,2026-03-31,6,cartao dr.consulta semestral,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-09
+18400140,2026-03-31,12,cartao dr.consulta com odonto anual,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
+18421890,2026-03-31,12,cartao dr.consulta com odonto anual,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-09
+18618393,2026-03-31,6,cartao dr.consulta semestral,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
+18832481,2026-03-31,6,cartao dr.consulta semestral,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
+18844379,2026-03-31,12,cartao dr.consulta com odonto anual,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
+18922909,2026-03-31,12,cartao dr.consulta com odonto anual,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-09
+18980428,2026-03-31,6,cartao dr.consulta semestral,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
+18985653,2026-03-31,6,cartao dr.consulta semestral,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
+18988988,2026-03-31,6,cartao dr.consulta semestral,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-09
+19159664,2026-03-31,6,cartao dr.consulta semestral,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
+19169170,2026-03-31,6,cartao dr.consulta semestral,Nao,Sim,8,cartao dr.consulta - gratis,,2026-04-08
+19170679,2026-03-31,12,cartao dr.consulta anual,Nao,Nao,,,,
+19241568,2026-03-31,6,cartao dr.consulta semestral,Nao,Sim,8,cartao dr.consulta - gratis,,2026-04-08
+19296443,2026-03-31,12,cartao dr.consulta com odonto anual,Nao,Sim,8,cartao dr.consulta - gratis,,2026-04-08
+19334793,2026-03-31,6,cartao dr.consulta semestral,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
+19410003,2026-03-31,6,cartao dr.consulta semestral,Sim,Sim,4,cartao dr.consulta anual,credit_card,2026-04-04
+19515656,2026-03-31,6,cartao dr.consulta semestral,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-09
+19574683,2026-03-31,6,cartao dr.consulta semestral,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
+19579069,2026-03-31,12,cartao dr.consulta com odonto anual,Nao,Sim,8,cartao dr.consulta - gratis,,2026-04-08
+19588503,2026-03-31,12,cartao dr.consulta anual,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
+19603174,2026-03-31,12,cartao dr.consulta com odonto anual,Nao,Sim,8,cartao dr.consulta - gratis,,2026-04-08
+19611049,2026-03-31,12,cartao dr.consulta anual,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
+19623563,2026-03-31,6,cartao dr.consulta semestral,Nao,Sim,8,cartao dr.consulta - gratis,,2026-04-08
+19633949,2026-03-31,6,cartao dr.consulta semestral,Sim,Sim,5,cartao dr.consulta - gratis,,2026-04-05
+19635895,2026-03-31,12,cartao dr.consulta anual,Nao,Sim,8,cartao dr.consulta - gratis,,2026-04-08
+19636575,2026-03-31,12,cartao dr.consulta anual,Sim,Sim,5,cartao dr.consulta - gratis,,2026-04-05
+19640777,2026-03-31,12,cartao dr.consulta anual,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
+19641156,2026-03-31,12,cartao dr.consulta com odonto anual,Nao,Sim,8,cartao dr.consulta - gratis,,2026-04-08
+19642562,2026-03-31,12,cartao dr.consulta anual,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
+19643097,2026-03-31,12,cartao dr.consulta anual,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
+19643257,2026-03-31,12,cartao dr.consulta anual,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
+19643359,2026-03-31,6,cartao dr.consulta semestral,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
+19643949,2026-03-31,12,cartao dr.consulta com odonto anual,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
+19644411,2026-03-31,6,cartao dr.consulta semestral,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
+19644811,2026-03-31,12,cartao dr.consulta anual,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
+19645944,2026-03-31,12,cartao dr.consulta so odonto anual,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
+19646366,2026-03-31,12,cartao dr.consulta so odonto anual,Nao,Nao,,,,
+19646645,2026-03-31,6,cartao dr.consulta semestral,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
+19646863,2026-03-31,6,cartao dr.consulta semestral,Sim,Sim,7,cartao dr.consulta - gratis,,2026-04-07
+19648149,2026-03-31,12,cartao dr.consulta anual,Nao,Sim,8,cartao dr.consulta - gratis,,2026-04-08
+19648268,2026-03-31,12,cartao dr.consulta com odonto anual,Nao,Sim,8,cartao dr.consulta - gratis,,2026-04-08
+19648936,2026-03-31,6,cartao dr.consulta semestral,Nao,Sim,8,cartao dr.consulta - gratis,,2026-04-08
+19650010,2026-03-31,12,cartao dr.consulta com odonto anual,Sim,Sim,2,cartao dr.consulta anual,credit_card,2026-04-02
+19650641,2026-03-31,6,cartao dr.consulta semestral,Nao,Nao,,,,
+19651724,2026-03-31,12,cartao dr.consulta anual,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-09
+19651731,2026-03-31,12,cartao dr.consulta com odonto anual,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-09
+19653255,2026-03-31,12,cartao dr.consulta com odonto anual,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-09
+20008213,2026-03-31,6,cartao dr.consulta semestral,Nao,Nao,,,,
+20327965,2026-03-31,6,cartao dr.consulta semestral,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
+20347312,2026-03-31,6,cartao dr.consulta semestral,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-09
+20352151,2026-03-31,6,cartao dr.consulta semestral,Sim,Sim,5,cartao dr.consulta - gratis,,2026-04-05
+20362467,2026-03-31,6,cartao dr.consulta semestral,Sim,Sim,6,cartao dr.consulta - gratis,,2026-04-06
+20370256,2026-03-31,6,cartao dr.consulta semestral,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-09
+20370457,2026-03-31,6,cartao dr.consulta semestral,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-09
+20370790,2026-03-31,6,cartao dr.consulta semestral,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-09
+20371751,2026-03-31,6,cartao dr.consulta semestral,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-09
+9906,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+12642,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+13684,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+20986,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+28711,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,14,cartao dr.consulta - gratis,,2026-04-16
+28981,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+31537,2026-04-02,12,cartao dr.consulta anual,Nao,Nao,,,,
+36249,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Nao,,,,
+1049860,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+1063727,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
+1097610,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+1133855,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+1168970,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Nao,,,,
+1170143,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,14,cartao dr.consulta - gratis,,2026-04-16
+1190367,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+1199386,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+1204792,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+1204976,2026-04-02,,,Nao,Nao,,,,
+1221622,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Nao,,,,
+1254823,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,13,cartao dr.consulta - gratis,,2026-04-15
+1284997,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+1341060,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,13,cartao dr.consulta - gratis,,2026-04-15
+1359853,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+1359923,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
+1385035,2026-04-02,12,cartao dr.consulta anual,Sim,Sim,4,cartao dr.consulta anual,credit_card,2026-04-06
+1418380,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,13,cartao dr.consulta - gratis,,2026-04-15
+1445047,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,14,cartao dr.consulta - gratis,,2026-04-16
+1459906,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+1461399,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,14,cartao dr.consulta - gratis,,2026-04-16
+1465170,2026-04-02,12,cartao dr.consulta com odonto anual,Sim,Sim,6,cartao dr.consulta anual,credit_card,2026-04-08
+1466000,2026-04-02,12,cartao dr.consulta anual,Nao,Nao,,,,
+1483384,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,12,cartao dr.consulta com odonto anual,credit_card,2026-04-14
+1493440,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
+1495471,2026-04-02,12,cartao dr.consulta anual,Nao,Nao,,,,
+1500283,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+1546682,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+1559098,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+1559625,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+1562835,2026-04-02,12,cartao dr.consulta anual,Nao,Nao,,,,
+1574182,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+1588508,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,8,cartao dr.consulta semestral,credit_card,2026-04-10
+1596203,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+1612811,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,14,cartao dr.consulta - gratis,,2026-04-16
+1613159,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+1614455,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+1620056,2026-04-02,12,cartao dr.consulta anual,Sim,Sim,5,cartao dr.consulta semestral,credit_card,2026-04-07
+1621633,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+1648838,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+1651581,2026-04-02,12,cartao dr.consulta anual,Nao,Nao,,,,
+1656027,2026-04-02,12,cartao dr.consulta anual,Nao,Nao,,,,
+1665813,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,14,cartao dr.consulta - gratis,,2026-04-16
+1670668,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
+1675534,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+1676517,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Nao,,,,
+1687081,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,13,cartao dr.consulta - gratis,,2026-04-15
+1689582,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,14,cartao dr.consulta - gratis,,2026-04-16
+1697119,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,13,cartao dr.consulta - gratis,,2026-04-15
+1705153,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+1744497,2026-04-02,12,cartao dr.consulta com odonto anual,Sim,Sim,4,cartao dr.consulta com odonto anual,credit_card,2026-04-06
+1759450,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
+1796731,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+1797893,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
+1834220,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+1874773,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
+1875069,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+1916999,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,13,cartao dr.consulta - gratis,,2026-04-15
+1936548,2026-04-02,6,cartao dr.consulta semestral,Sim,Sim,0,cartao dr.consulta semestral,credit_card,2026-04-02
+1936769,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+1937636,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Nao,,,,
+1971686,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,14,cartao dr.consulta - gratis,,2026-04-16
+1978053,2026-04-02,12,cartao dr.consulta com odonto anual,Sim,Sim,4,cartao dr.consulta com odonto anual,credit_card,2026-04-06
+1990714,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+2033169,2026-04-02,12,cartao dr.consulta anual,Nao,Nao,,,,
+2077938,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+2078091,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
+2083426,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+2102350,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+2106243,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,14,cartao dr.consulta - gratis,,2026-04-16
+2106986,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,13,cartao dr.consulta - gratis,,2026-04-15
+2113095,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,13,cartao dr.consulta - gratis,,2026-04-15
+2140903,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,13,cartao dr.consulta - gratis,,2026-04-15
+2142797,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
+2151994,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
+2190070,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
+2190916,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
+2210910,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
+2216017,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
+2227067,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
+2241916,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
+2247924,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+2252585,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+2303047,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Nao,,,,
+2318298,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
+2328111,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+2351682,2026-04-02,12,cartao dr.consulta com odonto anual,Sim,Sim,2,cartao dr.consulta com odonto anual,credit_card,2026-04-04
+2374136,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+2390349,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+2410129,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
+2414034,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Nao,,,,
+2419895,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,13,cartao dr.consulta - gratis,,2026-04-15
+2431296,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
+2461069,2026-04-02,6,cartao dr.consulta semestral,Sim,Sim,1,cartao dr.consulta semestral,credit_card,2026-04-03
+2487012,2026-04-02,6,cartao dr.consulta semestral,Sim,Sim,6,cartao dr.consulta anual,credit_card,2026-04-08
+2487253,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,14,cartao dr.consulta - gratis,,2026-04-16
+2489588,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
+2498705,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
+2513994,2026-04-02,12,cartao dr.consulta anual,Nao,Nao,,,,
+2532013,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+2538773,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+2540515,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,14,cartao dr.consulta - gratis,,2026-04-16
+2541493,2026-04-02,12,cartao dr.consulta anual,Nao,Nao,,,,
+2547928,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
+2548165,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+2550814,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+2597666,2026-04-02,12,cartao dr.consulta com odonto anual,Sim,Sim,0,cartao dr.consulta anual,pix,2026-04-02
+2610229,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+2635046,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+2635936,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,14,cartao dr.consulta - gratis,,2026-04-16
+2644702,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+2664712,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
+2685166,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+2687503,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Nao,,,,
+2695825,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
+2798443,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Nao,,,,
+2819498,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+2831672,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+2855129,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,10,cartao dr.consulta anual,credit_card,2026-04-12
+2888026,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+2956851,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,8,cartao dr.consulta com odonto anual,credit_card,2026-04-10
+3003763,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+3008391,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+3069285,2026-04-02,12,cartao dr.consulta anual,Nao,Nao,,,,
+3093814,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,14,cartao dr.consulta - gratis,,2026-04-16
+3095003,2026-04-02,12,cartao dr.consulta anual,Sim,Sim,3,cartao dr.consulta anual,credit_card,2026-04-05
+3110490,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+3137390,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+3195526,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Nao,,,,
+3236876,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+3249011,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+3287445,2026-04-02,6,cartao dr.consulta semestral,Sim,Sim,0,cartao dr.consulta semestral,credit_card,2026-04-02
+3297674,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,14,cartao dr.consulta - gratis,,2026-04-16
+3313384,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,14,cartao dr.consulta - gratis,,2026-04-16
+3317828,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+3353862,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,13,cartao dr.consulta - gratis,,2026-04-15
+3359373,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+3437587,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,9,cartao dr.consulta semestral,credit_card,2026-04-11
+3447049,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+3448218,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Nao,,,,
+3452778,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
+3505282,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
+3508922,2026-04-02,12,cartao dr.consulta anual,Sim,Sim,0,cartao dr.consulta anual,credit_card,2026-04-02
+3570955,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
+3582548,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
+3591794,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,14,cartao dr.consulta - gratis,,2026-04-16
+3598148,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
+3606470,2026-04-02,12,cartao dr.consulta com odonto anual,Sim,Sim,7,cartao dr.consulta com odonto anual,credit_card,2026-04-09
+3625427,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+3641135,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+3661358,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Nao,,,,
+3667238,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
+3667722,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+3679795,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+3685344,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,13,cartao dr.consulta - gratis,,2026-04-15
+3686987,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,13,cartao dr.consulta - gratis,,2026-04-15
+3698146,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+3742048,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,14,cartao dr.consulta - gratis,,2026-04-16
+3758491,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
+3772990,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+3924495,2026-04-02,6,cartao dr.consulta semestral,Sim,Sim,4,cartao dr.consulta semestral,credit_card,2026-04-06
+3924593,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,13,cartao dr.consulta com odonto anual,credit_card,2026-04-15
+3960619,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,9,cartao dr.consulta semestral,debit_card,2026-04-11
+3993629,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+4006108,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+4040165,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+4041443,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+4043935,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+4067271,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+4070497,2026-04-02,,,Nao,Nao,,,,
+4080297,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+4084509,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+4090647,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+4104203,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+4112747,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+4131841,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+4141360,2026-04-02,12,cartao dr.consulta com odonto anual,Sim,Sim,7,cartao dr.consulta anual,credit_card,2026-04-09
+4150978,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,13,cartao dr.consulta - gratis,,2026-04-15
+4164045,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
+4185325,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,13,cartao dr.consulta - gratis,,2026-04-15
+4225060,2026-04-02,6,cartao dr.consulta semestral,Sim,Sim,4,cartao dr.consulta semestral,credit_card,2026-04-06
+4239359,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+4244802,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+4274581,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+4294756,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+4297491,2026-04-02,12,cartao dr.consulta anual,Nao,Nao,,,,
+4371399,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+4379728,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,13,cartao dr.consulta - gratis,,2026-04-15
+4411854,2026-04-02,12,cartao dr.consulta anual,Nao,Nao,,,,
+4476840,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+4482016,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+4540426,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+4546086,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Nao,,,,
+4548159,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
+4567305,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,13,cartao dr.consulta - gratis,,2026-04-15
+4568632,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
+4585616,2026-04-02,12,cartao dr.consulta anual,Sim,Sim,4,cartao dr.consulta anual,credit_card,2026-04-06
+4604330,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+4610539,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,14,cartao dr.consulta - gratis,,2026-04-16
+4647033,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
+4667575,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
+4678289,2026-04-02,12,cartao dr.consulta anual,Nao,Nao,,,,
+4707453,2026-04-02,12,cartao dr.consulta com odonto anual,Sim,Sim,4,cartao dr.consulta com odonto anual,credit_card,2026-04-06
+4716355,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,14,cartao dr.consulta - gratis,,2026-04-16
+4759611,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
+4778182,2026-04-02,12,cartao dr.consulta anual,Nao,Nao,,,,
+4787032,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Nao,,,,
+4797128,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+4810473,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
+4835630,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+4869126,2026-04-02,12,cartao dr.consulta anual,Nao,Nao,,,,
+4896298,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
+4906953,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,13,cartao dr.consulta - gratis,,2026-04-15
+4908726,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Nao,,,,
+4947707,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,13,cartao dr.consulta - gratis,,2026-04-15
+4947758,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
+4947954,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+4948288,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
+4978672,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+5024884,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+5029255,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+5033261,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,13,cartao dr.consulta - gratis,,2026-04-15
+5034022,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+5061700,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+5110668,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
+5119795,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+5126282,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
+5134857,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,13,cartao dr.consulta - gratis,,2026-04-15
+5141660,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+5208519,2026-04-02,12,cartao dr.consulta anual,Sim,Sim,7,cartao dr.consulta anual,credit_card,2026-04-09
+5232856,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,13,cartao dr.consulta - gratis,,2026-04-15
+5254256,2026-04-02,6,cartao dr.consulta semestral,Sim,Sim,6,cartao dr.consulta com odonto anual,credit_card,2026-04-08
+5258966,2026-04-02,12,cartao dr.consulta anual,Sim,Sim,0,cartao dr.consulta anual,credit_card,2026-04-02
+5290795,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+5301557,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,14,cartao dr.consulta - gratis,,2026-04-16
+5350692,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,13,cartao dr.consulta - gratis,,2026-04-15
+5351138,2026-04-02,12,cartao dr.consulta com odonto anual,Sim,Sim,1,cartao dr.consulta com odonto anual,credit_card,2026-04-03
+5359168,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+5369805,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
+5376370,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
+5416758,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
+5428725,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,13,cartao dr.consulta - gratis,,2026-04-15
+5438028,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
+5446646,2026-04-02,12,cartao dr.consulta anual,Nao,Nao,,,,
+5546200,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
+5550673,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,14,cartao dr.consulta - gratis,,2026-04-16
+5559277,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,13,cartao dr.consulta com odonto anual,pix,2026-04-15
+5567091,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+5580999,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
+5584918,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+5589496,2026-04-02,6,cartao dr.consulta semestral,Sim,Sim,7,cartao dr.consulta semestral,credit_card,2026-04-09
+5622403,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
+5652626,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
+5657654,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Nao,,,,
+5661204,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,14,cartao dr.consulta - gratis,,2026-04-16
+5676934,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Nao,,,,
+5725488,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,13,cartao dr.consulta - gratis,,2026-04-15
+5735177,2026-04-02,12,cartao dr.consulta anual,Nao,Nao,,,,
+5744110,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
+5750429,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+5755071,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,13,cartao dr.consulta - gratis,,2026-04-15
+5761828,2026-04-02,12,cartao dr.consulta anual,Sim,Sim,0,cartao dr.consulta anual,credit_card,2026-04-02
+5765336,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+5776085,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
+5794940,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,14,cartao dr.consulta - gratis,,2026-04-16
+5809576,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+5822715,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+5844490,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,14,cartao dr.consulta - gratis,,2026-04-16
+5849017,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,14,cartao dr.consulta - gratis,,2026-04-16
+5868194,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+5873733,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Nao,,,,
+5881892,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,13,cartao dr.consulta - gratis,,2026-04-15
+5911053,2026-04-02,12,cartao dr.consulta anual,Nao,Nao,,,,
+5923697,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
+5944199,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+5971583,2026-04-02,12,cartao dr.consulta anual,Nao,Nao,,,,
+6001894,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+6028272,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+6075576,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+6098488,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,14,cartao dr.consulta - gratis,,2026-04-16
+6101274,2026-04-02,12,cartao dr.consulta anual,Nao,Nao,,,,
+6142612,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,13,cartao dr.consulta - gratis,,2026-04-15
+6169435,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,14,cartao dr.consulta - gratis,,2026-04-16
+6192864,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+6192929,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+6214702,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+6216174,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+6256912,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Nao,,,,
+6263162,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,9,cartao dr.consulta com odonto anual,credit_card,2026-04-11
+6267604,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
+6291037,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Nao,,,,
+6320525,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Nao,,,,
+6321646,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,14,cartao dr.consulta - gratis,,2026-04-16
+6343881,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+6397842,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+6410114,2026-04-02,12,cartao dr.consulta anual,Sim,Sim,0,cartao dr.consulta com odonto anual,credit_card,2026-04-02
+6469689,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
+6561755,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+6577694,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
+6610214,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+6623657,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+6642048,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,13,cartao dr.consulta - gratis,,2026-04-15
+6645122,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,13,cartao dr.consulta - gratis,,2026-04-15
+6661310,2026-04-02,12,cartao dr.consulta com odonto anual,Sim,Sim,0,cartao dr.consulta com odonto anual,credit_card,2026-04-02
+6676870,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
+6686511,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
+6701851,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+6755649,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+6762517,2026-04-02,6,cartao dr.consulta semestral,Sim,Sim,7,cartao dr.consulta semestral,credit_card,2026-04-09
+6765321,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Nao,,,,
+6806411,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+6818743,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Nao,,,,
+6851459,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,13,cartao dr.consulta - gratis,,2026-04-15
+6861203,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+6890853,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+6912644,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+6938824,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+6964056,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+6970628,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
+6986234,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,13,cartao dr.consulta - gratis,,2026-04-15
+7005820,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Nao,,,,
+7010068,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
+7068630,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,16,cartao dr.consulta com odonto anual,pix,2026-04-18
+7086401,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+7088352,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+7144307,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
+7193293,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+7200241,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+7216472,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
+7275840,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+7277939,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,14,cartao dr.consulta - gratis,,2026-04-16
+7297178,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,18,cartao dr.consulta com odonto anual,credit_card,2026-04-20
+7300173,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+7308442,2026-04-02,12,cartao dr.consulta anual,Sim,Sim,7,cartao dr.consulta anual,credit_card,2026-04-09
+7344649,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,14,cartao dr.consulta - gratis,,2026-04-16
+7345797,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+7353089,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,13,cartao dr.consulta - gratis,,2026-04-15
+7380361,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Nao,,,,
+7435392,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+7499691,2026-04-02,12,cartao dr.consulta com odonto anual,Sim,Sim,0,cartao dr.consulta com odonto anual,credit_card,2026-04-02
+7503889,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
+7587659,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+7589262,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
+7589943,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,13,cartao dr.consulta - gratis,,2026-04-15
+7623134,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,14,cartao dr.consulta - gratis,,2026-04-16
+7646317,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
+7667355,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+7705442,2026-04-02,12,cartao dr.consulta anual,Nao,Nao,,,,
+7719719,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+7775079,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+7780619,2026-04-02,6,cartao dr.consulta semestral,Sim,Sim,0,cartao dr.consulta semestral,credit_card,2026-04-02
+7786256,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+7833326,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,13,cartao dr.consulta - gratis,,2026-04-15
+7855791,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
+7861016,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+7910848,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
+7913982,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+7930226,2026-04-02,12,cartao dr.consulta anual,Nao,Nao,,,,
+7937006,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+7940204,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
+7942134,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+7971495,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+7980172,2026-04-02,6,cartao dr.consulta semestral,Sim,Sim,3,cartao dr.consulta semestral,credit_card,2026-04-05
+8016400,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
+8017496,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+8043431,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+8058868,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
+8067764,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+8079505,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+8101582,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
+8101679,2026-04-02,6,cartao dr.consulta semestral,Sim,Sim,2,cartao dr.consulta semestral,credit_card,2026-04-04
+8127480,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+8133335,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,13,cartao dr.consulta - gratis,,2026-04-15
+11263778,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+11291624,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
+11368436,2026-04-02,12,cartao dr.consulta com odonto anual,Sim,Sim,2,cartao dr.consulta com odonto anual,credit_card,2026-04-04
+11391758,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+11407656,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+11431128,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,14,cartao dr.consulta - gratis,,2026-04-16
+11469521,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+11489104,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,13,cartao dr.consulta - gratis,,2026-04-15
+11494284,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
+11499052,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+11533806,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+11538010,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
+11554478,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+11555163,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
+11561409,2026-04-02,12,cartao dr.consulta anual,Nao,Nao,,,,
+11567968,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Nao,,,,
+11599827,2026-04-02,12,cartao dr.consulta anual,Nao,Nao,,,,
+11603358,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
+11615165,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Nao,,,,
+11615823,2026-04-02,12,cartao dr.consulta com odonto anual,Sim,Sim,4,cartao dr.consulta com odonto anual,credit_card,2026-04-06
+11635888,2026-04-02,12,cartao dr.consulta anual,Nao,Nao,,,,
+11665448,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,14,cartao dr.consulta - gratis,,2026-04-16
+11678774,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,14,cartao dr.consulta - gratis,,2026-04-16
+11685127,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+11685548,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Nao,,,,
+11711551,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
+11740825,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
+11744296,2026-04-02,,,Nao,Nao,,,,
+11751885,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
+11839909,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+11844482,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,14,cartao dr.consulta - gratis,,2026-04-16
+11877070,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+11879432,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
+11879623,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
+11898326,2026-04-02,12,cartao dr.consulta anual,Nao,Nao,,,,
+11904766,2026-04-02,12,cartao dr.consulta anual,Nao,Nao,,,,
+12006953,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
+12011761,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+12028209,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+12033803,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
+12041417,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+12054797,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,14,cartao dr.consulta - gratis,,2026-04-16
+12061914,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+12188642,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+12193220,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+12193384,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,14,cartao dr.consulta - gratis,,2026-04-16
+12220213,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,13,cartao dr.consulta - gratis,,2026-04-15
+12224843,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+12265623,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
+12298224,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,14,cartao dr.consulta - gratis,,2026-04-16
+12344640,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
+12356188,2026-04-02,12,cartao dr.consulta anual,Nao,Nao,,,,
+12361875,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+12403539,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,9,cartao dr.consulta semestral,pix,2026-04-11
+12454064,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,14,cartao dr.consulta - gratis,,2026-04-16
+12476746,2026-04-02,6,cartao dr.consulta semestral,Sim,Sim,4,cartao dr.consulta com odonto anual,credit_card,2026-04-06
+12527819,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Nao,,,,
+12634060,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
+12652126,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+12669476,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
+12684666,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
+12693367,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Nao,,,,
+12715120,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+12724373,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
+12731675,2026-04-02,12,cartao dr.consulta anual,Nao,Nao,,,,
+12764319,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
+12816813,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+12820860,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
+12855891,2026-04-02,12,cartao dr.consulta com odonto anual,Sim,Sim,7,cartao dr.consulta com odonto anual,credit_card,2026-04-09
+12860345,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,14,cartao dr.consulta - gratis,,2026-04-16
+12875342,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+12903228,2026-04-02,12,cartao dr.consulta anual,Nao,Nao,,,,
+12929594,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,14,cartao dr.consulta - gratis,,2026-04-16
+12932597,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,13,cartao dr.consulta - gratis,,2026-04-15
+12946549,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+12973606,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
+13002399,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+13017857,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+13083752,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,14,cartao dr.consulta - gratis,,2026-04-16
+13104933,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+13151704,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+13177858,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
+13203249,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,14,cartao dr.consulta - gratis,,2026-04-16
+13223775,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
+13230207,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,13,cartao dr.consulta - gratis,,2026-04-15
+13237035,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+13269635,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,14,cartao dr.consulta anual,credit_card,2026-04-16
+13284147,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Nao,,,,
+13294398,2026-04-02,12,cartao dr.consulta anual,Nao,Nao,,,,
+13297676,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,13,cartao dr.consulta - gratis,,2026-04-15
+13300471,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+13311713,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
+13414061,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+13417359,2026-04-02,12,cartao dr.consulta anual,Nao,Nao,,,,
+13421890,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+13453554,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+13505253,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+13508769,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Nao,,,,
+13563780,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Nao,,,,
+13571654,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,13,cartao dr.consulta - gratis,,2026-04-15
+13575674,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,13,cartao dr.consulta - gratis,,2026-04-15
+13592836,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
+13616146,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,13,cartao dr.consulta - gratis,,2026-04-15
+13650808,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
+13679260,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
+13681305,2026-04-02,12,cartao dr.consulta anual,Sim,Sim,5,cartao dr.consulta anual,credit_card,2026-04-07
+13696826,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Nao,,,,
+13703682,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
+13727963,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+13751456,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+13777893,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+13870513,2026-04-02,12,cartao dr.consulta anual,Nao,Nao,,,,
+13899524,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,20,cartao dr.consulta anual,credit_card,2026-04-22
+13916288,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
+13954598,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
+13972692,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+13990885,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+14071242,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+14093515,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+14119646,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,13,cartao dr.consulta - gratis,,2026-04-15
+14225033,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
+14228433,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
+14243993,2026-04-02,12,cartao dr.consulta anual,Sim,Sim,0,cartao dr.consulta com odonto anual,credit_card,2026-04-02
+14288358,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+14299794,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
+14312139,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
+14328634,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+14394742,2026-04-02,12,cartao dr.consulta anual,Sim,Sim,5,cartao dr.consulta com odonto anual,credit_card,2026-04-07
+14412585,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+14414546,2026-04-02,12,cartao dr.consulta anual,Nao,Nao,,,,
+14489473,2026-04-02,12,cartao dr.consulta anual,Sim,Sim,0,cartao dr.consulta com odonto anual,credit_card,2026-04-02
+14510923,2026-04-02,12,cartao dr.consulta anual,Nao,Nao,,,,
+14516316,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,13,cartao dr.consulta - gratis,,2026-04-15
+14519518,2026-04-02,12,cartao dr.consulta com odonto anual,Sim,Sim,5,cartao dr.consulta com odonto anual,boleto,2026-04-07
+14551061,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+14598601,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
+14601985,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+14626665,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,8,cartao dr.consulta anual,credit_card,2026-04-10
+14677887,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+14694104,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+14711961,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
+14718318,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
+14735540,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
+14751473,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+14790478,2026-04-02,12,cartao dr.consulta anual,Nao,Nao,,,,
+14811132,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+14833684,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+14850725,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,13,cartao dr.consulta - gratis,,2026-04-15
+14859460,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,14,cartao dr.consulta - gratis,,2026-04-16
+14967606,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+14969288,2026-04-02,12,cartao dr.consulta anual,Nao,Nao,,,,
+14972814,2026-04-02,12,cartao dr.consulta anual,Sim,Sim,3,cartao dr.consulta anual,credit_card,2026-04-05
+14974812,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+14974880,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
+15035429,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,13,cartao dr.consulta - gratis,,2026-04-15
+15063297,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+15099045,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+15132112,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+15132770,2026-04-02,12,cartao dr.consulta com odonto anual,Sim,Sim,4,cartao dr.consulta com odonto anual,credit_card,2026-04-06
+15138288,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+15148172,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,13,cartao dr.consulta - gratis,,2026-04-15
+15148673,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+15150284,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+15160659,2026-04-02,12,cartao dr.consulta anual,Nao,Nao,,,,
+15162295,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+15181848,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+15184953,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+15198964,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+15242702,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,13,cartao dr.consulta - gratis,,2026-04-15
+15283319,2026-04-02,12,cartao dr.consulta anual,Sim,Sim,0,cartao dr.consulta anual,credit_card,2026-04-02
+15295737,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
+15317642,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+15341308,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
+15358949,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
+15366836,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+15391980,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+15409296,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
+15413790,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
+15455635,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+15480282,2026-04-02,,,Nao,Nao,,,,
+15515144,2026-04-02,6,cartao dr.consulta semestral,Sim,Sim,0,cartao dr.consulta anual,credit_card,2026-04-02
+15543390,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+15557298,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
+15590312,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,13,cartao dr.consulta - gratis,,2026-04-15
+15601406,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+15605788,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
+15615231,2026-04-02,12,cartao dr.consulta so odonto anual,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
+15631445,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+15660339,2026-04-02,12,cartao dr.consulta anual,Nao,Nao,,,,
+15708131,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+15712623,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,14,cartao dr.consulta - gratis,,2026-04-16
+15718974,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+15723476,2026-04-02,12,cartao dr.consulta com odonto anual,Sim,Sim,6,cartao dr.consulta semestral,credit_card,2026-04-08
+15723808,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+15727488,2026-04-02,6,cartao dr.consulta semestral,Sim,Sim,7,cartao dr.consulta semestral,credit_card,2026-04-09
+15728558,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+15776012,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
+15854011,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+15882566,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,14,cartao dr.consulta - gratis,,2026-04-16
+15884768,2026-04-02,12,cartao dr.consulta anual,Nao,Nao,,,,
+15904431,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+15915638,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+15937938,2026-04-02,12,cartao dr.consulta anual,Nao,Nao,,,,
+15952151,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+15961419,2026-04-02,12,cartao dr.consulta anual,Sim,Sim,6,cartao dr.consulta anual,credit_card,2026-04-08
+15985446,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,8,cartao dr.consulta semestral,credit_card,2026-04-10
+16009993,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Nao,,,,
+16011806,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+16093654,2026-04-02,12,cartao dr.consulta com odonto anual,Sim,Sim,0,cartao dr.consulta anual,credit_card,2026-04-02
+16106490,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,9,cartao dr.consulta anual,credit_card,2026-04-11
+16113904,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
+16114674,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+16123598,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,14,cartao dr.consulta - gratis,,2026-04-16
+16129361,2026-04-02,12,cartao dr.consulta anual,Nao,Nao,,,,
+16149790,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+16172068,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+16188004,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
+16212258,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
+16218069,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
+16219365,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
+16272122,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,13,cartao dr.consulta - gratis,,2026-04-15
+16275301,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+16297623,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,13,cartao dr.consulta - gratis,,2026-04-15
+16309809,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+16360832,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+16365120,2026-04-02,12,cartao dr.consulta anual,Sim,Sim,3,cartao dr.consulta anual,credit_card,2026-04-05
+16384068,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
+16384254,2026-04-02,12,cartao dr.consulta anual,Nao,Nao,,,,
+16387721,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,14,cartao dr.consulta - gratis,,2026-04-16
+16400401,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+16412250,2026-04-02,12,cartao dr.consulta anual,Nao,Nao,,,,
+16421693,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Nao,,,,
+16431218,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+16437241,2026-04-02,12,cartao dr.consulta anual,Nao,Nao,,,,
+16459045,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
+16459745,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+16485174,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+16525333,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
+16538447,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,14,cartao dr.consulta - gratis,,2026-04-16
+16538637,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
+16553401,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+16572597,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Nao,,,,
+16579490,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,13,cartao dr.consulta - gratis,,2026-04-15
+16582608,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Nao,,,,
+16585142,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,13,cartao dr.consulta - gratis,,2026-04-15
+16590898,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+16592477,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,14,cartao dr.consulta - gratis,,2026-04-16
+16593712,2026-04-02,12,cartao dr.consulta anual,Sim,Sim,7,cartao dr.consulta anual,credit_card,2026-04-09
+16680123,2026-04-02,12,cartao dr.consulta anual,Nao,Nao,,,,
+16683477,2026-04-02,12,cartao dr.consulta anual,Sim,Sim,0,cartao dr.consulta anual,credit_card,2026-04-02
+16708127,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Nao,,,,
+16747397,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+16762062,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+16767966,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
+16786211,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
+16789866,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,14,cartao dr.consulta - gratis,,2026-04-16
+16805561,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+16831043,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+16841189,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+16845478,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+16855532,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+16924068,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+16984935,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,12,cartao dr.consulta semestral,credit_card,2026-04-14
+17031433,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,13,cartao dr.consulta - gratis,,2026-04-15
+17098397,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
+17123277,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+17160462,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+17189451,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+17214615,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,14,cartao dr.consulta - gratis,,2026-04-16
+17234121,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+17251649,2026-04-02,12,cartao dr.consulta anual,Nao,Nao,,,,
+17287423,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,13,cartao dr.consulta - gratis,,2026-04-15
+17309448,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,13,cartao dr.consulta - gratis,,2026-04-15
+17313919,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,13,cartao dr.consulta - gratis,,2026-04-15
+17320073,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,14,cartao dr.consulta - gratis,,2026-04-16
+17334791,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,13,cartao dr.consulta - gratis,,2026-04-15
+17351415,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,14,cartao dr.consulta - gratis,,2026-04-16
+17357457,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+17359692,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
+17376030,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+17394391,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,14,cartao dr.consulta - gratis,,2026-04-16
+17407372,2026-04-02,6,cartao dr.consulta semestral,Sim,Sim,3,cartao dr.consulta semestral,credit_card,2026-04-05
+17416537,2026-04-02,12,cartao dr.consulta com odonto anual,Sim,Sim,1,cartao dr.consulta com odonto anual,credit_card,2026-04-03
+17420847,2026-04-02,12,cartao dr.consulta anual,Nao,Nao,,,,
+17435858,2026-04-02,12,cartao dr.consulta anual,Nao,Nao,,,,
+17453645,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Nao,,,,
+17509111,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
+17510426,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+17540836,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+17558702,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
+17558762,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+17564890,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+17573547,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,14,cartao dr.consulta - gratis,,2026-04-16
+17606074,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,14,cartao dr.consulta - gratis,,2026-04-16
+17633578,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+17637446,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+17655732,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,13,cartao dr.consulta - gratis,,2026-04-15
+17679779,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+17720114,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+17721668,2026-04-02,12,cartao dr.consulta anual,Nao,Nao,,,,
+17731673,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,14,cartao dr.consulta - gratis,,2026-04-16
+17741977,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
+17771922,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
+17803529,2026-04-02,12,cartao dr.consulta anual,Nao,Nao,,,,
+17805195,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+17810759,2026-04-02,6,cartao dr.consulta semestral,Sim,Sim,6,cartao dr.consulta semestral,credit_card,2026-04-08
+17834077,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+17836532,2026-04-02,6,cartao dr.consulta semestral,Sim,Sim,7,cartao dr.consulta semestral,credit_card,2026-04-09
+17862816,2026-04-02,12,cartao dr.consulta anual,Nao,Nao,,,,
+17881580,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+17923053,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Nao,,,,
+17953895,2026-04-02,12,cartao dr.consulta com odonto anual,Sim,Sim,0,cartao dr.consulta anual,credit_card,2026-04-02
+17956233,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+17969354,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+17992956,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+18011297,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
+18019818,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+18040525,2026-04-02,12,cartao dr.consulta anual,Nao,Nao,,,,
+18044604,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Nao,,,,
+18051616,2026-04-02,12,cartao dr.consulta anual,Nao,Nao,,,,
+18064569,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,13,cartao dr.consulta - gratis,,2026-04-15
+18077884,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,14,cartao dr.consulta - gratis,,2026-04-16
+18078251,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+18096455,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,13,cartao dr.consulta - gratis,,2026-04-15
+18100237,2026-04-02,12,cartao dr.consulta anual,Sim,Sim,2,cartao dr.consulta com odonto anual,credit_card,2026-04-04
+18119739,2026-04-02,12,cartao dr.consulta anual,Nao,Nao,,,,
+18129259,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,13,cartao dr.consulta semestral,credit_card,2026-04-15
+18140218,2026-04-02,12,cartao dr.consulta com odonto anual,Sim,Sim,7,cartao dr.consulta com odonto anual,credit_card,2026-04-09
+18142028,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+18165580,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+18167176,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,14,cartao dr.consulta - gratis,,2026-04-16
+18175363,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,14,cartao dr.consulta - gratis,,2026-04-16
+18178337,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+18191706,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Nao,,,,
+18197376,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+18209422,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
+18217956,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+18240274,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+18245123,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
+18264842,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+18266230,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+18267733,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Nao,,,,
+18269390,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+18271615,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+18271900,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+18272250,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+18273056,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
+18273172,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+18274465,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,14,cartao dr.consulta - gratis,,2026-04-16
+18275062,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
+18275613,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
+18275851,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+18277103,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
+18277604,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
+18277696,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
+18277933,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
+18278522,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+18280885,2026-04-02,12,cartao dr.consulta anual,Sim,Sim,1,cartao dr.consulta anual,credit_card,2026-04-03
+18281837,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
+18282266,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Nao,,,,
+18284186,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,13,cartao dr.consulta - gratis,,2026-04-15
+18284657,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,13,cartao dr.consulta - gratis,,2026-04-15
+18286167,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,14,cartao dr.consulta - gratis,,2026-04-16
+18286631,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,11,cartao dr.consulta semestral,credit_card,2026-04-13
+18288739,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Nao,,,,
+18289293,2026-04-02,12,cartao dr.consulta anual,Nao,Nao,,,,
+18290047,2026-04-02,12,cartao dr.consulta anual,Nao,Nao,,,,
+18290117,2026-04-02,12,cartao dr.consulta anual,Nao,Nao,,,,
+18330066,2026-04-02,12,cartao dr.consulta anual,Nao,Nao,,,,
+18449653,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
+18503411,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+18514300,2026-04-02,6,cartao dr.consulta semestral,Sim,Sim,2,cartao dr.consulta semestral,credit_card,2026-04-04
+18563363,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+18569379,2026-04-02,6,cartao dr.consulta semestral,Sim,Sim,7,cartao dr.consulta com odonto anual,credit_card,2026-04-09
+18583024,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+18593615,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
+18604236,2026-04-02,6,cartao dr.consulta semestral,Sim,Sim,0,cartao dr.consulta semestral,credit_card,2026-04-02
+18639662,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+18643227,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
+18648777,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,14,cartao dr.consulta - gratis,,2026-04-16
+18655648,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+18675544,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,14,cartao dr.consulta - gratis,,2026-04-16
+18680483,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,14,cartao dr.consulta - gratis,,2026-04-16
+18681461,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
+18682896,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,14,cartao dr.consulta - gratis,,2026-04-16
+18696388,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+18725952,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
+18744200,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
+18765521,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+18782511,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+18801888,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,13,cartao dr.consulta - gratis,,2026-04-15
+18814156,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+18823171,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,14,cartao dr.consulta - gratis,,2026-04-16
+18857068,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
+18858310,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+18872926,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+18885736,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
+18916203,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
+18933674,2026-04-02,12,cartao dr.consulta com odonto anual,Sim,Sim,4,cartao dr.consulta anual,credit_card,2026-04-06
+18937565,2026-04-02,12,cartao dr.consulta anual,Sim,Sim,4,cartao dr.consulta semestral,credit_card,2026-04-06
+18972880,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
+18975494,2026-04-02,6,cartao dr.consulta semestral,Sim,Sim,5,cartao dr.consulta com odonto anual,credit_card,2026-04-07
+18998993,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+19008141,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+19008930,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
+19010669,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
+19010957,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
+19019011,2026-04-02,6,cartao dr.consulta semestral,Sim,Sim,0,cartao dr.consulta semestral,credit_card,2026-04-02
+19073262,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
+19114332,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+19130274,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
+19136263,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+19175066,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+19192452,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
+19211307,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+19213185,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
+19221240,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+19224127,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
+19290644,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+19296560,2026-04-02,12,cartao dr.consulta anual,Nao,Nao,,,,
+19325210,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+19325279,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
+19352505,2026-04-02,12,cartao dr.consulta so odonto anual,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
+19365913,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
+19374799,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+19388401,2026-04-02,6,cartao dr.consulta semestral,Sim,Sim,5,cartao dr.consulta semestral,credit_card,2026-04-07
+19389765,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,13,cartao dr.consulta - gratis,,2026-04-15
+19423973,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,13,cartao dr.consulta - gratis,,2026-04-15
+19424321,2026-04-02,12,cartao dr.consulta anual,Sim,Sim,0,cartao dr.consulta anual,credit_card,2026-04-02
+19436073,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+19447109,2026-04-02,,,Nao,Nao,,,,
+19468874,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
+19496061,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+19522571,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Nao,,,,
+19529286,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+19534154,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,14,cartao dr.consulta - gratis,,2026-04-16
+19556160,2026-04-02,12,cartao dr.consulta so odonto anual,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+19563568,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+19575132,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
+19588509,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
+19594461,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,13,cartao dr.consulta - gratis,,2026-04-15
+19603979,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+19604592,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+19620271,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+19621350,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,13,cartao dr.consulta - gratis,,2026-04-15
+19623993,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Nao,,,,
+19627174,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
+19636208,2026-04-02,,,Nao,Nao,,,,
+19638616,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
+19643070,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+19648447,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
+19649121,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+19649697,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+19651122,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
+19652072,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+19652503,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+19653712,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+19655213,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+19656536,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+19656560,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
+19656659,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+19656798,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+19656965,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+19656990,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+19656994,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+19657254,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+19657276,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+19657411,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+19657530,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
+19657536,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+19658395,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+19658546,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+19658813,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+19658885,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
+19658924,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+19658948,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+19659036,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+19659413,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+19660227,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+19660281,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+19660665,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+19660989,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+19661068,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
+19661084,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+19661303,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+19662247,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+19662369,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
+19662545,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+19662555,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+19662752,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+19662975,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+19663037,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+19663047,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,13,cartao dr.consulta - gratis,,2026-04-15
+19663614,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+19663738,2026-04-02,12,cartao dr.consulta anual,Sim,Sim,0,cartao dr.consulta anual,credit_card,2026-04-02
+19663800,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+19664246,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+19664362,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+19664517,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+19664769,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+19665002,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+19665466,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+19665788,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+19666514,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
+19667745,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
+19667845,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
+19668196,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,13,cartao dr.consulta - gratis,,2026-04-15
+19668530,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,13,cartao dr.consulta - gratis,,2026-04-15
+19668607,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
+19668622,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
+19668663,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
+19668664,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,14,cartao dr.consulta - gratis,,2026-04-16
+19668939,2026-04-02,12,cartao dr.consulta anual,Nao,Nao,,,,
+19669035,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
+19669633,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
+19670804,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
+19671212,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
+19671658,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
+19672200,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
+19672201,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+19672304,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
+19672395,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
+19673030,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+19673369,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
+19673784,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
+19673803,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
+19673809,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
+19674132,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
+19674210,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
+19674483,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
+19674881,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
+19675142,2026-04-02,12,cartao dr.consulta com odonto anual,Sim,Sim,0,cartao dr.consulta com odonto anual,pix,2026-04-02
+19675918,2026-04-02,12,cartao dr.consulta anual,Nao,Nao,,,,
+19675962,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,13,cartao dr.consulta - gratis,,2026-04-15
+19675987,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,14,cartao dr.consulta - gratis,,2026-04-16
+19676591,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,13,cartao dr.consulta - gratis,,2026-04-15
+19676771,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,13,cartao dr.consulta - gratis,,2026-04-15
+19676875,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,13,cartao dr.consulta - gratis,,2026-04-15
+19677816,2026-04-02,12,cartao dr.consulta anual,Nao,Nao,,,,
+19677999,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,13,cartao dr.consulta - gratis,,2026-04-15
+19678169,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,13,cartao dr.consulta - gratis,,2026-04-15
+19678363,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,13,cartao dr.consulta - gratis,,2026-04-15
+19678540,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,14,cartao dr.consulta - gratis,,2026-04-16
+19678586,2026-04-02,12,cartao dr.consulta anual,Sim,Sim,0,cartao dr.consulta anual,credit_card,2026-04-02
+19679123,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,13,cartao dr.consulta - gratis,,2026-04-15
+19679479,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,13,cartao dr.consulta - gratis,,2026-04-15
+19679597,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,14,cartao dr.consulta - gratis,,2026-04-16
+19679743,2026-04-02,12,cartao dr.consulta com odonto anual,Nao,Sim,14,cartao dr.consulta - gratis,,2026-04-16
+19680026,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,14,cartao dr.consulta - gratis,,2026-04-16
+19680564,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,14,cartao dr.consulta - gratis,,2026-04-16
+19680906,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,14,cartao dr.consulta - gratis,,2026-04-16
+19681170,2026-04-02,12,cartao dr.consulta anual,Nao,Sim,14,cartao dr.consulta - gratis,,2026-04-16
+19681526,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,14,cartao dr.consulta - gratis,,2026-04-16
+19683148,2026-04-02,12,cartao dr.consulta anual,Nao,Nao,,,,
+19683151,2026-04-02,12,cartao dr.consulta anual,Nao,Nao,,,,
+19683946,2026-04-02,12,cartao dr.consulta anual,Sim,Sim,0,cartao dr.consulta anual,credit_card,2026-04-02
+19761055,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+19767428,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+19878373,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
+19960319,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+20030097,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
+20041521,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+20118741,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+20118869,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+20176854,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+20212420,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+20216425,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,13,cartao dr.consulta - gratis,,2026-04-15
+20222867,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,14,cartao dr.consulta - gratis,,2026-04-16
+20245729,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+20249152,2026-04-02,6,cartao dr.consulta semestral,Sim,Sim,2,cartao dr.consulta com odonto anual,credit_card,2026-04-04
+20264138,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
+20292877,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+20313985,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,13,cartao dr.consulta anual,credit_card,2026-04-15
+20328515,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+20352732,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+20357664,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,13,cartao dr.consulta - gratis,,2026-04-15
+20363729,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+20377579,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+20380106,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+20380567,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+20380688,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+20381015,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+20382041,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,13,cartao dr.consulta - gratis,,2026-04-15
+20382450,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+20382682,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+20383216,2026-04-02,6,cartao dr.consulta semestral,Sim,Sim,7,cartao dr.consulta semestral,credit_card,2026-04-09
+20383560,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+20384024,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+20384254,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+20384477,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,9,cartao dr.consulta - gratis,,2026-04-11
+20385751,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+20385807,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+20385897,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+20386491,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+20387227,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+20388082,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+20388767,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+20388934,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,10,cartao dr.consulta - gratis,,2026-04-12
+20389403,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
+20391819,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+20393041,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,11,cartao dr.consulta - gratis,,2026-04-13
+20393842,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
+20395734,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,12,cartao dr.consulta - gratis,,2026-04-14
+20396616,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,13,cartao dr.consulta - gratis,,2026-04-15
+20396794,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,13,cartao dr.consulta - gratis,,2026-04-15
+20397267,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,13,cartao dr.consulta - gratis,,2026-04-15
+20397521,2026-04-02,,,Nao,Nao,,,,
+20397828,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,13,cartao dr.consulta - gratis,,2026-04-15
+20399035,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,14,cartao dr.consulta - gratis,,2026-04-16
+20400267,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,14,cartao dr.consulta - gratis,,2026-04-16
+20400620,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,14,cartao dr.consulta - gratis,,2026-04-16
+20400799,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,14,cartao dr.consulta - gratis,,2026-04-16
+20401776,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,14,cartao dr.consulta - gratis,,2026-04-16
+20402076,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+20402488,2026-04-02,6,cartao dr.consulta semestral,Nao,Sim,14,cartao dr.consulta - gratis,,2026-04-16
+20403845,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+20405940,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+20407416,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,
+20407834,2026-04-02,6,cartao dr.consulta semestral,Nao,Nao,,,,

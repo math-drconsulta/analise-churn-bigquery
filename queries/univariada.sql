@@ -1,6 +1,6 @@
 -- ============================================================================
 -- QUERY CC-1: SEGMENTAÇÃO UNIVARIADA — APENAS CREDIT_CARD
--- Base: anl_churn_contratos | Filtro: planos 6+12m + credit_card
+-- Base: anl_churn_contratos | Filtro: planos 6+12m + credit_card + sem B2B/COOP
 -- ============================================================================
 
 -- 1A) CHURN POR DURAÇÃO
@@ -9,6 +9,7 @@ SELECT 'plan_months_duration' as dimensao, CAST(plan_months_duration AS STRING) 
   ROUND(100.0 * SUM(CASE WHEN churn_renovacao_automatica_sn = 'S' THEN 1 ELSE 0 END) / COUNT(*), 1) as churn_rate
 FROM `airflow-datalake-prod.YALO_DW.anl_churn_contratos`
 WHERE plan_months_duration IN (6, 12) AND order_payment_method = 'credit_card'
+  AND IFNULL(order_source_aj, '') != 'b2b'  -- excluir canal corporativo
   AND contract_due_date_month >= DATE_SUB(DATE_TRUNC(CURRENT_DATE(), MONTH), INTERVAL 12 MONTH)
 GROUP BY 1, 2
 
@@ -20,6 +21,7 @@ SELECT 'account_contract_number', CASE WHEN account_contract_number = 1 THEN '1o
   ROUND(100.0 * SUM(CASE WHEN churn_renovacao_automatica_sn = 'S' THEN 1 ELSE 0 END) / COUNT(*), 1)
 FROM `airflow-datalake-prod.YALO_DW.anl_churn_contratos`
 WHERE plan_months_duration IN (6, 12) AND order_payment_method = 'credit_card'
+  AND IFNULL(order_source_aj, '') != 'b2b'  -- excluir canal corporativo
   AND contract_due_date_month >= DATE_SUB(DATE_TRUNC(CURRENT_DATE(), MONTH), INTERVAL 12 MONTH)
 GROUP BY 1, 2
 
@@ -32,6 +34,7 @@ SELECT 'dependentes_faixa',
   ROUND(100.0 * SUM(CASE WHEN churn_renovacao_automatica_sn = 'S' THEN 1 ELSE 0 END) / COUNT(*), 1)
 FROM `airflow-datalake-prod.YALO_DW.anl_churn_contratos`
 WHERE plan_months_duration IN (6, 12) AND order_payment_method = 'credit_card'
+  AND IFNULL(order_source_aj, '') != 'b2b'  -- excluir canal corporativo
   AND contract_due_date_month >= DATE_SUB(DATE_TRUNC(CURRENT_DATE(), MONTH), INTERVAL 12 MONTH)
 GROUP BY 1, 2
 
@@ -43,6 +46,7 @@ SELECT 'titular_faixa_etaria', titular_faixa_etaria,
   ROUND(100.0 * SUM(CASE WHEN churn_renovacao_automatica_sn = 'S' THEN 1 ELSE 0 END) / COUNT(*), 1)
 FROM `airflow-datalake-prod.YALO_DW.anl_churn_contratos`
 WHERE plan_months_duration IN (6, 12) AND order_payment_method = 'credit_card'
+  AND IFNULL(order_source_aj, '') != 'b2b'  -- excluir canal corporativo
   AND contract_due_date_month >= DATE_SUB(DATE_TRUNC(CURRENT_DATE(), MONTH), INTERVAL 12 MONTH)
 GROUP BY 1, 2
 
@@ -54,6 +58,7 @@ SELECT 'titular_sexo', IFNULL(titular_sexo, '(vazio)'),
   ROUND(100.0 * SUM(CASE WHEN churn_renovacao_automatica_sn = 'S' THEN 1 ELSE 0 END) / COUNT(*), 1)
 FROM `airflow-datalake-prod.YALO_DW.anl_churn_contratos`
 WHERE plan_months_duration IN (6, 12) AND order_payment_method = 'credit_card'
+  AND IFNULL(order_source_aj, '') != 'b2b'  -- excluir canal corporativo
   AND contract_due_date_month >= DATE_SUB(DATE_TRUNC(CURRENT_DATE(), MONTH), INTERVAL 12 MONTH)
 GROUP BY 1, 2
 
@@ -65,6 +70,7 @@ SELECT 'classe_social', IFNULL(titual_classe_social, '(sem dados)'),
   ROUND(100.0 * SUM(CASE WHEN churn_renovacao_automatica_sn = 'S' THEN 1 ELSE 0 END) / COUNT(*), 1)
 FROM `airflow-datalake-prod.YALO_DW.anl_churn_contratos`
 WHERE plan_months_duration IN (6, 12) AND order_payment_method = 'credit_card'
+  AND IFNULL(order_source_aj, '') != 'b2b'  -- excluir canal corporativo
   AND contract_due_date_month >= DATE_SUB(DATE_TRUNC(CURRENT_DATE(), MONTH), INTERVAL 12 MONTH)
 GROUP BY 1, 2
 
@@ -76,6 +82,7 @@ SELECT 'titular_cronico', titular_main_cronico_sn,
   ROUND(100.0 * SUM(CASE WHEN churn_renovacao_automatica_sn = 'S' THEN 1 ELSE 0 END) / COUNT(*), 1)
 FROM `airflow-datalake-prod.YALO_DW.anl_churn_contratos`
 WHERE plan_months_duration IN (6, 12) AND order_payment_method = 'credit_card'
+  AND IFNULL(order_source_aj, '') != 'b2b'  -- excluir canal corporativo
   AND contract_due_date_month >= DATE_SUB(DATE_TRUNC(CURRENT_DATE(), MONTH), INTERVAL 12 MONTH)
 GROUP BY 1, 2
 
@@ -87,6 +94,7 @@ SELECT 'consumo_sn', IFNULL(consumo_sn, 'N'),
   ROUND(100.0 * SUM(CASE WHEN churn_renovacao_automatica_sn = 'S' THEN 1 ELSE 0 END) / COUNT(*), 1)
 FROM `airflow-datalake-prod.YALO_DW.anl_churn_contratos`
 WHERE plan_months_duration IN (6, 12) AND order_payment_method = 'credit_card'
+  AND IFNULL(order_source_aj, '') != 'b2b'  -- excluir canal corporativo
   AND contract_due_date_month >= DATE_SUB(DATE_TRUNC(CURRENT_DATE(), MONTH), INTERVAL 12 MONTH)
 GROUP BY 1, 2
 
@@ -98,6 +106,7 @@ SELECT 'order_source', IFNULL(order_source_aj, '(vazio)'),
   ROUND(100.0 * SUM(CASE WHEN churn_renovacao_automatica_sn = 'S' THEN 1 ELSE 0 END) / COUNT(*), 1)
 FROM `airflow-datalake-prod.YALO_DW.anl_churn_contratos`
 WHERE plan_months_duration IN (6, 12) AND order_payment_method = 'credit_card'
+  AND IFNULL(order_source_aj, '') != 'b2b'  -- excluir canal corporativo
   AND contract_due_date_month >= DATE_SUB(DATE_TRUNC(CURRENT_DATE(), MONTH), INTERVAL 12 MONTH)
 GROUP BY 1, 2
 
@@ -109,6 +118,7 @@ SELECT 'contract_sale_type', IFNULL(contract_sale_type, '(vazio)'),
   ROUND(100.0 * SUM(CASE WHEN churn_renovacao_automatica_sn = 'S' THEN 1 ELSE 0 END) / COUNT(*), 1)
 FROM `airflow-datalake-prod.YALO_DW.anl_churn_contratos`
 WHERE plan_months_duration IN (6, 12) AND order_payment_method = 'credit_card'
+  AND IFNULL(order_source_aj, '') != 'b2b'  -- excluir canal corporativo
   AND contract_due_date_month >= DATE_SUB(DATE_TRUNC(CURRENT_DATE(), MONTH), INTERVAL 12 MONTH)
 GROUP BY 1, 2
 
@@ -120,6 +130,7 @@ SELECT 'dep_idoso_6099', dependents_per_holder_6099_SN,
   ROUND(100.0 * SUM(CASE WHEN churn_renovacao_automatica_sn = 'S' THEN 1 ELSE 0 END) / COUNT(*), 1)
 FROM `airflow-datalake-prod.YALO_DW.anl_churn_contratos`
 WHERE plan_months_duration IN (6, 12) AND order_payment_method = 'credit_card'
+  AND IFNULL(order_source_aj, '') != 'b2b'  -- excluir canal corporativo
   AND contract_due_date_month >= DATE_SUB(DATE_TRUNC(CURRENT_DATE(), MONTH), INTERVAL 12 MONTH)
 GROUP BY 1, 2
 
@@ -131,6 +142,7 @@ SELECT 'dep_jovem_0020', dependents_per_holder_0020_SN,
   ROUND(100.0 * SUM(CASE WHEN churn_renovacao_automatica_sn = 'S' THEN 1 ELSE 0 END) / COUNT(*), 1)
 FROM `airflow-datalake-prod.YALO_DW.anl_churn_contratos`
 WHERE plan_months_duration IN (6, 12) AND order_payment_method = 'credit_card'
+  AND IFNULL(order_source_aj, '') != 'b2b'  -- excluir canal corporativo
   AND contract_due_date_month >= DATE_SUB(DATE_TRUNC(CURRENT_DATE(), MONTH), INTERVAL 12 MONTH)
 GROUP BY 1, 2
 
@@ -142,6 +154,7 @@ SELECT 'unsubscription_sn', unsubscription_sn,
   ROUND(100.0 * SUM(CASE WHEN churn_renovacao_automatica_sn = 'S' THEN 1 ELSE 0 END) / COUNT(*), 1)
 FROM `airflow-datalake-prod.YALO_DW.anl_churn_contratos`
 WHERE plan_months_duration IN (6, 12) AND order_payment_method = 'credit_card'
+  AND IFNULL(order_source_aj, '') != 'b2b'  -- excluir canal corporativo
   AND contract_due_date_month >= DATE_SUB(DATE_TRUNC(CURRENT_DATE(), MONTH), INTERVAL 12 MONTH)
 GROUP BY 1, 2
 
@@ -153,6 +166,7 @@ SELECT 'pacientes_cluster', pacientes_cluster,
   ROUND(100.0 * SUM(CASE WHEN churn_renovacao_automatica_sn = 'S' THEN 1 ELSE 0 END) / COUNT(*), 1)
 FROM `airflow-datalake-prod.YALO_DW.anl_churn_contratos`
 WHERE plan_months_duration IN (6, 12) AND order_payment_method = 'credit_card'
+  AND IFNULL(order_source_aj, '') != 'b2b'  -- excluir canal corporativo
   AND contract_due_date_month >= DATE_SUB(DATE_TRUNC(CURRENT_DATE(), MONTH), INTERVAL 12 MONTH)
 GROUP BY 1, 2
 

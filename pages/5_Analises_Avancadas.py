@@ -88,7 +88,7 @@ with tab1:
         #### Resultado: o consumo protege, mas não é o fator dominante
 
         **1. No 1º contrato, quem não usa cancela mais:**
-        - 12m: Não usou **63,9%** vs Usou **60,1%** → proteção de **3,8 p.p.**
+        - 12m: Não usou **64,2%** vs Usou **60,8%** → proteção de **3,4 p.p.**
         - 6m: Não usou **57,5%** vs Usou **56,6%** → proteção de **0,9 p.p.**
 
         **2. O 1º contrato tem churn alto de qualquer forma** — o problema não é uso vs não uso,
@@ -117,7 +117,7 @@ with tab2:
         st.markdown("""
         #### Motivos de cancelamento ativo
 
-        Dos ~26 mil que pediram cancelamento, o motivo registrado é revelador —
+        Dos registros que contêm motivo de cancelamento, a análise é reveladora —
         mais sobre os nossos processos do que sobre os pacientes.
         """)
 
@@ -254,22 +254,30 @@ with tab3:
                 "churners": "Churners", "churn_rate": "Churn (%)", "media_dias": "Dias (Média)"
             }), hide_index=True, use_container_width=True)
 
-        st.markdown(f"""
-        #### Leitura
+        # Identificar faixas dinamicamente
+        nunca_usou = df[df["faixa_primeiro_uso"].str.contains("nunca", case=False)]
+        usou_7d = df[df["faixa_primeiro_uso"].str.contains("0-7", case=False)]
+        usou_8_30 = df[df["faixa_primeiro_uso"].str.contains("8-30", case=False)]
 
-        A query retornou apenas pacientes que efetivamente usaram o plano (via `INNER JOIN`
-        com as tabelas de itens). Pacientes sem consumo (~112k) não estão neste corte.
+        md_parts = ["#### Leitura\n"]
 
-        **Resultados:**
-        - **{df.iloc[0]["total_contratos"]:,.0f} contratos** usaram nos primeiros 7 dias (média: {df.iloc[0]["media_dias"]:.0f} dias) → Churn **{df.iloc[0]["churn_rate"]}%**
-        - **{df.iloc[1]["total_contratos"]:,.0f} contratos** usaram entre 8-30 dias (média: {df.iloc[1]["media_dias"]:.0f} dias) → Churn **{df.iloc[1]["churn_rate"]}%**
+        if len(nunca_usou) > 0:
+            row_nu = nunca_usou.iloc[0]
+            md_parts.append(f"- **{row_nu['total_contratos']:,.0f} contratos nunca usaram** o plano → Churn **{row_nu['churn_rate']}%**")
 
-        O delta entre as faixas é de ~3 p.p. Ambos os grupos têm churn alto (~73-76%).
-        O tempo de engajamento não é o fator dominante — ciclo do contrato e perfil demográfico pesam mais.
+        if len(usou_7d) > 0:
+            row_7d = usou_7d.iloc[0]
+            md_parts.append(f"- **{row_7d['total_contratos']:,.0f} contratos** usaram nos primeiros 7 dias (média: {row_7d['media_dias']:.0f} dias) → Churn **{row_7d['churn_rate']}%**")
 
-        > Uma versão expandida desta query (com `LEFT JOIN`) está disponível em
-        > `queries/novas_analises.sql` para incluir todos os contratos, inclusive os sem consumo.
-        """)
+        if len(usou_8_30) > 0:
+            row_8_30 = usou_8_30.iloc[0]
+            md_parts.append(f"- **{row_8_30['total_contratos']:,.0f} contratos** usaram entre 8-30 dias (média: {row_8_30['media_dias']:.0f} dias) → Churn **{row_8_30['churn_rate']}%**")
+
+        md_parts.append("")
+        md_parts.append("Todos os grupos têm churn alto (~73-76%). ")
+        md_parts.append("O tempo de engajamento não é o fator dominante — ciclo do contrato e perfil demográfico pesam mais.")
+
+        st.markdown("\n".join(md_parts))
     except Exception as e:
         st.error(f"Erro: {e}")
 
@@ -308,16 +316,18 @@ with tab4:
 
         | Tipo de Venda | Ciclo | Consumo | Churn |
         |---|---|---|---|
-        | Reativação | 1o | N | **58,7%** |
-        | Reativação | 1o | S | **57,5%** |
-        | Primeiro contrato | 1o | N | 60,7% |
-        | Primeiro contrato | 1o | S | 59,0% |
+        | Primeiro contrato | 1o | N | 60,6% |
+        | Primeiro contrato | 1o | S | 59,2% |
+        | Reativação | 1o | N | **59,0%** |
+        | Reativação | 1o | S | **58,1%** |
+        | Renovação | 1o | N | 59,1% |
+        | Renovação | 1o | S | **56,2%** |
         | Renovação | 2o+ | N | **48,7%** |
 
         **Leitura:**
-        - Reativações têm churn **praticamente igual** ao primeiro contrato (~57-59%).
+        - Reativações têm churn **praticamente igual** ao primeiro contrato (~58-60%).
           Trazer alguém de volta não gera fidelidade residual — é como vender pra um novo cliente.
-        - Não há diferença entre quem usa e quem não usa nas reativações (~1 p.p.).
+        - Renovações no 1º ciclo que consomem já mostram alguma proteção (56,2% vs 59,1%).
         - A única classe que retém de verdade é a renovação do 2o+ contrato (48,7%).
 
         **Recomendação:** Campanhas de win-back só valem a pena se o custo de aquisição for
@@ -448,10 +458,10 @@ try:
 
     | Perfil | Churn | Observação |
     |---|---|---|
-    | 1o + sem dep. + não crônico | **64,9%** | Pior cenário |
-    | 1o + 3+ dep. + crônico | **50,5%** | Família + crônico já protege no 1º contrato |
-    | 2o+ + sem dep. + não crônico | **54,1%** | Renovação sozinha já reduz ~10 p.p. |
-    | 2o+ + 3+ dep. + crônico | **42,1%** | Melhor cenário — queda de 22,8 p.p. vs o pior |
+    | 1o + sem dep. + não crônico | **65,0%** | Pior cenário |
+    | 1o + 3+ dep. + crônico | **50,8%** | Família + crônico já protege no 1º contrato |
+    | 2o+ + sem dep. + não crônico | **54,2%** | Renovação sozinha já reduz ~10 p.p. |
+    | 2o+ + 3+ dep. + crônico | **42,1%** | Melhor cenário — queda de 22,9 p.p. vs o pior |
 
     **Decomposição do efeito:**
     - Ciclo (1o → 2o+): ~**10 p.p.**

@@ -1333,11 +1333,28 @@ primeira_assinatura AS (
   SELECT *
   FROM novas_assinaturas
   QUALIFY ROW_NUMBER() OVER (PARTITION BY id_paciente ORDER BY contract_register_date ASC) = 1
+),
+
+-- Último contrato ANTES do disparo (plano original que teve falha de pagamento)
+contrato_original AS (
+  SELECT
+    d.id_paciente,
+    ys.plan_months_duration AS duracao_plano_original,
+    ys.plan_name AS plano_original,
+    ys.contract_due_date AS vencimento_original
+  FROM disparos d
+  INNER JOIN `airflow-datalake-prod.YALO_DW.ref_yalo_subscriptions` ys
+    ON ys.id_paciente = d.id_paciente
+    AND ys.contract_due_date <= d.data_envio
+    AND ys.account_type = 'holder'
+  QUALIFY ROW_NUMBER() OVER (PARTITION BY d.id_paciente ORDER BY ys.contract_due_date DESC) = 1
 )
 
 SELECT
   d.id_paciente,
   d.data_envio,
+  co.duracao_plano_original,
+  co.plano_original,
   CASE WHEN pa.id_paciente IS NOT NULL AND pa.dias_ate_assinatura BETWEEN 0 AND 7 THEN 'Sim' ELSE 'Nao' END as assinatura_7dias_sn,
   CASE WHEN pa.id_paciente IS NOT NULL THEN 'Sim' ELSE 'Nao' END as assinatura_pos_disparo_sn,
   pa.dias_ate_assinatura,
@@ -1346,4 +1363,5 @@ SELECT
   pa.contract_register_date as data_assinatura
 FROM disparos d
 LEFT JOIN primeira_assinatura pa ON pa.id_paciente = d.id_paciente
+LEFT JOIN contrato_original co ON co.id_paciente = d.id_paciente
 ORDER BY d.data_envio, d.id_paciente;

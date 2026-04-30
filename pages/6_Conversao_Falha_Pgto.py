@@ -81,6 +81,77 @@ st.markdown("""
 ))
 
 # ═══════════════════════════════════════════════════════════════════════
+# PERFIL DO CONTRATO ORIGINAL (6m vs 12m)
+# ═══════════════════════════════════════════════════════════════════════
+if "duracao_plano_original" in df.columns:
+    st.markdown("---")
+    st.markdown("### Perfil do contrato original (antes da falha)")
+    st.markdown("""
+    Dos pacientes que receberam o email de recuperação, qual era a duração do contrato
+    que teve a falha de pagamento?
+    """)
+
+    dur_dist = df["duracao_plano_original"].fillna("Não identificado").astype(str)
+    dur_dist = dur_dist.apply(lambda x: f"{int(float(x))}m" if x not in ["Não identificado", "nan"] else x)
+    dur_counts = dur_dist.value_counts().reset_index()
+    dur_counts.columns = ["Duração", "Qtd"]
+    dur_counts["% do Total"] = round(100 * dur_counts["Qtd"] / total, 1)
+
+    # Métricas
+    dur_cols = st.columns(len(dur_counts))
+    for i, row in dur_counts.iterrows():
+        dur_cols[i].metric(
+            f"📋 {row['Duração']}",
+            f"{row['Qtd']:,}",
+            delta=f"{row['% do Total']}%",
+            delta_color="off"
+        )
+
+    # Gráfico
+    col_dur1, col_dur2 = st.columns([2, 3])
+
+    with col_dur1:
+        fig_dur = px.pie(
+            dur_counts, values="Qtd", names="Duração",
+            title="Distribuição por Duração do Contrato Original",
+            color_discrete_sequence=["#1565c0", "#42a5f5", "#90caf9", "#bbdefb"],
+            hole=0.4,
+        )
+        fig_dur.update_layout(height=350)
+        fig_dur.update_traces(textinfo="label+value+percent")
+        st.plotly_chart(fig_dur, use_container_width=True)
+
+    with col_dur2:
+        # Converter para análise: taxa de conversão paga por duração
+        if "duracao_plano_original" in df.columns:
+            df_dur_conv = df.copy()
+            df_dur_conv["dur_label"] = df_dur_conv["duracao_plano_original"].fillna(-1).apply(
+                lambda x: f"{int(x)}m" if x > 0 else "Não identificado"
+            )
+            dur_conv = []
+            for dur, g in df_dur_conv.groupby("dur_label"):
+                n = len(g)
+                conv_g = g[g["assinatura_pos_disparo_sn"] == "Sim"]
+                gratis_g = conv_g[conv_g["plano_assinado"] == "cartao dr.consulta - gratis"]
+                pago_g = conv_g[conv_g["plano_assinado"] != "cartao dr.consulta - gratis"]
+                dur_conv.append({
+                    "Duração Original": dur,
+                    "Total": n,
+                    "Conv. Bruta": len(conv_g),
+                    "Conv. Bruta (%)": round(100*len(conv_g)/n, 1),
+                    "Plano Grátis": len(gratis_g),
+                    "Plano Pago": len(pago_g),
+                    "Pago (%)": round(100*len(pago_g)/n, 1),
+                })
+            df_dur_conv_tbl = pd.DataFrame(dur_conv).sort_values("Total", ascending=False)
+            st.dataframe(df_dur_conv_tbl, use_container_width=True, hide_index=True)
+
+            st.markdown("""
+            **Leitura:** A tabela acima mostra, para cada duração do contrato original que falhou,
+            quantos pacientes converteram para plano pago após o disparo do email.
+            """)
+
+# ═══════════════════════════════════════════════════════════════════════
 # ANÁLISE POR ONDA DE DISPARO
 # ═══════════════════════════════════════════════════════════════════════
 st.markdown("---")
@@ -307,13 +378,13 @@ if len(conv_pago) > 0:
     st.markdown(f"""
     | Plano | Conversões | % do Pago |
     |---|---|---|
-    | Anual | {len(conv_pago[conv_pago['plano_assinado'].str.contains('anual')])} | {round(100*len(conv_pago[conv_pago['plano_assinado'].str.contains('anual')])/len(conv_pago),1)}% |
+    | Anual (com/sem odonto) | {len(conv_pago[conv_pago['plano_assinado'].str.contains('anual')])} | {round(100*len(conv_pago[conv_pago['plano_assinado'].str.contains('anual')])/len(conv_pago),1)}% |
     | Semestral | {len(conv_pago[conv_pago['plano_assinado'].str.contains('semestral')])} | {round(100*len(conv_pago[conv_pago['plano_assinado'].str.contains('semestral')])/len(conv_pago),1)}% |
 
     **Observações:**
-    - **71,6% escolheram plano anual** (com ou sem odonto) — boa notícia para LTV.
-    - **93,6% pagaram com cartão de crédito** — coerente, já que o motivo da falha era cartão.
-    - Pix (4) e boleto (2) são residuais.
+    - **{round(100*len(conv_pago[conv_pago['plano_assinado'].str.contains('anual')])/len(conv_pago),1)}% escolheram plano anual** (com ou sem odonto) — boa notícia para LTV.
+    - **{round(100*len(conv_pago[conv_pago['forma_pagamento']=='credit_card'])/len(conv_pago),1)}% pagaram com cartão de crédito** — coerente, já que o motivo da falha era cartão.
+    - Pix, boleto e débito são residuais.
     """)
 
 # ═══════════════════════════════════════════════════════════════════════
@@ -331,11 +402,11 @@ st.markdown(f"""
 
 **O que podemos concluir:**
 
-1. **A conversão para plano pago é baixa, mas real (~8%).**
-   Em escala — se 10.000 pacientes receberem esse disparo — estamos falando de 800-900 assinaturas recuperadas.
+1. **A conversão para plano pago é baixa, mas real ({round(100*len(conv_pago)/total,1)}%).**
+   Em escala — se 10.000 pacientes receberem esse disparo — estamos falando de ~{round(10000*len(conv_pago)/total)} assinaturas recuperadas.
    Se o ticket médio mensal for R$100-150, o ROI do email é significativo.
 
-2. **A janela de 7 dias captura 87% das conversões pagas.**
+2. **A janela de 7 dias captura {round(100*len(conv_pago_7d)/max(len(conv_pago),1))}% das conversões pagas.**
    A decisão de pagar é rápida. Réguas de follow-up além de 7 dias provavelmente não valem o esforço
    para conversão paga — mas podem valer para o plano grátis.
 
@@ -346,7 +417,7 @@ st.markdown(f"""
 **Próximos passos sugeridos:**
 - Validar com produto o que é o "cartão dr.consulta - gratis" (automático vs escolha do paciente?)
 - Medir se os {len(conv_gratis)} que entraram no grátis eventualmente migram pra pago
-- Testar variações de copy/oferta no email pra aumentar a taxa de 8% → 12-15%
+- Testar variações de copy/oferta no email pra aumentar a taxa de {round(100*len(conv_pago)/total,1)}%
 - Considerar SMS/WhatsApp como canal complementar (o email pode não ser aberto)
 """)
 

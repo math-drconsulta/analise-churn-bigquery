@@ -1,61 +1,60 @@
 dimensao,segmento,total_contratos,churners,churn_rate
-account_contract_number,1o contrato,126597,74640,59.0
-account_contract_number,2o+ contrato,79789,38859,48.7
+account_contract_number,1o contrato,124460,73656,59.2
+account_contract_number,2o+ contrato,79734,38849,48.7
 classe_social,SEM_INFORMACAO,3,2,66.7
-classe_social,(sem dados),19802,12028,60.7
-classe_social,D,2094,1168,55.8
-classe_social,C2,50838,27828,54.7
-classe_social,E,1847,1007,54.5
-classe_social,B2,49533,26952,54.4
-classe_social,C1,37925,20639,54.4
-classe_social,B1,30851,16759,54.3
-classe_social,A+,8220,4359,53.0
-classe_social,A++,5273,2757,52.3
-consumo_sn,S,93868,54802,58.4
-consumo_sn,N,112518,58697,52.2
-contract_sale_type,other,2516,1587,63.1
-contract_sale_type,first_contract,90639,53851,59.4
-contract_sale_type,reactivation,16644,9619,57.8
-contract_sale_type,renewal,96587,48442,50.2
-dep_idoso_6099,N,134716,77594,57.6
-dep_idoso_6099,S,71670,35905,50.1
-dep_jovem_0020,N,149949,82979,55.3
-dep_jovem_0020,S,56437,30520,54.1
-dependentes_faixa,0 (sem dep.),53345,32187,60.3
-dependentes_faixa,1-2 dep.,80077,44684,55.8
-dependentes_faixa,3+ dep.,72964,36628,50.2
+classe_social,(sem dados),18893,11419,60.4
+classe_social,D,2076,1168,56.3
+classe_social,C2,50396,27705,55.0
+classe_social,B2,49234,26863,54.6
+classe_social,C1,37651,20563,54.6
+classe_social,E,1834,1000,54.5
+classe_social,B1,30689,16698,54.4
+classe_social,A+,8174,4345,53.2
+classe_social,A++,5244,2742,52.3
+consumo_sn,S,93066,54621,58.7
+consumo_sn,N,111128,57884,52.1
+contract_sale_type,other,2325,1540,66.2
+contract_sale_type,first_contract,88923,52959,59.6
+contract_sale_type,reactivation,16440,9592,58.3
+contract_sale_type,renewal,96506,48414,50.2
+dep_idoso_6099,N,132919,76670,57.7
+dep_idoso_6099,S,71275,35835,50.3
+dep_jovem_0020,N,148199,82070,55.4
+dep_jovem_0020,S,55995,30435,54.4
+dependentes_faixa,0 (sem dep.),52125,31425,60.3
+dependentes_faixa,1-2 dep.,79610,44526,55.9
+dependentes_faixa,3+ dep.,72459,36554,50.4
 order_source,psycoai,291,205,70.4
 order_source,drc_digital,71950,41775,58.1
 order_source,drc_cm,60978,33526,55.0
 order_source,drc_cfp,55466,28928,52.2
 order_source,others,15494,8065,52.1
-order_source,b2b,2192,994,45.3
 order_source,coop,15,6,40.0
-pacientes_cluster,Outros,1730,1099,63.5
-pacientes_cluster,Titular_2160_sem_Dependente,37062,23129,62.4
-pacientes_cluster,Titular_Consumo_PSIQUIATRIA,3236,1979,61.2
-pacientes_cluster,Titular_2160_com_Dependente,63296,35757,56.5
-pacientes_cluster,Titular_4160_Dependente_0020,19321,10393,53.8
-pacientes_cluster,Titular_6199,51111,25761,50.4
-pacientes_cluster,Titular_4160_Dependente_6099,30630,15381,50.2
-plan_months_duration,12,96320,56505,58.7
+pacientes_cluster,Outros,1584,1003,63.3
+pacientes_cluster,Titular_2160_sem_Dependente,35995,22472,62.4
+pacientes_cluster,Titular_Consumo_PSIQUIATRIA,3219,1975,61.4
+pacientes_cluster,Titular_2160_com_Dependente,62580,35577,56.9
+pacientes_cluster,Titular_4160_Dependente_0020,19235,10373,53.9
+pacientes_cluster,Titular_4160_Dependente_6099,30509,15364,50.4
+pacientes_cluster,Titular_6199,51072,25741,50.4
+plan_months_duration,12,94128,55511,59.0
 plan_months_duration,6,110066,56994,51.8
-titular_cronico,N,166095,93423,56.2
-titular_cronico,S,40291,20076,49.8
-titular_faixa_etaria,00-10,558,360,64.5
-titular_faixa_etaria,21-30,24245,15318,63.2
-titular_faixa_etaria,11-20,1167,732,62.7
-titular_faixa_etaria,31-40,39926,23499,58.9
-titular_faixa_etaria,41-50,46466,25646,55.2
-titular_faixa_etaria,99+,51,27,52.9
+titular_cronico,N,164020,92446,56.4
+titular_cronico,S,40174,20059,49.9
+titular_faixa_etaria,00-10,486,321,66.0
+titular_faixa_etaria,21-30,23509,14961,63.6
+titular_faixa_etaria,11-20,1101,681,61.9
+titular_faixa_etaria,31-40,39268,23215,59.1
+titular_faixa_etaria,41-50,46033,25470,55.3
 titular_faixa_etaria,91-99,446,233,52.2
-titular_faixa_etaria,51-60,42380,21912,51.7
-titular_faixa_etaria,71-80,14250,7252,50.9
-titular_faixa_etaria,81-90,3657,1858,50.8
-titular_faixa_etaria,61-70,33240,16662,50.1
-titular_sexo,I,2133,1381,64.7
-titular_sexo,(vazio),1782,1079,60.5
-titular_sexo,F,133907,73942,55.2
-titular_sexo,M,68564,37097,54.1
-unsubscription_sn,S,26095,25759,98.7
-unsubscription_sn,N,180291,87740,48.7
+titular_faixa_etaria,51-60,42200,21851,51.8
+titular_faixa_etaria,71-80,14246,7249,50.9
+titular_faixa_etaria,81-90,3655,1857,50.8
+titular_faixa_etaria,61-70,33208,16647,50.1
+titular_faixa_etaria,99+,42,20,47.6
+titular_sexo,I,2089,1358,65.0
+titular_sexo,F,132616,73497,55.4
+titular_sexo,(vazio),1391,769,55.3
+titular_sexo,M,68098,36881,54.2
+unsubscription_sn,S,26026,25693,98.7
+unsubscription_sn,N,178168,86812,48.7

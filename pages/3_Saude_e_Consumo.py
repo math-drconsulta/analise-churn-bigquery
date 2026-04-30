@@ -41,7 +41,7 @@ def load_b(): return pd.read_csv("results/consumo_por_especialidade_b.csv")
 @st.cache_data
 def load_c(): return pd.read_csv("results/consumo_por_especialidade_c.csv")
 
-tab1, tab2, tab3 = st.tabs(["🩺 Especialidades", "📊 Faixa de Consumo", "🔀 Diversidade de Uso"])
+tab1, tab2, tab3, tab4 = st.tabs(["🩺 Especialidades", "📊 Faixa de Consumo", "🔀 Diversidade de Uso", "🔄 Renovação por Consumo"])
 
 # ═══════════════════════════════════════════════════════════════════════
 # TAB 1: ESPECIALIDADES
@@ -116,9 +116,10 @@ with tab1:
         - Quem "não usou" inclui renovações automáticas silenciosas com churn naturalmente baixo.
 
         **Especialidades mais reveladoras:**
-        - **CM_TELE** (+7,1 p.p.): resolve a queixa pontual por tele e some. Não gera vínculo.
-        - **PEDIATRA** (+6,3 p.p.): pais buscam por episódio agudo do filho e não retornam.
-        - **PSIQUIATRIA** (+5,8 p.p.): demanda pontual de saúde mental.
+        - **CM_TELE** (+7,6 p.p.): resolve a queixa pontual por tele e some. Não gera vínculo.
+        - **PEDIATRA** (+6,7 p.p.): pais buscam por episódio agudo do filho e não retornam.
+        - **CM_presencial** (+6,2 p.p.): uso pontual presencial sem continuidade.
+        - **PSIQUIATRIA** (+6,0 p.p.): demanda pontual de saúde mental.
 
         > **Importante:** Não interpretar como "usar faz mal". É armadilha estatística.
         > Na Página 5, quebramos esse paradoxo controlando pelo ciclo do contrato —
@@ -172,17 +173,17 @@ with tab2:
 
         | Faixa | Churn | Diversidade Média |
         |---|---|---|
-        | Sem consumo | 52,2% | 0,0 |
-        | Baixo (1-3) | **61,6%** | 1,2 |
-        | Médio (4-8) | 59,6% | 2,4 |
-        | Alto (9-15) | 57,9% | 3,0 |
-        | Muito Alto (16+) | **56,4%** | 3,9 |
+        | Sem consumo | 52,1% | 0,0 |
+        | Baixo (1-3) | **62,0%** | 1,2 |
+        | Médio (4-8) | 59,9% | 2,4 |
+        | Alto (9-15) | 58,2% | 3,0 |
+        | Muito Alto (16+) | **56,6%** | 3,9 |
 
         "Sem consumo" tem churn menor que "Baixo" — reforça o confounding:
         renovações silenciosas (que não usam) derrubam artificialmente o churn da faixa zero.
 
         Porém, de **Baixo → Muito Alto**, a tendência é clara: **mais consumo = menos churn**.
-        Delta entre Baixo e Muito Alto: **5,2 p.p.** — significativo em escala.
+        Delta entre Baixo e Muito Alto: **5,4 p.p.** — significativo em escala.
         """)
     except Exception as e:
         st.error(f"Erro: {e}")
@@ -243,6 +244,112 @@ with tab3:
 
         **Implicação pra produto:** Trilhas de cuidado continuado (acompanhamento trimestral
         com o mesmo clínico) podem ser mais eficazes que incentivar "testar todas as especialidades".
+        """)
+    except Exception as e:
+        st.error(f"Erro: {e}")
+
+# ═══════════════════════════════════════════════════════════════════════
+# TAB 4: RENOVAÇÃO POR CONSUMO
+# ═══════════════════════════════════════════════════════════════════════
+with tab4:
+    try:
+        df_b = load_b()
+
+        st.markdown("""
+        #### Quem de fato renovou com cartão de crédito, por grupo de consumo?
+
+        A pergunta do negócio: dentro de cada faixa de consumo, quantos pacientes
+        **efetivamente tiveram renovação automática** (ou seja, NÃO deram churn)?
+        """)
+
+        # Calcular renovação = total - churners
+        df_renov = df_b.copy()
+        df_renov["renovaram"] = df_renov["total_contratos"] - df_renov["churners"]
+        df_renov["taxa_renovacao"] = round(100.0 * df_renov["renovaram"] / df_renov["total_contratos"], 1)
+
+        # KPIs
+        total_renovaram = df_renov["renovaram"].sum()
+        total_base = df_renov["total_contratos"].sum()
+        k1, k2, k3 = st.columns(3)
+        k1.metric("Total de Contratos", f"{total_base:,}")
+        k2.metric("Renovaram (não churn)", f"{total_renovaram:,}",
+                  delta=f"{round(100*total_renovaram/total_base,1)}%")
+        k3.metric("Churners", f"{df_renov['churners'].sum():,}",
+                  delta=f"{round(100*df_renov['churners'].sum()/total_base,1)}%",
+                  delta_color="inverse")
+
+        # Gráfico: barras empilhadas renovação vs churn por faixa
+        fig_renov = go.Figure()
+        fig_renov.add_trace(go.Bar(
+            x=df_renov["faixa_consumo"],
+            y=df_renov["renovaram"],
+            name="Renovaram",
+            marker_color="#4caf50",
+            text=df_renov["renovaram"].apply(lambda x: f"{x:,}"),
+            textposition="inside",
+        ))
+        fig_renov.add_trace(go.Bar(
+            x=df_renov["faixa_consumo"],
+            y=df_renov["churners"],
+            name="Churners",
+            marker_color="#d62728",
+            text=df_renov["churners"].apply(lambda x: f"{x:,}"),
+            textposition="inside",
+        ))
+        fig_renov.add_trace(go.Scatter(
+            x=df_renov["faixa_consumo"],
+            y=df_renov["taxa_renovacao"],
+            name="Taxa Renovação (%)",
+            mode="lines+markers+text",
+            marker=dict(size=12, color="#1565c0"),
+            line=dict(width=3, color="#1565c0"),
+            yaxis="y2",
+            text=df_renov["taxa_renovacao"].apply(lambda x: f"{x}%"),
+            textposition="top center",
+            textfont=dict(size=12, color="#1565c0"),
+        ))
+        fig_renov.update_layout(
+            title="Renovação Efetiva vs Churn por Grupo de Consumo (cartão de crédito)",
+            barmode="stack",
+            yaxis=dict(title="Contratos"),
+            yaxis2=dict(title="Taxa Renovação (%)", overlaying="y", side="right", range=[30, 55]),
+            legend=dict(orientation="h", y=1.12),
+            height=480,
+        )
+        st.plotly_chart(fig_renov, use_container_width=True)
+
+        # Tabela
+        st.dataframe(
+            df_renov[["faixa_consumo", "total_contratos", "renovaram", "taxa_renovacao", "churners", "churn_rate"]].rename(columns={
+                "faixa_consumo": "Faixa de Consumo",
+                "total_contratos": "Total Contratos",
+                "renovaram": "Renovaram",
+                "taxa_renovacao": "Renovação (%)",
+                "churners": "Churners",
+                "churn_rate": "Churn (%)",
+            }),
+            use_container_width=True, hide_index=True
+        )
+
+        st.markdown(f"""
+        #### Leitura
+
+        | Faixa | Renovaram | Taxa |
+        |---|---|---|
+        | Sem consumo | {df_renov.iloc[0]['renovaram']:,.0f} | **{df_renov.iloc[0]['taxa_renovacao']}%** |
+        | Baixo (1-3) | {df_renov.iloc[1]['renovaram']:,.0f} | **{df_renov.iloc[1]['taxa_renovacao']}%** |
+        | Médio (4-8) | {df_renov.iloc[2]['renovaram']:,.0f} | **{df_renov.iloc[2]['taxa_renovacao']}%** |
+        | Alto (9-15) | {df_renov.iloc[3]['renovaram']:,.0f} | **{df_renov.iloc[3]['taxa_renovacao']}%** |
+        | Muito Alto (16+) | {df_renov.iloc[4]['renovaram']:,.0f} | **{df_renov.iloc[4]['taxa_renovacao']}%** |
+
+        **Observações:**
+        - Todos os contratos desta base são **cartão de crédito** (filtro aplicado na query original).
+        - "Renovaram" = contrato que completou o ciclo e teve renovação automática (diferença entre
+          `account_due_date` e `contract_due_date` > 7 dias).
+        - A faixa "Sem consumo" tem a **maior taxa de renovação** ({df_renov.iloc[0]['taxa_renovacao']}%)
+          por conta do confounding (renovações silenciosas).
+        - Entre quem usa, a tendência é clara: **mais consumo → mais renovação**.
+        - Diferença entre "Baixo" e "Muito Alto": **{round(df_renov.iloc[4]['taxa_renovacao'] - df_renov.iloc[1]['taxa_renovacao'], 1)} p.p.** de ganho de retenção.
         """)
     except Exception as e:
         st.error(f"Erro: {e}")

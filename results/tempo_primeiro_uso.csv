@@ -1,3 +1,4 @@
 faixa_primeiro_uso,total_contratos,churners,churn_rate,media_dias
-B_0-7_dias,127209,96959,76.2,2.0
-C_8-30_dias,22329,16361,73.3,13.0
+A_nunca_usou,238202,176808,74.2,
+B_0-7_dias,130206,98480,75.6,2.0
+C_8-30_dias,22845,16645,72.9,13.0

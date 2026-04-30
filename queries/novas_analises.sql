@@ -1,6 +1,6 @@
 -- ============================================================================
 -- QUERIES COMPLEMENTARES PARA ANÁLISE DE CHURN — dr.consulta
--- Base: anl_churn_contratos | Filtro: planos 6+12m + credit_card
+-- Base: anl_churn_contratos | Filtro: planos 6+12m + credit_card + sem B2B/COOP
 -- ============================================================================
 -- 
 -- INSTRUÇÕES: Rode cada query separadamente no BigQuery e salve o resultado
@@ -28,6 +28,7 @@ SELECT
 FROM `airflow-datalake-prod.YALO_DW.anl_churn_contratos`
 WHERE plan_months_duration IN (6, 12)
   AND order_payment_method = 'credit_card'
+  AND IFNULL(order_source_aj, '') != 'b2b'
   AND contract_due_date_month >= DATE_SUB(DATE_TRUNC(CURRENT_DATE(), MONTH), INTERVAL 12 MONTH)
 GROUP BY 1, 2, 3
 ORDER BY ciclo, consumo, duracao;
@@ -48,6 +49,7 @@ SELECT
 FROM `airflow-datalake-prod.YALO_DW.anl_churn_contratos`
 WHERE plan_months_duration IN (6, 12)
   AND order_payment_method = 'credit_card'
+  AND IFNULL(order_source_aj, '') != 'b2b'
   AND contract_due_date_month >= DATE_SUB(DATE_TRUNC(CURRENT_DATE(), MONTH), INTERVAL 12 MONTH)
   AND unsubscription_sn = 'S'
 GROUP BY 1
@@ -56,76 +58,15 @@ LIMIT 30;
 
 
 -- ============================================================================
--- QUERY N3: TEMPO ATÉ O PRIMEIRO USO (PROXY) — Curva de Engajamento
+-- QUERY N3: TEMPO ATÉ O PRIMEIRO USO — Curva de Engajamento
 -- Arquivo: results/tempo_primeiro_uso.csv
 --
 -- OBJETIVO: Quantos dias depois da ativação o paciente fez o 1o uso?
 -- Pacientes que usam nos primeiros 30 dias retêm muito mais.
 --
--- NOTA: Esta query usa a tabela de itens para calcular o gap.
---       Se a coluna não existir na anl_churn_contratos, rodar na ref_yalo.
--- ============================================================================
-
-WITH primeiro_uso AS (
-  SELECT
-    ys.contract_id,
-    ys.contract_register_date,
-    ys.contract_due_date,
-    ys.account_due_date,
-    ys.plan_months_duration,
-    ys.account_contract_number,
-    -- Recalculando a flag de churn (mesma lógica da anl_churn_contratos)
-    CASE
-      WHEN DATE_DIFF(ys.account_due_date, ys.contract_due_date, DAY) > 7 THEN 'N'
-      ELSE 'S'
-    END AS churn_renovacao_automatica_sn,
-    MIN(ri.data) AS data_primeiro_uso,
-    DATE_DIFF(MIN(ri.data), ys.contract_register_date, DAY) AS dias_ate_primeiro_uso
-  FROM `airflow-datalake-prod.YALO_DW.ref_yalo_subscriptions` ys
-  INNER JOIN `airflow-datalake-prod.YALO_DW.ref_yalo_itens` yi
-    ON yi.payment_id = ys.payment_id AND yi.person_id = ys.person_id
-  LEFT JOIN `airflow-datalake-prod.DRC_DW.bi_recepcao_itens` ri
-    ON ri.id_item = yi.id_item
-  WHERE ys.account_type = 'holder'
-    AND ys.contract_payment_number = 1
-    AND ys.plan_months_duration IN (6, 12)
-    AND ys.order_payment_method = 'credit_card'
-    AND ys.contract_due_date_month >= DATE_SUB(DATE_TRUNC(CURRENT_DATE(), MONTH), INTERVAL 12 MONTH)
-    AND ri.data >= ys.contract_register_date
-    AND ri.data <= ys.contract_due_date
-  GROUP BY 1, 2, 3, 4, 5, 6, 7
-)
-
-SELECT
-  CASE
-    WHEN dias_ate_primeiro_uso IS NULL THEN 'A_nunca_usou'
-    WHEN dias_ate_primeiro_uso <= 7 THEN 'B_0-7_dias'
-    WHEN dias_ate_primeiro_uso <= 30 THEN 'C_8-30_dias'
-    WHEN dias_ate_primeiro_uso <= 90 THEN 'D_31-90_dias'
-    ELSE 'E_90+_dias'
-  END AS faixa_primeiro_uso,
-  COUNT(*) AS total_contratos,
-  SUM(CASE WHEN churn_renovacao_automatica_sn = 'S' THEN 1 ELSE 0 END) AS churners,
-  ROUND(100.0 * SUM(CASE WHEN churn_renovacao_automatica_sn = 'S' THEN 1 ELSE 0 END) / COUNT(*), 1) AS churn_rate,
-  ROUND(AVG(dias_ate_primeiro_uso), 0) AS media_dias
-FROM primeiro_uso
-GROUP BY 1
-ORDER BY 1;
-
-
--- ============================================================================
--- QUERY N3-B: TEMPO ATÉ O PRIMEIRO USO — VERSÃO COMPLETA (LEFT JOIN)
--- Arquivo: results/tempo_primeiro_uso_v2.csv
---
--- OBJETIVO: Mesma análise da N3, mas incluindo pacientes que NUNCA usaram
--- o plano. A N3 original usava INNER JOIN com ref_yalo_itens, o que excluía
--- contratos sem itens registrados (~112k pacientes).
---
--- DIFERENÇAS DA N3:
--- 1. LEFT JOIN em ref_yalo_itens (em vez de INNER JOIN)
--- 2. LEFT JOIN em bi_recepcao_itens
--- 3. Filtro de datas (ri.data) movido para a cláusula ON do JOIN
--- 4. Resultado inclui faixa "A_nunca_usou"
+-- USA LEFT JOIN para incluir pacientes que NUNCA usaram o plano
+-- (faixa "A_nunca_usou"). Filtro de datas de recepção fica na cláusula
+-- ON do JOIN para não anular o LEFT JOIN.
 -- ============================================================================
 
 WITH primeiro_uso AS (
@@ -153,6 +94,7 @@ WITH primeiro_uso AS (
     AND ys.contract_payment_number = 1
     AND ys.plan_months_duration IN (6, 12)
     AND ys.order_payment_method = 'credit_card'
+    AND IFNULL(ys.order_source_aj, '') != 'b2b'
     AND ys.contract_due_date_month >= DATE_SUB(DATE_TRUNC(CURRENT_DATE(), MONTH), INTERVAL 12 MONTH)
   GROUP BY 1, 2, 3, 4, 5, 6, 7
 )
@@ -196,6 +138,7 @@ SELECT
 FROM `airflow-datalake-prod.YALO_DW.anl_churn_contratos`
 WHERE plan_months_duration IN (6, 12)
   AND order_payment_method = 'credit_card'
+  AND IFNULL(order_source_aj, '') != 'b2b'
   AND contract_due_date_month >= DATE_SUB(DATE_TRUNC(CURRENT_DATE(), MONTH), INTERVAL 12 MONTH)
 GROUP BY 1, 2, 3
 ORDER BY churn_rate DESC;
@@ -220,6 +163,7 @@ SELECT
 FROM `airflow-datalake-prod.YALO_DW.anl_churn_contratos`
 WHERE plan_months_duration IN (6, 12)
   AND order_payment_method = 'credit_card'
+  AND IFNULL(order_source_aj, '') != 'b2b'
   AND contract_due_date_month >= DATE_SUB(DATE_TRUNC(CURRENT_DATE(), MONTH), INTERVAL 12 MONTH)
   AND contract_sale_type IN ('reactivation', 'renewal', 'first_contract')
 GROUP BY 1, 2, 3
@@ -258,6 +202,7 @@ SELECT
 FROM `airflow-datalake-prod.YALO_DW.anl_churn_contratos`
 WHERE plan_months_duration IN (6, 12)
   AND order_payment_method = 'credit_card'
+  AND IFNULL(order_source_aj, '') != 'b2b'
   AND contract_due_date_month >= DATE_SUB(DATE_TRUNC(CURRENT_DATE(), MONTH), INTERVAL 12 MONTH)
 GROUP BY 1, 2, 3, 4, 5
 ORDER BY tipo_desfecho, total_contratos DESC;

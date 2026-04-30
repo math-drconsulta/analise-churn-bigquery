@@ -1,0 +1,686 @@
+mes_vencimento,dimensao,segmento,total_contratos,churners,churn_rate
+2025-04-01,account_contract_number,1o contrato,9788,5986,61.2
+2025-04-01,account_contract_number,2o+ contrato,6017,3012,50.1
+2025-05-01,account_contract_number,1o contrato,10124,6004,59.3
+2025-05-01,account_contract_number,2o+ contrato,6507,3033,46.6
+2025-06-01,account_contract_number,1o contrato,8692,5040,58.0
+2025-06-01,account_contract_number,2o+ contrato,5781,2775,48.0
+2025-07-01,account_contract_number,1o contrato,9668,5650,58.4
+2025-07-01,account_contract_number,2o+ contrato,6846,3320,48.5
+2025-08-01,account_contract_number,1o contrato,9737,5772,59.3
+2025-08-01,account_contract_number,2o+ contrato,6842,3412,49.9
+2025-09-01,account_contract_number,1o contrato,10028,5657,56.4
+2025-09-01,account_contract_number,2o+ contrato,7200,3471,48.2
+2025-10-01,account_contract_number,1o contrato,10180,6258,61.5
+2025-10-01,account_contract_number,2o+ contrato,6326,3111,49.2
+2025-11-01,account_contract_number,1o contrato,10275,6364,61.9
+2025-11-01,account_contract_number,2o+ contrato,6808,3538,52.0
+2025-12-01,account_contract_number,1o contrato,8751,5561,63.5
+2025-12-01,account_contract_number,2o+ contrato,5559,2935,52.8
+2026-01-01,account_contract_number,1o contrato,11804,6658,56.4
+2026-01-01,account_contract_number,2o+ contrato,7173,3410,47.5
+2026-02-01,account_contract_number,1o contrato,12085,6784,56.1
+2026-02-01,account_contract_number,2o+ contrato,6381,2903,45.5
+2026-03-01,account_contract_number,1o contrato,13328,7922,59.4
+2026-03-01,account_contract_number,2o+ contrato,8294,3929,47.4
+2025-04-01,classe_social,(sem dados),1462,915,62.6
+2025-04-01,classe_social,E,143,86,60.1
+2025-04-01,classe_social,B2,3797,2170,57.2
+2025-04-01,classe_social,C1,2893,1647,56.9
+2025-04-01,classe_social,D,171,96,56.1
+2025-04-01,classe_social,C2,3887,2182,56.1
+2025-04-01,classe_social,B1,2421,1347,55.6
+2025-04-01,classe_social,A+,615,337,54.8
+2025-04-01,classe_social,A++,416,218,52.4
+2025-05-01,classe_social,SEM_INFORMACAO,1,1,100.0
+2025-05-01,classe_social,(sem dados),1492,947,63.5
+2025-05-01,classe_social,D,161,92,57.1
+2025-05-01,classe_social,B1,2507,1369,54.6
+2025-05-01,classe_social,C2,4026,2174,54.0
+2025-05-01,classe_social,C1,3141,1676,53.4
+2025-05-01,classe_social,B2,4045,2144,53.0
+2025-05-01,classe_social,E,143,73,51.0
+2025-05-01,classe_social,A+,709,360,50.8
+2025-05-01,classe_social,A++,406,201,49.5
+2025-06-01,classe_social,D,146,93,63.7
+2025-06-01,classe_social,(sem dados),1380,818,59.3
+2025-06-01,classe_social,E,135,79,58.5
+2025-06-01,classe_social,C2,3551,1944,54.7
+2025-06-01,classe_social,C1,2572,1380,53.7
+2025-06-01,classe_social,B2,3590,1922,53.5
+2025-06-01,classe_social,B1,2134,1106,51.8
+2025-06-01,classe_social,A+,569,285,50.1
+2025-06-01,classe_social,A++,396,188,47.5
+2025-07-01,classe_social,(sem dados),1540,901,58.5
+2025-07-01,classe_social,D,184,106,57.6
+2025-07-01,classe_social,E,151,85,56.3
+2025-07-01,classe_social,C2,4067,2248,55.3
+2025-07-01,classe_social,C1,3073,1654,53.8
+2025-07-01,classe_social,B1,2483,1333,53.7
+2025-07-01,classe_social,B2,3961,2115,53.4
+2025-07-01,classe_social,A++,461,233,50.5
+2025-07-01,classe_social,A+,594,295,49.7
+2025-08-01,classe_social,SEM_INFORMACAO,1,1,100.0
+2025-08-01,classe_social,(sem dados),1409,881,62.5
+2025-08-01,classe_social,D,192,116,60.4
+2025-08-01,classe_social,E,149,86,57.7
+2025-08-01,classe_social,C2,4110,2284,55.6
+2025-08-01,classe_social,C1,3121,1714,54.9
+2025-08-01,classe_social,B1,2578,1405,54.5
+2025-08-01,classe_social,B2,3937,2127,54.0
+2025-08-01,classe_social,A+,644,340,52.8
+2025-08-01,classe_social,A++,438,230,52.5
+2025-09-01,classe_social,(sem dados),1618,954,59.0
+2025-09-01,classe_social,A++,441,238,54.0
+2025-09-01,classe_social,B2,4186,2231,53.3
+2025-09-01,classe_social,C1,3126,1641,52.5
+2025-09-01,classe_social,C2,4307,2247,52.2
+2025-09-01,classe_social,B1,2522,1305,51.7
+2025-09-01,classe_social,A+,679,343,50.5
+2025-09-01,classe_social,D,167,82,49.1
+2025-09-01,classe_social,E,181,87,48.1
+2025-09-01,classe_social,SEM_INFORMACAO,1,0,0.0
+2025-10-01,classe_social,D,147,91,61.9
+2025-10-01,classe_social,(sem dados),1550,957,61.7
+2025-10-01,classe_social,E,129,78,60.5
+2025-10-01,classe_social,A++,425,251,59.1
+2025-10-01,classe_social,B1,2509,1425,56.8
+2025-10-01,classe_social,C2,4046,2300,56.8
+2025-10-01,classe_social,A+,661,371,56.1
+2025-10-01,classe_social,B2,3979,2231,56.1
+2025-10-01,classe_social,C1,3060,1665,54.4
+2025-11-01,classe_social,(sem dados),1537,958,62.3
+2025-11-01,classe_social,B1,2602,1516,58.3
+2025-11-01,classe_social,A+,705,408,57.9
+2025-11-01,classe_social,B2,4115,2376,57.7
+2025-11-01,classe_social,C1,3241,1862,57.5
+2025-11-01,classe_social,C2,4124,2364,57.3
+2025-11-01,classe_social,E,154,87,56.5
+2025-11-01,classe_social,A++,431,240,55.7
+2025-11-01,classe_social,D,174,91,52.3
+2025-12-01,classe_social,(sem dados),1427,907,63.6
+2025-12-01,classe_social,D,143,88,61.5
+2025-12-01,classe_social,E,115,70,60.9
+2025-12-01,classe_social,C1,2584,1545,59.8
+2025-12-01,classe_social,C2,3522,2078,59.0
+2025-12-01,classe_social,B1,2095,1237,59.0
+2025-12-01,classe_social,B2,3481,2051,58.9
+2025-12-01,classe_social,A+,580,324,55.9
+2025-12-01,classe_social,A++,363,196,54.0
+2026-01-01,classe_social,(sem dados),1774,1052,59.3
+2026-01-01,classe_social,D,172,99,57.6
+2026-01-01,classe_social,C1,3431,1839,53.6
+2026-01-01,classe_social,C2,4715,2481,52.6
+2026-01-01,classe_social,E,183,96,52.5
+2026-01-01,classe_social,B1,2885,1496,51.9
+2026-01-01,classe_social,B2,4532,2350,51.9
+2026-01-01,classe_social,A+,789,402,51.0
+2026-01-01,classe_social,A++,496,253,51.0
+2026-02-01,classe_social,(sem dados),1668,918,55.0
+2026-02-01,classe_social,B1,2777,1476,53.2
+2026-02-01,classe_social,C2,4566,2401,52.6
+2026-02-01,classe_social,B2,4503,2358,52.4
+2026-02-01,classe_social,A+,763,394,51.6
+2026-02-01,classe_social,E,156,80,51.3
+2026-02-01,classe_social,C1,3414,1749,51.2
+2026-02-01,classe_social,A++,431,217,50.3
+2026-02-01,classe_social,D,188,94,50.0
+2026-03-01,classe_social,(sem dados),2036,1211,59.5
+2026-03-01,classe_social,A+,866,486,56.1
+2026-03-01,classe_social,C1,3995,2191,54.8
+2026-03-01,classe_social,C2,5475,3002,54.8
+2026-03-01,classe_social,B2,5108,2788,54.6
+2026-03-01,classe_social,B1,3176,1683,53.0
+2026-03-01,classe_social,D,231,120,51.9
+2026-03-01,classe_social,A++,540,277,51.3
+2026-03-01,classe_social,E,195,93,47.7
+2025-04-01,consumo_sn,S,9229,5566,60.3
+2025-04-01,consumo_sn,N,6576,3432,52.2
+2025-05-01,consumo_sn,S,9506,5559,58.5
+2025-05-01,consumo_sn,N,7125,3478,48.8
+2025-06-01,consumo_sn,S,8213,4709,57.3
+2025-06-01,consumo_sn,N,6260,3106,49.6
+2025-07-01,consumo_sn,S,9130,5260,57.6
+2025-07-01,consumo_sn,N,7384,3710,50.2
+2025-08-01,consumo_sn,S,9099,5278,58.0
+2025-08-01,consumo_sn,N,7480,3906,52.2
+2025-09-01,consumo_sn,S,9445,5233,55.4
+2025-09-01,consumo_sn,N,7783,3895,50.0
+2025-10-01,consumo_sn,S,9597,5817,60.6
+2025-10-01,consumo_sn,N,6909,3552,51.4
+2025-11-01,consumo_sn,S,9723,5955,61.2
+2025-11-01,consumo_sn,N,7360,3947,53.6
+2025-12-01,consumo_sn,S,8329,5237,62.9
+2025-12-01,consumo_sn,N,5981,3259,54.5
+2026-01-01,consumo_sn,S,10795,6007,55.6
+2026-01-01,consumo_sn,N,8182,4061,49.6
+2026-02-01,consumo_sn,N,18466,9687,52.5
+2026-03-01,consumo_sn,N,21622,11851,54.8
+2025-04-01,contract_sale_type,other,190,126,66.3
+2025-04-01,contract_sale_type,first_contract,7449,4613,61.9
+2025-04-01,contract_sale_type,reactivation,1062,640,60.3
+2025-04-01,contract_sale_type,renewal,7104,3619,50.9
+2025-05-01,contract_sale_type,first_contract,7578,4527,59.7
+2025-05-01,contract_sale_type,reactivation,1176,700,59.5
+2025-05-01,contract_sale_type,other,186,105,56.5
+2025-05-01,contract_sale_type,renewal,7691,3705,48.2
+2025-06-01,contract_sale_type,first_contract,6532,3806,58.3
+2025-06-01,contract_sale_type,other,168,98,58.3
+2025-06-01,contract_sale_type,reactivation,845,481,56.9
+2025-06-01,contract_sale_type,renewal,6928,3430,49.5
+2025-07-01,contract_sale_type,other,176,107,60.8
+2025-07-01,contract_sale_type,first_contract,7029,4201,59.8
+2025-07-01,contract_sale_type,reactivation,1151,658,57.2
+2025-07-01,contract_sale_type,renewal,8158,4004,49.1
+2025-08-01,contract_sale_type,other,214,160,74.8
+2025-08-01,contract_sale_type,first_contract,6803,4062,59.7
+2025-08-01,contract_sale_type,reactivation,1213,684,56.4
+2025-08-01,contract_sale_type,renewal,8349,4278,51.2
+2025-09-01,contract_sale_type,other,219,143,65.3
+2025-09-01,contract_sale_type,reactivation,1304,738,56.6
+2025-09-01,contract_sale_type,first_contract,7054,3958,56.1
+2025-09-01,contract_sale_type,renewal,8651,4289,49.6
+2025-10-01,contract_sale_type,other,177,131,74.0
+2025-10-01,contract_sale_type,reactivation,1385,861,62.2
+2025-10-01,contract_sale_type,first_contract,7040,4326,61.4
+2025-10-01,contract_sale_type,renewal,7904,4051,51.3
+2025-11-01,contract_sale_type,other,182,134,73.6
+2025-11-01,contract_sale_type,first_contract,7149,4473,62.6
+2025-11-01,contract_sale_type,reactivation,1548,952,61.5
+2025-11-01,contract_sale_type,renewal,8204,4343,52.9
+2025-12-01,contract_sale_type,other,116,80,69.0
+2025-12-01,contract_sale_type,first_contract,6192,3969,64.1
+2025-12-01,contract_sale_type,reactivation,1345,828,61.6
+2025-12-01,contract_sale_type,renewal,6657,3619,54.4
+2026-01-01,contract_sale_type,other,190,131,68.9
+2026-01-01,contract_sale_type,first_contract,8346,4761,57.0
+2026-01-01,contract_sale_type,reactivation,1790,978,54.6
+2026-01-01,contract_sale_type,renewal,8651,4198,48.5
+2026-02-01,contract_sale_type,other,292,184,63.0
+2026-02-01,contract_sale_type,first_contract,8339,4636,55.6
+2026-02-01,contract_sale_type,reactivation,1748,967,55.3
+2026-02-01,contract_sale_type,renewal,8087,3900,48.2
+2026-03-01,contract_sale_type,other,215,141,65.6
+2026-03-01,contract_sale_type,first_contract,9412,5627,59.8
+2026-03-01,contract_sale_type,reactivation,1873,1105,59.0
+2026-03-01,contract_sale_type,renewal,10122,4978,49.2
+2025-04-01,dep_idoso_6099,N,10054,6043,60.1
+2025-04-01,dep_idoso_6099,S,5751,2955,51.4
+2025-05-01,dep_idoso_6099,N,10502,6034,57.5
+2025-05-01,dep_idoso_6099,S,6129,3003,49.0
+2025-06-01,dep_idoso_6099,N,9165,5228,57.0
+2025-06-01,dep_idoso_6099,S,5308,2587,48.7
+2025-07-01,dep_idoso_6099,N,10442,6025,57.7
+2025-07-01,dep_idoso_6099,S,6072,2945,48.5
+2025-08-01,dep_idoso_6099,N,10664,6298,59.1
+2025-08-01,dep_idoso_6099,S,5915,2886,48.8
+2025-09-01,dep_idoso_6099,N,11290,6252,55.4
+2025-09-01,dep_idoso_6099,S,5938,2876,48.4
+2025-10-01,dep_idoso_6099,N,10813,6390,59.1
+2025-10-01,dep_idoso_6099,S,5693,2979,52.3
+2025-11-01,dep_idoso_6099,N,11227,6752,60.1
+2025-11-01,dep_idoso_6099,S,5856,3150,53.8
+2025-12-01,dep_idoso_6099,N,9485,5800,61.1
+2025-12-01,dep_idoso_6099,S,4825,2696,55.9
+2026-01-01,dep_idoso_6099,N,12349,6852,55.5
+2026-01-01,dep_idoso_6099,S,6628,3216,48.5
+2026-02-01,dep_idoso_6099,N,12366,6759,54.7
+2026-02-01,dep_idoso_6099,S,6100,2928,48.0
+2026-03-01,dep_idoso_6099,N,14562,8237,56.6
+2026-03-01,dep_idoso_6099,S,7060,3614,51.2
+2025-04-01,dep_jovem_0020,N,11224,6443,57.4
+2025-04-01,dep_jovem_0020,S,4581,2555,55.8
+2025-05-01,dep_jovem_0020,N,11907,6534,54.9
+2025-05-01,dep_jovem_0020,S,4724,2503,53.0
+2025-06-01,dep_jovem_0020,S,3997,2168,54.2
+2025-06-01,dep_jovem_0020,N,10476,5647,53.9
+2025-07-01,dep_jovem_0020,N,12048,6588,54.7
+2025-07-01,dep_jovem_0020,S,4466,2382,53.3
+2025-08-01,dep_jovem_0020,N,11964,6684,55.9
+2025-08-01,dep_jovem_0020,S,4615,2500,54.2
+2025-09-01,dep_jovem_0020,S,4818,2563,53.2
+2025-09-01,dep_jovem_0020,N,12410,6565,52.9
+2025-10-01,dep_jovem_0020,N,11971,6839,57.1
+2025-10-01,dep_jovem_0020,S,4535,2530,55.8
+2025-11-01,dep_jovem_0020,N,12429,7275,58.5
+2025-11-01,dep_jovem_0020,S,4654,2627,56.4
+2025-12-01,dep_jovem_0020,N,10610,6331,59.7
+2025-12-01,dep_jovem_0020,S,3700,2165,58.5
+2026-01-01,dep_jovem_0020,N,13949,7442,53.4
+2026-01-01,dep_jovem_0020,S,5028,2626,52.2
+2026-02-01,dep_jovem_0020,N,13429,7078,52.7
+2026-02-01,dep_jovem_0020,S,5037,2609,51.8
+2026-03-01,dep_jovem_0020,S,5840,3207,54.9
+2026-03-01,dep_jovem_0020,N,15782,8644,54.8
+2025-04-01,dependentes_faixa,0 (sem dep.),3826,2422,63.3
+2025-04-01,dependentes_faixa,1-2 dep.,5864,3438,58.6
+2025-04-01,dependentes_faixa,3+ dep.,6115,3138,51.3
+2025-05-01,dependentes_faixa,0 (sem dep.),4057,2444,60.2
+2025-05-01,dependentes_faixa,1-2 dep.,6356,3533,55.6
+2025-05-01,dependentes_faixa,3+ dep.,6218,3060,49.2
+2025-06-01,dependentes_faixa,0 (sem dep.),3443,2051,59.6
+2025-06-01,dependentes_faixa,1-2 dep.,5648,3097,54.8
+2025-06-01,dependentes_faixa,3+ dep.,5382,2667,49.6
+2025-07-01,dependentes_faixa,0 (sem dep.),4060,2504,61.7
+2025-07-01,dependentes_faixa,1-2 dep.,6332,3468,54.8
+2025-07-01,dependentes_faixa,3+ dep.,6122,2998,49.0
+2025-08-01,dependentes_faixa,0 (sem dep.),4129,2593,62.8
+2025-08-01,dependentes_faixa,1-2 dep.,6254,3535,56.5
+2025-08-01,dependentes_faixa,3+ dep.,6196,3056,49.3
+2025-09-01,dependentes_faixa,0 (sem dep.),4362,2532,58.0
+2025-09-01,dependentes_faixa,1-2 dep.,6657,3584,53.8
+2025-09-01,dependentes_faixa,3+ dep.,6209,3012,48.5
+2025-10-01,dependentes_faixa,0 (sem dep.),4229,2624,62.0
+2025-10-01,dependentes_faixa,1-2 dep.,6488,3725,57.4
+2025-10-01,dependentes_faixa,3+ dep.,5789,3020,52.2
+2025-11-01,dependentes_faixa,0 (sem dep.),4547,2858,62.9
+2025-11-01,dependentes_faixa,1-2 dep.,6726,3988,59.3
+2025-11-01,dependentes_faixa,3+ dep.,5810,3056,52.6
+2025-12-01,dependentes_faixa,0 (sem dep.),3835,2425,63.2
+2025-12-01,dependentes_faixa,1-2 dep.,5716,3411,59.7
+2025-12-01,dependentes_faixa,3+ dep.,4759,2660,55.9
+2026-01-01,dependentes_faixa,0 (sem dep.),4824,2780,57.6
+2026-01-01,dependentes_faixa,1-2 dep.,7549,4058,53.8
+2026-01-01,dependentes_faixa,3+ dep.,6604,3230,48.9
+2026-02-01,dependentes_faixa,0 (sem dep.),4923,2785,56.6
+2026-02-01,dependentes_faixa,1-2 dep.,7381,3922,53.1
+2026-02-01,dependentes_faixa,3+ dep.,6162,2980,48.4
+2026-03-01,dependentes_faixa,0 (sem dep.),5890,3407,57.8
+2026-03-01,dependentes_faixa,1-2 dep.,8639,4767,55.2
+2026-03-01,dependentes_faixa,3+ dep.,7093,3677,51.8
+2025-04-01,order_source,drc_digital,4384,2563,58.5
+2025-04-01,order_source,drc_cm,4523,2621,57.9
+2025-04-01,order_source,others,2415,1343,55.6
+2025-04-01,order_source,drc_cfp,4483,2471,55.1
+2025-05-01,order_source,drc_digital,5727,3382,59.1
+2025-05-01,order_source,drc_cfp,4697,2495,53.1
+2025-05-01,order_source,others,942,487,51.7
+2025-05-01,order_source,drc_cm,5265,2673,50.8
+2025-06-01,order_source,psycoai,2,2,100.0
+2025-06-01,order_source,drc_digital,4778,2803,58.7
+2025-06-01,order_source,drc_cfp,3926,2044,52.1
+2025-06-01,order_source,drc_cm,4807,2482,51.6
+2025-06-01,order_source,others,960,484,50.4
+2025-07-01,order_source,psycoai,2,2,100.0
+2025-07-01,order_source,coop,1,1,100.0
+2025-07-01,order_source,drc_cm,5098,2898,56.8
+2025-07-01,order_source,drc_digital,5039,2857,56.7
+2025-07-01,order_source,drc_cfp,4875,2463,50.5
+2025-07-01,order_source,others,1499,749,50.0
+2025-08-01,order_source,psycoai,6,6,100.0
+2025-08-01,order_source,drc_digital,5526,3245,58.7
+2025-08-01,order_source,drc_cm,5174,2903,56.1
+2025-08-01,order_source,drc_cfp,4543,2355,51.8
+2025-08-01,order_source,others,1330,675,50.8
+2025-09-01,order_source,psycoai,11,11,100.0
+2025-09-01,order_source,drc_digital,5648,3234,57.3
+2025-09-01,order_source,drc_cm,5497,2864,52.1
+2025-09-01,order_source,others,1348,676,50.1
+2025-09-01,order_source,drc_cfp,4724,2343,49.6
+2025-10-01,order_source,psycoai,7,7,100.0
+2025-10-01,order_source,drc_digital,5710,3502,61.3
+2025-10-01,order_source,drc_cm,4756,2613,54.9
+2025-10-01,order_source,drc_cfp,4586,2483,54.1
+2025-10-01,order_source,others,1447,764,52.8
+2025-11-01,order_source,psycoai,10,10,100.0
+2025-11-01,order_source,drc_cm,5489,3521,64.1
+2025-11-01,order_source,drc_digital,5680,3318,58.4
+2025-11-01,order_source,others,1179,635,53.9
+2025-11-01,order_source,drc_cfp,4725,2418,51.2
+2025-12-01,order_source,psycoai,6,4,66.7
+2025-12-01,order_source,drc_digital,5758,3638,63.2
+2025-12-01,order_source,others,908,542,59.7
+2025-12-01,order_source,drc_cfp,3641,2153,59.1
+2025-12-01,order_source,drc_cm,3997,2159,54.0
+2026-01-01,order_source,psycoai,34,27,79.4
+2026-01-01,order_source,drc_digital,7837,4346,55.5
+2026-01-01,order_source,drc_cm,4852,2573,53.0
+2026-01-01,order_source,drc_cfp,5016,2512,50.1
+2026-01-01,order_source,others,1227,606,49.4
+2026-01-01,order_source,coop,11,4,36.4
+2026-02-01,order_source,psycoai,78,47,60.3
+2026-02-01,order_source,drc_cm,4897,2680,54.7
+2026-02-01,order_source,drc_digital,7639,4117,53.9
+2026-02-01,order_source,drc_cfp,4803,2350,48.9
+2026-02-01,order_source,others,1047,493,47.1
+2026-02-01,order_source,coop,2,0,0.0
+2026-03-01,order_source,coop,1,1,100.0
+2026-03-01,order_source,psycoai,135,89,65.9
+2026-03-01,order_source,drc_digital,8224,4770,58.0
+2026-03-01,order_source,drc_cm,6623,3539,53.4
+2026-03-01,order_source,drc_cfp,5447,2841,52.2
+2026-03-01,order_source,others,1192,611,51.3
+2025-04-01,pacientes_cluster,Titular_2160_sem_Dependente,2629,1710,65.0
+2025-04-01,pacientes_cluster,Titular_Consumo_PSIQUIATRIA,336,205,61.0
+2025-04-01,pacientes_cluster,Titular_2160_com_Dependente,4763,2780,58.4
+2025-04-01,pacientes_cluster,Outros,94,53,56.4
+2025-04-01,pacientes_cluster,Titular_4160_Dependente_0020,1578,868,55.0
+2025-04-01,pacientes_cluster,Titular_6199,3942,2120,53.8
+2025-04-01,pacientes_cluster,Titular_4160_Dependente_6099,2463,1262,51.2
+2025-05-01,pacientes_cluster,Titular_2160_sem_Dependente,2712,1717,63.3
+2025-05-01,pacientes_cluster,Titular_Consumo_PSIQUIATRIA,299,180,60.2
+2025-05-01,pacientes_cluster,Outros,108,64,59.3
+2025-05-01,pacientes_cluster,Titular_2160_com_Dependente,4861,2785,57.3
+2025-05-01,pacientes_cluster,Titular_4160_Dependente_0020,1608,860,53.5
+2025-05-01,pacientes_cluster,Titular_4160_Dependente_6099,2711,1340,49.4
+2025-05-01,pacientes_cluster,Titular_6199,4332,2091,48.3
+2025-06-01,pacientes_cluster,Titular_2160_sem_Dependente,2306,1424,61.8
+2025-06-01,pacientes_cluster,Titular_Consumo_PSIQUIATRIA,288,173,60.1
+2025-06-01,pacientes_cluster,Titular_2160_com_Dependente,4312,2454,56.9
+2025-06-01,pacientes_cluster,Titular_4160_Dependente_0020,1345,746,55.5
+2025-06-01,pacientes_cluster,Outros,109,59,54.1
+2025-06-01,pacientes_cluster,Titular_4160_Dependente_6099,2249,1110,49.4
+2025-06-01,pacientes_cluster,Titular_6199,3864,1849,47.9
+2025-07-01,pacientes_cluster,Outros,105,72,68.6
+2025-07-01,pacientes_cluster,Titular_2160_sem_Dependente,2695,1724,64.0
+2025-07-01,pacientes_cluster,Titular_Consumo_PSIQUIATRIA,288,184,63.9
+2025-07-01,pacientes_cluster,Titular_2160_com_Dependente,4969,2765,55.6
+2025-07-01,pacientes_cluster,Titular_4160_Dependente_0020,1469,783,53.3
+2025-07-01,pacientes_cluster,Titular_6199,4442,2196,49.4
+2025-07-01,pacientes_cluster,Titular_4160_Dependente_6099,2546,1246,48.9
+2025-08-01,pacientes_cluster,Titular_2160_sem_Dependente,2799,1826,65.2
+2025-08-01,pacientes_cluster,Titular_Consumo_PSIQUIATRIA,318,206,64.8
+2025-08-01,pacientes_cluster,Outros,127,78,61.4
+2025-08-01,pacientes_cluster,Titular_2160_com_Dependente,5006,2848,56.9
+2025-08-01,pacientes_cluster,Titular_4160_Dependente_0020,1584,866,54.7
+2025-08-01,pacientes_cluster,Titular_6199,4176,2113,50.6
+2025-08-01,pacientes_cluster,Titular_4160_Dependente_6099,2569,1247,48.5
+2025-09-01,pacientes_cluster,Outros,102,62,60.8
+2025-09-01,pacientes_cluster,Titular_2160_sem_Dependente,3022,1811,59.9
+2025-09-01,pacientes_cluster,Titular_2160_com_Dependente,5305,2902,54.7
+2025-09-01,pacientes_cluster,Titular_Consumo_PSIQUIATRIA,319,174,54.5
+2025-09-01,pacientes_cluster,Titular_4160_Dependente_0020,1655,870,52.6
+2025-09-01,pacientes_cluster,Titular_4160_Dependente_6099,2515,1238,49.2
+2025-09-01,pacientes_cluster,Titular_6199,4310,2071,48.1
+2025-10-01,pacientes_cluster,Outros,138,90,65.2
+2025-10-01,pacientes_cluster,Titular_2160_sem_Dependente,2880,1823,63.3
+2025-10-01,pacientes_cluster,Titular_Consumo_PSIQUIATRIA,342,215,62.9
+2025-10-01,pacientes_cluster,Titular_2160_com_Dependente,5004,2877,57.5
+2025-10-01,pacientes_cluster,Titular_4160_Dependente_0020,1582,882,55.8
+2025-10-01,pacientes_cluster,Titular_6199,4156,2208,53.1
+2025-10-01,pacientes_cluster,Titular_4160_Dependente_6099,2404,1274,53.0
+2025-11-01,pacientes_cluster,Outros,131,86,65.6
+2025-11-01,pacientes_cluster,Titular_2160_sem_Dependente,3095,2007,64.8
+2025-11-01,pacientes_cluster,Titular_Consumo_PSIQUIATRIA,343,209,60.9
+2025-11-01,pacientes_cluster,Titular_2160_com_Dependente,5068,2970,58.6
+2025-11-01,pacientes_cluster,Titular_4160_Dependente_0020,1616,897,55.5
+2025-11-01,pacientes_cluster,Titular_6199,4266,2360,55.3
+2025-11-01,pacientes_cluster,Titular_4160_Dependente_6099,2564,1373,53.5
+2025-12-01,pacientes_cluster,Outros,148,106,71.6
+2025-12-01,pacientes_cluster,Titular_Consumo_PSIQUIATRIA,292,197,67.5
+2025-12-01,pacientes_cluster,Titular_2160_sem_Dependente,2622,1717,65.5
+2025-12-01,pacientes_cluster,Titular_2160_com_Dependente,4419,2714,61.4
+2025-12-01,pacientes_cluster,Titular_4160_Dependente_0020,1294,743,57.4
+2025-12-01,pacientes_cluster,Titular_4160_Dependente_6099,2037,1111,54.5
+2025-12-01,pacientes_cluster,Titular_6199,3498,1908,54.5
+2026-01-01,pacientes_cluster,Outros,147,93,63.3
+2026-01-01,pacientes_cluster,Titular_2160_sem_Dependente,3322,2014,60.6
+2026-01-01,pacientes_cluster,Titular_Consumo_PSIQUIATRIA,394,232,58.9
+2026-01-01,pacientes_cluster,Titular_2160_com_Dependente,5932,3255,54.9
+2026-01-01,pacientes_cluster,Titular_4160_Dependente_0020,1738,894,51.4
+2026-01-01,pacientes_cluster,Titular_4160_Dependente_6099,2805,1349,48.1
+2026-01-01,pacientes_cluster,Titular_6199,4639,2231,48.1
+2026-02-01,pacientes_cluster,Outros,177,104,58.8
+2026-02-01,pacientes_cluster,Titular_2160_sem_Dependente,3597,2105,58.5
+2026-02-01,pacientes_cluster,Titular_2160_com_Dependente,5910,3224,54.6
+2026-02-01,pacientes_cluster,Titular_4160_Dependente_0020,1789,920,51.4
+2026-02-01,pacientes_cluster,Titular_6199,4345,2097,48.3
+2026-02-01,pacientes_cluster,Titular_4160_Dependente_6099,2648,1237,46.7
+2026-03-01,pacientes_cluster,Outros,198,136,68.7
+2026-03-01,pacientes_cluster,Titular_2160_sem_Dependente,4316,2594,60.1
+2026-03-01,pacientes_cluster,Titular_2160_com_Dependente,7031,4003,56.9
+2026-03-01,pacientes_cluster,Titular_4160_Dependente_0020,1977,1044,52.8
+2026-03-01,pacientes_cluster,Titular_4160_Dependente_6099,2998,1577,52.6
+2026-03-01,pacientes_cluster,Titular_6199,5102,2497,48.9
+2025-04-01,plan_months_duration,12,7762,4695,60.5
+2025-04-01,plan_months_duration,6,8043,4303,53.5
+2025-05-01,plan_months_duration,12,8146,4763,58.5
+2025-05-01,plan_months_duration,6,8485,4274,50.4
+2025-06-01,plan_months_duration,12,7428,4313,58.1
+2025-06-01,plan_months_duration,6,7045,3502,49.7
+2025-07-01,plan_months_duration,12,7971,4595,57.6
+2025-07-01,plan_months_duration,6,8543,4375,51.2
+2025-08-01,plan_months_duration,12,8541,5038,59.0
+2025-08-01,plan_months_duration,6,8038,4146,51.6
+2025-09-01,plan_months_duration,12,7875,4508,57.2
+2025-09-01,plan_months_duration,6,9353,4620,49.4
+2025-10-01,plan_months_duration,12,7387,4495,60.9
+2025-10-01,plan_months_duration,6,9119,4874,53.4
+2025-11-01,plan_months_duration,12,6952,4270,61.4
+2025-11-01,plan_months_duration,6,10131,5632,55.6
+2025-12-01,plan_months_duration,12,5567,3617,65.0
+2025-12-01,plan_months_duration,6,8743,4879,55.8
+2026-01-01,plan_months_duration,12,8989,5104,56.8
+2026-01-01,plan_months_duration,6,9988,4964,49.7
+2026-02-01,plan_months_duration,12,8146,4597,56.4
+2026-02-01,plan_months_duration,6,10320,5090,49.3
+2026-03-01,plan_months_duration,12,9364,5516,58.9
+2026-03-01,plan_months_duration,6,12258,6335,51.7
+2025-04-01,titular_cronico,N,12707,7432,58.5
+2025-04-01,titular_cronico,S,3098,1566,50.5
+2025-05-01,titular_cronico,N,13222,7436,56.2
+2025-05-01,titular_cronico,S,3409,1601,47.0
+2025-06-01,titular_cronico,N,11389,6297,55.3
+2025-06-01,titular_cronico,S,3084,1518,49.2
+2025-07-01,titular_cronico,N,13090,7304,55.8
+2025-07-01,titular_cronico,S,3424,1666,48.7
+2025-08-01,titular_cronico,N,13168,7468,56.7
+2025-08-01,titular_cronico,S,3411,1716,50.3
+2025-09-01,titular_cronico,N,13795,7474,54.2
+2025-09-01,titular_cronico,S,3433,1654,48.2
+2025-10-01,titular_cronico,N,13241,7722,58.3
+2025-10-01,titular_cronico,S,3265,1647,50.4
+2025-11-01,titular_cronico,N,13651,8029,58.8
+2025-11-01,titular_cronico,S,3432,1873,54.6
+2025-12-01,titular_cronico,N,11663,7065,60.6
+2025-12-01,titular_cronico,S,2647,1431,54.1
+2026-01-01,titular_cronico,N,15382,8339,54.2
+2026-01-01,titular_cronico,S,3595,1729,48.1
+2026-02-01,titular_cronico,N,15074,8052,53.4
+2026-02-01,titular_cronico,S,3392,1635,48.2
+2026-03-01,titular_cronico,N,17638,9828,55.7
+2026-03-01,titular_cronico,S,3984,2023,50.8
+2025-04-01,titular_faixa_etaria,99+,1,1,100.0
+2025-04-01,titular_faixa_etaria,21-30,1727,1126,65.2
+2025-04-01,titular_faixa_etaria,31-40,3075,1876,61.0
+2025-04-01,titular_faixa_etaria,41-50,3622,2084,57.5
+2025-04-01,titular_faixa_etaria,91-99,47,27,57.4
+2025-04-01,titular_faixa_etaria,81-90,287,163,56.8
+2025-04-01,titular_faixa_etaria,11-20,69,39,56.5
+2025-04-01,titular_faixa_etaria,71-80,1151,649,56.4
+2025-04-01,titular_faixa_etaria,00-10,24,13,54.2
+2025-04-01,titular_faixa_etaria,61-70,2530,1324,52.3
+2025-04-01,titular_faixa_etaria,51-60,3272,1696,51.8
+2025-05-01,titular_faixa_etaria,99+,3,2,66.7
+2025-05-01,titular_faixa_etaria,21-30,1716,1113,64.9
+2025-05-01,titular_faixa_etaria,00-10,35,21,60.0
+2025-05-01,titular_faixa_etaria,31-40,3088,1839,59.6
+2025-05-01,titular_faixa_etaria,11-20,76,43,56.6
+2025-05-01,titular_faixa_etaria,41-50,3808,2110,55.4
+2025-05-01,titular_faixa_etaria,51-60,3520,1794,51.0
+2025-05-01,titular_faixa_etaria,81-90,276,136,49.3
+2025-05-01,titular_faixa_etaria,71-80,1283,631,49.2
+2025-05-01,titular_faixa_etaria,61-70,2789,1333,47.8
+2025-05-01,titular_faixa_etaria,91-99,37,15,40.5
+2025-06-01,titular_faixa_etaria,00-10,37,24,64.9
+2025-06-01,titular_faixa_etaria,21-30,1520,987,64.9
+2025-06-01,titular_faixa_etaria,31-40,2668,1587,59.5
+2025-06-01,titular_faixa_etaria,91-99,24,14,58.3
+2025-06-01,titular_faixa_etaria,99+,7,4,57.1
+2025-06-01,titular_faixa_etaria,41-50,3191,1780,55.8
+2025-06-01,titular_faixa_etaria,51-60,3069,1527,49.8
+2025-06-01,titular_faixa_etaria,71-80,1072,532,49.6
+2025-06-01,titular_faixa_etaria,11-20,71,34,47.9
+2025-06-01,titular_faixa_etaria,61-70,2527,1197,47.4
+2025-06-01,titular_faixa_etaria,81-90,287,129,44.9
+2025-07-01,titular_faixa_etaria,00-10,34,24,70.6
+2025-07-01,titular_faixa_etaria,11-20,73,49,67.1
+2025-07-01,titular_faixa_etaria,21-30,1779,1097,61.7
+2025-07-01,titular_faixa_etaria,91-99,40,24,60.0
+2025-07-01,titular_faixa_etaria,31-40,3081,1832,59.5
+2025-07-01,titular_faixa_etaria,41-50,3652,2016,55.2
+2025-07-01,titular_faixa_etaria,51-60,3404,1733,50.9
+2025-07-01,titular_faixa_etaria,81-90,338,169,50.0
+2025-07-01,titular_faixa_etaria,71-80,1290,639,49.5
+2025-07-01,titular_faixa_etaria,61-70,2820,1386,49.1
+2025-07-01,titular_faixa_etaria,99+,3,1,33.3
+2025-08-01,titular_faixa_etaria,21-30,1889,1232,65.2
+2025-08-01,titular_faixa_etaria,00-10,43,28,65.1
+2025-08-01,titular_faixa_etaria,91-99,33,20,60.6
+2025-08-01,titular_faixa_etaria,31-40,3083,1805,58.5
+2025-08-01,titular_faixa_etaria,11-20,86,50,58.1
+2025-08-01,titular_faixa_etaria,41-50,3756,2068,55.1
+2025-08-01,titular_faixa_etaria,51-60,3493,1855,53.1
+2025-08-01,titular_faixa_etaria,71-80,1180,606,51.4
+2025-08-01,titular_faixa_etaria,61-70,2695,1371,50.9
+2025-08-01,titular_faixa_etaria,81-90,318,148,46.5
+2025-08-01,titular_faixa_etaria,99+,3,1,33.3
+2025-09-01,titular_faixa_etaria,21-30,1997,1256,62.9
+2025-09-01,titular_faixa_etaria,00-10,24,15,62.5
+2025-09-01,titular_faixa_etaria,11-20,79,48,60.8
+2025-09-01,titular_faixa_etaria,31-40,3346,1880,56.2
+2025-09-01,titular_faixa_etaria,41-50,3875,2051,52.9
+2025-09-01,titular_faixa_etaria,81-90,327,169,51.7
+2025-09-01,titular_faixa_etaria,51-60,3542,1779,50.2
+2025-09-01,titular_faixa_etaria,91-99,37,18,48.6
+2025-09-01,titular_faixa_etaria,71-80,1164,557,47.9
+2025-09-01,titular_faixa_etaria,61-70,2836,1355,47.8
+2025-09-01,titular_faixa_etaria,99+,1,0,0.0
+2025-10-01,titular_faixa_etaria,00-10,48,33,68.8
+2025-10-01,titular_faixa_etaria,11-20,89,57,64.0
+2025-10-01,titular_faixa_etaria,21-30,1899,1215,64.0
+2025-10-01,titular_faixa_etaria,31-40,3193,1948,61.0
+2025-10-01,titular_faixa_etaria,81-90,283,164,58.0
+2025-10-01,titular_faixa_etaria,41-50,3614,2067,57.2
+2025-10-01,titular_faixa_etaria,71-80,1107,586,52.9
+2025-10-01,titular_faixa_etaria,51-60,3462,1823,52.7
+2025-10-01,titular_faixa_etaria,61-70,2769,1456,52.6
+2025-10-01,titular_faixa_etaria,99+,2,1,50.0
+2025-10-01,titular_faixa_etaria,91-99,40,19,47.5
+2025-11-01,titular_faixa_etaria,00-10,43,29,67.4
+2025-11-01,titular_faixa_etaria,99+,3,2,66.7
+2025-11-01,titular_faixa_etaria,11-20,88,57,64.8
+2025-11-01,titular_faixa_etaria,21-30,1862,1197,64.3
+2025-11-01,titular_faixa_etaria,31-40,3258,1961,60.2
+2025-11-01,titular_faixa_etaria,41-50,3931,2296,58.4
+2025-11-01,titular_faixa_etaria,71-80,1247,723,58.0
+2025-11-01,titular_faixa_etaria,51-60,3582,1975,55.1
+2025-11-01,titular_faixa_etaria,61-70,2723,1478,54.3
+2025-11-01,titular_faixa_etaria,81-90,307,164,53.4
+2025-11-01,titular_faixa_etaria,91-99,39,20,51.3
+2025-12-01,titular_faixa_etaria,00-10,45,34,75.6
+2025-12-01,titular_faixa_etaria,99+,4,3,75.0
+2025-12-01,titular_faixa_etaria,11-20,103,72,69.9
+2025-12-01,titular_faixa_etaria,21-30,1776,1215,68.4
+2025-12-01,titular_faixa_etaria,91-99,35,23,65.7
+2025-12-01,titular_faixa_etaria,31-40,2745,1744,63.5
+2025-12-01,titular_faixa_etaria,41-50,3154,1876,59.5
+2025-12-01,titular_faixa_etaria,61-70,2278,1262,55.4
+2025-12-01,titular_faixa_etaria,51-60,2950,1626,55.1
+2025-12-01,titular_faixa_etaria,71-80,947,505,53.3
+2025-12-01,titular_faixa_etaria,81-90,273,136,49.8
+2026-01-01,titular_faixa_etaria,00-10,43,28,65.1
+2026-01-01,titular_faixa_etaria,91-99,34,22,64.7
+2026-01-01,titular_faixa_etaria,11-20,106,66,62.3
+2026-01-01,titular_faixa_etaria,21-30,2382,1455,61.1
+2026-01-01,titular_faixa_etaria,31-40,3668,2107,57.4
+2026-01-01,titular_faixa_etaria,41-50,4349,2306,53.0
+2026-01-01,titular_faixa_etaria,51-60,3746,1859,49.6
+2026-01-01,titular_faixa_etaria,71-80,1250,604,48.3
+2026-01-01,titular_faixa_etaria,61-70,3060,1470,48.0
+2026-01-01,titular_faixa_etaria,81-90,335,150,44.8
+2026-01-01,titular_faixa_etaria,99+,4,1,25.0
+2026-02-01,titular_faixa_etaria,21-30,2301,1379,59.9
+2026-02-01,titular_faixa_etaria,11-20,122,73,59.8
+2026-02-01,titular_faixa_etaria,00-10,52,30,57.7
+2026-02-01,titular_faixa_etaria,31-40,3656,2041,55.8
+2026-02-01,titular_faixa_etaria,81-90,279,145,52.0
+2026-02-01,titular_faixa_etaria,41-50,4232,2175,51.4
+2026-02-01,titular_faixa_etaria,51-60,3755,1891,50.4
+2026-02-01,titular_faixa_etaria,61-70,2834,1385,48.9
+2026-02-01,titular_faixa_etaria,71-80,1190,552,46.4
+2026-02-01,titular_faixa_etaria,99+,7,3,42.9
+2026-02-01,titular_faixa_etaria,91-99,38,13,34.2
+2026-03-01,titular_faixa_etaria,00-10,58,42,72.4
+2026-03-01,titular_faixa_etaria,11-20,139,93,66.9
+2026-03-01,titular_faixa_etaria,21-30,2661,1689,63.5
+2026-03-01,titular_faixa_etaria,31-40,4407,2595,58.9
+2026-03-01,titular_faixa_etaria,41-50,4849,2641,54.5
+2026-03-01,titular_faixa_etaria,81-90,345,184,53.3
+2026-03-01,titular_faixa_etaria,51-60,4405,2293,52.1
+2026-03-01,titular_faixa_etaria,71-80,1365,665,48.7
+2026-03-01,titular_faixa_etaria,61-70,3347,1630,48.7
+2026-03-01,titular_faixa_etaria,91-99,42,18,42.9
+2026-03-01,titular_faixa_etaria,99+,4,1,25.0
+2025-04-01,titular_sexo,I,137,92,67.2
+2025-04-01,titular_sexo,F,10312,5949,57.7
+2025-04-01,titular_sexo,M,5215,2880,55.2
+2025-04-01,titular_sexo,(vazio),141,77,54.6
+2025-05-01,titular_sexo,I,136,90,66.2
+2025-05-01,titular_sexo,(vazio),139,81,58.3
+2025-05-01,titular_sexo,F,10873,5920,54.4
+2025-05-01,titular_sexo,M,5483,2946,53.7
+2025-06-01,titular_sexo,I,160,113,70.6
+2025-06-01,titular_sexo,F,9220,5026,54.5
+2025-06-01,titular_sexo,M,4953,2604,52.6
+2025-06-01,titular_sexo,(vazio),140,72,51.4
+2025-07-01,titular_sexo,I,146,86,58.9
+2025-07-01,titular_sexo,(vazio),152,84,55.3
+2025-07-01,titular_sexo,F,10705,5925,55.3
+2025-07-01,titular_sexo,M,5511,2875,52.2
+2025-08-01,titular_sexo,I,153,102,66.7
+2025-08-01,titular_sexo,(vazio),104,62,59.6
+2025-08-01,titular_sexo,F,10819,6018,55.6
+2025-08-01,titular_sexo,M,5503,3002,54.6
+2025-09-01,titular_sexo,I,162,99,61.1
+2025-09-01,titular_sexo,F,11187,6013,53.7
+2025-09-01,titular_sexo,M,5746,2951,51.4
+2025-09-01,titular_sexo,(vazio),133,65,48.9
+2025-10-01,titular_sexo,I,169,112,66.3
+2025-10-01,titular_sexo,F,10836,6150,56.8
+2025-10-01,titular_sexo,M,5395,3056,56.6
+2025-10-01,titular_sexo,(vazio),106,51,48.1
+2025-11-01,titular_sexo,I,151,95,62.9
+2025-11-01,titular_sexo,(vazio),117,71,60.7
+2025-11-01,titular_sexo,M,5757,3360,58.4
+2025-11-01,titular_sexo,F,11058,6376,57.7
+2025-12-01,titular_sexo,I,151,104,68.9
+2025-12-01,titular_sexo,F,9172,5494,59.9
+2025-12-01,titular_sexo,(vazio),71,42,59.2
+2025-12-01,titular_sexo,M,4916,2856,58.1
+2026-01-01,titular_sexo,I,228,159,69.7
+2026-01-01,titular_sexo,(vazio),103,60,58.3
+2026-01-01,titular_sexo,F,12177,6496,53.3
+2026-01-01,titular_sexo,M,6469,3353,51.8
+2026-02-01,titular_sexo,I,247,158,64.0
+2026-02-01,titular_sexo,(vazio),84,46,54.8
+2026-02-01,titular_sexo,F,12036,6309,52.4
+2026-02-01,titular_sexo,M,6099,3174,52.0
+2026-03-01,titular_sexo,I,249,148,59.4
+2026-03-01,titular_sexo,(vazio),101,58,57.4
+2026-03-01,titular_sexo,F,14221,7821,55.0
+2026-03-01,titular_sexo,M,7051,3824,54.2
+2025-04-01,unsubscription_sn,S,2098,2048,97.6
+2025-04-01,unsubscription_sn,N,13707,6950,50.7
+2025-05-01,unsubscription_sn,S,2155,2116,98.2
+2025-05-01,unsubscription_sn,N,14476,6921,47.8
+2025-06-01,unsubscription_sn,S,1936,1912,98.8
+2025-06-01,unsubscription_sn,N,12537,5903,47.1
+2025-07-01,unsubscription_sn,S,2196,2169,98.8
+2025-07-01,unsubscription_sn,N,14318,6801,47.5
+2025-08-01,unsubscription_sn,S,2186,2149,98.3
+2025-08-01,unsubscription_sn,N,14393,7035,48.9
+2025-09-01,unsubscription_sn,S,2362,2327,98.5
+2025-09-01,unsubscription_sn,N,14866,6801,45.7
+2025-10-01,unsubscription_sn,S,1957,1935,98.9
+2025-10-01,unsubscription_sn,N,14549,7434,51.1
+2025-11-01,unsubscription_sn,S,2123,2108,99.3
+2025-11-01,unsubscription_sn,N,14960,7794,52.1
+2025-12-01,unsubscription_sn,S,1472,1459,99.1
+2025-12-01,unsubscription_sn,N,12838,7037,54.8
+2026-01-01,unsubscription_sn,S,2193,2174,99.1
+2026-01-01,unsubscription_sn,N,16784,7894,47.0
+2026-02-01,unsubscription_sn,S,2229,2209,99.1
+2026-02-01,unsubscription_sn,N,16237,7478,46.1
+2026-03-01,unsubscription_sn,S,3119,3087,99.0
+2026-03-01,unsubscription_sn,N,18503,8764,47.4
