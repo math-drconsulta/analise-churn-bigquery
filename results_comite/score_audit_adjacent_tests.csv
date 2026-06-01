@@ -1,0 +1,25 @@
+duracao,estrategia,comparacao,churn_a,churn_b,diff_pp,ic_lo,ic_hi,p,sig
+12m,simetrico,CRITICO vs ALTO,68.8,61.8,7.0,6.0,8.0,0.0,***
+12m,simetrico,ALTO vs MEDIO,61.8,58.6,3.2,2.1,4.2,1.6052523754694903e-09,***
+12m,simetrico,MEDIO vs BAIXO,58.6,54.7,3.9,2.8,5.0,3.681499549657019e-13,***
+12m,simetrico,BAIXO vs SEGURO,54.7,50.6,4.1,3.1,5.2,2.020605904817785e-14,***
+12m,assimetrico,CRITICO vs ALTO,73.0,66.9,6.1,4.6,7.6,8.881784197001252e-16,***
+12m,assimetrico,ALTO vs MEDIO,66.9,61.1,5.8,4.7,6.8,0.0,***
+12m,assimetrico,MEDIO vs BAIXO,61.1,56.5,4.5,3.6,5.5,0.0,***
+12m,assimetrico,BAIXO vs SEGURO,56.5,51.5,5.0,4.1,6.0,0.0,***
+12m,fixo,CRITICO vs ALTO,70.1,62.3,7.8,6.8,8.8,0.0,***
+12m,fixo,ALTO vs MEDIO,62.3,58.3,4.1,3.1,5.0,0.0,***
+12m,fixo,MEDIO vs BAIXO,58.3,53.7,4.6,3.7,5.6,0.0,***
+12m,fixo,BAIXO vs SEGURO,53.7,48.7,4.9,3.7,6.1,4.440892098500626e-16,***
+6m,simetrico,CRITICO vs ALTO,66.4,57.7,8.7,7.5,9.9,0.0,***
+6m,simetrico,ALTO vs MEDIO,57.7,51.8,5.9,5.1,6.8,0.0,***
+6m,simetrico,MEDIO vs BAIXO,51.8,47.2,4.5,3.5,5.5,0.0,***
+6m,simetrico,BAIXO vs SEGURO,47.2,40.7,6.6,5.6,7.5,0.0,***
+6m,assimetrico,CRITICO vs ALTO,66.4,60.5,5.9,4.6,7.2,0.0,***
+6m,assimetrico,ALTO vs MEDIO,60.5,54.5,6.0,5.0,7.0,0.0,***
+6m,assimetrico,MEDIO vs BAIXO,54.5,49.1,5.4,4.5,6.3,0.0,***
+6m,assimetrico,BAIXO vs SEGURO,49.1,42.1,7.0,6.2,7.9,0.0,***
+6m,fixo,CRITICO vs ALTO,63.1,55.0,8.1,7.2,9.0,0.0,***
+6m,fixo,ALTO vs MEDIO,55.0,49.6,5.4,4.5,6.2,0.0,***
+6m,fixo,MEDIO vs BAIXO,49.6,44.2,5.4,4.4,6.3,0.0,***
+6m,fixo,BAIXO vs SEGURO,44.2,38.5,5.7,4.6,6.9,0.0,***

@@ -1,0 +1,27 @@
+plan_name,duracao,total_contratos,churners,churn_rate
+cartao dr.consulta semestral,6,100082,52063,52.0
+cartao dr.consulta anual,12,43787,25276,57.7
+cartao dr.consulta com odonto anual,12,36277,22115,61.0
+yalo familia cartao dr.consulta,12,4281,2183,51.0
+yalo cartao dr.consulta,6,1720,565,32.8
+cartao dr.consulta so odonto anual,12,695,477,68.6
+yalo familia anual,12,583,279,47.9
+yalo fidelidade,12,286,139,48.6
+yalo saude,12,142,80,56.3
+yalo fidelidade,6,141,35,24.8
+cartao dr.consulta anual - programa materna,12,103,103,100.0
+cartao dr.consulta odonto anual - gratis,12,81,63,77.8
+cartao dr.consulta nacional anual,12,76,49,64.5
+yalo saude,6,65,18,27.7
+assinatura dr.consulta online,12,24,24,100.0
+dr.consulta + odonto,12,13,13,100.0
+cartao dr.consulta odonto - beneficios 1 - anual,12,13,11,84.6
+cartao dr.consulta odonto semestral,6,6,6,100.0
+cartao dr.consulta odonto - beneficios 1 - semestral,6,5,2,40.0
+yalo emed,6,2,0,0.0
+yalo individual anual,12,2,2,100.0
+,12,1,0,0.0
+yalo vida,6,1,1,100.0
+cartao dr.consulta individual ,12,1,1,100.0
+yalo familia semestral,6,1,1,100.0
+cartao dr.consulta odonto - beneficios 2 - anual,12,1,1,100.0

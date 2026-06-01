@@ -1,0 +1,31 @@
+duracao,rank,feature,mean_abs_shap,mean_shap
+12m,1,composicao_titular_solo,0.1082,0.0047
+12m,2,ciclo_1o,0.0856,-0.0059
+12m,3,faixa_etaria_51-70,0.0773,-0.0023
+12m,4,usou_exames,0.0399,0.0083
+12m,5,tem_odonto,0.0379,0.0005
+12m,6,faixa_etaria_21-30,0.0378,0.0021
+12m,7,usou_cm_tele,0.0351,0.0026
+12m,8,composicao_titular_com_idoso,0.0344,0.0006
+12m,9,classe_social_(sem dados),0.0343,0.0005
+12m,10,cronico_N,0.0333,0.0004
+12m,11,ciclo_2o+,0.0331,-0.0021
+12m,12,faixa_etaria_71+,0.026,0.0014
+12m,13,usou_cm,0.0256,0.0004
+12m,14,faixa_etaria_31-50,0.0244,0.0027
+12m,15,canal_drc_cfp,0.0237,0.0003
+6m,1,ciclo_1o,0.1667,-0.0042
+6m,2,composicao_titular_solo,0.0874,0.0031
+6m,3,faixa_etaria_21-30,0.0588,0.0019
+6m,4,canal_drc_cfp,0.0435,-0.0015
+6m,5,faixa_etaria_31-50,0.042,-0.0016
+6m,6,faixa_etaria_51-70,0.0393,-0.0018
+6m,7,ciclo_2o+,0.0385,-0.0009
+6m,8,usou_exames,0.0361,0.0106
+6m,9,classe_social_(sem dados),0.0316,-0.0005
+6m,10,composicao_titular_com_idoso,0.0309,0.0
+6m,11,cronico_N,0.0306,0.0017
+6m,12,canal_drc_cm,0.0295,-0.0003
+6m,13,faixa_etaria_71+,0.0206,0.0007
+6m,14,usou_cm,0.0195,-0.004
+6m,15,composicao_titular_com_ambos,0.0168,0.0008

@@ -88,10 +88,12 @@ try:
               help=f"{len(so_passivos):,} contratos onde nenhum dep nunca consumiu na DRC")
 
     # ─── ABAS ──────────────────────────────────────────────────────────
-    tab_comp, tab_inter, tab_eng, tab_lim = st.tabs([
+    tab_comp, tab_inter, tab_eng, tab_esp, tab_lift, tab_lim = st.tabs([
         "🏠 Composição do Núcleo",
         "🔗 Interações com o Titular",
         "📊 Engajamento DRC",
+        "🩺 Especialidades dos Deps",
+        "🎯 Lift no Score",
         "⚠️ Limitações",
     ])
 
@@ -532,7 +534,523 @@ try:
         )
 
     # ═══════════════════════════════════════════════════════════════════
-    # TAB 4: LIMITAÇÕES
+    # TAB 4: ESPECIALIDADES DOS DEPS
+    # ═══════════════════════════════════════════════════════════════════
+    with tab_esp:
+        # Colunas adicionadas na v3 da query nucleo_familiar.sql
+        ESPEC_COLS = [
+            "qtd_itens_dep_CM_CLINICA_MEDICA",
+            "qtd_itens_dep_CM_GINECOLOGIA",
+            "qtd_itens_dep_CM_CARDIOLOGISTA",
+            "qtd_itens_dep_CM_DERMATOLOGISTA",
+            "qtd_itens_dep_CM_ENDOCRINOLOGISTA",
+            "qtd_itens_dep_CM_GASTROENTEROLOGISTA",
+            "qtd_itens_dep_CM_NEUROLOGIA",
+            "qtd_itens_dep_CM_OFTALMOLOGISTA",
+            "qtd_itens_dep_CM_ORTOPEDISTA",
+            "qtd_itens_dep_CM_OTORRINOLARINGOLOGISTA",
+            "qtd_itens_dep_CM_PEDIATRA",
+            "qtd_itens_dep_CM_PSIQUIATRIA",
+            "qtd_itens_dep_CM_UROLOGISTA",
+            "qtd_itens_dep_CM_OUTROS",
+            "qtd_itens_dep_CM_TELE",
+            "qtd_itens_dep_EXAMES",
+        ]
+        ESPEC_NOME = {
+            "qtd_itens_dep_CM_CLINICA_MEDICA":        "Clínica médica",
+            "qtd_itens_dep_CM_GINECOLOGIA":           "Ginecologia",
+            "qtd_itens_dep_CM_CARDIOLOGISTA":         "Cardiologia",
+            "qtd_itens_dep_CM_DERMATOLOGISTA":        "Dermatologia",
+            "qtd_itens_dep_CM_ENDOCRINOLOGISTA":      "Endocrinologia",
+            "qtd_itens_dep_CM_GASTROENTEROLOGISTA":   "Gastroenterologia",
+            "qtd_itens_dep_CM_NEUROLOGIA":            "Neurologia",
+            "qtd_itens_dep_CM_OFTALMOLOGISTA":        "Oftalmologia",
+            "qtd_itens_dep_CM_ORTOPEDISTA":           "Ortopedia",
+            "qtd_itens_dep_CM_OTORRINOLARINGOLOGISTA": "Otorrino",
+            "qtd_itens_dep_CM_PEDIATRA":              "Pediatria",
+            "qtd_itens_dep_CM_PSIQUIATRIA":           "Psiquiatria",
+            "qtd_itens_dep_CM_UROLOGISTA":            "Urologia",
+            "qtd_itens_dep_CM_OUTROS":                "Outras (CM)",
+            "qtd_itens_dep_CM_TELE":                  "Telemedicina",
+            "qtd_itens_dep_EXAMES":                   "Exames",
+        }
+        # Mapeamento entre rótulo da especialidade_principal_dep (vem da SQL)
+        # e nome amigável do gráfico
+        PRINC_NOME = {
+            "CM_CLINICA_MEDICA":        "Clínica médica",
+            "CM_GINECOLOGIA":           "Ginecologia",
+            "CM_CARDIOLOGISTA":         "Cardiologia",
+            "CM_DERMATOLOGISTA":        "Dermatologia",
+            "CM_ENDOCRINOLOGISTA":      "Endocrinologia",
+            "CM_GASTROENTEROLOGISTA":   "Gastroenterologia",
+            "CM_NEUROLOGIA":            "Neurologia",
+            "CM_OFTALMOLOGISTA":        "Oftalmologia",
+            "CM_ORTOPEDISTA":           "Ortopedia",
+            "CM_OTORRINOLARINGOLOGISTA": "Otorrino",
+            "CM_PEDIATRA":              "Pediatria",
+            "CM_PSIQUIATRIA":           "Psiquiatria",
+            "CM_UROLOGISTA":            "Urologia",
+            "CM_OUTROS":                "Outras (CM)",
+            "CM_TELE":                  "Telemedicina",
+            "EXAMES":                   "Exames",
+        }
+
+        cols_presentes = [c for c in ESPEC_COLS if c in df.columns]
+        if not cols_presentes:
+            st.warning(
+                "**Colunas de especialidade ainda não disponíveis no CSV.**\n\n"
+                "Esta aba depende da v3 de `queries/nucleo_familiar.sql` "
+                "(adiciona `qtd_itens_dep_<ESPECIALIDADE>`, `especialidade_principal_dep`, "
+                "`qtd_total_itens_dep`, `qtd_especialidades_dep_distintas`).\n\n"
+                "Rode a query no BigQuery e re-exporte para `results/nucleo_familiar.csv`."
+            )
+        else:
+            st.markdown("### O que os dependentes consomem na DRC?")
+            st.markdown(
+                "O score atual e as outras abas tratam o dep como ativo/passivo/crônico — "
+                "mas dois deps ativos podem ser muito diferentes: um indo só na pediatria, "
+                "outro acompanhando cardiologia. Esta aba abre o consumo do dep por especialidade "
+                "para ver se o **mix** carrega sinal além do engajamento bruto."
+            )
+
+            # ── Universo: titulares com pelo menos 1 dep ativo (consumiu na DRC) ──
+            sub = df[df.get("qtd_dep_consumiu", df["qtd_dep_ativos_drc"]) > 0].copy()
+            n_universo = len(sub)
+            churn_universo = sub["churner"].mean() * 100
+
+            k1, k2, k3 = st.columns(3)
+            k1.metric("Contratos com dep que consumiu",
+                      f"{n_universo:,}",
+                      help="Titulares com pelo menos 1 dependente que registrou atendimento na DRC dentro da vigência do plano. É o universo de toda esta aba.")
+            k2.metric("Churn nesse universo", f"{churn_universo:.1f}%")
+            if "qtd_total_itens_dep" in sub.columns:
+                k3.metric("Mediana de itens/dep no contrato",
+                          f"{sub['qtd_total_itens_dep'].median():.0f}",
+                          help="Mediana do total de itens consumidos pelos dependentes em cada contrato")
+
+            # ─────────────────────────────────────────────────────────────
+            # SEÇÃO 1: Ranking — volume total e cobertura
+            # ─────────────────────────────────────────────────────────────
+            st.markdown("---")
+            st.markdown("#### 1. Ranking de especialidades — o que aparece, em que volume?")
+
+            rank_data = []
+            for col in cols_presentes:
+                volume = int(df[col].sum())
+                contratos_com_uso = int((df[col] > 0).sum())
+                rank_data.append({
+                    "Especialidade": ESPEC_NOME[col],
+                    "col": col,
+                    "Itens (total)": volume,
+                    "Contratos com uso": contratos_com_uso,
+                    "% dos contratos": round(100 * contratos_com_uso / len(df), 1),
+                })
+            rank_df = pd.DataFrame(rank_data).sort_values("Itens (total)", ascending=False)
+
+            col_l, col_r = st.columns(2)
+            with col_l:
+                fig = go.Figure(go.Bar(
+                    y=rank_df["Especialidade"], x=rank_df["Itens (total)"],
+                    orientation="h", marker_color="#1f77b4",
+                    text=rank_df["Itens (total)"].apply(lambda v: f"{v:,}"),
+                    textposition="outside",
+                ))
+                fig.update_layout(
+                    title="Volume total de itens consumidos pelos deps",
+                    xaxis_title="Itens (soma sobre todos os contratos)",
+                    yaxis=dict(autorange="reversed"),
+                    height=520, margin=dict(l=10, r=80),
+                )
+                st.plotly_chart(fig, use_container_width=True)
+
+            with col_r:
+                fig = go.Figure(go.Bar(
+                    y=rank_df["Especialidade"], x=rank_df["% dos contratos"],
+                    orientation="h", marker_color="#2ca02c",
+                    text=rank_df["% dos contratos"].apply(lambda v: f"{v}%"),
+                    textposition="outside",
+                ))
+                fig.update_layout(
+                    title="% de contratos onde algum dep usou",
+                    xaxis_title="% sobre todos os contratos da base",
+                    yaxis=dict(autorange="reversed"),
+                    height=520, margin=dict(l=10, r=80),
+                )
+                st.plotly_chart(fig, use_container_width=True)
+
+            st.caption(
+                "Esquerda = volume total (itens × contratos). Direita = capilaridade (em quantos "
+                "núcleos a especialidade aparece). Especialidade com volume alto e capilaridade "
+                "baixa indica concentração em poucos núcleos crônicos — candidato a feature de âncora."
+            )
+
+            # ─────────────────────────────────────────────────────────────
+            # SEÇÃO 2: Churn por uso (dep usou X vs não usou X)
+            # ─────────────────────────────────────────────────────────────
+            st.markdown("---")
+            st.markdown("#### 2. Churn quando o dep usa cada especialidade")
+            st.markdown(
+                "Para cada especialidade, comparamos o churn de contratos onde **algum dep usou** vs "
+                "**nenhum dep usou**, dentro do universo de contratos com dep que consumiu. "
+                "Spread negativo (azul) = especialidade ancora; positivo (vermelho) = especialidade "
+                "associada a maior churn."
+            )
+
+            spread_data = []
+            for col in cols_presentes:
+                usou = sub[sub[col] > 0]
+                nao_usou = sub[sub[col] == 0]
+                if len(usou) < 30 or len(nao_usou) < 30:
+                    continue
+                ch_usou = usou["churner"].mean() * 100
+                ch_nao = nao_usou["churner"].mean() * 100
+                t = z_test_proportions(
+                    len(usou), int(usou["churner"].sum()),
+                    len(nao_usou), int(nao_usou["churner"].sum()),
+                )
+                _, lo_u, hi_u = wilson_ci(len(usou), int(usou["churner"].sum()))
+                spread_data.append({
+                    "Especialidade": ESPEC_NOME[col],
+                    "n_usou": len(usou),
+                    "Churn usou (%)": round(ch_usou, 1),
+                    "Churn não usou (%)": round(ch_nao, 1),
+                    "Spread (p.p.)": round(t["diff"], 1),
+                    "p": t["p"],
+                    "sig": sig_label(t["p"]),
+                    "ic_lo_usou": lo_u,
+                    "ic_hi_usou": hi_u,
+                })
+            spread_df = pd.DataFrame(spread_data).sort_values("Spread (p.p.)")
+
+            fig = go.Figure()
+            fig.add_trace(go.Bar(
+                y=spread_df["Especialidade"], x=spread_df["Spread (p.p.)"],
+                orientation="h",
+                marker_color=["#1f77b4" if v < 0 else "#d62728" for v in spread_df["Spread (p.p.)"]],
+                text=spread_df.apply(lambda r: f"{r['Spread (p.p.)']:+.1f} p.p. ({r['sig']})", axis=1),
+                textposition="outside",
+            ))
+            fig.add_vline(x=0, line_color="gray", line_dash="dash")
+            fig.update_layout(
+                title="Spread de churn: dep usou X vs dep não usou X (mesmo universo)",
+                xaxis_title="Diferença em pontos percentuais (negativo = especialidade ancora)",
+                yaxis=dict(autorange="reversed"),
+                height=520, margin=dict(l=10, r=120),
+            )
+            st.plotly_chart(fig, use_container_width=True)
+
+            st.dataframe(
+                spread_df[["Especialidade", "n_usou", "Churn usou (%)", "Churn não usou (%)",
+                           "Spread (p.p.)", "sig"]].rename(columns={"n_usou": "Contratos com uso",
+                                                                     "sig": "Sig."}),
+                hide_index=True, use_container_width=True,
+            )
+            st.caption(
+                "*Filtro:* universo restrito a contratos onde algum dep consumiu. Especialidades "
+                "com menos de 30 contratos em cada lado foram omitidas. Em qualquer leitura, lembre "
+                "que esta é uma associação bivariada — sem controle por idade do dep, crônico, "
+                "duração, etc. O sinal sugere features candidatas, não causal."
+            )
+
+            # ─────────────────────────────────────────────────────────────
+            # SEÇÃO 3: Diversidade × churn (dose-resposta)
+            # ─────────────────────────────────────────────────────────────
+            if "qtd_especialidades_dep_distintas" in df.columns:
+                st.markdown("---")
+                st.markdown("#### 3. Diversidade de especialidades × churn")
+                st.markdown(
+                    "Quanto mais especialidades distintas o dep cobre, mais o núcleo está "
+                    "ancorado na DRC. Hipótese: dose-resposta monotônica decrescente."
+                )
+
+                div_sub = df.copy()
+                div_sub["div_bin"] = div_sub["qtd_especialidades_dep_distintas"].clip(upper=4).astype(int)
+                div_sub["div_bin"] = div_sub["div_bin"].astype(str).replace({"4": "4+"})
+                d_div = churn_table(div_sub, ["div_bin"])
+                ord_div = ["0", "1", "2", "3", "4+"]
+                d_div["ord"] = d_div["div_bin"].map({k:i for i,k in enumerate(ord_div)})
+                d_div = d_div.sort_values("ord")
+
+                fig = go.Figure()
+                fig.add_trace(go.Scatter(
+                    x=d_div["div_bin"], y=d_div["churn_pct"],
+                    mode="lines+markers+text",
+                    marker=dict(size=14, color="#9467bd"), line=dict(width=3, color="#9467bd"),
+                    error_y=dict(
+                        type="data", symmetric=False,
+                        array=(d_div["ic_hi"] - d_div["churn_pct"]).values,
+                        arrayminus=(d_div["churn_pct"] - d_div["ic_lo"]).values,
+                        color="rgba(0,0,0,0.3)", thickness=2, width=6,
+                    ),
+                    text=d_div.apply(lambda r: f"{r['churn_pct']}%<br>{int(r['contratos']):,}", axis=1),
+                    textposition="top center",
+                ))
+                fig.add_hline(y=churn_global, line_dash="dash", line_color="gray")
+                fig.update_layout(
+                    title="Churn por nº de especialidades distintas usadas pelos deps",
+                    xaxis_title="Qtd especialidades distintas (deps)", yaxis_title="Churn (%)",
+                    height=400, yaxis=dict(range=[35, 65]), margin=dict(t=50),
+                )
+                st.plotly_chart(fig, use_container_width=True)
+
+                st.caption(
+                    "0 = nenhum dep consumiu (≈ deps passivos). Esperamos curva descendente: "
+                    "cada especialidade adicional dilui o risco de churn por aumentar superfícies "
+                    "de contato com a DRC."
+                )
+
+            # ─────────────────────────────────────────────────────────────
+            # SEÇÃO 4: Especialidade principal × cronico_titular
+            # (substitui o cruzamento por composicao_etaria, que está
+            #  100% 'idade_parcial' no CSV atual — idade dos deps não casa
+            #  em pacientes_audit, ver Limitações.)
+            # ─────────────────────────────────────────────────────────────
+            if "especialidade_principal_dep" in df.columns:
+                st.markdown("---")
+                st.markdown("#### 4. Especialidade principal do dep × crônico do titular")
+                st.markdown(
+                    "Quando o titular já é crônico, o que os deps consomem? Hipótese: titular "
+                    "crônico tende a 'puxar' o núcleo pra acompanhamento contínuo (cardio/endo/clínica), "
+                    "enquanto titular não-crônico tem deps com perfil mais agudo (oftalmo, ortopedia, derma)."
+                )
+
+                cross_src = df[df["especialidade_principal_dep"].notna()].copy()
+                cross_src["esp_label"] = cross_src["especialidade_principal_dep"].map(PRINC_NOME).fillna(cross_src["especialidade_principal_dep"])
+
+                # 4a) Distribuição (%) da esp principal por status do titular
+                tab_cross = pd.crosstab(
+                    cross_src["cronico_titular"], cross_src["esp_label"],
+                    normalize="index",
+                ) * 100
+                col_order = cross_src["esp_label"].value_counts().index.tolist()
+                tab_cross = tab_cross[[c for c in col_order if c in tab_cross.columns]]
+                tab_cross = tab_cross.rename(index={"S": "Titular crônico", "N": "Titular não-crônico"})
+
+                fig = px.imshow(
+                    tab_cross.values,
+                    x=tab_cross.columns, y=tab_cross.index,
+                    color_continuous_scale="Blues",
+                    aspect="auto",
+                    labels=dict(x="Especialidade principal dos deps", y="Status do titular", color="% no grupo"),
+                    text_auto=".1f",
+                )
+                fig.update_layout(
+                    title="Distribuição (%) da especialidade principal dos deps, por status crônico do titular",
+                    height=320, margin=dict(t=60),
+                )
+                st.plotly_chart(fig, use_container_width=True)
+
+                # 4b) Churn por especialidade principal (dose-resposta de tipo de uso)
+                ch_by_esp = (cross_src.groupby("esp_label")
+                             .agg(contratos=("contract_id", "count"),
+                                  churners=("churner", "sum"))
+                             .reset_index())
+                ch_by_esp["churn_pct"] = (ch_by_esp["churners"] / ch_by_esp["contratos"] * 100).round(1)
+                ch_by_esp = ch_by_esp[ch_by_esp["contratos"] >= 200].sort_values("churn_pct")
+
+                fig = go.Figure(go.Bar(
+                    y=ch_by_esp["esp_label"], x=ch_by_esp["churn_pct"],
+                    orientation="h",
+                    marker_color=["#1f77b4" if v < churn_global else "#d62728" for v in ch_by_esp["churn_pct"]],
+                    text=ch_by_esp.apply(lambda r: f"{r['churn_pct']}% ({int(r['contratos']):,})", axis=1),
+                    textposition="outside",
+                ))
+                fig.add_vline(x=churn_global, line_color="gray", line_dash="dash",
+                              annotation_text=f"Churn global ({churn_global:.1f}%)")
+                fig.update_layout(
+                    title="Churn por especialidade principal dos deps (universo: dep que consumiu)",
+                    xaxis_title="Churn (%)",
+                    yaxis=dict(autorange="reversed"),
+                    height=520, margin=dict(l=10, r=140),
+                )
+                st.plotly_chart(fig, use_container_width=True)
+
+                st.caption(
+                    "**Cruzamento original era por composição etária**, mas no CSV atual `qtd_dep_idade_conhecida=0` "
+                    "em 100% dos contratos (idade dos deps não casa em `pacientes_audit`, ver Limitações). "
+                    "Sem idade, esse heatmap fica vazio — substituído por status crônico do titular, que está "
+                    "100% disponível e carrega leitura semelhante (continuidade clínica vs uso pontual)."
+                )
+
+    # ═══════════════════════════════════════════════════════════════════
+    # TAB 5: LIFT NO SCORE
+    # ═══════════════════════════════════════════════════════════════════
+    with tab_lift:
+        st.markdown("### Adicionar features do núcleo no score: ganha quanto?")
+        st.markdown(
+            "Treinamos uma logística individual sobre os 188k contratos do `nucleo_familiar.csv` "
+            "(IRLS, split estratificado 70/30, seed=42) em 5 variantes:"
+        )
+        st.markdown(
+            "- **Baseline** — 7 vars (duração, contrato, idade, crônico, canal, classe, "
+            "`dependentes` 3-níveis baseado em `dep_count_anl`). É um recorte desta análise, "
+            "não o score da página 2 (que usa `composicao_drc` + `consumo_sn`).\n"
+            "- **Baseline_qtd** — substitui a fonte de `dependentes` por `qtd_dep_total` (subscriptions)\n"
+            "- **+composicao_drc** ⚠️ — Baseline + `composicao_drc` (4 níveis)\n"
+            "- **+full** ⚠️ — Baseline + `composicao_drc` + 4 features contínuas\n"
+            "- **v3_limpo** — Baseline_qtd + `composicao_drc` (sem leakage)\n"
+        )
+
+        try:
+            metrics_df = pd.read_csv("results/lift_nucleo_score.csv")
+            decis_df = pd.read_csv("results/lift_nucleo_decis.csv")
+            coefs_df = pd.read_csv("results/lift_nucleo_coefs.csv")
+        except FileNotFoundError:
+            st.error(
+                "Resultados do experimento de lift não encontrados.\n\n"
+                "Rode: `python scripts/lift_nucleo.py` para gerar `results/lift_nucleo_*.csv`."
+            )
+        else:
+            test = metrics_df[metrics_df["modelo"].str.endswith("_test")].copy()
+            test["variant"] = test["modelo"].str.replace("_test", "", regex=False)
+
+            row = lambda v: test[test["variant"] == v].iloc[0]
+            base = row("baseline")
+            base_qtd = row("baseline_qtd")
+            comp = row("plus_composicao")
+            full = row("plus_full")
+            v3 = row("v3_limpo")
+
+            # ─── 🚨 ALERTA DE LEAKAGE ─────────────────────────────────
+            n_div = int((df["dep_count_anl"].fillna(0) > df["qtd_dep_total"]).sum())
+            churn_div = float(df.loc[df["dep_count_anl"].fillna(0) > df["qtd_dep_total"], "churner"].mean()) * 100
+            st.error(f"""
+            **🚨 Data leakage detectado em `dep_count_anl`.**
+
+            Em **{n_div:,} contratos** (~{n_div/len(df)*100:.1f}% da base), `dep_count_anl > qtd_dep_total`
+            (yalo registra mais deps do que `ref_yalo_subscriptions` mostra). Esses contratos têm
+            **{churn_div:.2f}% de churn** — impossível sem vazamento de target.
+
+            Hipótese: `dep_count_anl` é snapshot do contrato; `qtd_dep_total` reflete subscriptions
+            atuais. Quando o titular renova/ajusta o plano, subscriptions são atualizadas — mas só
+            **depois** da decisão de renovar. Logo: divergência ≈ "já tomou decisão de não-churn".
+
+            **Implicação:** O ganho aparente de +18% Gini do `+composicao_drc` (vs Baseline) é
+            principalmente esse leakage, não sinal real do núcleo familiar. Comparações honestas
+            precisam usar `qtd_dep_total` como única fonte (Baseline_qtd e v3_limpo abaixo).
+            """)
+
+            # ─── KPIs do delta ────────────────────────────────────────
+            k1, k2, k3, k4 = st.columns(4)
+            k1.metric("Gini Baseline", f"{base['gini']:.3f}",
+                      help="Score atual (com leakage embutido via dep_count_anl)")
+            k2.metric("Gini +composicao ⚠️", f"{comp['gini']:.3f}",
+                      f"{(comp['gini']-base['gini'])/base['gini']*100:+.1f}%",
+                      help="Aparenta +18%, mas está contaminado pelo leakage")
+            k3.metric("Gini Baseline_qtd", f"{base_qtd['gini']:.3f}",
+                      f"{(base_qtd['gini']-base['gini'])/base['gini']*100:+.1f}%",
+                      help="Mesma estrutura, mas usa qtd_dep_total — esse é o piso real sem leakage")
+            k4.metric("Gini v3_limpo (real)", f"{v3['gini']:.3f}",
+                      f"{(v3['gini']-base_qtd['gini'])/base_qtd['gini']*100:+.1f}% vs Baseline_qtd",
+                      help="Ganho REAL de adicionar composicao_drc, comparado contra a referência limpa")
+
+            # ─── Tabela de métricas ────────────────────────────────────
+            st.markdown("#### Métricas no teste (30% holdout, n=56.518)")
+            disp = test[["variant", "auc", "gini", "ks", "log_loss"]].copy()
+            label_map = {
+                "baseline": "Baseline (dep_count_anl)",
+                "baseline_qtd": "Baseline_qtd (qtd_dep_total)",
+                "plus_composicao": "+composicao_drc ⚠️ leakage",
+                "plus_full": "+full ⚠️ leakage",
+                "v3_limpo": "v3_limpo (proposta)",
+            }
+            disp["variant"] = disp["variant"].map(label_map)
+            for c in ["auc", "gini", "ks", "log_loss"]:
+                disp[c] = disp[c].round(4)
+            st.dataframe(
+                disp.rename(columns={"variant": "Modelo", "auc": "AUC", "gini": "Gini",
+                                      "ks": "KS", "log_loss": "log-loss"}),
+                hide_index=True, use_container_width=True,
+            )
+
+            # ─── Lift por decil ───────────────────────────────────────
+            st.markdown("---")
+            st.markdown("#### Lift por decil (teste) — só os modelos limpos")
+            st.markdown(
+                "Comparamos só `Baseline_qtd` vs `v3_limpo` (sem leakage). Quanto mais baixo o "
+                "decil 0 e mais alto o decil 9, melhor a separação."
+            )
+
+            fig = go.Figure()
+            cores = {"baseline_qtd": "#7f7f7f", "v3_limpo": "#1f77b4"}
+            nomes = {"baseline_qtd": "Baseline_qtd", "v3_limpo": "v3_limpo (+composicao_drc)"}
+            for variant in ["baseline_qtd", "v3_limpo"]:
+                d = decis_df[decis_df["modelo"] == variant].sort_values("bin")
+                fig.add_trace(go.Bar(
+                    x=d["bin"].astype(str), y=d["lift"],
+                    name=nomes[variant], marker_color=cores[variant],
+                    text=d["lift"].apply(lambda v: f"{v:.2f}"),
+                    textposition="outside",
+                ))
+            fig.add_hline(y=1.0, line_dash="dash", line_color="gray",
+                          annotation_text="lift = 1 (= churn médio)")
+            fig.update_layout(
+                title="Lift de churn por decil — modelos sem leakage",
+                xaxis_title="Decil (0 = mais seguros, 9 = mais arriscados)",
+                yaxis_title="Lift (churn obs / churn médio)",
+                barmode="group", height=440,
+                legend=dict(orientation="h", y=1.10),
+            )
+            st.plotly_chart(fig, use_container_width=True)
+
+            # Spread D0 vs D9 — todos os modelos
+            spreads = []
+            for variant in ["baseline", "baseline_qtd", "plus_composicao", "plus_full", "v3_limpo"]:
+                d = decis_df[decis_df["modelo"] == variant].sort_values("bin")
+                d0, d9 = d.iloc[0]["lift"], d.iloc[-1]["lift"]
+                spreads.append({"Modelo": label_map[variant],
+                                "Lift D0": round(d0, 3),
+                                "Lift D9": round(d9, 3),
+                                "Spread D9 - D0": round(d9 - d0, 3)})
+            st.dataframe(pd.DataFrame(spreads), hide_index=True, use_container_width=True)
+
+            st.success(f"""
+            **Conclusão honesta — ganho real do núcleo é modesto:**
+
+            - **Baseline** (Gini {base['gini']:.3f}) → **Baseline_qtd** (Gini {base_qtd['gini']:.3f}):
+              **{(base_qtd['gini']-base['gini']):+.3f}** Gini. Trocar `dep_count_anl` por `qtd_dep_total`
+              FAZ o score perder poder — porque `dep_count_anl` carrega o leakage.
+            - **Baseline_qtd** ({base_qtd['gini']:.3f}) → **v3_limpo** ({v3['gini']:.3f}):
+              **{(v3['gini']-base_qtd['gini']):+.3f}** Gini. Adicionar `composicao_drc` traz só ~3 pts
+              de ganho real (~3.5%) — bem distante do +33 pts ilusório do `plus_composicao`.
+            - **`+full`** (5 features) traz +0.45 Gini extra sobre `+composicao` — mas todo esse
+              ganho também passa pelo leakage. Sem o leakage, as 4 features contínuas têm efeito
+              quase nulo.
+
+            **Próximos passos sugeridos** (em ordem de payoff esperado):
+            1. **Investigar a fonte do leakage** — confirmar com o time de dados se `dep_count_anl`
+               é snapshot atualizada ou se o pipeline tem um bug. Se for snapshot atualizada,
+               existe alguma feature legítima a extrair (ex: "houve mudança de plano nos últimos
+               60 dias" — sinaliza engajamento ativo, não leakage).
+            2. **Resolver a idade dos deps** — destrava o eixo `qtd_dep_jovens/idosos/financeiros`
+               que hoje está zerado, possivelmente o sinal mais forte que ainda não pegamos.
+            3. **Features comportamentais do titular** (consumo, intervalos, especialidade
+               principal) — fora do escopo do núcleo familiar mas com mais potencial de lift.
+            """)
+
+            # ─── Coeficientes do v3_limpo ───────────────────────────────
+            st.markdown("---")
+            st.markdown("#### Coeficientes do v3_limpo (proposta sem leakage)")
+            v3_coefs = coefs_df[coefs_df["variant"] == "v3_limpo"].copy()
+            v3_coefs = v3_coefs.reindex(v3_coefs["beta"].abs().sort_values(ascending=False).index)
+            v3_coefs["beta"] = v3_coefs["beta"].round(4)
+            st.dataframe(
+                v3_coefs[["feature", "beta"]].rename(
+                    columns={"feature": "Feature", "beta": "β (log-odds)"}),
+                hide_index=True, use_container_width=True, height=400,
+            )
+
+            st.caption(
+                "Coefs do v3_limpo são interpretáveis e na direção esperada: "
+                "`composicao_drc=so_ativos_drc` mais protetor (β=-0.29), "
+                "`passivos_e_ativos` intermediário (β=-0.13), `so_passivos` quase neutro vs solo "
+                "(β=+0.02). `dependentes_qtd=1-2_dep` ligeiramente mais arriscado que 3+_dep "
+                "(β=+0.10) — todos os sinais bivariados da Tab 1 sobrevivem ao controle multivariado, "
+                "só com magnitude pequena."
+            )
+
+    # ═══════════════════════════════════════════════════════════════════
+    # TAB 6: LIMITAÇÕES
     # ═══════════════════════════════════════════════════════════════════
     with tab_lim:
         st.markdown("### O que esta análise NÃO captura ainda")
@@ -542,34 +1060,35 @@ try:
         n_total_deps = df["qtd_dep_total"].sum()
 
         st.warning(f"""
-        **Idade dos dependentes — limitação atual.**
+        **Idade dos dependentes — bloqueador permanece.**
 
-        A definição de "dependente financeiro" (idade <21 ou >60) e os buckets etários do núcleo
-        (jovens / idosos / adultos) **não foram aplicados** nesta versão da análise:
+        A definição de "dependente financeiro" (<21 ou >60) e os buckets etários do núcleo
+        continuam **não aplicáveis** no CSV atual:
 
         - {n_total_deps:,} dependentes no escopo
         - {n_idade_desc:,} ({100*n_idade_desc/max(n_total_deps,1):.1f}%) com `dt_nasc` ausente em `pacientes_audit`
         - {n_idade_conh:,} com idade conhecida
 
-        Mesmo entre os {df['qtd_dep_ativos_drc'].sum():,} dependentes ativos no DRC (que têm match em
-        `bi_atendimentos`), o `id_paciente` não está casando com `pacientes_audit`. Provável causa:
-        formatos/origens diferentes de `id_paciente` entre as tabelas, ou `pacientes_audit` cobre
-        apenas titulares.
+        `pacientes_audit` não cobre `id_paciente` de dependentes (registrado no memo
+        `quirk_pacientes_audit_deps`). Por isso `qtd_dep_jovens/idosos/adultos`,
+        `tem_dep_financeiro/jovem/idoso` ficam todos zerados, e `composicao_etaria`
+        sempre cai em `'idade_parcial'` quando há dep — a Tab 4 §4 foi reformulada pra
+        usar `cronico_titular` no lugar.
 
-        **Próximos passos pra fechar:**
-        1. Verificar se `bi_atendimentos` tem `dt_nasc` ou `idade_paciente` direto.
+        **Caminhos pra fechar:**
+        1. Verificar se `bi_atendimentos` tem `dt_nasc`/`idade_paciente` direto pelo `id_paciente`.
         2. Procurar tabela mestre alternativa (ex: `bi_pacientes`, view do Yalo com `birth_date`).
-        3. Reconfirmar o mapeamento de `id_paciente` entre Yalo e DRC.
+        3. Reconfirmar o mapeamento de `id_paciente` Yalo ↔ DRC.
 
-        Quando isso for resolvido, esta página ganha uma 5a aba com a composição etária e o teste
-        da definição de dep financeiro.
+        Quando resolver, retornam: dose-resposta etária, definição de dep financeiro,
+        e o cruzamento etário × especialidade do dep.
         """)
 
         st.markdown("---")
         st.markdown("### O que JÁ está validado pra alimentar o score v2")
 
         st.success("""
-        **Features candidatas com sinal estatisticamente significativo:**
+        **Features candidatas com sinal bivariado estatisticamente significativo:**
 
         - `composicao_drc` (4 níveis) — spread de ~9 p.p. entre extremos.
         - `tem_dep_cronico` (3 estados + solo) — spread de ~8 p.p. entre solo e dep crônico=S;
@@ -582,11 +1101,29 @@ try:
         **Interações detectadas (não capturáveis por dummies aditivas):**
         - `cronico_titular × tem_dep_cronico`: dep crônico ancora mais o titular não-crônico.
         - `contrato × composicao_drc`: efeito do núcleo é maior em renovações que em 1o contrato.
+        """)
 
-        **Implicação pro score evolutivo:** essas features não são plug-and-play — vão precisar
-        de termos de interação. Vale mais pesar `composicao_drc` no score de mês 0 (já disponível
-        na assinatura) e refinar com `qtd_dep_cronicos_S` quando o histórico clínico do núcleo
-        ficar consolidado nos primeiros 60-90 dias.
+        st.warning("""
+        ### ⚠️ Lift real no score é modesto (ver aba 🎯)
+
+        A análise multivariada (logística com controle pelas 7 vars do baseline desta análise) revelou:
+
+        - O ganho aparente de **+18% Gini** ao adicionar `composicao_drc` é **artefato de
+          data leakage** entre `dep_count_anl` (snapshot do contrato) e `qtd_dep_total`
+          (`ref_yalo_subscriptions` atual). 9.818 contratos com divergência têm 0,2% de churn —
+          impossível sem vazamento de target.
+        - O **ganho real** (modelo limpo `v3_limpo` vs `Baseline_qtd`, ambos usando só
+          `qtd_dep_total`): **+0,006 Gini** (~3,5% relativo). Bem mais modesto.
+        - As 4 features contínuas (`qtd_dep_cronicos_S`, `pct_deps_passivos`, etc) também
+          eram conduzidas pelo leakage — efeito incremental real próximo de zero.
+
+        **Implicação pro score evolutivo:**
+        - Não vale incorporar `composicao_drc` no score atual antes de:
+          (a) confirmar com o time de dados a natureza da divergência `dep_count_anl` vs
+              `qtd_dep_total` (é bug de pipeline ou comportamento legítimo?);
+          (b) destravar a idade dos deps — onde provavelmente está o sinal não-explorado.
+        - O storytelling bivariado (Tabs 1-4) continua válido como descrição da base, mas não
+          se traduz em poder preditivo adicional sob controle multivariado limpo.
         """)
 
 except FileNotFoundError:

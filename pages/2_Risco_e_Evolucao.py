@@ -66,7 +66,7 @@ def fit_score_model():
     a["p_churn"] = a["churners"] / a["total_contratos"]
     a["logit_churn"] = logit(a["p_churn"])
 
-    # Referências (perfil de menor risco)
+    # Referências (perfil de menor risco) — alinhadas com as colunas reais do CSV
     refs = {"contrato": "2o+", "dependentes": "3+_dep", "faixa_idade": "51-70", "duracao": "6", "cronico": "S", "canal": "presencial_cfp", "classe": "AB"}
 
     # Matriz de design: dummies vs referência
@@ -109,7 +109,7 @@ def fit_score_model():
 
     # Coeficientes em pontos com IC
     coefs_table = []
-    coefs_table.append({"Variável": "Intercepto (referência)", "Nível": "2o+, 3+dep, 51-70, 6m, crônico, presencial, AB",
+    coefs_table.append({"Variável": "Intercepto (referência)", "Nível": "2o+, 3+ dep., 51-70, 6m, crônico, presencial, AB",
                          "Log-odds": beta[0], "SE": se_beta[0], "Pontos": 0,
                          "IC_lo": 0, "IC_hi": 0, "Efeito (p.p.)": 0,
                          "t": beta[0]/se_beta[0], "p": 0.0, "sig": ""})
@@ -261,7 +261,7 @@ with tab_score:
                 columns={"Pontos": "Pontos no Score", "Efeito (p.p.)": "Efeito no Churn"}
             ), hide_index=True, use_container_width=True)
 
-            st.caption(f"Referência (score 1000): 2o+ contrato, 3+ dependentes, 51-70 anos, 6 meses, crônico, presencial/CFP, classe AB → churn base: {model['ref_churn']}%")
+            st.caption(f"Referência (score 1000): 2o+ contrato, 3+ dep., 51-70 anos, 6 meses, crônico, presencial/CFP, classe AB → churn base: {model['ref_churn']}%")
 
         with col_example:
             st.markdown("#### Exemplos")
@@ -280,6 +280,7 @@ with tab_score:
                 ("Não crônico", coefs_dict.get("cronico=N", 0)),
                 ("Canal digital", coefs_dict.get("canal=digital", 0)),
                 ("Classe CDE", coefs_dict.get("classe=CDE", 0)),
+                # consumo_sn removido — não disponível no CSV de 7 vars
             ]
             crit_total = sum(p for _, p in crit_items)
             crit_score = 1000 + crit_total
@@ -377,8 +378,8 @@ with tab_score:
         - **Apenas 7 variáveis demográfico-contratuais:** o score não enxerga **histórico de
           pagamento**, **frequência/recência de uso**, **interações de suporte** ou **eventos
           clínicos**. Esses sinais são exatamente os que separariam, dentro do mesmo perfil
-          (ex: "1o contrato, jovem, sem dep, 12m, digital, CDE"), quem vai sair de quem vai ficar.
-          Hoje esses dois grupos estão misturados na mesma faixa CRITICO.
+          (ex: "1o contrato, jovem, solo, 12m, digital, CDE, não consumiu"), quem vai sair de
+          quem vai ficar. Hoje esses dois grupos estão misturados na mesma faixa CRITICO.
         - **AUC moderado (~0.60):** com dados comportamentais, o mesmo modelo poderia chegar a
           0.75-0.85 — e o CRITICO mostraria 85-90% de churn em vez de 77%.
 
@@ -444,7 +445,7 @@ with tab_score:
         labels_coef = penalties_sorted.apply(
             lambda r: {
                 "contrato": {"1o": "1o contrato"},
-                "dependentes": {"sem_dep": "Sem dependentes", "1-2_dep": "1-2 dependentes"},
+                "dependentes": {"sem_dep": "Sem dependentes", "1-2_dep": "1-2 dependentes", "3+_dep": "3+ dependentes"},
                 "faixa_idade": {"00-20": "Idade até 20 anos", "21-30": "Idade 21-30 anos", "31-50": "Idade 31-50 anos", "71+": "Idade 71+ anos"},
                 "duracao": {"12": "Plano de 12 meses"},
                 "cronico": {"N": "Sem doença crônica"},
@@ -511,7 +512,7 @@ with tab_score:
         consistency = model["consistency"]
         var_labels = {
             "contrato": ("Ciclo do Contrato", "Quem está no 1o contrato cancela ~10 p.p. a mais do que quem já renovou."),
-            "dependentes": ("Dependentes no Plano", "Cada faixa de dependentes reduz o cancelamento em ~5 p.p."),
+            "dependentes": ("Dependentes por Titular", "Pacientes sem dependentes cancelam mais. Cada dependente adicional reduz o churn."),
             "faixa_idade": ("Faixa Etária do Titular", "Jovens cancelam mais. A partir dos 50, a taxa estabiliza."),
             "duracao": ("Duração do Plano", "12 meses = mais tempo para desengajar. 6 meses renova mais rápido."),
             "cronico": ("Doença Crônica", "Crônicos dependem do plano para acompanhamento contínuo."),
@@ -520,7 +521,7 @@ with tab_score:
         }
         level_labels = {
             "1o": "1o contrato", "2o+": "2o+ contrato",
-            "sem_dep": "Sem dep.", "1-2_dep": "1-2 dep.", "3+_dep": "3+ dep.",
+            "sem_dep": "Sem dependentes", "1-2_dep": "1-2 dep.", "3+_dep": "3+ dep.",
             "00-20": "Até 20", "21-30": "21-30", "31-50": "31-50", "51-70": "51-70", "71+": "71+",
             "6": "6 meses", "12": "12 meses",
             "S": "Sim", "N": "Não",
@@ -576,7 +577,7 @@ with tab_score:
         st.markdown("---")
         st.markdown("#### 3. Visão geral: cada perfil de paciente no mapa de risco")
         st.markdown("""
-        Cada bolha abaixo é um **tipo de paciente** (combinação das 5 variáveis).
+        Cada bolha abaixo é um **tipo de paciente** (combinação das 7 variáveis).
         O tamanho representa quantos contratos existem naquele perfil.
         A posição mostra a relação entre o score e o cancelamento real.
 
@@ -649,7 +650,7 @@ with tab_score:
 
         st.markdown("""
         **Como ler este gráfico:**
-        - Cada **bolha** = um tipo de paciente (ex: "1o contrato, jovem, sem dependentes, 12m, não crônico, digital, CDE")
+        - Cada **bolha** = um tipo de paciente (ex: "1o contrato, jovem, solo, 12m, não crônico, digital, CDE")
         - **Bolhas maiores** = mais pacientes com esse perfil
         - **Cores quentes** (vermelho) = alto cancelamento | **Cores frias** (verde) = baixo cancelamento
         - A **linha pontilhada** é o que o modelo prevê — as bolhas devem seguir essa curva
@@ -659,6 +660,407 @@ with tab_score:
         os perfis de paciente. A dispersão natural (~2-3 p.p.) existe porque combinações
         específicas de variáveis podem interagir de formas que o modelo simplificado não captura.
         """)
+
+        # ═══════════════════════════════════════════════════════════════
+        # RETRATO DE CADA FAIXA
+        # ═══════════════════════════════════════════════════════════════
+        st.markdown("---")
+        st.markdown("### 4. Retrato de cada faixa de risco")
+        st.markdown("""
+        Cada faixa agrupa centenas de perfis diferentes. Abaixo mostramos a **composicao
+        predominante** de cada faixa — qual e o "cliente tipico" em cada nivel de risco,
+        com base na distribuicao ponderada por volume de contratos.
+        """)
+
+        profiles = model["profiles"]
+        feature_vars = ["contrato", "dependentes", "faixa_idade", "duracao", "cronico", "canal", "classe"]
+
+        # Labels amigaveis
+        var_display = {
+            "contrato": "Ciclo",
+            "dependentes": "Dependentes",
+            "faixa_idade": "Idade",
+            "duracao": "Duracao",
+            "cronico": "Cronico",
+            "canal": "Canal",
+            "classe": "Classe",
+        }
+        level_display = {
+            "1o": "1o contrato", "2o+": "2o+ contrato",
+            "sem_dep": "Sem dep.", "1-2_dep": "1-2 dep.", "3+_dep": "3+ dep.",
+            "00-20": "Ate 20", "21-30": "21-30", "31-50": "31-50", "51-70": "51-70", "71+": "71+",
+            "6": "6 meses", "12": "12 meses",
+            "S": "Sim", "N": "Nao",
+            "digital": "Digital", "presencial_cfp": "Presencial",
+            "AB": "AB", "CDE": "CDE",
+        }
+
+        faixa_order = ["0-99", "100-199", "200-399", "400-599", "600-799", "800-899", "900-1000"]
+        faixa_nomes = {
+            "0-99": "CRITICO", "100-199": "MUITO ALTO", "200-399": "ALTO",
+            "400-599": "MEDIO", "600-799": "BAIXO",
+            "800-899": "MUITO BAIXO", "900-1000": "MINIMO",
+        }
+        faixa_cores_bg = {
+            "0-99": "#fdedec", "100-199": "#fadbd8", "200-399": "#fdebd0",
+            "400-599": "#fef9e7", "600-799": "#eafaf1",
+            "800-899": "#d6eaf8", "900-1000": "#d4e6f1",
+        }
+
+        # Calcular distribuicao predominante por faixa
+        faixa_summaries = []
+        for faixa in faixa_order:
+            sub = profiles[profiles["faixa"] == faixa]
+            if sub.empty:
+                continue
+
+            n_total = int(sub["total_contratos"].sum())
+            n_churners = int(sub["churners"].sum())
+            churn_faixa = round(100 * n_churners / n_total, 1) if n_total > 0 else 0
+
+            # Para cada variavel, calcular % ponderado por volume
+            dominantes = {}
+            detalhes = {}
+            for var in feature_vars:
+                dist = sub.groupby(var)["total_contratos"].sum()
+                dist_pct = (100 * dist / dist.sum()).round(1)
+                # Nivel dominante
+                top_level = dist_pct.idxmax()
+                top_pct = dist_pct.max()
+                dominantes[var] = (level_display.get(str(top_level), str(top_level)), top_pct)
+                # Distribuicao completa
+                detalhes[var] = {
+                    level_display.get(str(k), str(k)): v
+                    for k, v in dist_pct.sort_values(ascending=False).items()
+                }
+
+            faixa_summaries.append({
+                "faixa": faixa,
+                "nome": faixa_nomes[faixa],
+                "n_total": n_total,
+                "n_churners": n_churners,
+                "churn": churn_faixa,
+                "dominantes": dominantes,
+                "detalhes": detalhes,
+            })
+
+        # --- Cards resumo ---
+        st.markdown("#### Visao rapida: o cliente tipico de cada faixa")
+
+        for row in faixa_summaries:
+            faixa = row["faixa"]
+            nome = row["nome"]
+            cor_bg = faixa_cores_bg.get(faixa, "#ffffff")
+            cor_faixa = colors_map.get(faixa, "#333333")
+
+            with st.container():
+                st.markdown(
+                    f'<div style="background:{cor_bg}; padding:16px; border-radius:8px; '
+                    f'border-left:5px solid {cor_faixa.lstrip("#") if isinstance(cor_faixa, str) else "333"}; '
+                    f'margin-bottom:12px;">',
+                    unsafe_allow_html=True,
+                )
+
+                cols = st.columns([1.5, 1, 1, 1, 1, 1, 1, 1])
+
+                # Header da faixa
+                cols[0].markdown(
+                    f"**{nome}** (score {faixa})\n\n"
+                    f"{row['n_total']:,} contratos · churn **{row['churn']}%**"
+                )
+
+                # Cada variavel
+                for i, var in enumerate(feature_vars):
+                    level, pct = row["dominantes"][var]
+                    cols[i + 1].markdown(
+                        f"**{var_display[var]}**\n\n"
+                        f"{level} ({pct:.0f}%)"
+                    )
+
+                st.markdown("</div>", unsafe_allow_html=True)
+
+        # --- Tabela detalhada ---
+        st.markdown("---")
+        st.markdown("#### Distribuicao completa por faixa")
+
+        faixa_sel = st.selectbox(
+            "Selecione a faixa:",
+            options=[f"{s['faixa']} — {s['nome']} ({s['n_total']:,} contratos, churn {s['churn']}%)"
+                     for s in faixa_summaries],
+            key="faixa_retrato"
+        )
+        idx_sel = [f"{s['faixa']} — {s['nome']} ({s['n_total']:,} contratos, churn {s['churn']}%)"
+                   for s in faixa_summaries].index(faixa_sel)
+        sel = faixa_summaries[idx_sel]
+
+        detail_cols = st.columns(len(feature_vars))
+        for i, var in enumerate(feature_vars):
+            with detail_cols[i]:
+                st.markdown(f"**{var_display[var]}**")
+                det = sel["detalhes"][var]
+                for level, pct in det.items():
+                    bar_len = int(pct / 2)  # max ~50 chars
+                    bar = "█" * bar_len
+                    st.markdown(f"`{pct:5.1f}%` {bar} {level}")
+
+        # --- Insights inferidos ---
+        st.markdown("---")
+        st.markdown("#### Perfil sintetico por faixa")
+
+        for row in faixa_summaries:
+            faixa = row["faixa"]
+            nome = row["nome"]
+            d = row["dominantes"]
+
+            # Construir descricao textual
+            desc_parts = []
+            for var in feature_vars:
+                level, pct = d[var]
+                if pct >= 60:
+                    desc_parts.append(f"**{level}** ({pct:.0f}%)")
+                elif pct >= 45:
+                    desc_parts.append(f"{level} ({pct:.0f}%)")
+
+            if desc_parts:
+                perfil_txt = " · ".join(desc_parts)
+            else:
+                perfil_txt = "Perfil misto — nenhuma caracteristica dominante acima de 45%"
+
+            col_nome, col_desc = st.columns([1, 5])
+            with col_nome:
+                st.markdown(f"**{nome}**\n\n{faixa} · {row['churn']}%")
+            with col_desc:
+                st.markdown(f"{perfil_txt}")
+                # Volume e concentracao
+                pct_base = round(100 * row["n_total"] / profiles["total_contratos"].sum(), 1)
+                st.caption(f"{row['n_total']:,} contratos ({pct_base}% da base)")
+
+        # ═══════════════════════════════════════════════════════════════
+        # SIMULADOR DINAMICO: WHAT-IF POR FAIXA
+        # ═══════════════════════════════════════════════════════════════
+        st.markdown("---")
+        st.markdown("### 5. Simulador: e se mudassemos uma caracteristica da faixa?")
+        st.markdown("""
+        Selecione uma faixa e escolha **uma feature para alterar**.
+        O simulador aplica a mudanca em todos os perfis reais da faixa
+        que possuem o valor original, e mostra o impacto agregado.
+        """)
+
+        coefs_df = model["coefs"]
+        intercept = model["intercept"]
+        logit_min = model["logit_min"]
+        logit_max = model["logit_max"]
+
+        refs = {"contrato": "2o+", "dependentes": "3+_dep", "faixa_idade": "51-70",
+                "duracao": "6", "cronico": "S", "canal": "presencial_cfp", "classe": "AB"}
+
+        label_amigavel = {
+            "contrato": "Ciclo", "dependentes": "Dependentes", "faixa_idade": "Idade",
+            "duracao": "Duracao", "cronico": "Cronico", "canal": "Canal", "classe": "Classe",
+        }
+        nivel_amigavel = {
+            "1o": "1o contrato", "2o+": "2o+ contrato",
+            "sem_dep": "Sem dep.", "1-2_dep": "1-2 dep.", "3+_dep": "3+ dep.",
+            "00-20": "Ate 20", "21-30": "21-30", "31-50": "31-50", "51-70": "51-70", "71+": "71+",
+            "6": "6 meses", "12": "12 meses",
+            "N": "Nao", "S": "Sim",
+            "digital": "Digital", "presencial_cfp": "Presencial",
+            "AB": "AB", "CDE": "CDE",
+        }
+
+        coef_map = {}
+        for _, r in coefs_df.iterrows():
+            if r["Variável"] != "Intercepto (referência)":
+                coef_map[(r["Variável"], r["Nível"])] = float(r["Log-odds"])
+
+        # --- Selecao da faixa ---
+        faixa_sel = st.selectbox(
+            "Faixa de risco:",
+            options=faixa_order,
+            format_func=lambda f: f"{f} — {faixa_nomes[f]}",
+            index=0,
+            key="sim_faixa_sel"
+        )
+
+        sub_faixa = profiles[profiles["faixa"] == faixa_sel].copy()
+        if sub_faixa.empty:
+            st.warning("Sem perfis nessa faixa.")
+        else:
+            n_faixa = int(sub_faixa["total_contratos"].sum())
+            n_churners_faixa = int(sub_faixa["churners"].sum())
+            churn_faixa = round(100 * n_churners_faixa / n_faixa, 1)
+
+            # Distribuicao atual da faixa
+            st.markdown(f"**{faixa_nomes[faixa_sel]}** — {n_faixa:,} contratos — churn real: **{churn_faixa}%**")
+
+            # Mostrar composicao atual como contexto
+            comp_cols = st.columns(len(feature_vars))
+            for i, var in enumerate(feature_vars):
+                with comp_cols[i]:
+                    dist = sub_faixa.groupby(var)["total_contratos"].sum()
+                    dist_pct = (100 * dist / dist.sum()).round(1)
+                    top = dist_pct.idxmax()
+                    top_pct = dist_pct.max()
+                    st.markdown(f"**{label_amigavel[var]}**")
+                    for nivel, pct in dist_pct.sort_values(ascending=False).items():
+                        marker = " ◀" if str(nivel) == str(top) else ""
+                        st.caption(f"{nivel_amigavel.get(str(nivel), nivel)}: {pct:.0f}%{marker}")
+
+            st.markdown("---")
+
+            # --- Selecao da feature e valor ---
+            col_var, col_de, col_para = st.columns(3)
+
+            with col_var:
+                var_sel = st.selectbox(
+                    "Feature a alterar:",
+                    options=feature_vars,
+                    format_func=lambda v: label_amigavel[v],
+                    key="sim_var_sel"
+                )
+
+            # Valores presentes na faixa para essa feature
+            vals_na_faixa = sorted(sub_faixa[var_sel].astype(str).unique())
+
+            with col_de:
+                val_de = st.selectbox(
+                    f"Valor atual ({label_amigavel[var_sel]}):",
+                    options=vals_na_faixa,
+                    format_func=lambda v: nivel_amigavel.get(v, v),
+                    key="sim_val_de"
+                )
+
+            # Valores possiveis para mudar (todos menos o atual)
+            todos_vals = sorted(sub_faixa[var_sel].astype(str).unique().tolist()
+                                + [str(refs[var_sel])])
+            todos_vals = sorted(set(todos_vals))
+            vals_para = [v for v in todos_vals if v != val_de]
+
+            with col_para:
+                val_para = st.selectbox(
+                    f"Mudar para:",
+                    options=vals_para,
+                    format_func=lambda v: nivel_amigavel.get(v, v),
+                    key="sim_val_para"
+                )
+
+            # --- Calcular impacto nos perfis reais ---
+            afetados = sub_faixa[sub_faixa[var_sel].astype(str) == val_de].copy()
+            nao_afetados = sub_faixa[sub_faixa[var_sel].astype(str) != val_de].copy()
+
+            n_afetados = int(afetados["total_contratos"].sum())
+
+            if n_afetados == 0:
+                st.warning(f"Nenhum perfil na faixa tem {label_amigavel[var_sel]} = {nivel_amigavel.get(val_de, val_de)}.")
+            else:
+                n_churners_afetados = int(afetados["churners"].sum())
+                churn_afetados_real = round(100 * n_churners_afetados / n_afetados, 1)
+                pct_da_faixa = round(100 * n_afetados / n_faixa, 1)
+
+                # Calcular delta de log-odds para a mudanca
+                ref_val = refs[var_sel]
+                delta_logit = 0.0
+                if val_de != ref_val:
+                    delta_logit -= coef_map.get((var_sel, val_de), 0.0)
+                if val_para != ref_val:
+                    delta_logit += coef_map.get((var_sel, val_para), 0.0)
+
+                # Aplicar nos perfis reais
+                afetados["logit_sim"] = afetados["logit_pred"] + delta_logit
+                afetados["p_sim"] = inv_logit(afetados["logit_sim"])
+                afetados["score_sim"] = np.round(
+                    1000 * (1 - (afetados["logit_sim"] - logit_min) / (logit_max - logit_min))
+                ).clip(0, 1000).astype(int)
+
+                churners_sim = (afetados["p_sim"] * afetados["total_contratos"]).sum()
+                churn_sim = round(100 * churners_sim / n_afetados, 1)
+                evitados = int(n_churners_afetados - churners_sim)
+                delta_churn = round(churn_sim - churn_afetados_real, 1)
+
+                # Score medio antes e depois
+                score_medio_antes = round(
+                    (afetados["score"] * afetados["total_contratos"]).sum() / n_afetados
+                )
+                score_medio_depois = round(
+                    (afetados["score_sim"] * afetados["total_contratos"]).sum() / n_afetados
+                )
+
+                # Churn da faixa inteira apos simulacao
+                churners_nao_afetados = int(nao_afetados["churners"].sum())
+                n_nao_afetados = int(nao_afetados["total_contratos"].sum())
+                churn_faixa_sim = round(
+                    100 * (churners_sim + churners_nao_afetados) / n_faixa, 1
+                )
+
+                # Faixa de destino pelo score medio
+                for lo, hi, nome in [(0,100,"CRITICO"),(100,200,"MUITO ALTO"),(200,400,"ALTO"),
+                                      (400,600,"MEDIO"),(600,800,"BAIXO"),(800,900,"MUITO BAIXO"),(900,1001,"MINIMO")]:
+                    if lo <= score_medio_depois < hi:
+                        faixa_dest_nome = nome
+                        break
+                else:
+                    faixa_dest_nome = "?"
+
+                # --- Resultado ---
+                st.markdown("#### Resultado")
+                st.markdown(
+                    f"**{label_amigavel[var_sel]}:** "
+                    f"{nivel_amigavel.get(val_de, val_de)} → {nivel_amigavel.get(val_para, val_para)} "
+                    f"— aplicado a **{n_afetados:,} contratos** ({pct_da_faixa}% da faixa)"
+                )
+
+                k1, k2, k3, k4 = st.columns(4)
+                k1.metric("Churn real do grupo", f"{churn_afetados_real}%",
+                          help=f"Churn observado dos {n_afetados:,} contratos com {nivel_amigavel.get(val_de, val_de)}")
+                k2.metric("Churn simulado", f"{churn_sim}%",
+                          delta=f"{delta_churn:+.1f} p.p.", delta_color="inverse")
+                k3.metric("Churners evitaveis", f"{evitados:,}",
+                          delta=f"de {n_churners_afetados:,}", delta_color="inverse")
+                k4.metric("Score medio", f"{score_medio_antes} → {score_medio_depois}",
+                          delta=f"{score_medio_depois - score_medio_antes:+d} pts", delta_color="normal")
+
+                # Impacto na faixa como um todo
+                st.markdown(f"""
+                | Metrica | Antes | Depois |
+                |---|---|---|
+                | Churn do grupo alterado ({n_afetados:,} contratos) | {churn_afetados_real}% | {churn_sim}% |
+                | Churn da faixa inteira ({n_faixa:,} contratos) | {churn_faixa}% | {churn_faixa_sim}% |
+                | Score medio do grupo | {score_medio_antes} | {score_medio_depois} ({faixa_dest_nome}) |
+                """)
+
+                # Migracao entre faixas
+                bins_sim = [0, 100, 200, 400, 600, 800, 900, 1001]
+                labels_sim = ["0-99", "100-199", "200-399", "400-599", "600-799", "800-899", "900-1000"]
+                afetados["faixa_sim"] = pd.cut(
+                    afetados["score_sim"], bins=bins_sim, labels=labels_sim, right=False
+                )
+
+                migrou = afetados[afetados["faixa_sim"].astype(str) != faixa_sel]
+                n_migrou = int(migrou["total_contratos"].sum())
+                pct_migrou = round(100 * n_migrou / n_afetados, 1) if n_afetados > 0 else 0
+
+                if n_migrou > 0:
+                    # Destinos
+                    destinos = migrou.groupby("faixa_sim")["total_contratos"].sum().sort_values(ascending=False)
+                    dest_txt = ", ".join([
+                        f"{faixa_nomes.get(str(f), f)} ({int(v):,})"
+                        for f, v in destinos.items()
+                    ])
+                    st.success(
+                        f"**{n_migrou:,} contratos ({pct_migrou}%)** migrariam para faixas melhores: {dest_txt}"
+                    )
+                else:
+                    st.info(
+                        f"Nenhum contrato muda de faixa — a mudanca de **{label_amigavel[var_sel]}** "
+                        f"sozinha nao e suficiente para migrar. As outras features ainda pesam."
+                    )
+
+            # Ressalva
+            st.markdown("---")
+            st.caption(
+                "Simulacao baseada nos coeficientes do modelo WLS (projecao estatistica). "
+                "Nao e relacao causal — para validar, seria necessario piloto com grupo controle."
+            )
 
     except Exception as e:
         st.error(f"Erro: {e}")
@@ -782,7 +1184,7 @@ with tab_valid:
         - **Spread de {round(ks_df.iloc[0]['Churn (%)'] - ks_df.iloc[-1]['Churn (%)'], 1)} p.p.** entre extremos — suficiente para diferenciar ações de CRM
 
         **Limitação conhecida:**
-        - **AUC = {m['c_index']:.3f}** (moderado) — o score usa apenas 5 variáveis demográficas/contratuais
+        - **AUC = {m['c_index']:.3f}** (moderado) — o score usa 7 variáveis demográficas/contratuais
           disponíveis no momento da assinatura. Não inclui dados comportamentais (frequência de uso,
           histórico de pagamento, interações com suporte). Com dados comportamentais, o AUC poderia
           subir para 0.70-0.80+.
@@ -796,7 +1198,7 @@ with tab_valid:
 
             - **Unidade de análise:** perfis compostos (7 variáveis × N contratos)
             - **Variável resposta:** log(churn / (1-churn)) de cada perfil
-            - **Preditores:** 10 dummies (7 variáveis, categorias vs referência)
+            - **Preditores:** dummies (7 variáveis, categorias vs referência)
             - **Variáveis:** duração, ciclo contrato, dependentes, faixa etária, crônico, canal, classe social
             - **Pesos:** volume de contratos por perfil
             - **Intercepto:** {model['intercept']:.4f} → churn base = {model['ref_churn']}%

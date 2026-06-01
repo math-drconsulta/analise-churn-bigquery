@@ -1,0 +1,5 @@
+janela,periodo,total_contratos,renovaram,nao_renovaram,taxa_renovacao,churn_rate
+1_PRE-3 (15-24/abr),PRE,6813,3548,3265,52.08,47.92
+2_PRE-2 (25/abr-04/mai),PRE,6384,3206,3178,50.22,49.78
+3_PRE-1 (05-14/mai),PRE,7134,3596,3538,50.41,49.59
+4_POS (15-24/mai),POS,6565,3416,3149,52.03,47.97

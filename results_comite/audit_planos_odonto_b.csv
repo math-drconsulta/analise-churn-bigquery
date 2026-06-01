@@ -1,0 +1,5 @@
+duracao,tem_odonto,total_contratos,churners,churn_rate,pct_contratos_da_duracao,pct_churners_da_duracao,pct_contratos_total,pct_churners_total
+12,com_odonto,37080,22680,61.2,42.9,44.6,19.7,21.9
+12,sem_odonto,49286,28136,57.1,57.1,55.4,26.2,27.2
+6,com_odonto,11,8,72.7,0.0,0.0,0.0,0.0
+6,sem_odonto,102012,52683,51.6,100.0,100.0,54.1,50.9

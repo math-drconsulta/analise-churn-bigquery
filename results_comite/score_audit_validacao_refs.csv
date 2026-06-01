@@ -1,0 +1,9 @@
+duracao,variavel,ref_atual,churn_ref_atual_pp,ref_melhor_observado,churn_ref_melhor_pp,gap_pp,ranking_atual,n_niveis
+12m,ciclo,2o+,54.01,2o+,54.01,0.0,1,2
+12m,faixa_etaria,71+,54.64,71+,54.64,0.0,1,5
+12m,cronico,S,53.55,S,53.55,0.0,1,2
+12m,composicao_titular,com_idoso,53.71,com_idoso,53.71,0.0,1,4
+6m,ciclo,2o+,44.79,2o+,44.79,0.0,1,2
+6m,faixa_etaria,71+,45.48,71+,45.48,0.0,1,5
+6m,cronico,S,45.96,S,45.96,0.0,1,2
+6m,composicao_titular,com_idoso,45.62,com_idoso,45.62,0.0,1,4

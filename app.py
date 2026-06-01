@@ -135,15 +135,17 @@ if df_int is not None:
 
 st.markdown("---")
 
-# ── O QUE RECOMENDAMOS ─────────────────────────────────────────────────
+# ── PERGUNTAS QUE OS DADOS LEVANTAM ───────────────────────────────────
 st.markdown("""
-### Ações recomendadas por impacto esperado
+### Perguntas que os dados levantam
 
-| Prioridade | Ação | Segmento-alvo | Impacto estimado |
-|---|---|---|---|
-| **1** | Programa de onboarding clínico nos primeiros 30 dias (agendar 1ª consulta, lembretes, telemedicina) | 1º contrato | Redução de ~5-10 p.p. no churn do 1º ciclo |
-| **2** | Campanha "Adicione um dependente" com desconto marginal | Titulares sem dependentes | Cada dependente adicionado = ~5 p.p. menos churn |
-| **3** | Régua de retenção pré-vencimento via WhatsApp/SMS para silent churners | Contratos vencendo em 30 dias | Recuperação de parte dos ~88k churners silenciosos |
+Os números acima apontam para questões que valem discutir:
+
+| Observação | Pergunta |
+|---|---|
+| O 1º contrato concentra a maior parte do churn | O que acontece nos primeiros meses que leva tantos a não renovar? |
+| Dependentes reduzem o churn em ~5 p.p. cada | O custo de saída sobe quando o plano cuida de mais gente — isso é alavancável? |
+| ~75% do churn é silencioso (sem pedido de cancelamento) | Quantos desses clientes nem sabiam que estavam saindo? São recuperáveis? |
 """)
 
 st.markdown("---")
@@ -153,12 +155,17 @@ st.info("⬅️ **Navegue pelo menu lateral** para aprofundar em cada capítulo.
 st.markdown("""
 | Capítulo | Conteúdo |
 |---|---|
+| **0. Resumo Executivo** | Narrativa completa: tamanho do problema, drivers, valor em jogo |
 | **1. Visão Geral** | Cada variável isolada e o que ela mostra |
 | **2. Risco e Evolução** | Score de risco, sazonalidade, unidades |
 | **3. Saúde e Consumo** | Consumo por especialidade e o paradoxo do uso |
 | **4. Perfis Compostos** | Cruzamento multivariável — o rosto do churner |
 | **5. Análises Avançadas** | Motivos de cancelamento, win-back, churn silencioso vs ativo |
 | **6. Conversão Falha Pgto** | Resultado do disparo de email pós-falha de pagamento |
+| **8. Insights Negócio** | Anatomia da não-renovação em detalhe |
+| **9. Coorte e Retenção** | Curvas de sobrevivência por safra e perfil |
+| **10. Impacto Financeiro** | CLV, receita perdida e simulador de ROI |
+| **11. Sazonalidade** | Meses críticos e sinais precoces de abandono |
 """)
 
 with st.expander("Sobre esta base de dados", expanded=False):

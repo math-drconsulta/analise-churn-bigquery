@@ -1,28 +1,48 @@
 -- ============================================================================
--- QUERY: NUCLEO FAMILIAR — features dos dependentes por contrato (v2)
+-- QUERY: NUCLEO FAMILIAR — features dos dependentes por contrato (v4)
 -- Output: results/nucleo_familiar.csv  (1 linha por contrato)
 -- Consumido por: pages/7_Nucleo_Familiar.py
 --
--- Mudanças vs v1
+-- Mudanças vs v3
 -- --------------
--- v1 tinha 2 problemas (descobertos na 1a EDA):
+-- v4 endereça as 2 limitações expostas pelo audit (queries/audit_dep_count.sql,
+-- maio/2026):
 --
---   (1) ~26% dos contratos com dep_count_anl > qtd_dep_total: a v1 filtrava
---       s.contract_payment_number = 1 em ref_yalo_subscriptions, dropando
---       dependentes adicionados em payments posteriores. CORREÇÃO: filtro
---       removido; DISTINCT por (contract_id, person_id) já deduplica.
+--   (1) IDADE DOS DEPS — agora vem de ref_yalo_subscriptions.people_birth_date
+--       (com fallback pra vw_yalo_vidas.birth_date). v3 usava
+--       DRC.pacientes_audit.dt_nasc, que não cobre id_paciente de dependente
+--       (cobertura ~0%). people_birth_date está direto na tabela base e tem
+--       cobertura ampla, destravando os buckets etários e a definição de
+--       dependente financeiro (<21 ou >60).
 --
---   (2) ~64% dos contratos com pelo menos 1 dep com idade NULL: pacientes_audit
---       só cobre quem tem cadastro/atendimento na DRC. Deps inscritos no plano
---       mas que nunca consumiram não estão lá. A v1 mascarava esses casos no
---       ELSE 'multi_geracional', deixando a categoria inútil.
---       CORREÇÃO: tratar idade ausente e atendimento ausente como categorias
---       explícitas — vira sinal, não bug:
---         - dep_ativo_drc   = tem atendimento (main_cronico_sn não-NULL)
---         - dep_passivo_drc = nunca teve atendimento (main_cronico_sn NULL)
---       Composição etária só é calculada quando TODOS os deps têm idade
---       conhecida — caso contrário marca 'idade_parcial'.
---       Crônico do dep agora tem 3 estados: 'S' / 'N' confirmado / 'desconhecido'.
+--   (2) LEAKAGE EM dep_count_anl — anl_churn_contratos.dependents_per_holder
+--       diverge de qtd_dep_total recalculado em ~5% dos contratos, e nesses
+--       contratos o churn é ~0% (correlacionado com contract_churn_status =
+--       'renewal'). É campo declarativo do contrato, contaminado pelo
+--       desfecho. v4 marca a coluna dep_count_anl no output como ⚠️ leaky
+--       (mantém pro consumo da pg 7 não quebrar, mas com aviso). Features
+--       derivadas — composicao_drc, qtd_dep_*, etc — usam só qtd_dep_total
+--       recalculado (sem leakage).
+--
+-- Mudanças vs v2
+-- --------------
+-- v3 adicionou MIX DE ESPECIALIDADES dos dependentes (consumo separado do
+-- titular). Motivação: o score atual e a página do núcleo só sabem se o dep
+-- é "ativo/passivo/crônico" — não sabem O QUE ele consumiu.
+--
+-- Path para extrair especialidade do dep:
+--   ref_yalo_subscriptions (y, account_type='dependent')
+--     → ref_yalo_itens (yi, JOIN em payment_id + person_id) → id_item
+--     → bi_recepcao_itens (r, JOIN em id_item) → executante_especialidade
+--
+-- Janela temporal: atendimentos com
+--   date_diff(r.data, y.account_register_date, month) < y.plan_months_duration
+--
+-- Taxonomia (idêntica à consumo_por_especialidade.sql):
+--   produto_grupo='CM' AND unidade != 'TELE'  → 13 especialidades presenciais
+--   produto_grupo='CM' AND unidade  = 'TELE'  → CM_TELE
+--   produto_grupo='EXAMES'                    → EXAMES
+--   demais executante_especialidade em CM      → CM_OUTROS (catch-all)
 --
 -- Universo (idêntico ao score atual)
 -- ----------------------------------
@@ -37,16 +57,30 @@
 WITH
 
 -- ----------------------------------------------------------------------------
--- 1) Idade por paciente (do cadastro). NULL se paciente não tem dt_nasc
---    em pacientes_audit (caso típico: dep que nunca consumiu na DRC).
+-- 1) Idade por paciente (v4): people_birth_date direto de
+--    ref_yalo_subscriptions, com fallback pra vw_yalo_vidas.birth_date para
+--    cobertura adicional. NULL só se ambas as fontes forem NULL.
+--    Agregação por id_paciente: MAX da data (caso uma pessoa apareça com
+--    múltiplas datas — pega a mais recente cadastrada).
 -- ----------------------------------------------------------------------------
 pac AS (
+  WITH bd_subs AS (
+    SELECT id_paciente, MAX(people_birth_date) AS bd
+    FROM `airflow-datalake-prod.YALO_DW.ref_yalo_subscriptions`
+    WHERE id_paciente IS NOT NULL AND people_birth_date IS NOT NULL
+    GROUP BY 1
+  ),
+  bd_vidas AS (
+    SELECT id_paciente, MAX(birth_date) AS bd
+    FROM `airflow-datalake-prod.YALO_DW.vw_yalo_vidas`
+    WHERE id_paciente IS NOT NULL AND birth_date IS NOT NULL
+    GROUP BY 1
+  )
   SELECT
-    id_paciente,
-    DATE_DIFF(CURRENT_DATE(), MAX(dt_nasc), YEAR) AS idade
-  FROM `airflow-datalake-prod.DRC.pacientes_audit`
-  WHERE dt_nasc IS NOT NULL
-  GROUP BY 1
+    COALESCE(s.id_paciente, v.id_paciente) AS id_paciente,
+    DATE_DIFF(CURRENT_DATE(), COALESCE(s.bd, v.bd), YEAR) AS idade
+  FROM bd_subs s
+  FULL OUTER JOIN bd_vidas v USING (id_paciente)
 ),
 
 -- ----------------------------------------------------------------------------
@@ -135,6 +169,101 @@ nucleo AS (
     ROUND(AVG(idade), 1)  AS idade_media_dep
   FROM deps_contrato
   GROUP BY 1
+),
+
+-- ----------------------------------------------------------------------------
+-- 4b) Itens consumidos por dependentes — granularidade (contract_id, item).
+--     Usa o mesmo path da query original yalo_contratos.sql, mas filtrando
+--     account_type = 'dependent' e a janela do plano.
+--     Categoriza cada item em uma única "especialidade_norm" para evitar
+--     dupla contagem na agregação por contrato.
+-- ----------------------------------------------------------------------------
+dep_itens AS (
+  SELECT
+    y.contract_id,
+    y.person_id,
+    yi.id_item,
+    -- Categoria normalizada (mesma taxonomia de consumo_por_especialidade.sql)
+    CASE
+      WHEN r.produto_grupo = 'EXAMES'                                            THEN 'EXAMES'
+      WHEN r.produto_grupo = 'CM' AND r.unidade = 'TELE'                          THEN 'CM_TELE'
+      WHEN r.produto_grupo = 'CM' AND r.executante_especialidade = 'CLINICA MEDICA'        THEN 'CM_CLINICA_MEDICA'
+      WHEN r.produto_grupo = 'CM' AND r.executante_especialidade = 'GINECOLOGISTA'         THEN 'CM_GINECOLOGIA'
+      WHEN r.produto_grupo = 'CM' AND r.executante_especialidade = 'CARDIOLOGISTA'         THEN 'CM_CARDIOLOGISTA'
+      WHEN r.produto_grupo = 'CM' AND r.executante_especialidade = 'DERMATOLOGISTA'        THEN 'CM_DERMATOLOGISTA'
+      WHEN r.produto_grupo = 'CM' AND r.executante_especialidade = 'ENDOCRINOLOGISTA'      THEN 'CM_ENDOCRINOLOGISTA'
+      WHEN r.produto_grupo = 'CM' AND r.executante_especialidade = 'GASTROENTEROLOGISTA'   THEN 'CM_GASTROENTEROLOGISTA'
+      WHEN r.produto_grupo = 'CM' AND r.executante_especialidade = 'NEUROLOGIA'            THEN 'CM_NEUROLOGIA'
+      WHEN r.produto_grupo = 'CM' AND r.executante_especialidade = 'OFTALMOLOGISTA'        THEN 'CM_OFTALMOLOGISTA'
+      WHEN r.produto_grupo = 'CM' AND r.executante_especialidade = 'ORTOPEDISTA'           THEN 'CM_ORTOPEDISTA'
+      WHEN r.produto_grupo = 'CM' AND r.executante_especialidade = 'OTORRINOLARINGOLOGISTA' THEN 'CM_OTORRINOLARINGOLOGISTA'
+      WHEN r.produto_grupo = 'CM' AND r.executante_especialidade = 'PEDIATRA'              THEN 'CM_PEDIATRA'
+      WHEN r.produto_grupo = 'CM' AND r.executante_especialidade = 'PSIQUIATRIA'           THEN 'CM_PSIQUIATRIA'
+      WHEN r.produto_grupo = 'CM' AND r.executante_especialidade = 'UROLOGISTA'            THEN 'CM_UROLOGISTA'
+      WHEN r.produto_grupo = 'CM'                                                  THEN 'CM_OUTROS'
+      ELSE NULL  -- ignora itens sem produto_grupo casável
+    END AS especialidade_norm
+  FROM `airflow-datalake-prod.YALO_DW.ref_yalo_subscriptions` y
+  INNER JOIN `airflow-datalake-prod.YALO_DW.ref_yalo_itens` yi
+    ON yi.payment_id = y.payment_id AND yi.person_id = y.person_id
+  LEFT JOIN `airflow-datalake-prod.DRC_DW.bi_recepcao_itens` r
+    ON r.id_item = yi.id_item
+  WHERE y.account_type = 'dependent'
+    AND r.id_item IS NOT NULL
+    AND DATE_DIFF(r.data, y.account_register_date, MONTH) < y.plan_months_duration
+),
+
+dep_consumo AS (
+  SELECT
+    contract_id,
+
+    -- Volume agregado
+    COUNT(DISTINCT id_item)                        AS qtd_total_itens_dep,
+    COUNT(DISTINCT especialidade_norm)             AS qtd_especialidades_dep_distintas,
+    COUNT(DISTINCT IF(especialidade_norm IS NOT NULL, person_id, NULL)) AS qtd_dep_consumiu,
+
+    -- Itens por especialidade (16 colunas)
+    COUNT(DISTINCT IF(especialidade_norm = 'CM_CLINICA_MEDICA',        id_item, NULL)) AS qtd_itens_dep_CM_CLINICA_MEDICA,
+    COUNT(DISTINCT IF(especialidade_norm = 'CM_GINECOLOGIA',           id_item, NULL)) AS qtd_itens_dep_CM_GINECOLOGIA,
+    COUNT(DISTINCT IF(especialidade_norm = 'CM_CARDIOLOGISTA',         id_item, NULL)) AS qtd_itens_dep_CM_CARDIOLOGISTA,
+    COUNT(DISTINCT IF(especialidade_norm = 'CM_DERMATOLOGISTA',        id_item, NULL)) AS qtd_itens_dep_CM_DERMATOLOGISTA,
+    COUNT(DISTINCT IF(especialidade_norm = 'CM_ENDOCRINOLOGISTA',      id_item, NULL)) AS qtd_itens_dep_CM_ENDOCRINOLOGISTA,
+    COUNT(DISTINCT IF(especialidade_norm = 'CM_GASTROENTEROLOGISTA',   id_item, NULL)) AS qtd_itens_dep_CM_GASTROENTEROLOGISTA,
+    COUNT(DISTINCT IF(especialidade_norm = 'CM_NEUROLOGIA',            id_item, NULL)) AS qtd_itens_dep_CM_NEUROLOGIA,
+    COUNT(DISTINCT IF(especialidade_norm = 'CM_OFTALMOLOGISTA',        id_item, NULL)) AS qtd_itens_dep_CM_OFTALMOLOGISTA,
+    COUNT(DISTINCT IF(especialidade_norm = 'CM_ORTOPEDISTA',           id_item, NULL)) AS qtd_itens_dep_CM_ORTOPEDISTA,
+    COUNT(DISTINCT IF(especialidade_norm = 'CM_OTORRINOLARINGOLOGISTA', id_item, NULL)) AS qtd_itens_dep_CM_OTORRINOLARINGOLOGISTA,
+    COUNT(DISTINCT IF(especialidade_norm = 'CM_PEDIATRA',              id_item, NULL)) AS qtd_itens_dep_CM_PEDIATRA,
+    COUNT(DISTINCT IF(especialidade_norm = 'CM_PSIQUIATRIA',           id_item, NULL)) AS qtd_itens_dep_CM_PSIQUIATRIA,
+    COUNT(DISTINCT IF(especialidade_norm = 'CM_UROLOGISTA',            id_item, NULL)) AS qtd_itens_dep_CM_UROLOGISTA,
+    COUNT(DISTINCT IF(especialidade_norm = 'CM_OUTROS',                id_item, NULL)) AS qtd_itens_dep_CM_OUTROS,
+    COUNT(DISTINCT IF(especialidade_norm = 'CM_TELE',                  id_item, NULL)) AS qtd_itens_dep_CM_TELE,
+    COUNT(DISTINCT IF(especialidade_norm = 'EXAMES',                   id_item, NULL)) AS qtd_itens_dep_EXAMES
+  FROM dep_itens
+  GROUP BY 1
+),
+
+-- Especialidade onde os deps mais consumiram (top-1 por volume de itens).
+-- Empate: ordem alfabética (determinístico).
+dep_principal AS (
+  SELECT
+    contract_id,
+    especialidade_norm AS especialidade_principal_dep,
+    itens AS qtd_itens_principal_dep
+  FROM (
+    SELECT
+      contract_id,
+      especialidade_norm,
+      COUNT(DISTINCT id_item) AS itens,
+      ROW_NUMBER() OVER (
+        PARTITION BY contract_id
+        ORDER BY COUNT(DISTINCT id_item) DESC, especialidade_norm
+      ) AS rn
+    FROM dep_itens
+    WHERE especialidade_norm IS NOT NULL
+    GROUP BY 1, 2
+  )
+  WHERE rn = 1
 )
 
 -- ----------------------------------------------------------------------------
@@ -160,7 +289,10 @@ SELECT
     ELSE 'CDE'
   END AS classe,
 
-  -- Sanity check: agora deve bater (ou estar muito próximo de) qtd_dep_total
+  -- ⚠️ LEAKY: anl_churn_contratos.dependents_per_holder está contaminado.
+  -- Quando dep_count_anl > qtd_dep_total (~5% da base), churn=0% — correlacionado
+  -- com contract_churn_status='renewal' (snapshot pós-decisão). Mantido só
+  -- pro sanity check da pg 7. NÃO USAR como feature do score. Use qtd_dep_total.
   c.dependents_per_holder AS dep_count_anl,
 
   -- ===== Núcleo: contagens =====
@@ -230,12 +362,39 @@ SELECT
   n.idade_max_dep,
   n.idade_media_dep,
 
+  -- ===== Consumo do dep — agregados =====
+  IFNULL(dc.qtd_total_itens_dep, 0)              AS qtd_total_itens_dep,
+  IFNULL(dc.qtd_especialidades_dep_distintas, 0) AS qtd_especialidades_dep_distintas,
+  IFNULL(dc.qtd_dep_consumiu, 0)                 AS qtd_dep_consumiu,
+  dp.especialidade_principal_dep,                                          -- NULL se nenhum dep consumiu
+  IFNULL(dp.qtd_itens_principal_dep, 0)          AS qtd_itens_principal_dep,
+
+  -- ===== Consumo do dep — itens por especialidade (16 colunas) =====
+  IFNULL(dc.qtd_itens_dep_CM_CLINICA_MEDICA, 0)        AS qtd_itens_dep_CM_CLINICA_MEDICA,
+  IFNULL(dc.qtd_itens_dep_CM_GINECOLOGIA, 0)           AS qtd_itens_dep_CM_GINECOLOGIA,
+  IFNULL(dc.qtd_itens_dep_CM_CARDIOLOGISTA, 0)         AS qtd_itens_dep_CM_CARDIOLOGISTA,
+  IFNULL(dc.qtd_itens_dep_CM_DERMATOLOGISTA, 0)        AS qtd_itens_dep_CM_DERMATOLOGISTA,
+  IFNULL(dc.qtd_itens_dep_CM_ENDOCRINOLOGISTA, 0)      AS qtd_itens_dep_CM_ENDOCRINOLOGISTA,
+  IFNULL(dc.qtd_itens_dep_CM_GASTROENTEROLOGISTA, 0)   AS qtd_itens_dep_CM_GASTROENTEROLOGISTA,
+  IFNULL(dc.qtd_itens_dep_CM_NEUROLOGIA, 0)            AS qtd_itens_dep_CM_NEUROLOGIA,
+  IFNULL(dc.qtd_itens_dep_CM_OFTALMOLOGISTA, 0)        AS qtd_itens_dep_CM_OFTALMOLOGISTA,
+  IFNULL(dc.qtd_itens_dep_CM_ORTOPEDISTA, 0)           AS qtd_itens_dep_CM_ORTOPEDISTA,
+  IFNULL(dc.qtd_itens_dep_CM_OTORRINOLARINGOLOGISTA, 0) AS qtd_itens_dep_CM_OTORRINOLARINGOLOGISTA,
+  IFNULL(dc.qtd_itens_dep_CM_PEDIATRA, 0)              AS qtd_itens_dep_CM_PEDIATRA,
+  IFNULL(dc.qtd_itens_dep_CM_PSIQUIATRIA, 0)           AS qtd_itens_dep_CM_PSIQUIATRIA,
+  IFNULL(dc.qtd_itens_dep_CM_UROLOGISTA, 0)            AS qtd_itens_dep_CM_UROLOGISTA,
+  IFNULL(dc.qtd_itens_dep_CM_OUTROS, 0)                AS qtd_itens_dep_CM_OUTROS,
+  IFNULL(dc.qtd_itens_dep_CM_TELE, 0)                  AS qtd_itens_dep_CM_TELE,
+  IFNULL(dc.qtd_itens_dep_EXAMES, 0)                   AS qtd_itens_dep_EXAMES,
+
   -- ===== Target =====
   c.churn_renovacao_automatica_sn AS churn_sn,
   CASE WHEN c.churn_renovacao_automatica_sn = 'S' THEN 1 ELSE 0 END AS churner
 
 FROM `airflow-datalake-prod.YALO_DW.anl_churn_contratos` c
-LEFT JOIN nucleo n ON n.contract_id = c.contract_id
+LEFT JOIN nucleo        n  ON n.contract_id  = c.contract_id
+LEFT JOIN dep_consumo   dc ON dc.contract_id = c.contract_id
+LEFT JOIN dep_principal dp ON dp.contract_id = c.contract_id
 WHERE c.plan_months_duration IN (6, 12)
   AND c.order_payment_method = 'credit_card'
   AND IFNULL(c.order_source_aj, '') != 'b2b'
