@@ -28,9 +28,7 @@ def load_resumo():
 
 @st.cache_data
 def load_detalhe():
-    df = pd.read_csv("results/impacto_adquirente_detalhe.csv")
-    df["duracao"] = df["duracao"].astype(str)
-    return df
+    return pd.read_csv("results/impacto_adquirente_detalhe.csv")
 
 @st.cache_data
 def load_diario():
@@ -101,16 +99,23 @@ else:
 # ═══════════════════════════════════════════════════════════════════
 st.markdown("### Panorama Geral")
 
-k1, k2, k3, k4, k5 = st.columns(5)
+# Pessoas retidas a mais (ou a menos)
+renovacoes_esperadas = int(round(n_pos * taxa_pre / 100))
+pessoas_delta = renov_pos - renovacoes_esperadas
+
+k1, k2, k3, k4, k5, k6 = st.columns(6)
 k1.metric("Renovacao PRE", f"{taxa_pre:.1f}%",
-          help=f"Media das 3 janelas de 10 dias antes da mudanca ({n_pre:,} contratos)")
+          help=f"Media das 3 semanas antes da mudanca ({n_pre:,} contratos)")
 k2.metric("Renovacao POS", f"{taxa_pos:.1f}%",
           delta=f"{delta_global:+.1f} p.p.", delta_color="normal",
-          help=f"Janela pos-mudanca ({n_pos:,} contratos, {dias_pos} dias)")
-k3.metric("Contratos PRE", f"{n_pre:,}")
-k4.metric("Contratos POS", f"{n_pos:,}")
-k5.metric("Dias de observacao POS", f"{dias_pos}",
-          help="Quanto mais dias, mais confiavel a comparacao")
+          help=f"Periodo pos-mudanca ({n_pos:,} contratos, {dias_pos} dias)")
+k3.metric("Pessoas retidas a mais", f"{pessoas_delta:+,}",
+          delta="vs se mantivesse taxa PRE",
+          delta_color="normal" if pessoas_delta > 0 else "inverse",
+          help=f"Esperado: {renovacoes_esperadas:,} renovacoes | Real: {renov_pos:,}")
+k4.metric("Contratos PRE", f"{n_pre:,}")
+k5.metric("Contratos POS", f"{n_pos:,}")
+k6.metric("Dias POS", f"{dias_pos}")
 
 
 # ═══════════════════════════════════════════════════════════════════
@@ -128,36 +133,31 @@ tab_visao, tab_diario, tab_segmentos, tab_estatistica = st.tabs([
 # TAB 1: VISAO POR JANELA
 # ═══════════════════════════════════════════════════════════════════
 with tab_visao:
-    st.markdown("### Taxa de Renovacao por Janela de 10 Dias")
+    st.markdown("### Taxa de Renovacao por Semana")
     st.markdown("""
-    Cada barra e uma janela de 10 dias. As 3 primeiras sao **antes** da mudanca,
-    a ultima e **depois**. A linha tracejada e a media PRE.
+    Cada barra e uma semana. As 3 primeiras sao **PRE** (antes da mudanca),
+    as demais sao **POS**. A linha tracejada e a media PRE.
     """)
 
-    df_janela = df_res.sort_values("janela")
+    df_janela = df_det.sort_values("janela")
+    df_janela["label"] = df_janela["janela"].str.replace(r"^\d_", "", regex=True)
 
     fig = go.Figure()
 
-    # Barras
-    cores = []
-    for _, r in df_janela.iterrows():
-        if r["periodo"] == "POS":
-            cores.append(veredicto_cor)
-        else:
-            cores.append("#3498db")
-
     fig.add_trace(go.Bar(
-        x=df_janela["janela"].str.replace(r"^\d_", "", regex=True),
+        x=df_janela["label"],
         y=df_janela["taxa_renovacao"],
-        marker_color=cores,
+        marker_color=[
+            "#3498db" if p == "PRE" else veredicto_cor
+            for p in df_janela["periodo"]
+        ],
         text=df_janela.apply(
             lambda r: f'{r["taxa_renovacao"]:.1f}%<br>({int(r["total_contratos"]):,})', axis=1
         ),
         textposition="outside",
-        textfont=dict(size=13),
+        textfont=dict(size=12),
     ))
 
-    # Media PRE
     fig.add_hline(
         y=taxa_pre, line_dash="dash", line_color="#3498db", line_width=2,
         annotation_text=f"Media PRE: {taxa_pre:.1f}%",
@@ -169,27 +169,28 @@ with tab_visao:
         yaxis_title="Taxa de Renovacao (%)",
         height=420,
         yaxis=dict(range=[
-            max(0, min(df_janela["taxa_renovacao"]) - 5),
-            max(df_janela["taxa_renovacao"]) + 5
+            max(0, df_janela["taxa_renovacao"].min() - 5),
+            df_janela["taxa_renovacao"].max() + 5
         ]),
         showlegend=False,
     )
     st.plotly_chart(fig, use_container_width=True)
 
     # Tabela
-    df_janela_display = df_janela.copy()
-    df_janela_display["janela"] = df_janela_display["janela"].str.replace(r"^\d_", "", regex=True)
-    df_janela_display["total_contratos"] = df_janela_display["total_contratos"].apply(lambda v: f"{v:,}")
-    df_janela_display["renovaram"] = df_janela_display["renovaram"].apply(lambda v: f"{v:,}")
-    df_janela_display["nao_renovaram"] = df_janela_display["nao_renovaram"].apply(lambda v: f"{v:,}")
-    df_janela_display["taxa_renovacao"] = df_janela_display["taxa_renovacao"].apply(lambda v: f"{v:.2f}%")
-    df_janela_display["churn_rate"] = df_janela_display["churn_rate"].apply(lambda v: f"{v:.2f}%")
+    df_tab = df_janela[["label", "periodo", "total_contratos", "renovaram", "churners", "taxa_renovacao", "churn_rate"]].copy()
+    df_tab["delta_pp"] = (df_tab["taxa_renovacao"] - taxa_pre).round(1)
+    df_tab["total_contratos"] = df_tab["total_contratos"].apply(lambda v: f"{int(v):,}")
+    df_tab["renovaram"] = df_tab["renovaram"].apply(lambda v: f"{int(v):,}")
+    df_tab["churners"] = df_tab["churners"].apply(lambda v: f"{int(v):,}")
+    df_tab["taxa_renovacao"] = df_tab["taxa_renovacao"].apply(lambda v: f"{v:.1f}%")
+    df_tab["churn_rate"] = df_tab["churn_rate"].apply(lambda v: f"{v:.1f}%")
+    df_tab["delta_pp"] = df_tab["delta_pp"].apply(lambda v: f"{v:+.1f}")
 
     st.dataframe(
-        df_janela_display.rename(columns={
-            "janela": "Janela", "periodo": "Periodo", "total_contratos": "Contratos",
-            "renovaram": "Renovaram", "nao_renovaram": "Nao Renovaram",
-            "taxa_renovacao": "Taxa Renovacao", "churn_rate": "Churn"
+        df_tab.rename(columns={
+            "label": "Semana", "periodo": "Periodo", "total_contratos": "Contratos",
+            "renovaram": "Renovaram", "churners": "Churners",
+            "taxa_renovacao": "Renovacao", "churn_rate": "Churn", "delta_pp": "Δ vs PRE",
         }),
         hide_index=True, use_container_width=True,
     )
@@ -249,14 +250,16 @@ with tab_diario:
     ))
 
     # Linha de corte
-    fig.add_vline(
-        x="2026-05-15", line_dash="dash", line_color="red", line_width=2,
+    mudanca_dt = pd.Timestamp("2026-05-15")
+    fig.add_shape(
+        type="line", x0=mudanca_dt, x1=mudanca_dt, y0=0, y1=1, yref="paper",
+        line=dict(dash="dash", color="red", width=2),
     )
     fig.add_annotation(
-        x="2026-05-15", y=df_d["taxa_renovacao"].max() + 2,
+        x=mudanca_dt, y=1, yref="paper",
         text="Mudanca de adquirente",
         showarrow=True, arrowhead=2, arrowcolor="red",
-        font=dict(size=12, color="red"),
+        font=dict(size=12, color="red"), yanchor="bottom",
     )
 
     # Media PRE
@@ -291,7 +294,10 @@ with tab_diario:
         x=pos_d["dia"], y=pos_d["total_contratos"],
         marker_color=veredicto_cor, opacity=0.7, name="POS",
     ))
-    fig_vol.add_vline(x="2026-05-15", line_dash="dash", line_color="red", line_width=2)
+    fig_vol.add_shape(
+        type="line", x0=mudanca_dt, x1=mudanca_dt, y0=0, y1=1, yref="paper",
+        line=dict(dash="dash", color="red", width=2),
+    )
     fig_vol.update_layout(
         yaxis_title="Contratos", height=300,
         legend=dict(orientation="h", y=1.1),
@@ -362,120 +368,54 @@ with tab_diario:
 # TAB 3: POR SEGMENTO
 # ═══════════════════════════════════════════════════════════════════
 with tab_segmentos:
-    st.markdown("### Impacto por Segmento")
+    st.markdown("### Evolucao Semanal")
     st.markdown("""
-    A mudanca de adquirente pode ter afetado alguns segmentos mais que outros.
-    Abaixo comparamos PRE vs POS para cada combinacao de **duracao × ciclo**.
+    Cada barra e uma semana. As 3 primeiras sao **PRE**, as demais **POS**.
+    Mostra a tendencia semana a semana.
     """)
 
-    # Calcular media PRE e POS por segmento
-    seg_pre = df_det[df_det["janela"].str.contains("PRE")].groupby(["duracao", "ciclo"]).agg(
-        n=("total_contratos", "sum"),
-        renov=("renovaram", "sum"),
-    ).reset_index()
-    seg_pre["taxa_pre"] = round(100 * seg_pre["renov"] / seg_pre["n"], 2)
+    df_sem = df_det.copy()
+    df_sem["label"] = df_sem["janela"].str.replace(r"^\d_", "", regex=True)
 
-    seg_pos = df_det[df_det["janela"].str.contains("POS")].groupby(["duracao", "ciclo"]).agg(
-        n=("total_contratos", "sum"),
-        renov=("renovaram", "sum"),
-    ).reset_index()
-    seg_pos["taxa_pos"] = round(100 * seg_pos["renov"] / seg_pos["n"], 2)
-
-    seg = seg_pre.merge(seg_pos, on=["duracao", "ciclo"], suffixes=("_pre", "_pos"))
-    seg["delta"] = round(seg["taxa_pos"] - seg["taxa_pre"], 2)
-    seg["label"] = seg["duracao"] + "m · " + seg["ciclo"]
-
-    # Z-test por segmento
-    def z_test(n1, x1, n2, x2):
-        p1 = x1/n1 if n1 else 0
-        p2 = x2/n2 if n2 else 0
-        pp = (x1+x2)/(n1+n2) if (n1+n2) else 0
-        se = np.sqrt(pp*(1-pp)*(1/n1+1/n2)) if n1 and n2 and pp > 0 and pp < 1 else 0
-        z = (p2-p1)/se if se > 0 else 0
-        p = 2*(1-stats.norm.cdf(abs(z)))
-        return p
-
-    seg["p_valor"] = seg.apply(
-        lambda r: z_test(r["n_pre"], r["renov_pre"], r["n_pos"], r["renov_pos"]), axis=1
-    )
-    seg["sig"] = seg["p_valor"].apply(
-        lambda p: "***" if p < 0.001 else "**" if p < 0.01 else "*" if p < 0.05 else "n.s."
-    )
-
-    # Grafico
-    fig_seg = go.Figure()
-
-    fig_seg.add_trace(go.Bar(
-        x=seg["label"], y=seg["taxa_pre"],
-        name="PRE (media 30 dias)",
-        marker_color="#3498db", opacity=0.6,
-        text=seg["taxa_pre"].apply(lambda v: f"{v:.1f}%"),
-        textposition="outside", textfont=dict(size=12),
-    ))
-    fig_seg.add_trace(go.Bar(
-        x=seg["label"], y=seg["taxa_pos"],
-        name="POS (10 dias)",
+    fig_sem = go.Figure()
+    fig_sem.add_trace(go.Bar(
+        x=df_sem["label"],
+        y=df_sem["taxa_renovacao"],
         marker_color=[
-            "#27ae60" if d > 0 else "#c0392b" if d < -1 else "#f39c12"
-            for d in seg["delta"]
+            "#3498db" if p == "PRE" else veredicto_cor
+            for p in df_sem["periodo"]
         ],
-        text=seg.apply(
-            lambda r: f'{r["taxa_pos"]:.1f}% ({r["delta"]:+.1f}pp {r["sig"]})', axis=1
+        text=df_sem.apply(
+            lambda r: f'{r["taxa_renovacao"]}%\n({int(r["total_contratos"]):,})', axis=1
         ),
-        textposition="outside", textfont=dict(size=12),
+        textposition="outside",
+        textfont=dict(size=11),
     ))
-
-    fig_seg.update_layout(
-        barmode="group",
+    fig_sem.add_hline(y=taxa_pre, line_dash="dash", line_color="#3498db", line_width=2,
+                      annotation_text=f"Media PRE: {taxa_pre:.1f}%",
+                      annotation_position="top left")
+    fig_sem.update_layout(
+        title="Renovacao por Semana",
         yaxis_title="Taxa de Renovacao (%)",
         height=420,
-        legend=dict(orientation="h", y=1.1),
-        yaxis=dict(range=[0, max(seg["taxa_pos"].max(), seg["taxa_pre"].max()) + 8]),
+        yaxis=dict(range=[0, max(df_sem["taxa_renovacao"]) + 8]),
     )
-    st.plotly_chart(fig_seg, use_container_width=True)
+    st.plotly_chart(fig_sem, use_container_width=True)
 
-    # Tabela detalhada
-    st.markdown("### Detalhe por Segmento")
+    # Tabela
+    df_sem_display = df_sem[["label", "periodo", "total_contratos", "renovaram", "churners", "taxa_renovacao", "churn_rate"]].copy()
+    df_sem_display["delta_vs_pre"] = (df_sem_display["taxa_renovacao"] - taxa_pre).round(1)
+    df_sem_display.columns = ["Semana", "Periodo", "Contratos", "Renovaram", "Churners",
+                               "Renovacao (%)", "Churn (%)", "Δ vs PRE (p.p.)"]
+    st.dataframe(df_sem_display, hide_index=True, use_container_width=True)
 
-    seg_display = seg[["label", "n_pre", "taxa_pre", "n_pos", "taxa_pos", "delta", "p_valor", "sig"]].copy()
-    seg_display.columns = ["Segmento", "N (PRE)", "Renovacao PRE", "N (POS)", "Renovacao POS",
-                           "Δ (p.p.)", "p-valor", "Sig."]
-    seg_display["N (PRE)"] = seg_display["N (PRE)"].apply(lambda v: f"{v:,}")
-    seg_display["N (POS)"] = seg_display["N (POS)"].apply(lambda v: f"{v:,}")
-    seg_display["Renovacao PRE"] = seg_display["Renovacao PRE"].apply(lambda v: f"{v:.1f}%")
-    seg_display["Renovacao POS"] = seg_display["Renovacao POS"].apply(lambda v: f"{v:.1f}%")
-    seg_display["Δ (p.p.)"] = seg_display["Δ (p.p.)"].apply(lambda v: f"{v:+.1f}")
-    seg_display["p-valor"] = seg_display["p-valor"].apply(
-        lambda v: f"{v:.4f}" if v >= 0.001 else "<0.001"
-    )
-
-    st.dataframe(seg_display, hide_index=True, use_container_width=True)
-
-    st.caption("*** p<0.001 · ** p<0.01 · * p<0.05 · n.s. = nao significativo")
-
-    # Insights por segmento
-    st.markdown("---")
-    st.markdown("### Leitura por Segmento")
-
-    for _, r in seg.sort_values("delta", ascending=False).iterrows():
-        if r["delta"] > 1 and r["sig"] != "n.s.":
-            st.success(
-                f"**{r['label']}:** renovacao subiu de {r['taxa_pre']:.1f}% para "
-                f"{r['taxa_pos']:.1f}% (**{r['delta']:+.1f} p.p.**, {r['sig']}). "
-                f"Sinal positivo — {int(r['n_pos']):,} contratos observados."
-            )
-        elif r["delta"] < -1 and r["sig"] != "n.s.":
-            st.error(
-                f"**{r['label']}:** renovacao caiu de {r['taxa_pre']:.1f}% para "
-                f"{r['taxa_pos']:.1f}% (**{r['delta']:+.1f} p.p.**, {r['sig']}). "
-                f"Atenção — monitorar nas proximas semanas."
-            )
-        else:
-            st.info(
-                f"**{r['label']}:** {r['taxa_pre']:.1f}% → {r['taxa_pos']:.1f}% "
-                f"({r['delta']:+.1f} p.p., {r['sig']}). "
-                f"Sem mudanca significativa."
-            )
+    # Alerta sobre lag
+    st.warning("""
+    **Atencao ao lag de processamento:** contratos das ultimas 1-2 semanas podem
+    ainda nao ter tido a renovacao processada. Isso infla artificialmente o churn
+    das semanas mais recentes. Aguardar mais 1 semana antes de concluir sobre
+    a tendencia de queda.
+    """)
 
 
 # ═══════════════════════════════════════════════════════════════════

@@ -85,8 +85,10 @@ k5.metric("Features", f"{int(df_met[df_met['modelo'].str.contains('XGBoost Demo.
 # ═══════════════════════════════════════════════════════════════════
 # TABS
 # ═══════════════════════════════════════════════════════════════════
-tab_faixas, tab_compare, tab_scatter, tab_importance, tab_detalhe = st.tabs([
+tab_faixas, tab_grupos, tab_explorador, tab_compare, tab_scatter, tab_importance, tab_detalhe = st.tabs([
     "📊 Faixas de Score",
+    "👥 Grupos por Faixa",
+    "🔎 Explorador de Perfis",
     "⚔️ Antes vs Depois",
     "🗺️ Mapa de Risco",
     "🏆 Feature Importance",
@@ -180,7 +182,289 @@ with tab_faixas:
 
 
 # ═══════════════════════════════════════════════════════════════════
-# TAB 2: ANTES VS DEPOIS
+# TAB 2: GRUPOS POR FAIXA
+# ═══════════════════════════════════════════════════════════════════
+FEATURES_GRUPO = [
+    ("ciclo", "Ciclo"),
+    ("duracao", "Duracao"),
+    ("faixa_idade_cat", "Idade"),
+    ("faixa_dep", "Dependentes"),
+    ("cronico", "Cronico"),
+    ("rotatividade_cat", "Rotatividade"),
+    ("faixa_nps_cat", "NPS"),
+    ("faixa_tempo_cat", "Tempo clinica"),
+]
+
+with tab_grupos:
+    st.markdown("### Quem esta em cada faixa?")
+    st.markdown("""
+    Cada faixa agrupa pacientes com diferentes combinacoes de perfil e experiencia.
+    Abaixo mostramos os **maiores grupos** dentro de cada faixa — as combinacoes
+    mais frequentes e seu churn real.
+    """)
+
+    faixa_sel = st.selectbox(
+        "Selecione a faixa:", options=FAIXA_ORDER,
+        format_func=lambda f: f"{f} ({len(df[df['faixa_xgb']==f]):,} contratos)",
+        key="grp_faixa"
+    )
+
+    sub = df[df["faixa_xgb"] == faixa_sel].copy()
+
+    if len(sub) == 0:
+        st.warning("Sem contratos nessa faixa.")
+    else:
+        n_faixa = len(sub)
+        churn_faixa = round(100 * sub["churn"].mean(), 1)
+
+        st.markdown(f"**{faixa_sel}:** {n_faixa:,} contratos · churn **{churn_faixa}%** · score {int(sub['score_xgb'].min())} a {int(sub['score_xgb'].max())}")
+
+        # Retrato rapido: composicao predominante
+        st.markdown("---")
+        st.markdown("#### Retrato da faixa")
+
+        comp_cols = st.columns(len(FEATURES_GRUPO))
+        for i, (col_name, label) in enumerate(FEATURES_GRUPO):
+            with comp_cols[i]:
+                st.markdown(f"**{label}**")
+                dist = sub[col_name].value_counts(normalize=True).head(4)
+                for val, pct in dist.items():
+                    pct_100 = round(pct * 100)
+                    bar = "█" * (pct_100 // 5)
+                    st.caption(f"{val}: {pct_100}% {bar}")
+
+        # Top grupos (combinacoes mais frequentes)
+        st.markdown("---")
+        st.markdown("#### Maiores grupos dentro da faixa")
+
+        # Agrupar por features principais
+        feat_cols = [f[0] for f in FEATURES_GRUPO]
+        grupos = sub.groupby(feat_cols).agg(
+            n=("churn", "count"),
+            ch=("churn", "sum"),
+            score_medio=("score_xgb", "mean"),
+        ).reset_index()
+        grupos["churn_rate"] = (100 * grupos["ch"] / grupos["n"]).round(1)
+        grupos["score_medio"] = grupos["score_medio"].round(0).astype(int)
+        grupos = grupos[grupos["n"] >= 10].sort_values("n", ascending=False)
+
+        # Mostrar top 15
+        top_n = min(15, len(grupos))
+        if top_n == 0:
+            st.info("Poucos contratos pra formar grupos significativos.")
+        else:
+            st.markdown(f"**Top {top_n} grupos** (minimo 10 contratos):")
+
+            top_grupos = grupos.head(top_n).copy()
+            top_grupos["perfil"] = top_grupos.apply(
+                lambda r: " · ".join([f"{r[f[0]]}" for f in FEATURES_GRUPO if str(r[f[0]]) not in ["", "nan"]]),
+                axis=1
+            )
+
+            fig_grp = go.Figure()
+            fig_grp.add_trace(go.Bar(
+                y=top_grupos["perfil"].iloc[::-1],
+                x=top_grupos["churn_rate"].iloc[::-1],
+                orientation="h",
+                marker_color=[
+                    "#c0392b" if cr > churn_faixa + 5
+                    else "#27ae60" if cr < churn_faixa - 5
+                    else "#f39c12"
+                    for cr in top_grupos["churn_rate"].iloc[::-1]
+                ],
+                text=top_grupos.apply(
+                    lambda r: f'{r["churn_rate"]}% ({int(r["n"]):,} · score {r["score_medio"]})', axis=1
+                ).iloc[::-1],
+                textposition="outside",
+                textfont=dict(size=11),
+            ))
+            fig_grp.add_vline(x=churn_faixa, line_dash="dash", line_color="gray",
+                              annotation_text=f"Media faixa: {churn_faixa}%")
+            fig_grp.update_layout(
+                title=f"Top {top_n} grupos na faixa {faixa_sel}",
+                xaxis_title="Churn (%)",
+                height=max(450, top_n * 35 + 100),
+                margin=dict(l=20, r=120),
+                yaxis=dict(automargin=True),
+                xaxis=dict(range=[0, min(100, max(top_grupos["churn_rate"]) + 15)]),
+            )
+            st.plotly_chart(fig_grp, use_container_width=True)
+
+            # Tabela
+            st.dataframe(
+                top_grupos[["perfil", "n", "ch", "churn_rate", "score_medio"]].rename(columns={
+                    "perfil": "Perfil", "n": "Contratos", "ch": "Churners",
+                    "churn_rate": "Churn (%)", "score_medio": "Score medio",
+                }),
+                hide_index=True, use_container_width=True,
+            )
+
+        # Resumo: grupos de maior e menor churn dentro da faixa
+        if len(grupos) >= 2:
+            st.markdown("---")
+            col1, col2 = st.columns(2)
+            with col1:
+                st.markdown("**Maior churn dentro da faixa:**")
+                pior = grupos.nlargest(3, "churn_rate")
+                for _, r in pior.iterrows():
+                    perfil = " · ".join([f"{r[f[0]]}" for f in FEATURES_GRUPO if str(r[f[0]]) not in ["", "nan"]])
+                    st.markdown(f"- **{r['churn_rate']}%** — {perfil} ({int(r['n'])} contratos)")
+            with col2:
+                st.markdown("**Menor churn dentro da faixa:**")
+                melhor = grupos.nsmallest(3, "churn_rate")
+                for _, r in melhor.iterrows():
+                    perfil = " · ".join([f"{r[f[0]]}" for f in FEATURES_GRUPO if str(r[f[0]]) not in ["", "nan"]])
+                    st.markdown(f"- **{r['churn_rate']}%** — {perfil} ({int(r['n'])} contratos)")
+
+
+# ═══════════════════════════════════════════════════════════════════
+# TAB 3: EXPLORADOR DE PERFIS
+# ═══════════════════════════════════════════════════════════════════
+with tab_explorador:
+    st.markdown("### Explorador de Perfis")
+    st.markdown("""
+    Monte uma combinacao de caracteristicas e veja em tempo real:
+    o churn, o score medio, a faixa de risco e quantos contratos tem.
+    """)
+
+    # Selectboxes pra cada feature
+    col_selects = st.columns(4)
+
+    filtros = {}
+    opcoes_feature = [
+        ("ciclo", "Ciclo", 0),
+        ("duracao", "Duracao", 0),
+        ("faixa_idade_cat", "Idade", 1),
+        ("faixa_dep", "Dependentes", 1),
+        ("cronico", "Cronico", 2),
+        ("canal_simples", "Canal", 2),
+        ("rotatividade_cat", "Rotatividade", 3),
+        ("faixa_nps_cat", "NPS", 3),
+    ]
+
+    for col_name, label, col_idx in opcoes_feature:
+        with col_selects[col_idx]:
+            vals = ["Todos"] + sorted(df[col_name].dropna().unique().tolist())
+            sel = st.selectbox(label, options=vals, key=f"exp_{col_name}")
+            if sel != "Todos":
+                filtros[col_name] = sel
+
+    # Filtro adicional: tempo na clinica
+    col_extra1, col_extra2 = st.columns(2)
+    with col_extra1:
+        tempo_vals = ["Todos"] + sorted(df["faixa_tempo_cat"].dropna().unique().tolist())
+        tempo_sel = st.selectbox("Tempo clinica", options=tempo_vals, key="exp_tempo")
+        if tempo_sel != "Todos":
+            filtros["faixa_tempo_cat"] = tempo_sel
+
+    # Aplicar filtros
+    sub = df.copy()
+    for col_name, val in filtros.items():
+        sub = sub[sub[col_name] == val]
+
+    # Resultados
+    st.markdown("---")
+
+    if len(sub) == 0:
+        st.warning("Nenhum contrato com essa combinacao. Tente remover algum filtro.")
+    elif len(sub) < 10:
+        st.warning(f"Apenas {len(sub)} contratos — amostra muito pequena pra conclusao.")
+    else:
+        n = len(sub)
+        ch = sub["churn"].sum()
+        cr = round(100 * ch / n, 1)
+        score_med = int(sub["score_xgb"].median())
+        score_min = int(sub["score_xgb"].min())
+        score_max = int(sub["score_xgb"].max())
+
+        # Faixa predominante
+        faixa_pred = sub["faixa_xgb"].value_counts().index[0]
+
+        # Filtros aplicados como texto
+        if filtros:
+            filtro_txt = " · ".join([f"**{dict(opcoes_feature + [('faixa_tempo_cat', 'Tempo', 0)])[k] if k != 'faixa_tempo_cat' else 'Tempo'}** = {v}" for k, v in filtros.items()])
+        else:
+            filtro_txt = "Nenhum filtro — base inteira"
+
+        st.markdown(f"**Perfil selecionado:** {filtro_txt}")
+
+        k1, k2, k3, k4, k5 = st.columns(5)
+        k1.metric("Contratos", f"{n:,}")
+        k2.metric("Churn", f"{cr}%",
+                  delta=f"{cr - churn_global:+.1f} p.p. vs base",
+                  delta_color="inverse" if cr > churn_global else "normal")
+        k3.metric("Score mediano", f"{score_med}")
+        k4.metric("Score range", f"{score_min} – {score_max}")
+        k5.metric("Faixa predominante", faixa_pred)
+
+        # Comparar com a base
+        fig_comp = go.Figure()
+
+        fig_comp.add_trace(go.Indicator(
+            mode="gauge+number+delta",
+            value=cr,
+            delta={"reference": churn_global, "valueformat": ".1f", "suffix": " p.p."},
+            gauge={
+                "axis": {"range": [0, 100]},
+                "bar": {"color": "#c0392b" if cr > churn_global else "#27ae60"},
+                "steps": [
+                    {"range": [0, 40], "color": "#d4efdf"},
+                    {"range": [40, 55], "color": "#fef9e7"},
+                    {"range": [55, 100], "color": "#fdedec"},
+                ],
+                "threshold": {
+                    "line": {"color": "black", "width": 3},
+                    "thickness": 0.8,
+                    "value": churn_global,
+                },
+            },
+            title={"text": f"Churn do perfil selecionado<br><span style='font-size:12px'>Base: {churn_global}%</span>"},
+        ))
+        fig_comp.update_layout(height=300)
+        st.plotly_chart(fig_comp, use_container_width=True)
+
+        # Distribuicao de faixas desse perfil
+        st.markdown("#### Distribuicao por faixa")
+        faixa_dist = sub["faixa_xgb"].value_counts().reindex(FAIXA_ORDER, fill_value=0)
+        fig_dist = go.Figure()
+        fig_dist.add_trace(go.Bar(
+            x=faixa_dist.index.astype(str),
+            y=faixa_dist.values,
+            marker_color=[CORES_FAIXA.get(f, "gray") for f in faixa_dist.index],
+            text=[f"{v:,}" for v in faixa_dist.values],
+            textposition="outside",
+        ))
+        fig_dist.update_layout(
+            title="Em quais faixas esse perfil cai",
+            yaxis_title="Contratos", height=350,
+        )
+        st.plotly_chart(fig_dist, use_container_width=True)
+
+        # Se tiver mais de um filtro ativo, mostrar qual pesa mais
+        if len(filtros) >= 2:
+            st.markdown("#### Qual feature mais pesa nesse perfil?")
+            st.caption("Removendo um filtro por vez e vendo quanto o churn muda:")
+            for col_name, val in filtros.items():
+                sub_sem = df.copy()
+                for c2, v2 in filtros.items():
+                    if c2 != col_name:
+                        sub_sem = sub_sem[sub_sem[c2] == v2]
+                n_sem = len(sub_sem)
+                cr_sem = round(100 * sub_sem["churn"].mean(), 1) if n_sem > 0 else 0
+                delta = round(cr - cr_sem, 1)
+                label_feat = col_name
+                for f_name, f_label, _ in opcoes_feature:
+                    if f_name == col_name:
+                        label_feat = f_label
+                        break
+                st.markdown(
+                    f"- Sem filtro de **{label_feat}** ({val}): churn seria {cr_sem}% "
+                    f"→ filtro contribui **{delta:+.1f} p.p.**"
+                )
+
+
+# ═══════════════════════════════════════════════════════════════════
+# TAB 4: ANTES VS DEPOIS
 # ═══════════════════════════════════════════════════════════════════
 with tab_compare:
     st.markdown("### Comparacao: Score Antigo vs Novo")
