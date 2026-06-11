@@ -1,0 +1,16 @@
+categoria,contratos,churners,churn_rate,ticket_medio
+Outros,130,80,61.54,1.2
+Reclamacao geral,76,46,60.53,1.1
+Financeiro/Estorno,698,405,58.02,1.1
+Documentos,545,302,55.41,1.2
+Atendimento/Conduta,226,123,54.42,1.1
+Cadastro/Alteracao,137,73,53.28,1.2
+Exames/Resultados,686,354,51.6,1.1
+Suporte tecnico,164,84,51.22,1.1
+Renovacao,182,93,51.1,1.2
+Agendamento,388,196,50.52,1.1
+Nota fiscal,83,39,46.99,1.2
+Dependente: inclusao,165,77,46.67,1.2
+Solicitacao geral,42,18,42.86,1.1
+Integracao/Ativacao,670,230,34.33,1.2
+Dependente: exclusao,366,74,20.22,1.2

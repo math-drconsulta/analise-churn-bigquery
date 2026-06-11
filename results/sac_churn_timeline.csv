@@ -1,0 +1,15 @@
+janela,tipo_contato,contratos,churners,churn_rate
+60+ dias antes,Outros (sem cancelamento),669,301,44.99
+60+ dias antes,So cancelamento,95,40,42.11
+30-60 dias antes,Outros (sem cancelamento),301,144,47.84
+30-60 dias antes,So cancelamento,62,20,32.26
+7-30 dias antes,Outros (sem cancelamento),326,135,41.41
+7-30 dias antes,So cancelamento,85,20,23.53
+0-7 dias antes,Outros (sem cancelamento),116,55,47.41
+0-7 dias antes,So cancelamento,46,12,26.09
+0-7 dias depois,Outros (sem cancelamento),150,84,56.0
+0-7 dias depois,So cancelamento,120,95,79.17
+7-30 dias depois,Outros (sem cancelamento),530,274,51.7
+7-30 dias depois,So cancelamento,524,446,85.11
+30+ dias depois,Outros (sem cancelamento),1749,913,52.2
+30+ dias depois,So cancelamento,190,183,96.32

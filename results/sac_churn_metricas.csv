@@ -1,0 +1,5 @@
+grupo,contratos,churners,churn_rate,retidos,pct_retidos,churn_ativo,churn_silencioso,ticket_medio
+Sem SAC,127692,69431,54.37,58261,45.6,26022,43409,0.0
+SAC (sem cancelamento),4562,2198,48.18,2364,51.8,879,1319,1.1
+SAC (so cancelamento),1488,1021,68.62,467,31.4,835,186,1.1
+SAC (cancel + outros),202,138,68.32,64,31.7,105,33,2.3

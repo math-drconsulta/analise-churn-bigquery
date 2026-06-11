@@ -1,0 +1,28 @@
+motivo_cancelamento,contratos,churnou,retido,churn_rate,taxa_retencao
+Não sabia da renovação,400,286,114,71.5,28.5
+Cancelamento (Direcionado para retenção),307,178,129,58.0,42.0
+Compra duplicada,243,156,87,64.2,35.8
+Cancelamento de renovação automática (a qualquer momento),135,80,55,59.3,40.7
+Compra á vista/Queria Parcelamento,117,95,22,81.2,18.8
+Não faz uso dos beneficios,80,67,13,83.8,16.2
+Renovação,47,28,19,59.6,40.4
+Possui Convênio - Outros,45,35,10,77.8,22.2
+Trocar/Trocou assinatura,41,36,5,87.8,12.2
+Renovação automática,33,25,8,75.8,24.2
+Cancelamento (Após 7 dias),32,17,15,53.1,46.9
+Cartão,21,10,11,47.6,52.4
+Não reconhece a compra da fatura,15,11,4,73.3,26.7
+Pagar-me,14,13,1,92.9,7.1
+Confirmação Assinatura Ativa,13,8,5,61.5,38.5
+Falecimento,13,12,1,92.3,7.7
+Trocar/Trocou forma de pagamento,12,8,4,66.7,33.3
+Comprou assinatura errada (Tipo e duração),11,10,1,90.9,9.1
+Duvida sobre cobrança,11,8,3,72.7,27.3
+Renovação (Link Enviado),10,6,4,60.0,40.0
+Problemas Sistêmicos Yalo,10,6,4,60.0,40.0
+Adyen,9,7,2,77.8,22.2
+Outros,8,8,0,100.0,0.0
+Pensou que não comprometeria o limite do cartão,7,6,1,85.7,14.3
+Experiencia no DRC ruim,7,6,1,85.7,14.3
+Comprou assinatura errada,6,5,1,83.3,16.7
+Mudou de cidade/estado/pais,5,3,2,60.0,40.0

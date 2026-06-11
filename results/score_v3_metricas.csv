@@ -1,0 +1,5 @@
+modelo,auc_cv,brier,n_features
+A: Logistica Demo,0.5792,0.2432,9
+B: Logistica Demo+Exp,0.5856,0.2425,18
+C: XGBoost Demo+Exp tuned,0.5895,,25
+D: XGBoost Demo only,0.582,,9

@@ -23,12 +23,15 @@
 -- Permite ver se safras recentes retêm melhor ou pior que as antigas.
 -- ============================================================================
 
-WITH contratos_ordenados AS (
+WITH contratos_validos AS (
+  -- Só contratos com vencimento dentro do range confiável da base
+  -- (anl_churn_contratos vai até ~mar/2026 em vencimentos)
   SELECT
     account_id,
     contract_id,
     contract_register_date,
     contract_due_date,
+    contract_due_date_month,
     account_contract_number,
     churn_renovacao_automatica_sn,
     plan_months_duration,
@@ -37,14 +40,20 @@ WITH contratos_ordenados AS (
   WHERE plan_months_duration IN (6, 12)
     AND order_payment_method = 'credit_card'
     AND IFNULL(order_source_aj, '') != 'b2b'
+    -- Filtrar só contratos que VENCERAM nos últimos 12 meses (dados confiáveis)
+    AND contract_due_date_month >= DATE_SUB(DATE_TRUNC(CURRENT_DATE(), MONTH), INTERVAL 12 MONTH)
 ),
 
--- Para cada account, pegar a safra do PRIMEIRO contrato (coorte real)
+-- Para cada account, pegar a safra do PRIMEIRO contrato
+-- (considerando toda a história, não só os 12 meses filtrados)
 primeira_safra AS (
   SELECT
     account_id,
-    MIN(safra_registro) AS coorte
-  FROM contratos_ordenados
+    DATE_TRUNC(MIN(contract_register_date), MONTH) AS coorte
+  FROM `airflow-datalake-prod.YALO_DW.anl_churn_contratos`
+  WHERE plan_months_duration IN (6, 12)
+    AND order_payment_method = 'credit_card'
+    AND IFNULL(order_source_aj, '') != 'b2b'
   GROUP BY account_id
 )
 
@@ -57,10 +66,10 @@ SELECT
   SUM(CASE WHEN co.churn_renovacao_automatica_sn = 'S' THEN 1 ELSE 0 END) AS churners,
   ROUND(100.0 * SUM(CASE WHEN co.churn_renovacao_automatica_sn = 'S' THEN 1 ELSE 0 END) / COUNT(*), 1) AS churn_rate,
   ROUND(100.0 - 100.0 * SUM(CASE WHEN co.churn_renovacao_automatica_sn = 'S' THEN 1 ELSE 0 END) / COUNT(*), 1) AS retencao_rate
-FROM contratos_ordenados co
+FROM contratos_validos co
 JOIN primeira_safra ps ON co.account_id = ps.account_id
-WHERE ps.coorte >= DATE_SUB(DATE_TRUNC(CURRENT_DATE(), MONTH), INTERVAL 24 MONTH)
 GROUP BY 1, 2, 3
+HAVING COUNT(*) >= 30  -- evitar perfis com volume muito baixo
 ORDER BY ps.coorte, co.account_contract_number, duracao;
 
 

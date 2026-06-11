@@ -50,8 +50,8 @@ WITH base AS (
 
     -- Mesma definição de churn da anl_churn_contratos
     CASE
-      WHEN DATE_DIFF(ys.account_due_date, ys.contract_due_date, DAY) > 7 THEN 'S'
-      ELSE 'N'
+      WHEN DATE_DIFF(ys.account_due_date, ys.contract_due_date, DAY) > 7 THEN 'N'
+      ELSE 'S'
     END AS churn_sn,
 
     -- Janelas
@@ -109,8 +109,8 @@ WITH base AS (
     CASE WHEN ys.account_contract_number = 1 THEN '1o' ELSE '2o+' END AS ciclo,
 
     CASE
-      WHEN DATE_DIFF(ys.account_due_date, ys.contract_due_date, DAY) > 7 THEN 'S'
-      ELSE 'N'
+      WHEN DATE_DIFF(ys.account_due_date, ys.contract_due_date, DAY) > 7 THEN 'N'
+      ELSE 'S'
     END AS churn_sn,
 
     CASE
@@ -160,8 +160,8 @@ WITH base AS (
     ys.account_due_date,
 
     CASE
-      WHEN DATE_DIFF(ys.account_due_date, ys.contract_due_date, DAY) > 7 THEN 'S'
-      ELSE 'N'
+      WHEN DATE_DIFF(ys.account_due_date, ys.contract_due_date, DAY) > 7 THEN 'N'
+      ELSE 'S'
     END AS churn_sn
 
   FROM `airflow-datalake-prod.YALO_DW.ref_yalo_subscriptions` ys
