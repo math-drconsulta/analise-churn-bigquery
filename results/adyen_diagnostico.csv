@@ -1,0 +1,24 @@
+janela,periodo,diagnostico,total,pct_da_semana
+1_PRE sem3,PRE,Pagamento recusado,421,72.21
+1_PRE sem3,PRE,Renovado,110,18.87
+1_PRE sem3,PRE,Cancelado (pediu),52,8.92
+2_PRE sem2,PRE,Pagamento recusado,424,75.85
+2_PRE sem2,PRE,Renovado,84,15.03
+2_PRE sem2,PRE,Cancelado (pediu),51,9.12
+3_PRE sem1,PRE,Pagamento recusado,479,74.49
+3_PRE sem1,PRE,Renovado,94,14.62
+3_PRE sem1,PRE,Cancelado (pediu),70,10.89
+4_POS sem1,POS,Pagamento recusado,442,75.56
+4_POS sem1,POS,Renovado,84,14.36
+4_POS sem1,POS,Cancelado (pediu),59,10.09
+5_POS sem2,POS,Pagamento recusado,416,77.76
+5_POS sem2,POS,Cancelado (pediu),64,11.96
+5_POS sem2,POS,Renovado,51,9.53
+5_POS sem2,POS,ERRO: Cobrado Adyen mas nao renovou,4,0.75
+6_POS sem3,POS,Pagamento recusado,385,80.38
+6_POS sem3,POS,Renovado,47,9.81
+6_POS sem3,POS,Cancelado (pediu),46,9.6
+6_POS sem3,POS,ERRO: Cobrado Adyen mas nao renovou,1,0.21
+7_POS sem4,POS,Pagamento recusado,720,86.96
+7_POS sem4,POS,Renovado,54,6.52
+7_POS sem4,POS,Cancelado (pediu),54,6.52

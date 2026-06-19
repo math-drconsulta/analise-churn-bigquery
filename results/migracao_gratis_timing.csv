@@ -1,0 +1,6 @@
+status,faixa_dias,contratos,pct,media_days_diff
+migrou_gratis,0-7 dias,10,0.0,4.3
+migrou_gratis,15-21 dias,46515,65.4,17.0
+migrou_gratis,22-30 dias,2,0.0,27.0
+migrou_gratis,8-14 dias,14,0.0,11.9
+nao_migrou,sem_gratis,24544,34.5,12.1

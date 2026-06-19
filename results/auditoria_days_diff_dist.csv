@@ -1,0 +1,13 @@
+faixa_days_diff,churn_sn,contratos
+1-7 dias,N,252
+1-7 dias,S,4913
+15-21 dias,S,45724
+181-365 dias,S,937
+22-30 dias,S,1188
+31-60 dias,S,2427
+61-90 dias,S,1228
+8-14 dias,S,3343
+91-180 dias,S,1854
+NULL,S,40894
+negativo_ou_zero,N,89273
+negativo_ou_zero,S,3127

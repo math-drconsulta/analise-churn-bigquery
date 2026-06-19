@@ -1,0 +1,8 @@
+janela,periodo,total_contratos,renovaram,churners,taxa_renovacao,churn_rate
+1_PRE sem3 (24-30/abr),PRE,1399,816,583,58.33,41.67
+2_PRE sem2 (01-07/mai),PRE,1270,711,559,55.98,44.02
+3_PRE sem1 (08-14/mai),PRE,1440,797,643,55.35,44.65
+4_POS sem1 (15-21/mai),POS,1279,694,585,54.26,45.74
+5_POS sem2 (22-28/mai),POS,1172,637,535,54.35,45.65
+6_POS sem3 (29/mai-04/jun),POS,951,471,480,49.53,50.47
+7_POS sem4 (05-15/jun),POS,1670,836,834,50.06,49.94

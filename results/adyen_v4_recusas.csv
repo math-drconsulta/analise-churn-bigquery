@@ -1,0 +1,27 @@
+periodo,refusal_reason,total,pct_das_recusas
+POS,Refused,1848,33.86
+POS,Not enough balance,1045,19.15
+POS,Transaction blocked by Adyen to prevent excessive retry fees,1025,18.78
+POS,Transaction Not Permitted,346,6.34
+POS,Restricted Card,262,4.8
+POS,Issuer Suspected Fraud,252,4.62
+POS,Invalid Card Number,183,3.35
+POS,(sem motivo),155,2.84
+POS,Blocked Card,113,2.07
+POS,Not supported,91,1.67
+POS,FRAUD,72,1.32
+POS,Expired Card,51,0.93
+POS,Declined Non Generic,15,0.27
+PRE,Refused,1472,29.56
+PRE,Transaction blocked by Adyen to prevent excessive retry fees,1177,23.64
+PRE,Not enough balance,924,18.56
+PRE,Transaction Not Permitted,377,7.57
+PRE,Issuer Suspected Fraud,241,4.84
+PRE,Restricted Card,227,4.56
+PRE,(sem motivo),160,3.21
+PRE,Invalid Card Number,114,2.29
+PRE,Blocked Card,98,1.97
+PRE,FRAUD,78,1.57
+PRE,Not supported,77,1.55
+PRE,Expired Card,22,0.44
+PRE,Declined Non Generic,12,0.24

@@ -1,0 +1,100 @@
+layout,faixa,feature,val_risco,pct_risco,delta_risco,val_protege,pct_protege,delta_protege
+5_faixas,CRITICO,ciclo,1o,90.0,27.9,2o+,10.0,-27.9
+5_faixas,CRITICO,duracao,12,40.0,-3.3,6,60.0,3.3
+5_faixas,CRITICO,cronico,N,100.0,15.2,S,0.0,-15.2
+5_faixas,CRITICO,faixa_dep,sem_dep,50.0,8.7,3+_dep,10.0,-17.0
+5_faixas,CRITICO,faixa_idade_cat,jovem,30.0,19.7,senior,0.0,-35.9
+5_faixas,CRITICO,canal_simples,digital,70.0,31.7,presencial,30.0,-31.7
+5_faixas,CRITICO,faixa_nps_cat,sem_nps,80.0,-7.4,promotor,10.0,-0.9
+5_faixas,CRITICO,faixa_tempo_cat,sem_atend,40.0,9.7,longo,0.0,-50.3
+5_faixas,CRITICO,rotatividade_cat,alta,100.0,93.5,continuidade,0.0,-58.3
+5_faixas,ALTO,ciclo,1o,81.9,19.8,2o+,18.1,-19.8
+5_faixas,ALTO,duracao,12,98.7,55.4,6,1.3,-55.4
+5_faixas,ALTO,cronico,N,99.7,14.9,S,0.3,-14.9
+5_faixas,ALTO,faixa_dep,sem_dep,99.6,58.3,3+_dep,0.1,-26.9
+5_faixas,ALTO,faixa_idade_cat,jovem,6.4,-3.9,senior,0.0,-35.9
+5_faixas,ALTO,canal_simples,digital,61.7,23.4,presencial,38.3,-23.4
+5_faixas,ALTO,faixa_nps_cat,sem_nps,98.1,10.7,promotor,0.4,-10.5
+5_faixas,ALTO,faixa_tempo_cat,sem_atend,83.0,52.7,longo,10.3,-40.0
+5_faixas,ALTO,rotatividade_cat,alta,3.9,-2.6,continuidade,17.2,-41.1
+5_faixas,MEDIO,ciclo,1o,70.8,8.7,2o+,29.2,-8.7
+5_faixas,MEDIO,duracao,12,36.2,-7.1,6,63.8,7.1
+5_faixas,MEDIO,cronico,N,99.1,14.3,S,0.9,-14.3
+5_faixas,MEDIO,faixa_dep,sem_dep,99.9,58.6,3+_dep,0.0,-27.0
+5_faixas,MEDIO,faixa_idade_cat,jovem,2.8,-7.5,senior,2.4,-33.5
+5_faixas,MEDIO,canal_simples,digital,40.7,2.4,presencial,59.3,-2.4
+5_faixas,MEDIO,faixa_nps_cat,sem_nps,91.8,4.4,promotor,6.8,-4.1
+5_faixas,MEDIO,faixa_tempo_cat,sem_atend,32.9,2.6,longo,45.9,-4.4
+5_faixas,MEDIO,rotatividade_cat,alta,6.5,0.0,continuidade,56.0,-2.3
+5_faixas,BAIXO,ciclo,1o,65.1,3.0,2o+,34.9,-3.0
+5_faixas,BAIXO,duracao,12,42.3,-1.0,6,57.7,1.0
+5_faixas,BAIXO,cronico,N,88.8,4.0,S,11.2,-4.0
+5_faixas,BAIXO,faixa_dep,sem_dep,37.0,-4.3,3+_dep,17.7,-9.3
+5_faixas,BAIXO,faixa_idade_cat,jovem,20.2,9.9,senior,31.3,-4.6
+5_faixas,BAIXO,canal_simples,digital,36.7,-1.6,presencial,63.3,1.6
+5_faixas,BAIXO,faixa_nps_cat,sem_nps,90.6,3.2,promotor,7.6,-3.3
+5_faixas,BAIXO,faixa_tempo_cat,sem_atend,44.0,13.7,longo,38.5,-11.8
+5_faixas,BAIXO,rotatividade_cat,alta,7.3,0.8,continuidade,45.3,-13.0
+5_faixas,SEGURO,ciclo,1o,53.8,-8.3,2o+,46.2,8.3
+5_faixas,SEGURO,duracao,12,44.8,1.5,6,55.2,-1.5
+5_faixas,SEGURO,cronico,N,73.1,-11.7,S,26.9,11.7
+5_faixas,SEGURO,faixa_dep,sem_dep,10.4,-30.9,3+_dep,50.7,23.7
+5_faixas,SEGURO,faixa_idade_cat,jovem,6.2,-4.1,senior,59.5,23.6
+5_faixas,SEGURO,canal_simples,digital,37.1,-1.2,presencial,62.9,1.2
+5_faixas,SEGURO,faixa_nps_cat,sem_nps,81.8,-5.6,promotor,16.4,5.5
+5_faixas,SEGURO,faixa_tempo_cat,sem_atend,14.6,-15.7,longo,64.8,14.5
+5_faixas,SEGURO,rotatividade_cat,alta,6.0,-0.5,continuidade,72.5,14.2
+7_faixas,MUITO ALTO,ciclo,1o,88.9,26.8,2o+,11.1,-26.8
+7_faixas,MUITO ALTO,duracao,12,66.7,23.4,6,33.3,-23.4
+7_faixas,MUITO ALTO,cronico,N,100.0,15.2,S,0.0,-15.2
+7_faixas,MUITO ALTO,faixa_dep,sem_dep,74.1,32.8,3+_dep,7.4,-19.6
+7_faixas,MUITO ALTO,faixa_idade_cat,jovem,7.4,-2.9,senior,0.0,-35.9
+7_faixas,MUITO ALTO,canal_simples,digital,59.3,21.0,presencial,40.7,-21.0
+7_faixas,MUITO ALTO,faixa_nps_cat,sem_nps,51.9,-35.5,promotor,7.4,-3.5
+7_faixas,MUITO ALTO,faixa_tempo_cat,sem_atend,33.3,3.0,longo,33.3,-17.0
+7_faixas,MUITO ALTO,rotatividade_cat,alta,77.8,71.3,continuidade,22.2,-36.1
+7_faixas,ALTO,ciclo,1o,59.7,-2.4,2o+,40.3,2.4
+7_faixas,ALTO,duracao,12,98.5,55.2,6,1.5,-55.2
+7_faixas,ALTO,cronico,N,98.8,14.0,S,1.2,-14.0
+7_faixas,ALTO,faixa_dep,sem_dep,99.8,58.5,3+_dep,0.1,-26.9
+7_faixas,ALTO,faixa_idade_cat,jovem,3.8,-6.5,senior,0.7,-35.2
+7_faixas,ALTO,canal_simples,digital,42.6,4.3,presencial,57.4,-4.3
+7_faixas,ALTO,faixa_nps_cat,sem_nps,98.1,10.7,promotor,0.8,-10.1
+7_faixas,ALTO,faixa_tempo_cat,sem_atend,79.1,48.8,longo,12.7,-37.6
+7_faixas,ALTO,rotatividade_cat,alta,3.0,-3.5,continuidade,20.7,-37.6
+7_faixas,MEDIO,ciclo,1o,74.2,12.1,2o+,25.8,-12.1
+7_faixas,MEDIO,duracao,12,30.8,-12.5,6,69.2,12.5
+7_faixas,MEDIO,cronico,N,99.3,14.5,S,0.7,-14.5
+7_faixas,MEDIO,faixa_dep,sem_dep,99.9,58.6,3+_dep,0.0,-27.0
+7_faixas,MEDIO,faixa_idade_cat,jovem,2.1,-8.2,senior,1.9,-34.0
+7_faixas,MEDIO,canal_simples,digital,41.0,2.7,presencial,59.0,-2.7
+7_faixas,MEDIO,faixa_nps_cat,sem_nps,93.1,5.7,promotor,5.5,-5.4
+7_faixas,MEDIO,faixa_tempo_cat,sem_atend,32.6,2.3,longo,45.9,-4.4
+7_faixas,MEDIO,rotatividade_cat,alta,6.8,0.3,continuidade,55.8,-2.5
+7_faixas,BAIXO,ciclo,1o,55.0,-7.1,2o+,45.0,7.1
+7_faixas,BAIXO,duracao,12,39.8,-3.5,6,60.2,3.5
+7_faixas,BAIXO,cronico,N,93.3,8.5,S,6.7,-8.5
+7_faixas,BAIXO,faixa_dep,sem_dep,83.1,41.8,3+_dep,0.7,-26.3
+7_faixas,BAIXO,faixa_idade_cat,jovem,22.2,11.9,senior,9.9,-26.0
+7_faixas,BAIXO,canal_simples,digital,46.5,8.2,presencial,53.5,-8.2
+7_faixas,BAIXO,faixa_nps_cat,sem_nps,85.0,-2.4,promotor,13.0,2.1
+7_faixas,BAIXO,faixa_tempo_cat,sem_atend,26.5,-3.8,longo,50.7,0.4
+7_faixas,BAIXO,rotatividade_cat,alta,8.9,2.4,continuidade,60.1,1.8
+7_faixas,MUITO BAIXO,ciclo,1o,67.2,5.1,2o+,32.8,-5.1
+7_faixas,MUITO BAIXO,duracao,12,40.2,-3.1,6,59.8,3.1
+7_faixas,MUITO BAIXO,cronico,N,82.8,-2.0,S,17.2,2.0
+7_faixas,MUITO BAIXO,faixa_dep,sem_dep,18.2,-23.1,3+_dep,35.7,8.7
+7_faixas,MUITO BAIXO,faixa_idade_cat,jovem,12.7,2.4,senior,46.7,10.8
+7_faixas,MUITO BAIXO,canal_simples,digital,35.7,-2.6,presencial,64.3,2.6
+7_faixas,MUITO BAIXO,faixa_nps_cat,sem_nps,88.9,1.5,promotor,9.4,-1.5
+7_faixas,MUITO BAIXO,faixa_tempo_cat,sem_atend,34.6,4.3,longo,47.2,-3.1
+7_faixas,MUITO BAIXO,rotatividade_cat,alta,6.1,-0.4,continuidade,54.2,-4.1
+7_faixas,SEGURO,ciclo,1o,32.9,-29.2,2o+,67.1,29.2
+7_faixas,SEGURO,duracao,12,58.2,14.9,6,41.8,-14.9
+7_faixas,SEGURO,cronico,N,63.5,-21.3,S,36.5,21.3
+7_faixas,SEGURO,faixa_dep,sem_dep,6.2,-35.1,3+_dep,56.8,29.8
+7_faixas,SEGURO,faixa_idade_cat,jovem,3.2,-7.1,senior,68.0,32.1
+7_faixas,SEGURO,canal_simples,digital,37.3,-1.0,presencial,62.7,1.0
+7_faixas,SEGURO,faixa_nps_cat,sem_nps,73.4,-14.0,promotor,24.5,13.6
+7_faixas,SEGURO,faixa_tempo_cat,sem_atend,0.1,-30.2,longo,78.9,28.6
+7_faixas,SEGURO,rotatividade_cat,alta,6.6,0.1,continuidade,86.2,27.9

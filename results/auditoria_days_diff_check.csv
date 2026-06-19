@@ -1,0 +1,8 @@
+comparacao,contratos,pct,media_original,media_calculado
+muito_diferente (diff > 30d),136658,70.02,8.9,-269.8
+original_null_calculado_existe,36091,18.49,,-268.9
+original_existe_calculado_null,11273,5.78,11.6,
+batem (diff <= 3d),5108,2.62,-19.8,-19.9
+ambos_null,4803,2.46,,
+diferente (diff 8-30d),1106,0.57,-198.5,-215.9
+proximo (diff 4-7d),121,0.06,-246.1,-251.3

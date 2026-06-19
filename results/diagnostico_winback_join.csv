@@ -1,0 +1,179 @@
+account_id,contract_id,contract_register_date,contract_due_date,account_due_date,plan_months_duration,plan_name,payment_method,account_contract_number,contract_sale_type,canal,days_diff_until_next_contract,date_month
+01d9e3c0-880b-11f0-b46f-193afe4a970f,01d9e3c0-880b-11f0-b46f-193afe4a970f-1,2025-09-02,2026-03-03,2026-03-03,6,cartao dr.consulta semestral,credit_card,1,first_contract,drc_cm,17,2025-09-01
+01d9e3c0-880b-11f0-b46f-193afe4a970f,01d9e3c0-880b-11f0-b46f-193afe4a970f-1,2025-09-02,2026-03-03,2026-03-03,6,cartao dr.consulta semestral,credit_card,1,first_contract,drc_cm,17,2025-10-01
+01d9e3c0-880b-11f0-b46f-193afe4a970f,01d9e3c0-880b-11f0-b46f-193afe4a970f-1,2025-09-02,2026-03-03,2026-03-03,6,cartao dr.consulta semestral,credit_card,1,first_contract,drc_cm,17,2025-11-01
+01d9e3c0-880b-11f0-b46f-193afe4a970f,01d9e3c0-880b-11f0-b46f-193afe4a970f-1,2025-09-02,2026-03-03,2026-03-03,6,cartao dr.consulta semestral,credit_card,1,first_contract,drc_cm,17,2025-12-01
+01d9e3c0-880b-11f0-b46f-193afe4a970f,01d9e3c0-880b-11f0-b46f-193afe4a970f-1,2025-09-02,2026-03-03,2026-03-03,6,cartao dr.consulta semestral,credit_card,1,first_contract,drc_cm,17,2026-01-01
+01d9e3c0-880b-11f0-b46f-193afe4a970f,01d9e3c0-880b-11f0-b46f-193afe4a970f-1,2025-09-02,2026-03-03,2026-03-03,6,cartao dr.consulta semestral,credit_card,1,first_contract,drc_cm,17,2026-02-01
+01d9e3c0-880b-11f0-b46f-193afe4a970f,01d9e3c0-880b-11f0-b46f-193afe4a970f-1,2025-09-02,2026-03-03,2026-03-03,6,cartao dr.consulta semestral,credit_card,1,first_contract,drc_cm,17,2026-03-01
+030beda0-d2bd-11ef-a92f-49859a4ed444,,,,2026-01-15,12,cartao dr.consulta com odonto anual,credit_card,,,drc_cfp,,2026-02-01
+030beda0-d2bd-11ef-a92f-49859a4ed444,030beda0-d2bd-11ef-a92f-49859a4ed444-1,2025-01-14,2026-01-15,2026-01-15,12,cartao dr.consulta com odonto anual,credit_card,1,renewal,drc_cfp,17,2025-01-01
+030beda0-d2bd-11ef-a92f-49859a4ed444,030beda0-d2bd-11ef-a92f-49859a4ed444-1,2025-01-14,2026-01-15,2026-01-15,12,cartao dr.consulta com odonto anual,credit_card,1,renewal,drc_cfp,17,2025-02-01
+030beda0-d2bd-11ef-a92f-49859a4ed444,030beda0-d2bd-11ef-a92f-49859a4ed444-1,2025-01-14,2026-01-15,2026-01-15,12,cartao dr.consulta com odonto anual,credit_card,1,renewal,drc_cfp,17,2025-03-01
+030beda0-d2bd-11ef-a92f-49859a4ed444,030beda0-d2bd-11ef-a92f-49859a4ed444-1,2025-01-14,2026-01-15,2026-01-15,12,cartao dr.consulta com odonto anual,credit_card,1,renewal,drc_cfp,17,2025-04-01
+030beda0-d2bd-11ef-a92f-49859a4ed444,030beda0-d2bd-11ef-a92f-49859a4ed444-1,2025-01-14,2026-01-15,2026-01-15,12,cartao dr.consulta com odonto anual,credit_card,1,renewal,drc_cfp,17,2025-05-01
+030beda0-d2bd-11ef-a92f-49859a4ed444,030beda0-d2bd-11ef-a92f-49859a4ed444-1,2025-01-14,2026-01-15,2026-01-15,12,cartao dr.consulta com odonto anual,credit_card,1,renewal,drc_cfp,17,2025-06-01
+030beda0-d2bd-11ef-a92f-49859a4ed444,030beda0-d2bd-11ef-a92f-49859a4ed444-1,2025-01-14,2026-01-15,2026-01-15,12,cartao dr.consulta com odonto anual,credit_card,1,renewal,drc_cfp,17,2025-07-01
+030beda0-d2bd-11ef-a92f-49859a4ed444,030beda0-d2bd-11ef-a92f-49859a4ed444-1,2025-01-14,2026-01-15,2026-01-15,12,cartao dr.consulta com odonto anual,credit_card,1,renewal,drc_cfp,17,2025-08-01
+030beda0-d2bd-11ef-a92f-49859a4ed444,030beda0-d2bd-11ef-a92f-49859a4ed444-1,2025-01-14,2026-01-15,2026-01-15,12,cartao dr.consulta com odonto anual,credit_card,1,renewal,drc_cfp,17,2025-09-01
+030beda0-d2bd-11ef-a92f-49859a4ed444,030beda0-d2bd-11ef-a92f-49859a4ed444-1,2025-01-14,2026-01-15,2026-01-15,12,cartao dr.consulta com odonto anual,credit_card,1,renewal,drc_cfp,17,2025-10-01
+030beda0-d2bd-11ef-a92f-49859a4ed444,030beda0-d2bd-11ef-a92f-49859a4ed444-1,2025-01-14,2026-01-15,2026-01-15,12,cartao dr.consulta com odonto anual,credit_card,1,renewal,drc_cfp,17,2025-11-01
+030beda0-d2bd-11ef-a92f-49859a4ed444,030beda0-d2bd-11ef-a92f-49859a4ed444-1,2025-01-14,2026-01-15,2026-01-15,12,cartao dr.consulta com odonto anual,credit_card,1,renewal,drc_cfp,17,2025-12-01
+030beda0-d2bd-11ef-a92f-49859a4ed444,030beda0-d2bd-11ef-a92f-49859a4ed444-1,2025-01-14,2026-01-15,2026-01-15,12,cartao dr.consulta com odonto anual,credit_card,1,renewal,drc_cfp,17,2026-01-01
+043b0310-edd4-11ee-8a98-d33e330ae38f,,,,2026-03-30,12,cartao dr.consulta anual,credit_card,,,drc_cfp,,2026-04-01
+043b0310-edd4-11ee-8a98-d33e330ae38f,043b0310-edd4-11ee-8a98-d33e330ae38f-1,2024-03-29,2025-03-29,2026-03-30,12,cartao dr.consulta anual,credit_card,1,first_contract,drc_cfp,0,2024-03-01
+043b0310-edd4-11ee-8a98-d33e330ae38f,043b0310-edd4-11ee-8a98-d33e330ae38f-1,2024-03-29,2025-03-29,2026-03-30,12,cartao dr.consulta anual,credit_card,1,first_contract,drc_cfp,0,2024-04-01
+043b0310-edd4-11ee-8a98-d33e330ae38f,043b0310-edd4-11ee-8a98-d33e330ae38f-1,2024-03-29,2025-03-29,2026-03-30,12,cartao dr.consulta anual,credit_card,1,first_contract,drc_cfp,0,2024-05-01
+043b0310-edd4-11ee-8a98-d33e330ae38f,043b0310-edd4-11ee-8a98-d33e330ae38f-1,2024-03-29,2025-03-29,2026-03-30,12,cartao dr.consulta anual,credit_card,1,first_contract,drc_cfp,0,2024-06-01
+043b0310-edd4-11ee-8a98-d33e330ae38f,043b0310-edd4-11ee-8a98-d33e330ae38f-1,2024-03-29,2025-03-29,2026-03-30,12,cartao dr.consulta anual,credit_card,1,first_contract,drc_cfp,0,2024-07-01
+043b0310-edd4-11ee-8a98-d33e330ae38f,043b0310-edd4-11ee-8a98-d33e330ae38f-1,2024-03-29,2025-03-29,2026-03-30,12,cartao dr.consulta anual,credit_card,1,first_contract,drc_cfp,0,2024-08-01
+043b0310-edd4-11ee-8a98-d33e330ae38f,043b0310-edd4-11ee-8a98-d33e330ae38f-1,2024-03-29,2025-03-29,2026-03-30,12,cartao dr.consulta anual,credit_card,1,first_contract,drc_cfp,0,2024-09-01
+043b0310-edd4-11ee-8a98-d33e330ae38f,043b0310-edd4-11ee-8a98-d33e330ae38f-1,2024-03-29,2025-03-29,2026-03-30,12,cartao dr.consulta anual,credit_card,1,first_contract,drc_cfp,0,2024-10-01
+043b0310-edd4-11ee-8a98-d33e330ae38f,043b0310-edd4-11ee-8a98-d33e330ae38f-1,2024-03-29,2025-03-29,2026-03-30,12,cartao dr.consulta anual,credit_card,1,first_contract,drc_cfp,0,2024-11-01
+043b0310-edd4-11ee-8a98-d33e330ae38f,043b0310-edd4-11ee-8a98-d33e330ae38f-1,2024-03-29,2025-03-29,2026-03-30,12,cartao dr.consulta anual,credit_card,1,first_contract,drc_cfp,0,2024-12-01
+043b0310-edd4-11ee-8a98-d33e330ae38f,043b0310-edd4-11ee-8a98-d33e330ae38f-1,2024-03-29,2025-03-29,2026-03-30,12,cartao dr.consulta anual,credit_card,1,first_contract,drc_cfp,0,2025-01-01
+043b0310-edd4-11ee-8a98-d33e330ae38f,043b0310-edd4-11ee-8a98-d33e330ae38f-1,2024-03-29,2025-03-29,2026-03-30,12,cartao dr.consulta anual,credit_card,1,first_contract,drc_cfp,0,2025-02-01
+043b0310-edd4-11ee-8a98-d33e330ae38f,043b0310-edd4-11ee-8a98-d33e330ae38f-2,2025-03-29,2026-03-30,2026-03-30,12,cartao dr.consulta anual,credit_card,2,renewal,drc_cfp,17,2025-03-01
+043b0310-edd4-11ee-8a98-d33e330ae38f,043b0310-edd4-11ee-8a98-d33e330ae38f-2,2025-03-29,2026-03-30,2026-03-30,12,cartao dr.consulta anual,credit_card,2,renewal,drc_cfp,17,2025-04-01
+043b0310-edd4-11ee-8a98-d33e330ae38f,043b0310-edd4-11ee-8a98-d33e330ae38f-2,2025-03-29,2026-03-30,2026-03-30,12,cartao dr.consulta anual,credit_card,2,renewal,drc_cfp,17,2025-05-01
+043b0310-edd4-11ee-8a98-d33e330ae38f,043b0310-edd4-11ee-8a98-d33e330ae38f-2,2025-03-29,2026-03-30,2026-03-30,12,cartao dr.consulta anual,credit_card,2,renewal,drc_cfp,17,2025-06-01
+043b0310-edd4-11ee-8a98-d33e330ae38f,043b0310-edd4-11ee-8a98-d33e330ae38f-2,2025-03-29,2026-03-30,2026-03-30,12,cartao dr.consulta anual,credit_card,2,renewal,drc_cfp,17,2025-07-01
+043b0310-edd4-11ee-8a98-d33e330ae38f,043b0310-edd4-11ee-8a98-d33e330ae38f-2,2025-03-29,2026-03-30,2026-03-30,12,cartao dr.consulta anual,credit_card,2,renewal,drc_cfp,17,2025-08-01
+043b0310-edd4-11ee-8a98-d33e330ae38f,043b0310-edd4-11ee-8a98-d33e330ae38f-2,2025-03-29,2026-03-30,2026-03-30,12,cartao dr.consulta anual,credit_card,2,renewal,drc_cfp,17,2025-09-01
+043b0310-edd4-11ee-8a98-d33e330ae38f,043b0310-edd4-11ee-8a98-d33e330ae38f-2,2025-03-29,2026-03-30,2026-03-30,12,cartao dr.consulta anual,credit_card,2,renewal,drc_cfp,17,2025-10-01
+043b0310-edd4-11ee-8a98-d33e330ae38f,043b0310-edd4-11ee-8a98-d33e330ae38f-2,2025-03-29,2026-03-30,2026-03-30,12,cartao dr.consulta anual,credit_card,2,renewal,drc_cfp,17,2025-11-01
+043b0310-edd4-11ee-8a98-d33e330ae38f,043b0310-edd4-11ee-8a98-d33e330ae38f-2,2025-03-29,2026-03-30,2026-03-30,12,cartao dr.consulta anual,credit_card,2,renewal,drc_cfp,17,2025-12-01
+043b0310-edd4-11ee-8a98-d33e330ae38f,043b0310-edd4-11ee-8a98-d33e330ae38f-2,2025-03-29,2026-03-30,2026-03-30,12,cartao dr.consulta anual,credit_card,2,renewal,drc_cfp,17,2026-01-01
+043b0310-edd4-11ee-8a98-d33e330ae38f,043b0310-edd4-11ee-8a98-d33e330ae38f-2,2025-03-29,2026-03-30,2026-03-30,12,cartao dr.consulta anual,credit_card,2,renewal,drc_cfp,17,2026-02-01
+043b0310-edd4-11ee-8a98-d33e330ae38f,043b0310-edd4-11ee-8a98-d33e330ae38f-2,2025-03-29,2026-03-30,2026-03-30,12,cartao dr.consulta anual,credit_card,2,renewal,drc_cfp,17,2026-03-01
+062c69b0-56a2-11f0-bc30-cf173838a38c,062c69b0-56a2-11f0-bc30-cf173838a38c-1,2025-07-01,2026-01-02,2026-01-02,6,cartao dr.consulta semestral,credit_card,1,renewal,drc_cm,17,2025-07-01
+062c69b0-56a2-11f0-bc30-cf173838a38c,062c69b0-56a2-11f0-bc30-cf173838a38c-1,2025-07-01,2026-01-02,2026-01-02,6,cartao dr.consulta semestral,credit_card,1,renewal,drc_cm,17,2025-08-01
+062c69b0-56a2-11f0-bc30-cf173838a38c,062c69b0-56a2-11f0-bc30-cf173838a38c-1,2025-07-01,2026-01-02,2026-01-02,6,cartao dr.consulta semestral,credit_card,1,renewal,drc_cm,17,2025-09-01
+062c69b0-56a2-11f0-bc30-cf173838a38c,062c69b0-56a2-11f0-bc30-cf173838a38c-1,2025-07-01,2026-01-02,2026-01-02,6,cartao dr.consulta semestral,credit_card,1,renewal,drc_cm,17,2025-10-01
+062c69b0-56a2-11f0-bc30-cf173838a38c,062c69b0-56a2-11f0-bc30-cf173838a38c-1,2025-07-01,2026-01-02,2026-01-02,6,cartao dr.consulta semestral,credit_card,1,renewal,drc_cm,17,2025-11-01
+062c69b0-56a2-11f0-bc30-cf173838a38c,062c69b0-56a2-11f0-bc30-cf173838a38c-1,2025-07-01,2026-01-02,2026-01-02,6,cartao dr.consulta semestral,credit_card,1,renewal,drc_cm,17,2025-12-01
+062c69b0-56a2-11f0-bc30-cf173838a38c,062c69b0-56a2-11f0-bc30-cf173838a38c-1,2025-07-01,2026-01-02,2026-01-02,6,cartao dr.consulta semestral,credit_card,1,renewal,drc_cm,17,2026-01-01
+06bea690-b482-11ee-acf8-ad42860c9a06,,,,2026-01-17,6,cartao dr.consulta semestral,credit_card,,,drc_cm,,2026-02-01
+06bea690-b482-11ee-acf8-ad42860c9a06,06bea690-b482-11ee-acf8-ad42860c9a06-1,2024-01-16,2024-07-16,2026-01-17,6,cartao dr.consulta semestral,credit_card,1,first_contract,drc_cm,0,2024-01-01
+06bea690-b482-11ee-acf8-ad42860c9a06,06bea690-b482-11ee-acf8-ad42860c9a06-1,2024-01-16,2024-07-16,2026-01-17,6,cartao dr.consulta semestral,credit_card,1,first_contract,drc_cm,0,2024-02-01
+06bea690-b482-11ee-acf8-ad42860c9a06,06bea690-b482-11ee-acf8-ad42860c9a06-1,2024-01-16,2024-07-16,2026-01-17,6,cartao dr.consulta semestral,credit_card,1,first_contract,drc_cm,0,2024-03-01
+06bea690-b482-11ee-acf8-ad42860c9a06,06bea690-b482-11ee-acf8-ad42860c9a06-1,2024-01-16,2024-07-16,2026-01-17,6,cartao dr.consulta semestral,credit_card,1,first_contract,drc_cm,0,2024-04-01
+06bea690-b482-11ee-acf8-ad42860c9a06,06bea690-b482-11ee-acf8-ad42860c9a06-1,2024-01-16,2024-07-16,2026-01-17,6,cartao dr.consulta semestral,credit_card,1,first_contract,drc_cm,0,2024-05-01
+06bea690-b482-11ee-acf8-ad42860c9a06,06bea690-b482-11ee-acf8-ad42860c9a06-1,2024-01-16,2024-07-16,2026-01-17,6,cartao dr.consulta semestral,credit_card,1,first_contract,drc_cm,0,2024-06-01
+06bea690-b482-11ee-acf8-ad42860c9a06,06bea690-b482-11ee-acf8-ad42860c9a06-2,2024-07-16,2025-01-16,2026-01-17,6,cartao dr.consulta semestral,credit_card,2,renewal,drc_cm,0,2024-07-01
+06bea690-b482-11ee-acf8-ad42860c9a06,06bea690-b482-11ee-acf8-ad42860c9a06-2,2024-07-16,2025-01-16,2026-01-17,6,cartao dr.consulta semestral,credit_card,2,renewal,drc_cm,0,2024-08-01
+06bea690-b482-11ee-acf8-ad42860c9a06,06bea690-b482-11ee-acf8-ad42860c9a06-2,2024-07-16,2025-01-16,2026-01-17,6,cartao dr.consulta semestral,credit_card,2,renewal,drc_cm,0,2024-09-01
+06bea690-b482-11ee-acf8-ad42860c9a06,06bea690-b482-11ee-acf8-ad42860c9a06-2,2024-07-16,2025-01-16,2026-01-17,6,cartao dr.consulta semestral,credit_card,2,renewal,drc_cm,0,2024-10-01
+06bea690-b482-11ee-acf8-ad42860c9a06,06bea690-b482-11ee-acf8-ad42860c9a06-2,2024-07-16,2025-01-16,2026-01-17,6,cartao dr.consulta semestral,credit_card,2,renewal,drc_cm,0,2024-11-01
+06bea690-b482-11ee-acf8-ad42860c9a06,06bea690-b482-11ee-acf8-ad42860c9a06-2,2024-07-16,2025-01-16,2026-01-17,6,cartao dr.consulta semestral,credit_card,2,renewal,drc_cm,0,2024-12-01
+06bea690-b482-11ee-acf8-ad42860c9a06,06bea690-b482-11ee-acf8-ad42860c9a06-3,2025-01-16,2025-07-16,2026-01-17,6,cartao dr.consulta semestral,credit_card,3,renewal,drc_cm,0,2025-01-01
+06bea690-b482-11ee-acf8-ad42860c9a06,06bea690-b482-11ee-acf8-ad42860c9a06-3,2025-01-16,2025-07-16,2026-01-17,6,cartao dr.consulta semestral,credit_card,3,renewal,drc_cm,0,2025-02-01
+06bea690-b482-11ee-acf8-ad42860c9a06,06bea690-b482-11ee-acf8-ad42860c9a06-3,2025-01-16,2025-07-16,2026-01-17,6,cartao dr.consulta semestral,credit_card,3,renewal,drc_cm,0,2025-03-01
+06bea690-b482-11ee-acf8-ad42860c9a06,06bea690-b482-11ee-acf8-ad42860c9a06-3,2025-01-16,2025-07-16,2026-01-17,6,cartao dr.consulta semestral,credit_card,3,renewal,drc_cm,0,2025-04-01
+06bea690-b482-11ee-acf8-ad42860c9a06,06bea690-b482-11ee-acf8-ad42860c9a06-3,2025-01-16,2025-07-16,2026-01-17,6,cartao dr.consulta semestral,credit_card,3,renewal,drc_cm,0,2025-05-01
+06bea690-b482-11ee-acf8-ad42860c9a06,06bea690-b482-11ee-acf8-ad42860c9a06-3,2025-01-16,2025-07-16,2026-01-17,6,cartao dr.consulta semestral,credit_card,3,renewal,drc_cm,0,2025-06-01
+06bea690-b482-11ee-acf8-ad42860c9a06,06bea690-b482-11ee-acf8-ad42860c9a06-4,2025-07-16,2026-01-17,2026-01-17,6,cartao dr.consulta semestral,credit_card,4,renewal,drc_cm,17,2025-07-01
+06bea690-b482-11ee-acf8-ad42860c9a06,06bea690-b482-11ee-acf8-ad42860c9a06-4,2025-07-16,2026-01-17,2026-01-17,6,cartao dr.consulta semestral,credit_card,4,renewal,drc_cm,17,2025-08-01
+06bea690-b482-11ee-acf8-ad42860c9a06,06bea690-b482-11ee-acf8-ad42860c9a06-4,2025-07-16,2026-01-17,2026-01-17,6,cartao dr.consulta semestral,credit_card,4,renewal,drc_cm,17,2025-09-01
+06bea690-b482-11ee-acf8-ad42860c9a06,06bea690-b482-11ee-acf8-ad42860c9a06-4,2025-07-16,2026-01-17,2026-01-17,6,cartao dr.consulta semestral,credit_card,4,renewal,drc_cm,17,2025-10-01
+06bea690-b482-11ee-acf8-ad42860c9a06,06bea690-b482-11ee-acf8-ad42860c9a06-4,2025-07-16,2026-01-17,2026-01-17,6,cartao dr.consulta semestral,credit_card,4,renewal,drc_cm,17,2025-11-01
+06bea690-b482-11ee-acf8-ad42860c9a06,06bea690-b482-11ee-acf8-ad42860c9a06-4,2025-07-16,2026-01-17,2026-01-17,6,cartao dr.consulta semestral,credit_card,4,renewal,drc_cm,17,2025-12-01
+06bea690-b482-11ee-acf8-ad42860c9a06,06bea690-b482-11ee-acf8-ad42860c9a06-4,2025-07-16,2026-01-17,2026-01-17,6,cartao dr.consulta semestral,credit_card,4,renewal,drc_cm,17,2026-01-01
+099b3df0-dccd-11ef-ade3-c9324d00ccb3,,,,2026-01-28,6,cartao dr.consulta semestral,credit_card,,,drc_digital,,2026-02-01
+099b3df0-dccd-11ef-ade3-c9324d00ccb3,099b3df0-dccd-11ef-ade3-c9324d00ccb3-1,2025-01-27,2025-07-27,2026-01-28,6,cartao dr.consulta semestral,credit_card,1,first_contract,drc_digital,0,2025-01-01
+099b3df0-dccd-11ef-ade3-c9324d00ccb3,099b3df0-dccd-11ef-ade3-c9324d00ccb3-1,2025-01-27,2025-07-27,2026-01-28,6,cartao dr.consulta semestral,credit_card,1,first_contract,drc_digital,0,2025-02-01
+099b3df0-dccd-11ef-ade3-c9324d00ccb3,099b3df0-dccd-11ef-ade3-c9324d00ccb3-1,2025-01-27,2025-07-27,2026-01-28,6,cartao dr.consulta semestral,credit_card,1,first_contract,drc_digital,0,2025-03-01
+099b3df0-dccd-11ef-ade3-c9324d00ccb3,099b3df0-dccd-11ef-ade3-c9324d00ccb3-1,2025-01-27,2025-07-27,2026-01-28,6,cartao dr.consulta semestral,credit_card,1,first_contract,drc_digital,0,2025-04-01
+099b3df0-dccd-11ef-ade3-c9324d00ccb3,099b3df0-dccd-11ef-ade3-c9324d00ccb3-1,2025-01-27,2025-07-27,2026-01-28,6,cartao dr.consulta semestral,credit_card,1,first_contract,drc_digital,0,2025-05-01
+099b3df0-dccd-11ef-ade3-c9324d00ccb3,099b3df0-dccd-11ef-ade3-c9324d00ccb3-1,2025-01-27,2025-07-27,2026-01-28,6,cartao dr.consulta semestral,credit_card,1,first_contract,drc_digital,0,2025-06-01
+099b3df0-dccd-11ef-ade3-c9324d00ccb3,099b3df0-dccd-11ef-ade3-c9324d00ccb3-2,2025-07-27,2026-01-28,2026-01-28,6,cartao dr.consulta semestral,credit_card,2,renewal,drc_digital,17,2025-07-01
+099b3df0-dccd-11ef-ade3-c9324d00ccb3,099b3df0-dccd-11ef-ade3-c9324d00ccb3-2,2025-07-27,2026-01-28,2026-01-28,6,cartao dr.consulta semestral,credit_card,2,renewal,drc_digital,17,2025-08-01
+099b3df0-dccd-11ef-ade3-c9324d00ccb3,099b3df0-dccd-11ef-ade3-c9324d00ccb3-2,2025-07-27,2026-01-28,2026-01-28,6,cartao dr.consulta semestral,credit_card,2,renewal,drc_digital,17,2025-09-01
+099b3df0-dccd-11ef-ade3-c9324d00ccb3,099b3df0-dccd-11ef-ade3-c9324d00ccb3-2,2025-07-27,2026-01-28,2026-01-28,6,cartao dr.consulta semestral,credit_card,2,renewal,drc_digital,17,2025-10-01
+099b3df0-dccd-11ef-ade3-c9324d00ccb3,099b3df0-dccd-11ef-ade3-c9324d00ccb3-2,2025-07-27,2026-01-28,2026-01-28,6,cartao dr.consulta semestral,credit_card,2,renewal,drc_digital,17,2025-11-01
+099b3df0-dccd-11ef-ade3-c9324d00ccb3,099b3df0-dccd-11ef-ade3-c9324d00ccb3-2,2025-07-27,2026-01-28,2026-01-28,6,cartao dr.consulta semestral,credit_card,2,renewal,drc_digital,17,2025-12-01
+099b3df0-dccd-11ef-ade3-c9324d00ccb3,099b3df0-dccd-11ef-ade3-c9324d00ccb3-2,2025-07-27,2026-01-28,2026-01-28,6,cartao dr.consulta semestral,credit_card,2,renewal,drc_digital,17,2026-01-01
+0a350ce0-7eb3-11f0-a41f-83493b81f62e,,,,2026-02-22,6,cartao dr.consulta semestral,credit_card,,,drc_cm,,2026-03-01
+0a350ce0-7eb3-11f0-a41f-83493b81f62e,0a350ce0-7eb3-11f0-a41f-83493b81f62e-1,2025-08-21,2026-02-22,2026-02-22,6,cartao dr.consulta semestral,credit_card,1,first_contract,drc_cm,17,2025-08-01
+0a350ce0-7eb3-11f0-a41f-83493b81f62e,0a350ce0-7eb3-11f0-a41f-83493b81f62e-1,2025-08-21,2026-02-22,2026-02-22,6,cartao dr.consulta semestral,credit_card,1,first_contract,drc_cm,17,2025-09-01
+0a350ce0-7eb3-11f0-a41f-83493b81f62e,0a350ce0-7eb3-11f0-a41f-83493b81f62e-1,2025-08-21,2026-02-22,2026-02-22,6,cartao dr.consulta semestral,credit_card,1,first_contract,drc_cm,17,2025-10-01
+0a350ce0-7eb3-11f0-a41f-83493b81f62e,0a350ce0-7eb3-11f0-a41f-83493b81f62e-1,2025-08-21,2026-02-22,2026-02-22,6,cartao dr.consulta semestral,credit_card,1,first_contract,drc_cm,17,2025-11-01
+0a350ce0-7eb3-11f0-a41f-83493b81f62e,0a350ce0-7eb3-11f0-a41f-83493b81f62e-1,2025-08-21,2026-02-22,2026-02-22,6,cartao dr.consulta semestral,credit_card,1,first_contract,drc_cm,17,2025-12-01
+0a350ce0-7eb3-11f0-a41f-83493b81f62e,0a350ce0-7eb3-11f0-a41f-83493b81f62e-1,2025-08-21,2026-02-22,2026-02-22,6,cartao dr.consulta semestral,credit_card,1,first_contract,drc_cm,17,2026-01-01
+0a350ce0-7eb3-11f0-a41f-83493b81f62e,0a350ce0-7eb3-11f0-a41f-83493b81f62e-1,2025-08-21,2026-02-22,2026-02-22,6,cartao dr.consulta semestral,credit_card,1,first_contract,drc_cm,17,2026-02-01
+0e2dd120-e17d-11ef-a4f8-719f2817c600,0e2dd120-e17d-11ef-a4f8-719f2817c600-1,2025-02-02,2026-02-03,2026-02-03,12,cartao dr.consulta anual,credit_card,1,first_contract,drc_digital,17,2025-02-01
+0e2dd120-e17d-11ef-a4f8-719f2817c600,0e2dd120-e17d-11ef-a4f8-719f2817c600-1,2025-02-02,2026-02-03,2026-02-03,12,cartao dr.consulta anual,credit_card,1,first_contract,drc_digital,17,2025-03-01
+0e2dd120-e17d-11ef-a4f8-719f2817c600,0e2dd120-e17d-11ef-a4f8-719f2817c600-1,2025-02-02,2026-02-03,2026-02-03,12,cartao dr.consulta anual,credit_card,1,first_contract,drc_digital,17,2025-04-01
+0e2dd120-e17d-11ef-a4f8-719f2817c600,0e2dd120-e17d-11ef-a4f8-719f2817c600-1,2025-02-02,2026-02-03,2026-02-03,12,cartao dr.consulta anual,credit_card,1,first_contract,drc_digital,17,2025-05-01
+0e2dd120-e17d-11ef-a4f8-719f2817c600,0e2dd120-e17d-11ef-a4f8-719f2817c600-1,2025-02-02,2026-02-03,2026-02-03,12,cartao dr.consulta anual,credit_card,1,first_contract,drc_digital,17,2025-06-01
+0e2dd120-e17d-11ef-a4f8-719f2817c600,0e2dd120-e17d-11ef-a4f8-719f2817c600-1,2025-02-02,2026-02-03,2026-02-03,12,cartao dr.consulta anual,credit_card,1,first_contract,drc_digital,17,2025-07-01
+0e2dd120-e17d-11ef-a4f8-719f2817c600,0e2dd120-e17d-11ef-a4f8-719f2817c600-1,2025-02-02,2026-02-03,2026-02-03,12,cartao dr.consulta anual,credit_card,1,first_contract,drc_digital,17,2025-08-01
+0e2dd120-e17d-11ef-a4f8-719f2817c600,0e2dd120-e17d-11ef-a4f8-719f2817c600-1,2025-02-02,2026-02-03,2026-02-03,12,cartao dr.consulta anual,credit_card,1,first_contract,drc_digital,17,2025-09-01
+0e2dd120-e17d-11ef-a4f8-719f2817c600,0e2dd120-e17d-11ef-a4f8-719f2817c600-1,2025-02-02,2026-02-03,2026-02-03,12,cartao dr.consulta anual,credit_card,1,first_contract,drc_digital,17,2025-10-01
+0e2dd120-e17d-11ef-a4f8-719f2817c600,0e2dd120-e17d-11ef-a4f8-719f2817c600-1,2025-02-02,2026-02-03,2026-02-03,12,cartao dr.consulta anual,credit_card,1,first_contract,drc_digital,17,2025-11-01
+0e2dd120-e17d-11ef-a4f8-719f2817c600,0e2dd120-e17d-11ef-a4f8-719f2817c600-1,2025-02-02,2026-02-03,2026-02-03,12,cartao dr.consulta anual,credit_card,1,first_contract,drc_digital,17,2025-12-01
+0e2dd120-e17d-11ef-a4f8-719f2817c600,0e2dd120-e17d-11ef-a4f8-719f2817c600-1,2025-02-02,2026-02-03,2026-02-03,12,cartao dr.consulta anual,credit_card,1,first_contract,drc_digital,17,2026-01-01
+0e2dd120-e17d-11ef-a4f8-719f2817c600,0e2dd120-e17d-11ef-a4f8-719f2817c600-1,2025-02-02,2026-02-03,2026-02-03,12,cartao dr.consulta anual,credit_card,1,first_contract,drc_digital,17,2026-02-01
+0ea329e0-d8ad-11ee-a6fd-5ba55f987f3e,0ea329e0-d8ad-11ee-a6fd-5ba55f987f3e-1,2024-03-02,2025-03-02,2026-03-03,12,cartao dr.consulta com odonto anual,credit_card,1,first_contract,others,0,2024-03-01
+0ea329e0-d8ad-11ee-a6fd-5ba55f987f3e,0ea329e0-d8ad-11ee-a6fd-5ba55f987f3e-1,2024-03-02,2025-03-02,2026-03-03,12,cartao dr.consulta com odonto anual,credit_card,1,first_contract,others,0,2024-04-01
+0ea329e0-d8ad-11ee-a6fd-5ba55f987f3e,0ea329e0-d8ad-11ee-a6fd-5ba55f987f3e-1,2024-03-02,2025-03-02,2026-03-03,12,cartao dr.consulta com odonto anual,credit_card,1,first_contract,others,0,2024-05-01
+0ea329e0-d8ad-11ee-a6fd-5ba55f987f3e,0ea329e0-d8ad-11ee-a6fd-5ba55f987f3e-1,2024-03-02,2025-03-02,2026-03-03,12,cartao dr.consulta com odonto anual,credit_card,1,first_contract,others,0,2024-06-01
+0ea329e0-d8ad-11ee-a6fd-5ba55f987f3e,0ea329e0-d8ad-11ee-a6fd-5ba55f987f3e-1,2024-03-02,2025-03-02,2026-03-03,12,cartao dr.consulta com odonto anual,credit_card,1,first_contract,others,0,2024-07-01
+0ea329e0-d8ad-11ee-a6fd-5ba55f987f3e,0ea329e0-d8ad-11ee-a6fd-5ba55f987f3e-1,2024-03-02,2025-03-02,2026-03-03,12,cartao dr.consulta com odonto anual,credit_card,1,first_contract,others,0,2024-08-01
+0ea329e0-d8ad-11ee-a6fd-5ba55f987f3e,0ea329e0-d8ad-11ee-a6fd-5ba55f987f3e-1,2024-03-02,2025-03-02,2026-03-03,12,cartao dr.consulta com odonto anual,credit_card,1,first_contract,others,0,2024-09-01
+0ea329e0-d8ad-11ee-a6fd-5ba55f987f3e,0ea329e0-d8ad-11ee-a6fd-5ba55f987f3e-1,2024-03-02,2025-03-02,2026-03-03,12,cartao dr.consulta com odonto anual,credit_card,1,first_contract,others,0,2024-10-01
+0ea329e0-d8ad-11ee-a6fd-5ba55f987f3e,0ea329e0-d8ad-11ee-a6fd-5ba55f987f3e-1,2024-03-02,2025-03-02,2026-03-03,12,cartao dr.consulta com odonto anual,credit_card,1,first_contract,others,0,2024-11-01
+0ea329e0-d8ad-11ee-a6fd-5ba55f987f3e,0ea329e0-d8ad-11ee-a6fd-5ba55f987f3e-1,2024-03-02,2025-03-02,2026-03-03,12,cartao dr.consulta com odonto anual,credit_card,1,first_contract,others,0,2024-12-01
+0ea329e0-d8ad-11ee-a6fd-5ba55f987f3e,0ea329e0-d8ad-11ee-a6fd-5ba55f987f3e-1,2024-03-02,2025-03-02,2026-03-03,12,cartao dr.consulta com odonto anual,credit_card,1,first_contract,others,0,2025-01-01
+0ea329e0-d8ad-11ee-a6fd-5ba55f987f3e,0ea329e0-d8ad-11ee-a6fd-5ba55f987f3e-1,2024-03-02,2025-03-02,2026-03-03,12,cartao dr.consulta com odonto anual,credit_card,1,first_contract,others,0,2025-02-01
+0ea329e0-d8ad-11ee-a6fd-5ba55f987f3e,0ea329e0-d8ad-11ee-a6fd-5ba55f987f3e-2,2025-03-02,2026-03-03,2026-03-03,12,cartao dr.consulta com odonto anual,credit_card,2,renewal,others,17,2025-03-01
+0ea329e0-d8ad-11ee-a6fd-5ba55f987f3e,0ea329e0-d8ad-11ee-a6fd-5ba55f987f3e-2,2025-03-02,2026-03-03,2026-03-03,12,cartao dr.consulta com odonto anual,credit_card,2,renewal,others,17,2025-04-01
+0ea329e0-d8ad-11ee-a6fd-5ba55f987f3e,0ea329e0-d8ad-11ee-a6fd-5ba55f987f3e-2,2025-03-02,2026-03-03,2026-03-03,12,cartao dr.consulta com odonto anual,credit_card,2,renewal,others,17,2025-05-01
+0ea329e0-d8ad-11ee-a6fd-5ba55f987f3e,0ea329e0-d8ad-11ee-a6fd-5ba55f987f3e-2,2025-03-02,2026-03-03,2026-03-03,12,cartao dr.consulta com odonto anual,credit_card,2,renewal,others,17,2025-06-01
+0ea329e0-d8ad-11ee-a6fd-5ba55f987f3e,0ea329e0-d8ad-11ee-a6fd-5ba55f987f3e-2,2025-03-02,2026-03-03,2026-03-03,12,cartao dr.consulta com odonto anual,credit_card,2,renewal,others,17,2025-07-01
+0ea329e0-d8ad-11ee-a6fd-5ba55f987f3e,0ea329e0-d8ad-11ee-a6fd-5ba55f987f3e-2,2025-03-02,2026-03-03,2026-03-03,12,cartao dr.consulta com odonto anual,credit_card,2,renewal,others,17,2025-08-01
+0ea329e0-d8ad-11ee-a6fd-5ba55f987f3e,0ea329e0-d8ad-11ee-a6fd-5ba55f987f3e-2,2025-03-02,2026-03-03,2026-03-03,12,cartao dr.consulta com odonto anual,credit_card,2,renewal,others,17,2025-09-01
+0ea329e0-d8ad-11ee-a6fd-5ba55f987f3e,0ea329e0-d8ad-11ee-a6fd-5ba55f987f3e-2,2025-03-02,2026-03-03,2026-03-03,12,cartao dr.consulta com odonto anual,credit_card,2,renewal,others,17,2025-10-01
+0ea329e0-d8ad-11ee-a6fd-5ba55f987f3e,0ea329e0-d8ad-11ee-a6fd-5ba55f987f3e-2,2025-03-02,2026-03-03,2026-03-03,12,cartao dr.consulta com odonto anual,credit_card,2,renewal,others,17,2025-11-01
+0ea329e0-d8ad-11ee-a6fd-5ba55f987f3e,0ea329e0-d8ad-11ee-a6fd-5ba55f987f3e-2,2025-03-02,2026-03-03,2026-03-03,12,cartao dr.consulta com odonto anual,credit_card,2,renewal,others,17,2025-12-01
+0ea329e0-d8ad-11ee-a6fd-5ba55f987f3e,0ea329e0-d8ad-11ee-a6fd-5ba55f987f3e-2,2025-03-02,2026-03-03,2026-03-03,12,cartao dr.consulta com odonto anual,credit_card,2,renewal,others,17,2026-01-01
+0ea329e0-d8ad-11ee-a6fd-5ba55f987f3e,0ea329e0-d8ad-11ee-a6fd-5ba55f987f3e-2,2025-03-02,2026-03-03,2026-03-03,12,cartao dr.consulta com odonto anual,credit_card,2,renewal,others,17,2026-02-01
+0ea329e0-d8ad-11ee-a6fd-5ba55f987f3e,0ea329e0-d8ad-11ee-a6fd-5ba55f987f3e-2,2025-03-02,2026-03-03,2026-03-03,12,cartao dr.consulta com odonto anual,credit_card,2,renewal,others,17,2026-03-01
+0f0027b0-b128-11ed-981a-193043ea06bc,,,,2026-02-21,12,cartao dr.consulta anual,credit_card,,,drc_cfp,,2026-03-01
+0f0027b0-b128-11ed-981a-193043ea06bc,0f0027b0-b128-11ed-981a-193043ea06bc-1,2023-02-20,2024-02-20,2026-02-21,12,cartao dr.consulta anual,credit_card,1,first_contract,drc_cfp,0,2023-02-01
+0f0027b0-b128-11ed-981a-193043ea06bc,0f0027b0-b128-11ed-981a-193043ea06bc-1,2023-02-20,2024-02-20,2026-02-21,12,cartao dr.consulta anual,credit_card,1,first_contract,drc_cfp,0,2023-03-01
+0f0027b0-b128-11ed-981a-193043ea06bc,0f0027b0-b128-11ed-981a-193043ea06bc-1,2023-02-20,2024-02-20,2026-02-21,12,cartao dr.consulta anual,credit_card,1,first_contract,drc_cfp,0,2023-04-01
+0f0027b0-b128-11ed-981a-193043ea06bc,0f0027b0-b128-11ed-981a-193043ea06bc-1,2023-02-20,2024-02-20,2026-02-21,12,cartao dr.consulta anual,credit_card,1,first_contract,drc_cfp,0,2023-05-01
+0f0027b0-b128-11ed-981a-193043ea06bc,0f0027b0-b128-11ed-981a-193043ea06bc-1,2023-02-20,2024-02-20,2026-02-21,12,cartao dr.consulta anual,credit_card,1,first_contract,drc_cfp,0,2023-06-01
+0f0027b0-b128-11ed-981a-193043ea06bc,0f0027b0-b128-11ed-981a-193043ea06bc-1,2023-02-20,2024-02-20,2026-02-21,12,cartao dr.consulta anual,credit_card,1,first_contract,drc_cfp,0,2023-07-01
+0f0027b0-b128-11ed-981a-193043ea06bc,0f0027b0-b128-11ed-981a-193043ea06bc-1,2023-02-20,2024-02-20,2026-02-21,12,cartao dr.consulta anual,credit_card,1,first_contract,drc_cfp,0,2023-08-01
+0f0027b0-b128-11ed-981a-193043ea06bc,0f0027b0-b128-11ed-981a-193043ea06bc-1,2023-02-20,2024-02-20,2026-02-21,12,cartao dr.consulta anual,credit_card,1,first_contract,drc_cfp,0,2023-09-01
+0f0027b0-b128-11ed-981a-193043ea06bc,0f0027b0-b128-11ed-981a-193043ea06bc-1,2023-02-20,2024-02-20,2026-02-21,12,cartao dr.consulta anual,credit_card,1,first_contract,drc_cfp,0,2023-10-01
+0f0027b0-b128-11ed-981a-193043ea06bc,0f0027b0-b128-11ed-981a-193043ea06bc-1,2023-02-20,2024-02-20,2026-02-21,12,cartao dr.consulta anual,credit_card,1,first_contract,drc_cfp,0,2023-11-01
+0f0027b0-b128-11ed-981a-193043ea06bc,0f0027b0-b128-11ed-981a-193043ea06bc-1,2023-02-20,2024-02-20,2026-02-21,12,cartao dr.consulta anual,credit_card,1,first_contract,drc_cfp,0,2023-12-01
+0f0027b0-b128-11ed-981a-193043ea06bc,0f0027b0-b128-11ed-981a-193043ea06bc-1,2023-02-20,2024-02-20,2026-02-21,12,cartao dr.consulta anual,credit_card,1,first_contract,drc_cfp,0,2024-01-01
+0f0027b0-b128-11ed-981a-193043ea06bc,0f0027b0-b128-11ed-981a-193043ea06bc-2,2024-02-20,2025-02-20,2026-02-21,12,cartao dr.consulta anual,credit_card,2,renewal,drc_cfp,0,2024-02-01
+0f0027b0-b128-11ed-981a-193043ea06bc,0f0027b0-b128-11ed-981a-193043ea06bc-2,2024-02-20,2025-02-20,2026-02-21,12,cartao dr.consulta anual,credit_card,2,renewal,drc_cfp,0,2024-03-01
+0f0027b0-b128-11ed-981a-193043ea06bc,0f0027b0-b128-11ed-981a-193043ea06bc-2,2024-02-20,2025-02-20,2026-02-21,12,cartao dr.consulta anual,credit_card,2,renewal,drc_cfp,0,2024-04-01
+0f0027b0-b128-11ed-981a-193043ea06bc,0f0027b0-b128-11ed-981a-193043ea06bc-2,2024-02-20,2025-02-20,2026-02-21,12,cartao dr.consulta anual,credit_card,2,renewal,drc_cfp,0,2024-05-01
+0f0027b0-b128-11ed-981a-193043ea06bc,0f0027b0-b128-11ed-981a-193043ea06bc-2,2024-02-20,2025-02-20,2026-02-21,12,cartao dr.consulta anual,credit_card,2,renewal,drc_cfp,0,2024-06-01
+0f0027b0-b128-11ed-981a-193043ea06bc,0f0027b0-b128-11ed-981a-193043ea06bc-2,2024-02-20,2025-02-20,2026-02-21,12,cartao dr.consulta anual,credit_card,2,renewal,drc_cfp,0,2024-07-01
+0f0027b0-b128-11ed-981a-193043ea06bc,0f0027b0-b128-11ed-981a-193043ea06bc-2,2024-02-20,2025-02-20,2026-02-21,12,cartao dr.consulta anual,credit_card,2,renewal,drc_cfp,0,2024-08-01
+0f0027b0-b128-11ed-981a-193043ea06bc,0f0027b0-b128-11ed-981a-193043ea06bc-2,2024-02-20,2025-02-20,2026-02-21,12,cartao dr.consulta anual,credit_card,2,renewal,drc_cfp,0,2024-09-01
+0f0027b0-b128-11ed-981a-193043ea06bc,0f0027b0-b128-11ed-981a-193043ea06bc-2,2024-02-20,2025-02-20,2026-02-21,12,cartao dr.consulta anual,credit_card,2,renewal,drc_cfp,0,2024-10-01
+0f0027b0-b128-11ed-981a-193043ea06bc,0f0027b0-b128-11ed-981a-193043ea06bc-2,2024-02-20,2025-02-20,2026-02-21,12,cartao dr.consulta anual,credit_card,2,renewal,drc_cfp,0,2024-11-01
+0f0027b0-b128-11ed-981a-193043ea06bc,0f0027b0-b128-11ed-981a-193043ea06bc-2,2024-02-20,2025-02-20,2026-02-21,12,cartao dr.consulta anual,credit_card,2,renewal,drc_cfp,0,2024-12-01
+0f0027b0-b128-11ed-981a-193043ea06bc,0f0027b0-b128-11ed-981a-193043ea06bc-2,2024-02-20,2025-02-20,2026-02-21,12,cartao dr.consulta anual,credit_card,2,renewal,drc_cfp,0,2025-01-01
+0f0027b0-b128-11ed-981a-193043ea06bc,0f0027b0-b128-11ed-981a-193043ea06bc-3,2025-02-20,2026-02-21,2026-02-21,12,cartao dr.consulta anual,credit_card,3,renewal,drc_cfp,17,2025-02-01
+0f0027b0-b128-11ed-981a-193043ea06bc,0f0027b0-b128-11ed-981a-193043ea06bc-3,2025-02-20,2026-02-21,2026-02-21,12,cartao dr.consulta anual,credit_card,3,renewal,drc_cfp,17,2025-03-01
+0f0027b0-b128-11ed-981a-193043ea06bc,0f0027b0-b128-11ed-981a-193043ea06bc-3,2025-02-20,2026-02-21,2026-02-21,12,cartao dr.consulta anual,credit_card,3,renewal,drc_cfp,17,2025-04-01
+0f0027b0-b128-11ed-981a-193043ea06bc,0f0027b0-b128-11ed-981a-193043ea06bc-3,2025-02-20,2026-02-21,2026-02-21,12,cartao dr.consulta anual,credit_card,3,renewal,drc_cfp,17,2025-05-01
+0f0027b0-b128-11ed-981a-193043ea06bc,0f0027b0-b128-11ed-981a-193043ea06bc-3,2025-02-20,2026-02-21,2026-02-21,12,cartao dr.consulta anual,credit_card,3,renewal,drc_cfp,17,2025-06-01
+0f0027b0-b128-11ed-981a-193043ea06bc,0f0027b0-b128-11ed-981a-193043ea06bc-3,2025-02-20,2026-02-21,2026-02-21,12,cartao dr.consulta anual,credit_card,3,renewal,drc_cfp,17,2025-07-01
+0f0027b0-b128-11ed-981a-193043ea06bc,0f0027b0-b128-11ed-981a-193043ea06bc-3,2025-02-20,2026-02-21,2026-02-21,12,cartao dr.consulta anual,credit_card,3,renewal,drc_cfp,17,2025-08-01
+0f0027b0-b128-11ed-981a-193043ea06bc,0f0027b0-b128-11ed-981a-193043ea06bc-3,2025-02-20,2026-02-21,2026-02-21,12,cartao dr.consulta anual,credit_card,3,renewal,drc_cfp,17,2025-09-01
+0f0027b0-b128-11ed-981a-193043ea06bc,0f0027b0-b128-11ed-981a-193043ea06bc-3,2025-02-20,2026-02-21,2026-02-21,12,cartao dr.consulta anual,credit_card,3,renewal,drc_cfp,17,2025-10-01
+0f0027b0-b128-11ed-981a-193043ea06bc,0f0027b0-b128-11ed-981a-193043ea06bc-3,2025-02-20,2026-02-21,2026-02-21,12,cartao dr.consulta anual,credit_card,3,renewal,drc_cfp,17,2025-11-01
+0f0027b0-b128-11ed-981a-193043ea06bc,0f0027b0-b128-11ed-981a-193043ea06bc-3,2025-02-20,2026-02-21,2026-02-21,12,cartao dr.consulta anual,credit_card,3,renewal,drc_cfp,17,2025-12-01
+0f0027b0-b128-11ed-981a-193043ea06bc,0f0027b0-b128-11ed-981a-193043ea06bc-3,2025-02-20,2026-02-21,2026-02-21,12,cartao dr.consulta anual,credit_card,3,renewal,drc_cfp,17,2026-01-01
+0f0027b0-b128-11ed-981a-193043ea06bc,0f0027b0-b128-11ed-981a-193043ea06bc-3,2025-02-20,2026-02-21,2026-02-21,12,cartao dr.consulta anual,credit_card,3,renewal,drc_cfp,17,2026-02-01

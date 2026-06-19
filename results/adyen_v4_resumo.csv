@@ -1,0 +1,8 @@
+janela,periodo,total_contratos,renovaram_recurrent,taxa_renovacao_recurrent,renovaram_flag,taxa_renovacao_flag,cancelaram,adyen_total_tentativas,adyen_total_sucessos,adyen_total_recusas,adyen_taxa_aprovacao,sem_tentativa
+1_PRE sem3,PRE,583,529,90.74,110,18.87,55,1558,47,1511,3.02,0
+2_PRE sem2,PRE,559,506,90.52,84,15.03,54,1645,51,1594,3.1,0
+3_PRE sem1,PRE,643,580,90.2,94,14.62,72,1935,59,1876,3.05,0
+4_POS sem1,POS,585,538,91.97,84,14.36,60,2060,40,2020,1.94,0
+5_POS sem2,POS,535,492,91.96,51,9.53,64,1474,39,1435,2.65,0
+6_POS sem3,POS,479,441,92.07,47,9.81,47,973,47,926,4.83,0
+7_POS sem4,POS,828,788,95.17,54,6.52,55,1143,60,1083,5.25,0

@@ -1,0 +1,8 @@
+is_recurrent,flag_novo_contrato,churn_date_diff,flag_unsubscription,total
+false,false,S,false,8
+false,false,S,true,694
+false,true,S,true,86
+true,false,S,false,6107
+true,false,S,true,1686
+true,true,S,false,1696
+true,true,S,true,137

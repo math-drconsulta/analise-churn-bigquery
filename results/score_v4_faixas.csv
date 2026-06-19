@@ -1,0 +1,13 @@
+layout,faixa,contratos,churners,churn_rate,pct_base
+5_faixas,CRITICO,10,9,90.0,0.0
+5_faixas,ALTO,3035,1566,51.6,2.3
+5_faixas,MEDIO,29574,12029,40.7,22.1
+5_faixas,BAIXO,46028,10545,22.9,34.4
+5_faixas,SEGURO,55297,8122,14.7,41.3
+7_faixas,CRITICO,5,5,100.0,0.0
+7_faixas,MUITO ALTO,27,23,85.2,0.0
+7_faixas,ALTO,5220,2640,50.6,3.9
+7_faixas,MEDIO,23341,9584,41.1,17.4
+7_faixas,BAIXO,15167,4455,29.4,11.3
+7_faixas,MUITO BAIXO,71782,13565,18.9,53.6
+7_faixas,SEGURO,18402,1999,10.9,13.7

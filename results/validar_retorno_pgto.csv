@@ -1,0 +1,4 @@
+situacao_pagamento,contratos,pct,media_dias_ate_sucesso,media_days_diff
+So falhas Adyen no periodo,45604,99.7,,17.0
+Pagamento Adyen ANTES do vencimento,112,0.2,-1.3,17.0
+Pagamento Adyen no periodo,3,0.0,0.3,17.7
