@@ -1,0 +1,43 @@
+id_transacao_tipo,tipo,ativo_sn,stamp_modified,controle_migracao,datastream_metadata
+1,PreAutorização,S,2021-12-05T14:36:04,1,"{
+  ""datastream_metadata"": {
+    ""uuid"": ""bb360ae0-ab03-4ecb-81b8-0ac700000000"",
+    ""source_timestamp"": ""1697551598000""
+  }
+}"
+2,Cancelamento PreAutorização,S,2021-12-05T14:36:04,1,"{
+  ""datastream_metadata"": {
+    ""uuid"": ""bb360ae0-ab03-4ecb-81b8-0ac700000001"",
+    ""source_timestamp"": ""1697551598000""
+  }
+}"
+3,Captura,S,2021-12-05T14:36:04,1,"{
+  ""datastream_metadata"": {
+    ""uuid"": ""bb360ae0-ab03-4ecb-81b8-0ac700000010"",
+    ""source_timestamp"": ""1697551598000""
+  }
+}"
+4,Cancelamento Captura,S,2021-12-05T14:36:04,1,"{
+  ""datastream_metadata"": {
+    ""uuid"": ""bb360ae0-ab03-4ecb-81b8-0ac700000011"",
+    ""source_timestamp"": ""1697551598000""
+  }
+}"
+5,Checkout Criado,S,2021-12-05T14:36:04,1,"{
+  ""datastream_metadata"": {
+    ""uuid"": ""bb360ae0-ab03-4ecb-81b8-0ac700000100"",
+    ""source_timestamp"": ""1697551598000""
+  }
+}"
+6,Pix,S,2024-02-05T18:36:47,1,"{
+  ""datastream_metadata"": {
+    ""uuid"": ""0c4ec52c-f794-4e3f-85d3-9ada01011111"",
+    ""source_timestamp"": ""1707169007000""
+  }
+}"
+7,Coberto por Voucher,S,2024-01-10T15:27:19,0,"{
+  ""datastream_metadata"": {
+    ""uuid"": ""ad32940c-c506-49ad-b727-e67900010000"",
+    ""source_timestamp"": ""1704911239000""
+  }
+}"

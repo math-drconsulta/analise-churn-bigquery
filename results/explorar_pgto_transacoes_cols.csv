@@ -1,0 +1,34 @@
+column_name,data_type,is_nullable
+id_transacao,INT64,YES
+id_transacao_original,INT64,YES
+id_transacao_reagendado,INT64,YES
+origem,STRING,YES
+id_origem,STRING,YES
+id_unidade,STRING,YES
+id_transacao_tipo,INT64,YES
+id_usuario,INT64,YES
+id_portal_usuario,INT64,YES
+status,STRING,YES
+valor,"NUMERIC(12, 2)",YES
+valor_processado,"NUMERIC(12, 2)",YES
+valor_nao_processado,"NUMERIC(12, 2)",YES
+customer_id,STRING,YES
+request_key,STRING,YES
+order_key,STRING,YES
+order_reference,STRING,YES
+checkout_key,STRING,YES
+stamp_created,DATETIME,YES
+ativo_sn,STRING,YES
+id_gateway,INT64,YES
+numero_tantativas,INT64,YES
+pagamento_tipo,STRING,YES
+stamp_modified,DATETIME,YES
+controle_migracao,INT64,YES
+pix_qrcode_link_expiracao,DATETIME,YES
+pix_qrcode_link,STRING,YES
+pix_qrcode_conteudo,STRING,YES
+datastream_metadata,"STRUCT<uuid STRING, source_timestamp INT64>",YES
+selfchekin,INT64,YES
+transactionid,STRING,YES
+poiid,STRING,YES
+id_tokens_cartoes_paciente,INT64,YES

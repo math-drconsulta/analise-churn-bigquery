@@ -1,0 +1,17 @@
+column_name,data_type
+id,STRING
+payment_partner_invoice_id,STRING
+payment_partner_order_id,STRING
+payment_partner_card_id,STRING
+payment_partner_bank_slip_id,STRING
+charge_external_id,STRING(50)
+status,STRING(30)
+is_success,BOOL
+amount,FLOAT64
+acquirer_tid,STRING
+acquirer_auth_code,STRING(50)
+acquirer_message,STRING(100)
+paid_at,TIMESTAMP
+created_at,TIMESTAMP
+updated_at,TIMESTAMP
+datastream_metadata,"STRUCT<uuid STRING, source_timestamp INT64>"

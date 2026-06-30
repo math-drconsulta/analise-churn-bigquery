@@ -1,0 +1,6 @@
+diagnostico,churn_sn,contratos,pct_total,churners,media_tentativas,media_recusas
+renovado,N,20306,48.2,0,1.1,0.0
+falha_pagamento,S,15482,36.8,15482,1.5,1.5
+cancelou_ativo,S,5307,12.6,5307,0.4,0.1
+sem_tentativa,S,835,2.0,835,0.0,0.0
+cobrado_mas_churnou,S,169,0.4,169,1.1,0.1

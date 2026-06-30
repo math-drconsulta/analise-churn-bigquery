@@ -1,0 +1,97 @@
+target,features,layout,faixa,contratos,churn_rate
+Original,perfil,5_faixas,CRITICO,84,100.0
+Original,perfil,5_faixas,ALTO,4995,75.5
+Original,perfil,5_faixas,MEDIO,70627,59.6
+Original,perfil,5_faixas,BAIXO,44611,46.3
+Original,perfil,5_faixas,SEGURO,3535,32.9
+Original,perfil,7_faixas,CRITICO,47,100.0
+Original,perfil,7_faixas,MUITO ALTO,473,91.1
+Original,perfil,7_faixas,ALTO,10681,70.4
+Original,perfil,7_faixas,MEDIO,50064,60.3
+Original,perfil,7_faixas,BAIXO,47484,49.9
+Original,perfil,7_faixas,MUITO BAIXO,14677,39.3
+Original,perfil,7_faixas,SEGURO,426,25.1
+Original,perfil_pgto,5_faixas,CRITICO,11930,99.8
+Original,perfil_pgto,5_faixas,ALTO,37719,65.6
+Original,perfil_pgto,5_faixas,MEDIO,56338,52.2
+Original,perfil_pgto,5_faixas,BAIXO,1373,35.1
+Original,perfil_pgto,5_faixas,SEGURO,16492,7.2
+Original,perfil_pgto,7_faixas,CRITICO,11870,99.8
+Original,perfil_pgto,7_faixas,MUITO ALTO,1925,80.1
+Original,perfil_pgto,7_faixas,ALTO,50001,63.1
+Original,perfil_pgto,7_faixas,MEDIO,39629,50.9
+Original,perfil_pgto,7_faixas,BAIXO,3914,37.4
+Original,perfil_pgto,7_faixas,MUITO BAIXO,1466,18.1
+Original,perfil_pgto,7_faixas,SEGURO,15047,6.2
+v4 (exclui 30d),perfil,5_faixas,CRITICO,13,84.6
+v4 (exclui 30d),perfil,5_faixas,ALTO,1881,52.1
+v4 (exclui 30d),perfil,5_faixas,MEDIO,22389,39.0
+v4 (exclui 30d),perfil,5_faixas,BAIXO,57603,21.6
+v4 (exclui 30d),perfil,5_faixas,SEGURO,41966,13.5
+v4 (exclui 30d),perfil,7_faixas,CRITICO,7,100.0
+v4 (exclui 30d),perfil,7_faixas,MUITO ALTO,23,73.9
+v4 (exclui 30d),perfil,7_faixas,ALTO,3835,48.8
+v4 (exclui 30d),perfil,7_faixas,MEDIO,17064,39.5
+v4 (exclui 30d),perfil,7_faixas,BAIXO,15744,27.6
+v4 (exclui 30d),perfil,7_faixas,MUITO BAIXO,74310,18.2
+v4 (exclui 30d),perfil,7_faixas,SEGURO,12869,9.9
+v4 (exclui 30d),perfil_pgto,5_faixas,CRITICO,147,95.9
+v4 (exclui 30d),perfil_pgto,5_faixas,ALTO,2134,72.7
+v4 (exclui 30d),perfil_pgto,5_faixas,MEDIO,8932,45.9
+v4 (exclui 30d),perfil_pgto,5_faixas,BAIXO,57226,26.6
+v4 (exclui 30d),perfil_pgto,5_faixas,SEGURO,55413,12.2
+v4 (exclui 30d),perfil_pgto,7_faixas,CRITICO,72,98.6
+v4 (exclui 30d),perfil_pgto,7_faixas,MUITO ALTO,436,86.2
+v4 (exclui 30d),perfil_pgto,7_faixas,ALTO,2041,68.4
+v4 (exclui 30d),perfil_pgto,7_faixas,MEDIO,4974,47.6
+v4 (exclui 30d),perfil_pgto,7_faixas,BAIXO,22950,35.1
+v4 (exclui 30d),perfil_pgto,7_faixas,MUITO BAIXO,67609,20.1
+v4 (exclui 30d),perfil_pgto,7_faixas,SEGURO,25770,7.6
+v5 (so pago 30d),perfil,5_faixas,CRITICO,229,88.2
+v5 (so pago 30d),perfil,5_faixas,ALTO,13241,66.0
+v5 (so pago 30d),perfil,5_faixas,MEDIO,80707,51.6
+v5 (so pago 30d),perfil,5_faixas,BAIXO,29123,36.1
+v5 (so pago 30d),perfil,5_faixas,SEGURO,552,13.0
+v5 (so pago 30d),perfil,7_faixas,CRITICO,37,100.0
+v5 (so pago 30d),perfil,7_faixas,MUITO ALTO,1620,77.8
+v5 (so pago 30d),perfil,7_faixas,ALTO,20909,62.3
+v5 (so pago 30d),perfil,7_faixas,MEDIO,64864,51.5
+v5 (so pago 30d),perfil,7_faixas,BAIXO,30307,39.3
+v5 (so pago 30d),perfil,7_faixas,MUITO BAIXO,6051,25.7
+v5 (so pago 30d),perfil,7_faixas,SEGURO,64,0.0
+v5 (so pago 30d),perfil_pgto,5_faixas,CRITICO,10595,93.9
+v5 (so pago 30d),perfil_pgto,5_faixas,ALTO,18704,65.2
+v5 (so pago 30d),perfil_pgto,5_faixas,MEDIO,67327,51.0
+v5 (so pago 30d),perfil_pgto,5_faixas,BAIXO,10710,33.7
+v5 (so pago 30d),perfil_pgto,5_faixas,SEGURO,16516,6.7
+v5 (so pago 30d),perfil_pgto,7_faixas,CRITICO,9656,95.0
+v5 (so pago 30d),perfil_pgto,7_faixas,MUITO ALTO,2578,78.9
+v5 (so pago 30d),perfil_pgto,7_faixas,ALTO,28310,62.0
+v5 (so pago 30d),perfil_pgto,7_faixas,MEDIO,50499,50.2
+v5 (so pago 30d),perfil_pgto,7_faixas,BAIXO,15715,37.3
+v5 (so pago 30d),perfil_pgto,7_faixas,MUITO BAIXO,1143,22.1
+v5 (so pago 30d),perfil_pgto,7_faixas,SEGURO,15951,6.2
+Estendido (pos-gratis),perfil,5_faixas,CRITICO,197,86.8
+Estendido (pos-gratis),perfil,5_faixas,ALTO,7560,63.1
+Estendido (pos-gratis),perfil,5_faixas,MEDIO,68070,48.1
+Estendido (pos-gratis),perfil,5_faixas,BAIXO,41843,31.7
+Estendido (pos-gratis),perfil,5_faixas,SEGURO,6182,15.3
+Estendido (pos-gratis),perfil,7_faixas,CRITICO,13,100.0
+Estendido (pos-gratis),perfil,7_faixas,MUITO ALTO,679,79.2
+Estendido (pos-gratis),perfil,7_faixas,ALTO,12895,60.1
+Estendido (pos-gratis),perfil,7_faixas,MEDIO,50885,48.7
+Estendido (pos-gratis),perfil,7_faixas,BAIXO,40239,36.4
+Estendido (pos-gratis),perfil,7_faixas,MUITO BAIXO,17676,22.8
+Estendido (pos-gratis),perfil,7_faixas,SEGURO,1465,10.0
+Estendido (pos-gratis),perfil_pgto,5_faixas,CRITICO,6914,88.5
+Estendido (pos-gratis),perfil_pgto,5_faixas,ALTO,10808,66.1
+Estendido (pos-gratis),perfil_pgto,5_faixas,MEDIO,57661,48.9
+Estendido (pos-gratis),perfil_pgto,5_faixas,BAIXO,29701,30.8
+Estendido (pos-gratis),perfil_pgto,5_faixas,SEGURO,18768,7.1
+Estendido (pos-gratis),perfil_pgto,7_faixas,CRITICO,5119,90.8
+Estendido (pos-gratis),perfil_pgto,7_faixas,MUITO ALTO,4313,78.5
+Estendido (pos-gratis),perfil_pgto,7_faixas,ALTO,15737,60.3
+Estendido (pos-gratis),perfil_pgto,7_faixas,MEDIO,42748,48.9
+Estendido (pos-gratis),perfil_pgto,7_faixas,BAIXO,29012,35.2
+Estendido (pos-gratis),perfil_pgto,7_faixas,MUITO BAIXO,10511,22.0
+Estendido (pos-gratis),perfil_pgto,7_faixas,SEGURO,16412,5.8

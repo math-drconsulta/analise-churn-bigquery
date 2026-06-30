@@ -1,0 +1,21 @@
+column_name,data_type
+id,STRING
+account_id,STRING
+person_id,STRING
+cycle,INT64
+retry_cycle,INT64
+created_at_subscription,TIMESTAMP
+due_date_subscription,TIMESTAMP
+subscription_id,STRING(100)
+payment_status,BOOL
+acquirer_return_code,STRING(100)
+date_payment,TIMESTAMP
+body,JSON
+payment_method,STRING(100)
+number_installment,STRING(100)
+flag,STRING(100)
+created_at,TIMESTAMP
+update_at,TIMESTAMP
+response,JSON
+proccessed,BOOL
+datastream_metadata,"STRUCT<uuid STRING, source_timestamp INT64>"

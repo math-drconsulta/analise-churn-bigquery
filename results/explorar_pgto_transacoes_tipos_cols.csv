@@ -1,0 +1,7 @@
+column_name,data_type,is_nullable
+id_transacao_tipo,INT64,YES
+tipo,STRING,YES
+ativo_sn,STRING,YES
+stamp_modified,DATETIME,YES
+controle_migracao,INT64,YES
+datastream_metadata,"STRUCT<uuid STRING, source_timestamp INT64>",YES

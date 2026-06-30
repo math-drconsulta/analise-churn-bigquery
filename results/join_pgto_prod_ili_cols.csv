@@ -1,0 +1,55 @@
+tabela,column_name,data_type
+prod_ili_orders,addressId,INT64
+prod_ili_orders,datastream_metadata,"STRUCT<uuid STRING, source_timestamp INT64>"
+prod_ili_orders,datetime,TIMESTAMP
+prod_ili_orders,externalUserId,STRING
+prod_ili_orders,giftCodeId,INT64
+prod_ili_orders,orderId,INT64
+prod_ili_orders,payerId,INT64
+prod_ili_orders,paymentId,INT64
+prod_ili_orders,planId,INT64
+prod_ili_orders,signatureType,STRING
+prod_ili_orders,signature_type_id,INT64
+prod_ili_orders,storeId,INT64
+prod_ili_payers,accepted_email,INT64
+prod_ili_payers,accepted_sms,INT64
+prod_ili_payers,accepted_whatsapp,INT64
+prod_ili_payers,cpf,STRING
+prod_ili_payers,datastream_metadata,"STRUCT<uuid STRING, source_timestamp INT64>"
+prod_ili_payers,email,STRING
+prod_ili_payers,password,STRING
+prod_ili_payers,payerId,INT64
+prod_ili_payment,acquirer_code,STRING
+prod_ili_payment,bank_slip_pdf,STRING
+prod_ili_payment,bank_slip_url,STRING
+prod_ili_payment,created_at,DATETIME
+prod_ili_payment,data_adyen,JSON
+prod_ili_payment,datastream_metadata,"STRUCT<uuid STRING, source_timestamp INT64>"
+prod_ili_payment,mundipaggOrderId,STRING
+prod_ili_payment,paymentId,INT64
+prod_ili_payment,paymentMethod,STRING
+prod_ili_payment,pspReference,STRING
+prod_ili_payment,recurringDetailReference,STRING
+prod_ili_payment,shopperReference,STRING
+prod_ili_payment,status,STRING
+prod_ili_payment,updated_at,DATETIME
+prod_ili_payment,validation_error,STRING
+prod_ili_plans,active_dependents,INT64
+prod_ili_plans,datastream_metadata,"STRUCT<uuid STRING, source_timestamp INT64>"
+prod_ili_plans,deliveryTax,FLOAT64
+prod_ili_plans,gracePeriodTax,FLOAT64
+prod_ili_plans,hasGracePeriod,INT64
+prod_ili_plans,month,INT64
+prod_ili_plans,name,STRING
+prod_ili_plans,name_description,STRING
+prod_ili_plans,name_site,STRING
+prod_ili_plans,numberOfInstallment,INT64
+prod_ili_plans,number_of_dependents,INT64
+prod_ili_plans,planId,INT64
+prod_ili_plans,price,FLOAT64
+prod_ili_plans,recurrence,INT64
+prod_ili_plans,signature_type,STRING
+prod_ili_plans,signature_type_id,INT64
+prod_ili_plans,used_card,INT64
+prod_ili_plans,visible,INT64
+prod_ili_plans,yaloId,STRING

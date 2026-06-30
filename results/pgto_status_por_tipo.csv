@@ -1,0 +1,39 @@
+tipo,status,status_descricao,transacoes,pct_do_tipo
+Cancelamento Captura,R,Estornado,11786,89.5
+Cancelamento Captura,C,Cancelado Pré,894,6.8
+Cancelamento Captura,W,Parcialmentet Estornado,339,2.6
+Cancelamento Captura,E,Enviado Mundipagg,136,1.0
+Cancelamento Captura,N,Negado,14,0.1
+Cancelamento PreAutorização,C,Cancelado Pré,365245,99.7
+Cancelamento PreAutorização,Y,Parcialmente Cancelado Pré,1155,0.3
+Cancelamento PreAutorização,E,Enviado Mundipagg,6,0.0
+Captura,A,Autorizado,1393360,98.7
+Captura,C,Cancelado Pré,14070,1.0
+Captura,E,Enviado Mundipagg,1853,0.1
+Captura,Z,Parcialmente Autorizado,1390,0.1
+Captura,N,Negado,512,0.0
+Captura,P,Pendente,14,0.0
+Checkout Criado,C,Cancelado Pré,8258,54.5
+Checkout Criado,K,Checkout Criado,3450,22.8
+Checkout Criado,A,Autorizado,1648,10.9
+Checkout Criado,N,Negado,1589,10.5
+Checkout Criado,T,Pré-Autorização Transferida,153,1.0
+Checkout Criado,P,Pendente,62,0.4
+Checkout Criado,Y,Parcialmente Cancelado Pré,1,0.0
+Coberto por Voucher,A,Autorizado,1099,50.0
+Coberto por Voucher,C,Cancelado Pré,575,26.2
+Coberto por Voucher,T,Pré-Autorização Transferida,523,23.8
+Pix,A,Autorizado,1264673,50.5
+Pix,K,Checkout Criado,591275,23.6
+Pix,C,Cancelado Pré,376078,15.0
+Pix,T,Pré-Autorização Transferida,270441,10.8
+Pix,N,Negado,1027,0.0
+Pix,Y,Parcialmente Cancelado Pré,137,0.0
+PreAutorização,P,Pendente,1288772,47.5
+PreAutorização,C,Cancelado Pré,494660,18.2
+PreAutorização,E,Enviado Mundipagg,321386,11.8
+PreAutorização,A,Autorizado,235379,8.7
+PreAutorização,T,Pré-Autorização Transferida,215609,7.9
+PreAutorização,N,Negado,134861,5.0
+PreAutorização,Y,Parcialmente Cancelado Pré,22871,0.8
+PreAutorização,I,Parcialmente Pré-autorizado,25,0.0

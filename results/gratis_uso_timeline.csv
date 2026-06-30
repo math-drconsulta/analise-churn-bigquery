@@ -1,0 +1,15 @@
+desfecho,periodo,atendimentos,pacientes_distintos
+saiu_de_vez,apos_8_semanas,162,141
+saiu_de_vez,semana_1,338,260
+saiu_de_vez,semana_2,272,230
+saiu_de_vez,semana_3,242,223
+saiu_de_vez,semana_4,280,234
+saiu_de_vez,semana_5_6,501,418
+saiu_de_vez,semana_7_8,517,420
+voltou_pago,apos_8_semanas,442,189
+voltou_pago,semana_1,419,196
+voltou_pago,semana_2,474,226
+voltou_pago,semana_3,547,237
+voltou_pago,semana_4,571,220
+voltou_pago,semana_5_6,963,404
+voltou_pago,semana_7_8,1058,412

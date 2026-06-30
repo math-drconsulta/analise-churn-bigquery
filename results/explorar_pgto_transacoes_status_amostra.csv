@@ -1,0 +1,73 @@
+status,descricao,stamp_modified,controle_migracao,datastream_metadata
+A,Autorizado,2021-12-05T14:36:00,1,"{
+  ""datastream_metadata"": {
+    ""uuid"": ""074eea61-0b80-4818-a93e-6c5700000000"",
+    ""source_timestamp"": ""1697551578000""
+  }
+}"
+C,Cancelado Pré,2021-12-05T14:36:00,1,"{
+  ""datastream_metadata"": {
+    ""uuid"": ""074eea61-0b80-4818-a93e-6c5700000001"",
+    ""source_timestamp"": ""1697551578000""
+  }
+}"
+E,Enviado Mundipagg,2021-12-05T14:36:00,1,"{
+  ""datastream_metadata"": {
+    ""uuid"": ""074eea61-0b80-4818-a93e-6c5700000010"",
+    ""source_timestamp"": ""1697551578000""
+  }
+}"
+I,Parcialmente Pré-autorizado,2021-12-05T14:36:00,1,"{
+  ""datastream_metadata"": {
+    ""uuid"": ""074eea61-0b80-4818-a93e-6c5700000011"",
+    ""source_timestamp"": ""1697551578000""
+  }
+}"
+K,Checkout Criado,2021-12-05T14:36:00,1,"{
+  ""datastream_metadata"": {
+    ""uuid"": ""074eea61-0b80-4818-a93e-6c5700000100"",
+    ""source_timestamp"": ""1697551578000""
+  }
+}"
+N,Negado,2021-12-05T14:36:00,1,"{
+  ""datastream_metadata"": {
+    ""uuid"": ""074eea61-0b80-4818-a93e-6c5700000101"",
+    ""source_timestamp"": ""1697551578000""
+  }
+}"
+P,Pendente,2021-12-05T14:36:00,1,"{
+  ""datastream_metadata"": {
+    ""uuid"": ""074eea61-0b80-4818-a93e-6c5700000110"",
+    ""source_timestamp"": ""1697551578000""
+  }
+}"
+R,Estornado,2021-12-05T14:36:00,1,"{
+  ""datastream_metadata"": {
+    ""uuid"": ""074eea61-0b80-4818-a93e-6c5700000111"",
+    ""source_timestamp"": ""1697551578000""
+  }
+}"
+T,Pré-Autorização Transferida,2021-12-05T14:36:00,1,"{
+  ""datastream_metadata"": {
+    ""uuid"": ""074eea61-0b80-4818-a93e-6c5700001000"",
+    ""source_timestamp"": ""1697551578000""
+  }
+}"
+W,Parcialmentet Estornado,2021-12-05T14:36:00,1,"{
+  ""datastream_metadata"": {
+    ""uuid"": ""074eea61-0b80-4818-a93e-6c5700001001"",
+    ""source_timestamp"": ""1697551578000""
+  }
+}"
+Y,Parcialmente Cancelado Pré,2021-12-05T14:36:00,1,"{
+  ""datastream_metadata"": {
+    ""uuid"": ""074eea61-0b80-4818-a93e-6c5700001010"",
+    ""source_timestamp"": ""1697551578000""
+  }
+}"
+Z,Parcialmente Autorizado,2021-12-05T14:36:00,1,"{
+  ""datastream_metadata"": {
+    ""uuid"": ""074eea61-0b80-4818-a93e-6c5700001011"",
+    ""source_timestamp"": ""1697551578000""
+  }
+}"

@@ -1,0 +1,121 @@
+id_transacao,id_transacao_original,id_transacao_reagendado,origem,id_origem,id_unidade,id_transacao_tipo,id_usuario,id_portal_usuario,status,valor,valor_processado,valor_nao_processado,customer_id,request_key,order_key,order_reference,checkout_key,stamp_created,ativo_sn,id_gateway,numero_tantativas,pagamento_tipo,stamp_modified,controle_migracao,pix_qrcode_link_expiracao,pix_qrcode_link,pix_qrcode_conteudo,datastream_metadata,selfchekin,transactionid,poiid,id_tokens_cartoes_paciente
+7039317,7033637,0,A,34868460,8040,3,22676,0,A,217,217,0,3607355,M28MJ37HRVH8FTZ3,DIG-34868460,M28MJ37HRVH8FTZ3,DrConsultaCOM339,2026-06-25T09:28:54,S,3,0,,2026-06-25T09:28:55,0,,,,"{
+  ""datastream_metadata"": {
+    ""uuid"": ""7e01911b-ab7b-49a5-aede-d59da747587e"",
+    ""source_timestamp"": ""1782390535000""
+  }
+}",0,,,
+7039235,0,7038268,A,34985396,8012,1,22676,2088808,P,153,0,0,2088808,NH5B334B8KQ42XG6,DIG-34982150,NH5B334B8KQ42XG6,DrConsultaCOM339,2026-06-24T19:24:03,S,3,0,,2026-06-25T09:11:26,0,,,,"{
+  ""datastream_metadata"": {
+    ""uuid"": ""6e1e2c8d-62bb-46d4-a040-8670f20d18d2"",
+    ""source_timestamp"": ""1782389486000""
+  }
+}",0,,,
+7012724,0,6889067,A,34891238,8065,6,22676,2935632,A,99,0,0,2935632,J85K7R92LCK4CHQ9,DIG-34422491,J85K7R92LCK4CHQ9,DrConsultaDigital,2026-05-07T00:00:29,S,3,0,,2026-06-17T11:14:07,0,,,,"{
+  ""datastream_metadata"": {
+    ""uuid"": ""e0cc2b97-0d27-40d8-8517-9cb8467a00d2"",
+    ""source_timestamp"": ""1781705647000""
+  }
+}",0,,,
+7035380,0,6915243,A,34970665,8081,6,22676,4956856,A,99,0,0,4956856,XSZH6SD3C9RCFQG6,DIG-34523856,XSZH6SD3C9RCFQG6,DrConsultaDigital,2026-05-18T08:44:10,S,3,0,,2026-06-23T22:13:58,0,,,,"{
+  ""datastream_metadata"": {
+    ""uuid"": ""e0565fb2-e4d6-42da-8d4e-0087b297cbe0"",
+    ""source_timestamp"": ""1782263638000""
+  }
+}",0,,,
+6977512,0,6960195,A,34761247,8013,6,22676,4727405,T,69,0,0,4727405,P7CDGQPV9GNZLWP9,DIG-34520006,P7CDGQPV9GNZLWP9,DrConsultaDigital,2026-05-18T08:44:10,S,3,0,,2026-06-09T22:20:29,0,,,,"{
+  ""datastream_metadata"": {
+    ""uuid"": ""0dd8b361-2c0a-4c5d-83b5-fa2af978bde7"",
+    ""source_timestamp"": ""1781054429000""
+  }
+}",0,,,
+6984244,0,6965400,A,34785638,8034,6,22676,2784004,A,164,0,0,2784004,S3R66BLMXX252KZ3,DIG-34676987,S3R66BLMXX252KZ3,DrConsultaDigital,2026-05-25T20:45:13,S,3,0,,2026-06-09T11:27:17,0,,,,"{
+  ""datastream_metadata"": {
+    ""uuid"": ""8b930b1a-08db-47d8-b592-7c4535865677"",
+    ""source_timestamp"": ""1781015237000""
+  }
+}",0,,,
+6981466,0,6969853,A,34775634,8034,1,22676,3789075,T,45,0,0,3789075,SKRCR7MRFL5X86H6,DIG-34631738,SKRCR7MRFL5X86H6,DrConsultaCOM339,2026-05-27T12:36:54,S,3,0,,2026-06-09T07:29:46,0,,,,"{
+  ""datastream_metadata"": {
+    ""uuid"": ""04678ddb-edc4-4dce-a00e-7b275d74db21"",
+    ""source_timestamp"": ""1781000986000""
+  }
+}",0,,,
+6979067,0,6946452,A,34766582,8014,1,1001155,2332003,T,173,0,0,2332003,BZ43WPLH3TPTL5H6,DIG-34622587,BZ43WPLH3TPTL5H6,DrConsultaCOM339,2026-05-28T10:56:01,S,3,0,,2026-06-15T13:36:31,0,,,,"{
+  ""datastream_metadata"": {
+    ""uuid"": ""f60a8c4e-e398-422c-b9b0-3fada88c762a"",
+    ""source_timestamp"": ""1781541391000""
+  }
+}",0,,,
+6979155,0,6954768,A,34766950,8065,1,22676,4884955,P,190,0,0,4884955,P2BW3Z7GB9MLQLX3,DIG-34676392,P2BW3Z7GB9MLQLX3,DrConsultaCOM339,2026-05-31T13:50:25,S,3,0,,2026-06-08T11:01:15,0,,,,"{
+  ""datastream_metadata"": {
+    ""uuid"": ""17a3d787-c086-4498-bc66-71e2b3fe5128"",
+    ""source_timestamp"": ""1780927275000""
+  }
+}",0,,,
+6980340,0,6974256,A,34771180,8065,6,22676,4978001,T,166,0,0,4978001,ZGD6KH485QFLC7F6,DIG-34750006,ZGD6KH485QFLC7F6,DrConsultaDigital,2026-06-01T13:27:52,S,3,0,,2026-06-08T14:48:57,0,,,,"{
+  ""datastream_metadata"": {
+    ""uuid"": ""6726382e-9b97-40ce-9d7c-663c0f033e2b"",
+    ""source_timestamp"": ""1780940937000""
+  }
+}",0,,,
+6980008,0,6979324,A,34770086,8065,6,22676,4511347,A,99,0,0,4511347,NW5HHVH6RC2GX5G3,DIG-34742729,NW5HHVH6RC2GX5G3,DrConsultaDigital,2026-06-01T13:27:52,S,3,0,,2026-06-08T13:11:13,0,,,,"{
+  ""datastream_metadata"": {
+    ""uuid"": ""4f09a793-7c74-43ad-8dbc-50b3f4b1a19f"",
+    ""source_timestamp"": ""1780935073000""
+  }
+}",0,,,
+6992278,0,6968419,A,34815231,8024,6,22676,3993468,A,75,0,0,3993468,C47PNF3V9BC4D3G3,DIG-34728461,C47PNF3V9BC4D3G3,DrConsultaDigital,2026-06-01T13:27:52,S,3,0,,2026-06-11T09:33:48,0,,,,"{
+  ""datastream_metadata"": {
+    ""uuid"": ""8e498043-4212-4a99-a672-55a6a898fb2c"",
+    ""source_timestamp"": ""1781181228000""
+  }
+}",0,,,
+7018103,0,7009289,A,34910475,8065,6,22676,120978,T,190,0,0,120978,J6PFFD7TM9BQ3NQ9,DIG-34754585,J6PFFD7TM9BQ3NQ9,DrConsultaDigital,2026-06-01T13:27:52,S,3,0,,2026-06-23T10:55:49,0,,,,"{
+  ""datastream_metadata"": {
+    ""uuid"": ""5652b347-110d-4d99-8e6b-7b5a843c0942"",
+    ""source_timestamp"": ""1782222949000""
+  }
+}",0,,,
+7000608,0,6998516,A,34847294,8025,6,22676,3563707,A,45,0,0,3563707,RK7NNWWW9BC4D3G3,DIG-34752158,RK7NNWWW9BC4D3G3,DrConsultaDigital,2026-06-01T13:27:52,S,3,0,,2026-06-14T11:01:20,0,,,,"{
+  ""datastream_metadata"": {
+    ""uuid"": ""a50a0748-cea5-43c6-8e92-33638129521b"",
+    ""source_timestamp"": ""1781445680000""
+  }
+}",0,,,
+6977684,0,6977098,A,34761706,8065,6,22676,2202819,T,45,0,0,2202819,HPF4XSF79DZ9WRX3,DIG-34758916,HPF4XSF79DZ9WRX3,DrConsultaDigital,2026-06-01T13:27:52,S,3,0,,2026-06-08T09:26:07,0,,,,"{
+  ""datastream_metadata"": {
+    ""uuid"": ""0535c1ed-8f23-4f70-8f3a-316829aa0ff1"",
+    ""source_timestamp"": ""1780921567000""
+  }
+}",0,,,
+6977693,0,6976221,A,34761731,8023,6,22676,4567310,A,69,0,0,4567310,N8K6LRMPSQMD3FG3,DIG-34757613,N8K6LRMPSQMD3FG3,DrConsultaDigital,2026-06-01T13:27:52,S,3,0,,2026-06-08T07:25:14,0,,,,"{
+  ""datastream_metadata"": {
+    ""uuid"": ""bd5e4187-e68e-4717-9030-23959626f652"",
+    ""source_timestamp"": ""1780914314000""
+  }
+}",0,,,
+7025762,0,6976174,A,34937291,8065,6,22676,4947575,T,99,0,0,4947575,SLLXND3QV6XXG6H6,DIG-34695635,SLLXND3QV6XXG6H6,DrConsultaDigital,2026-06-01T13:27:52,S,3,0,,2026-06-21T19:33:25,0,,,,"{
+  ""datastream_metadata"": {
+    ""uuid"": ""3db31fa2-eb12-4917-85b9-9fa3f6a2c03c"",
+    ""source_timestamp"": ""1782081205000""
+  }
+}",0,,,
+6981612,0,0,A,34776214,7679,6,22676,4513915,K,75,0,75,4513915,DF65NKDLKTBLQZF6,DIG-34776214,DF65NKDLKTBLQZF6,DrConsultaDigital,2026-06-01T13:27:52,N,3,,,2026-06-08T18:11:45,0,2026-06-08T18:11:08,https://live-us.adyen.com/hpp/generateQRCodeImage.shtml?url=00020101021226900014br.gov.bcb.pix2568pix.adyen.com/pixqrcodelocation/pixloc/v1/loc/KRe9h3q6Q-GwOM_kZUCrnQ5204000053039865802BR5924DR CONSULTA CENTRO MEDIC6009SAO PAULO62070503***63048D02,00020101021226900014br.gov.bcb.pix2568pix.adyen.com/pixqrcodelocation/pixloc/v1/loc/KRe9h3q6Q-GwOM_kZUCrnQ5204000053039865802BR5924DR CONSULTA CENTRO MEDIC6009SAO PAULO62070503***63048D02,"{
+  ""datastream_metadata"": {
+    ""uuid"": ""2f5dc22f-9a90-44e9-aabb-20ab83b14044"",
+    ""source_timestamp"": ""1780953105000""
+  }
+}",0,,,
+7011152,0,6987519,A,34885726,8081,6,22676,360712,T,99,0,0,360712,T7S9B23N2WZWB4G6,DIG-34697406,T7S9B23N2WZWB4G6,DrConsultaDigital,2026-06-01T13:27:52,S,3,0,,2026-06-22T08:52:45,0,,,,"{
+  ""datastream_metadata"": {
+    ""uuid"": ""c3c5fce6-11a4-4e3c-88d8-54ad0dde0854"",
+    ""source_timestamp"": ""1782129165000""
+  }
+}",0,,,
+6978179,0,0,A,34756671,7562,6,22676,543022,K,145,0,145,543022,P784DDQVHVTL87G3,DIG-34756671,P784DDQVHVTL87G3,DrConsultaDigital,2026-06-01T13:27:52,N,3,,,2026-06-08T09:27:29,0,2026-06-08T09:26:04,https://live-us.adyen.com/hpp/generateQRCodeImage.shtml?url=00020101021226900014br.gov.bcb.pix2568pix.adyen.com/pixqrcodelocation/pixloc/v1/loc/6LIwPE9_Rm2rMeO3kX81IQ5204000053039865802BR5924DR CONSULTA CENTRO MEDIC6009SAO PAULO62070503***630411F3,00020101021226900014br.gov.bcb.pix2568pix.adyen.com/pixqrcodelocation/pixloc/v1/loc/6LIwPE9_Rm2rMeO3kX81IQ5204000053039865802BR5924DR CONSULTA CENTRO MEDIC6009SAO PAULO62070503***630411F3,"{
+  ""datastream_metadata"": {
+    ""uuid"": ""fd1ff6b7-142e-4a06-9436-ff770a53d9df"",
+    ""source_timestamp"": ""1780921649000""
+  }
+}",0,,,

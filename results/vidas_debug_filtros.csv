@@ -1,0 +1,17 @@
+account_type,tipo_plano,status_conta,contratos,pessoas
+holder,pago,inativo,475370,228250
+dependent,pago,inativo,222374,182391
+holder,pago,ativo,312055,137309
+dependent,pago,ativo,170058,134095
+holder,gratis,inativo,73658,57974
+dependent,gratis,inativo,57137,51042
+holder,pago,venceu_3m,23757,15939
+dependent,pago,venceu_3m,18392,15667
+holder,gratis,venceu_3m,9476,8583
+dependent,gratis,venceu_3m,7491,7460
+dependent,pago,venceu_ultimo_mes,9186,7403
+holder,pago,venceu_ultimo_mes,14303,7334
+holder,gratis,venceu_ultimo_mes,3570,3479
+dependent,gratis,venceu_ultimo_mes,3117,3086
+dependent,gratis,ativo,39,26
+holder,gratis,ativo,57,11

@@ -1,0 +1,6 @@
+faixa,contratos_v4,churn_rate_v4,contratos_pgto,churn_rate_pgto
+CRITICO,10,90.0,554,93.5
+ALTO,3035,51.6,3113,74.0
+MEDIO,29574,40.7,15806,45.7
+BAIXO,46028,22.9,57577,26.6
+SEGURO,55297,14.7,56894,12.1

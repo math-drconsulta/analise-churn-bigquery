@@ -1,0 +1,6 @@
+diagnostico,contratos,pct_total,media_tentativas,media_falhas,pct_6m,pct_12m,pct_1o_contrato,pct_consumer,pct_credit,pct_debit
+renovado,23595,48.4,0.4,0.1,58.8,41.2,57.1,97.9,100.0,0.0
+sem_tentativa,13426,27.5,0.0,0.0,46.0,54.0,68.2,,,
+cancelou_ativo,6226,12.8,0.2,0.1,55.0,45.0,58.3,98.3,100.0,0.0
+falha_pagamento,5388,11.0,2.7,2.7,52.7,47.3,69.2,98.2,,
+cobrado_mas_churnou,143,0.3,1.0,0.0,71.3,28.7,70.6,99.3,100.0,0.0

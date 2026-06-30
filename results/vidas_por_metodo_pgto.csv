@@ -1,0 +1,13 @@
+account_type,tipo_plano,payment_method,contratos,pessoas,accounts
+dependent,pago,credit_card,148051,120987,95406
+holder,pago,credit_card,155640,108419,108944
+holder,pago,,72803,15509,15553
+holder,pago,pix,7844,7806,7834
+dependent,pago,pix,4870,4861,4858
+holder,pago,debit_card,3543,3536,3541
+dependent,pago,,9479,3470,2093
+dependent,pago,boleto,2414,2226,2001
+dependent,pago,debit_card,2200,2199,2199
+holder,pago,boleto,2811,2158,2163
+dependent,gratis,,34,25,12
+holder,gratis,,50,11,11

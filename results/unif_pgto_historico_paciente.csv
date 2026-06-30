@@ -1,0 +1,9 @@
+perfil_historico,churn_atual,contratos,pct_do_grupo
+0_primeiro_contrato,N,9588,40.6
+1_nunca_churnou,N,8003,33.9
+2_churnou_1x,N,4621,19.6
+3_churnou_2x+,N,1383,5.9
+0_primeiro_contrato,S,11987,47.6
+1_nunca_churnou,S,6973,27.7
+2_churnou_1x,S,4702,18.7
+3_churnou_2x+,S,1521,6.0

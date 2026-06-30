@@ -1,0 +1,146 @@
+account_type,plan_name,plan_months_duration,tipo_plano,payment_method,contratos,pessoas
+holder,cartao dr.consulta semestral,6,pago,credit_card,67648,43211
+dependent,cartao dr.consulta semestral,6,pago,credit_card,53019,40770
+dependent,cartao dr.consulta anual,12,pago,credit_card,44693,38805
+dependent,cartao dr.consulta com odonto anual,12,pago,credit_card,39547,35235
+holder,cartao dr.consulta anual,12,pago,credit_card,41323,32271
+holder,cartao dr.consulta com odonto anual,12,pago,credit_card,35447,29121
+holder,assinatura dr.consulta entregadores ifood,1,pago,,44888,10323
+holder,cartao dr.consulta semestral,6,pago,pix,4924,4906
+dependent,yalo familia cartao dr.consulta,12,pago,credit_card,5156,3533
+holder,cartao dr.consulta + odonto pj v24,12,pago,,3378,2764
+dependent,cartao dr.consulta semestral,6,pago,pix,2647,2641
+holder,cartao dr.consulta semestral,6,pago,debit_card,2192,2189
+holder,yalo familia cartao dr.consulta,12,pago,credit_card,3287,1604
+holder,cartao dr.consulta com odonto anual,12,pago,pix,1573,1567
+dependent,cartao dr.consulta com odonto anual,12,pago,pix,1244,1243
+dependent,cartao dr.consulta semestral,6,pago,debit_card,1164,1163
+holder,cartao dr.consulta anual,12,pago,pix,1117,1115
+holder,cartao dr.consulta semestral,6,pago,boleto,1170,1055
+dependent,cartao dr.consulta + odonto pj v24,12,pago,,1100,986
+dependent,cartao dr.consulta anual,12,pago,pix,936,936
+dependent,cartao dr.consulta semestral,6,pago,boleto,992,915
+dependent,yalo cartao dr.consulta,6,pago,credit_card,1912,878
+dependent,yalo familia anual,12,pago,credit_card,1176,858
+dependent,cartao dr.consulta + odonto pj,1,pago,,2661,811
+holder,cartao dr.consulta anual,12,pago,debit_card,733,733
+holder,cartao dr.consulta + odonto pj,1,pago,,6462,671
+dependent,cartao dr.consulta anual,12,pago,boleto,685,638
+holder,cartao dr.consulta so odonto anual,12,pago,credit_card,768,619
+dependent,cartao dr.consulta com odonto anual,12,pago,boleto,600,584
+dependent,cartao dr.consulta anual,12,pago,debit_card,557,557
+holder,cartao dr.consulta com odonto anual,12,pago,debit_card,529,529
+holder,cartao dr.consulta anual,12,pago,boleto,552,520
+holder,cartao dr.consulta com odonto anual,12,pago,boleto,516,484
+dependent,cartao dr.consulta com odonto anual,12,pago,debit_card,441,441
+holder,yalo cartao dr.consulta,6,pago,credit_card,1623,435
+dependent,yalo cartao dr.consulta,3,pago,credit_card,1512,428
+holder,yalo cartao dr.consulta,1,pago,,7949,408
+holder,yalo familia anual,12,pago,credit_card,637,399
+dependent,cartao dr.consulta so odonto anual,12,pago,credit_card,425,368
+dependent,yalo cartao dr.consulta,1,pago,,1854,322
+dependent,cartao dr.consulta anual *sem comprometer o limite,1,pago,,924,295
+dependent,cartao dr.consulta semestral *sem comprometer o limite,1,pago,,942,283
+holder,yalo cartao dr.consulta,3,pago,credit_card,1569,214
+dependent,cartao dr.consulta + odonto anual *sem comprometer o limite,1,pago,,606,208
+holder,cartao dr.consulta + odonto pj v23,1,pago,,2451,193
+dependent,cartao dr.consulta trimestral,3,pago,credit_card,452,179
+holder,assinatura dr.consulta online,12,pago,credit_card,177,177
+holder,yalo fidelidade,12,pago,credit_card,722,154
+holder,cartao dr.consulta anual *sem comprometer o limite,1,pago,,810,151
+holder,cartao dr.consulta semestral *sem comprometer o limite,1,pago,,831,149
+holder,assinatura amigos da saude,1,pago,,525,143
+dependent,cartao dr.consulta + odonto pj v23,1,pago,,621,137
+holder,dr.consulta + odonto,12,pago,credit_card,136,136
+holder,cartao dr.consulta semestral,6,pago,,127,123
+holder,assinatura dr.consulta online,12,pago,pix,108,108
+holder,cartao dr.consulta trimestral,3,pago,credit_card,665,107
+holder,cartao dr.consulta anual - programa materna,12,pago,,103,103
+holder,cartao dr.consulta anual,12,pago,,102,100
+holder,cartao dr.consulta so odonto anual,12,pago,pix,97,96
+holder,cartao dr.consulta com odonto anual,12,pago,,90,87
+holder,cartao dr.consulta + odonto anual *sem comprometer o limite,1,pago,,324,82
+dependent,cartao dr.consulta anual - programa materna,12,pago,,80,80
+dependent,dr.consulta + odonto,12,pago,credit_card,75,75
+holder,yalo saude,12,pago,credit_card,283,74
+dependent,cartao dr.consulta semestral,6,pago,,76,73
+holder,cartao dr.consulta so odonto anual,12,pago,debit_card,70,70
+dependent,cartao dr.consulta colaboradores,72,pago,,69,69
+dependent,cartao dr.consulta anual,12,pago,,67,64
+holder,cartao dr.consulta nacional anual,12,pago,credit_card,75,57
+dependent,cartao dr.consulta com odonto anual,12,pago,,53,52
+holder,cartao dr.consulta pj v23,1,pago,,874,51
+dependent,cartao dr.consulta nacional anual,12,pago,credit_card,56,49
+dependent,cartao dr.consulta pj v23,1,pago,,294,48
+holder,yalo fidelidade,6,pago,credit_card,410,47
+holder,cartao dr.consulta colaboradores,72,pago,,43,42
+dependent,yalo familia anual,12,pago,boleto,49,38
+dependent,cartao dr.consulta so odonto anual,12,pago,pix,37,37
+holder,cartao dr.consulta so odonto anual,12,pago,boleto,38,35
+holder,yalo corporativo,1,pago,,1436,33
+holder,cartao dr.consulta pj v24,12,pago,,56,32
+dependent,cartao dr.consulta so odonto anual,12,pago,debit_card,29,29
+holder,yalo saude corporativo,1,pago,,1269,24
+dependent,cartao dr.consulta odonto anual - gratis,12,gratis,,31,23
+holder,yalo saude,6,pago,credit_card,172,22
+holder,dr.consulta + odonto,12,pago,pix,20,20
+holder,yalo fidelidade,3,pago,credit_card,281,19
+holder,yalo familia anual,12,pago,boleto,21,18
+holder,dr.consulta + odonto,12,pago,debit_card,18,18
+dependent,cartao dr.consulta so odonto anual,12,pago,boleto,18,18
+holder,yalo familia,1,pago,,430,17
+holder,yalo saude,3,pago,credit_card,228,16
+dependent,yalo cartao dr.consulta,3,pago,boleto,45,16
+dependent,yalo familia,1,pago,,89,15
+dependent,cartao dr.consulta pj v24,12,pago,,15,13
+dependent,assinatura dr.consulta entregadores ifood,1,pago,,15,13
+holder,yalo saude,1,pago,,454,9
+dependent,yalo familia cartao dr.consulta,12,pago,boleto,16,9
+dependent,dr.consulta + odonto,12,pago,debit_card,9,9
+holder,cartao dr.consulta odonto anual - gratis,12,gratis,,18,8
+holder,yalo fidelidade,3,pago,boleto,120,7
+holder,yalo fidelidade corporativo,1,pago,,55,7
+holder,assinatura dr.consulta online,12,pago,boleto,7,7
+holder,yalo cartao dr.consulta,3,pago,boleto,32,6
+holder,yalo fidelidade,12,pago,boleto,22,6
+dependent,dr.consulta + odonto,12,pago,pix,6,6
+holder,yalo individual mensal,1,pago,credit_card,173,5
+holder,yalo individual mensal,1,pago,boleto,248,4
+holder,yalo saude,3,pago,boleto,42,4
+holder,yalo individual anual,12,pago,,10,4
+dependent,yalo fidelidade,12,pago,credit_card,5,4
+holder,cartao dr.consulta trimestral,3,pago,boleto,16,4
+dependent,cartao dr.consulta trimestral,3,pago,boleto,4,4
+dependent,cartao dr.consulta odonto - beneficios 1 - anual,12,pago,credit_card,4,4
+dependent,yalo familia cartao dr.consulta,12,pago,,5,3
+holder,yalo saude,12,pago,boleto,8,3
+holder,cartao dr.consulta - gratis,2,gratis,,32,3
+dependent,yalo familia anual,12,pago,,4,3
+holder,yalo individual semestral,6,pago,,3,3
+holder,cartao dr.consulta nacional anual,12,pago,boleto,3,3
+holder,yalo corporativo dr.c,1,pago,,122,2
+holder,yalo familia cartao dr.consulta,12,pago,,3,2
+holder,cartao dr.consulta odonto - beneficios 1 - anual,12,pago,credit_card,3,2
+dependent,yalo fidelidade,6,pago,credit_card,8,2
+dependent,yalo saude,12,pago,credit_card,6,2
+dependent,cartao dr.consulta nacional anual,12,pago,boleto,2,2
+dependent,cartao dr.consulta - gratis,2,gratis,,3,2
+dependent,yalo saude,6,pago,credit_card,5,2
+holder,yalo fidelidade,6,pago,boleto,13,2
+holder,cartao dr.consulta odonto semestral,6,pago,,2,2
+holder,cartao dr.consulta so odonto anual,12,pago,,2,2
+dependent,assinatura amigos da saude,1,pago,,2,2
+holder,yalo familia cartao dr.consulta,12,pago,boleto,2,2
+holder,cartao dr.consulta individual ,12,pago,credit_card,2,2
+dependent,dr.consulta + odonto,12,pago,boleto,2,2
+holder,dr.consulta + odonto,12,pago,,1,1
+holder,yalo emed,6,pago,credit_card,11,1
+holder,yalo individual mensal,1,pago,pix,5,1
+holder,assinatura dr.consulta online,12,pago,debit_card,1,1
+holder,cartao dr.consulta individual ,12,pago,,1,1
+dependent,assinatura dr.consulta online,12,pago,boleto,1,1
+holder,yalo familia anual,12,pago,,1,1
+holder,assinatura dr.consulta online,12,pago,,1,1
+dependent,dr.consulta + odonto,12,pago,,1,1
+holder,cartao dr.consulta odonto - beneficios 1 - anual,12,pago,boleto,1,1
+dependent,cartao dr.consulta so odonto anual,12,pago,,1,1

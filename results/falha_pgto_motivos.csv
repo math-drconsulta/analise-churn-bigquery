@@ -1,0 +1,14 @@
+motivo,motivo_code,recusas_pre,recusas_pos,total,pct_pre,pct_pos
+Refused,2,2072,2467,4539,31.0,35.3
+Not enough balance,12,1385,1419,2804,20.7,20.3
+Transaction blocked by Adyen to prevent excessive retry fees,46,1389,1210,2599,20.8,17.3
+Transaction Not Permitted,23,519,453,972,7.8,6.5
+Issuer Suspected Fraud,31,300,311,611,4.5,4.4
+Restricted Card,25,286,313,599,4.3,4.5
+Sem motivo informado,,192,188,380,2.9,2.7
+Invalid Card Number,8,156,219,375,2.3,3.1
+Blocked Card,5,124,127,251,1.9,1.8
+Not supported,10,103,110,213,1.5,1.6
+FRAUD,20,100,88,188,1.5,1.3
+Expired Card,6,35,60,95,0.5,0.9
+Declined Non Generic,27,14,18,32,0.2,0.3

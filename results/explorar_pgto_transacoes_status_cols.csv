@@ -1,0 +1,6 @@
+column_name,data_type,is_nullable
+status,STRING,YES
+descricao,STRING,YES
+stamp_modified,DATETIME,YES
+controle_migracao,INT64,YES
+datastream_metadata,"STRUCT<uuid STRING, source_timestamp INT64>",YES
