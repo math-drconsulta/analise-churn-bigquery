@@ -1,0 +1,6 @@
+tipo_transacao,transacoes,clientes,pct_transacoes,valor_total
+Pix,137773,79592,48.4,15577095
+PreAutorização,91925,42247,32.3,11202717
+Captura,54782,41450,19.2,6568116
+Cancelamento Captura,219,200,0.1,39769
+Coberto por Voucher,147,1,0.1,0

@@ -33,7 +33,7 @@ WITH contratos_pagos AS (
     ys.plan_months_duration AS duracao_original,
     ys.payment_method AS metodo_original,
     ys.account_contract_number AS ciclo_original,
-    ys.holder_birth_date,
+    ys.titular_idade,
     ys.total_accounts_dependents AS dependentes,
     ys.canal
   FROM `airflow-datalake-prod.YALO_DW.ref_yalo_subscriptions` ys
@@ -61,7 +61,7 @@ proximo_gratis AS (
     cp.duracao_original,
     cp.metodo_original,
     cp.ciclo_original,
-    cp.holder_birth_date,
+    cp.titular_idade,
     cp.dependentes,
     cp.canal,
     ng.contract_id AS contrato_gratis_id,
@@ -120,7 +120,7 @@ SELECT
   desfecho,
   COUNT(*) AS contratos,
   -- Idade (calculada a partir de birth_date)
-  ROUND(AVG(DATE_DIFF(CURRENT_DATE(), CAST(holder_birth_date AS DATE), YEAR)), 1) AS media_idade,
+  ROUND(AVG(titular_idade), 1) AS media_idade,
   -- Dependentes
   ROUND(AVG(IFNULL(dependentes, 0)), 1) AS media_dependentes,
   COUNTIF(IFNULL(dependentes, 0) = 0) AS sem_dependentes,
